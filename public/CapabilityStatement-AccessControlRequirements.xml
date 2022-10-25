@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CapabilityStatement xmlns="http://hl7.org/fhir">
+  <id value="AccessControlRequirements"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2/></div>
+  </text>
+  <url value="https://gitlab.mitre.org/awatson/fast-access-control/CapabilityStatement/AccessControlRequirements"/>
+  <version value="0.1.0"/>
+  <status value="draft"/>
+  <date value="2022-10-12"/>
+  <publisher value="MITRE"/>
+  <contact>
+    <name value="MITRE"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.mitre.org"/>
+    </telecom>
+  </contact>
+  <kind value="requirements"/>
+  <fhirVersion value="4.0.1"/>
+  <format value="json"/>
+</CapabilityStatement>

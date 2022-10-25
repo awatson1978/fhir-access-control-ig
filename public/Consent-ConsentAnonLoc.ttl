@@ -1,0 +1,83 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://gitlab.mitre.org/awatson/fast-access-control/Consent/ConsentAnonLoc> a fhir:Consent;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "ConsentAnonLoc"];
+  fhir:Resource.meta [
+     fhir:Meta.versionId [ fhir:value "1" ];
+     fhir:Meta.lastUpdated [ fhir:value "2022-09-19T00:00:42.562Z"^^xsd:dateTime ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Consent</b><a name=\"ConsentAnonLoc\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Consent \"ConsentAnonLoc\" Version \"1\" Updated \"2022-09-19 12:00:42+0000\" </p></div><p><b>status</b>: active</p><p><b>scope</b>: Privacy Consent <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-consentscope.html\">Consent Scope Codes</a>#patient-privacy)</span></p><p><b>category</b>: information disclosure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-v3-ActCode.html\">ActCode</a>#IDSCL)</span></p><p><b>dateTime</b>: 2022-09-18 12:00:00+0000</p><h3>Policies</h3><table class=\"grid\"><tr><td>-</td><td><b>Uri</b></td></tr><tr><td>*</td><td><a href=\"https://docs.google.com/document/d/10Y-rEtVQiTWTy7tU-Slw5urAv5RVN38DwSGMVz84Phg/edit?usp=sharing\">https://docs.google.com/document/d/10Y-rEtVQiTWTy7tU-Slw5urAv5RVN38DwSGMVz84Phg/edit?usp=sharing</a></td></tr></table><blockquote><p><b>provision</b></p><p><b>type</b>: deny</p><blockquote><p><b>provision</b></p><p><b>type</b>: permit</p><p><b>securityLabel</b>: normal (Details: http://terminology.hl7.org/CodeSystem/v3-Confidentiality code N = 'normal', stated as 'normal')</p><p><b>class</b>: Location (Details: [not stated] code Location = 'Location', stated as 'Location')</p></blockquote></blockquote></div>"
+  ];
+  fhir:Consent.status [ fhir:value "active"];
+  fhir:Consent.scope [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/consentscope" ];
+       fhir:Coding.code [ fhir:value "patient-privacy" ];
+       fhir:Coding.display [ fhir:value "Privacy Consent" ]
+     ]
+  ];
+  fhir:Consent.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ActCode" ];
+       fhir:Coding.code [ fhir:value "IDSCL" ];
+       fhir:Coding.display [ fhir:value "information disclosure" ]
+     ]
+  ];
+  fhir:Consent.dateTime [ fhir:value "2022-09-18T00:00:00.000Z"^^xsd:dateTime];
+  fhir:Consent.policy [
+     fhir:index 0;
+     fhir:Consent.policy.uri [ fhir:value "https://docs.google.com/document/d/10Y-rEtVQiTWTy7tU-Slw5urAv5RVN38DwSGMVz84Phg/edit?usp=sharing" ]
+  ];
+  fhir:Consent.provision [
+     fhir:Consent.provision.type [ fhir:value "deny" ];
+     fhir:Consent.provision.provision [
+       fhir:index 0;
+       fhir:Consent.provision.type [ fhir:value "permit" ];
+       fhir:Consent.provision.actor [
+         fhir:index 0;
+         fhir:Consent.provision.actor.role [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-RoleClass" ];
+             fhir:Coding.code [ fhir:value "CIT" ];
+             fhir:Coding.display [ fhir:value "citizen" ];
+             fhir:Coding.userSelected [ fhir:value "true"^^xsd:boolean ]
+           ]
+         ];
+         fhir:Consent.provision.actor.reference [
+           fhir:Reference.reference [ fhir:value "AnonRole" ]
+         ]
+       ];
+       fhir:Consent.provision.securityLabel [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-Confidentiality" ];
+         fhir:Coding.code [ fhir:value "N" ];
+         fhir:Coding.display [ fhir:value "normal" ];
+         fhir:Coding.userSelected [ fhir:value "true"^^xsd:boolean ]
+       ];
+       fhir:Consent.provision.class [
+         fhir:index 0;
+         fhir:Coding.code [ fhir:value "Location" ];
+         fhir:Coding.display [ fhir:value "Location" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://gitlab.mitre.org/awatson/fast-access-control/Consent/ConsentAnonLoc.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

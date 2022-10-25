@@ -1,0 +1,74 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://gitlab.mitre.org/awatson/fast-access-control/CodeSystem/CmsInteroperabilityPolicyCodes> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "CmsInteroperabilityPolicyCodes"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://gitlab.mitre.org/awatson/fast-access-control/CodeSystem/CmsInteroperabilityPolicyCodes</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">CMS-9115-F.III<a name=\"CmsInteroperabilityPolicyCodes-CMS-9115-F.46III\"> </a></td><td>Provisions of Patient Access Through APIs</td></tr><tr><td style=\"white-space:nowrap\">CMS-9115-F.IV<a name=\"CmsInteroperabilityPolicyCodes-CMS-9115-F.46IV\"> </a></td><td>API Access to Published Provider Directory Data Provisions</td></tr><tr><td style=\"white-space:nowrap\">CMS-9115-F.V<a name=\"CmsInteroperabilityPolicyCodes-CMS-9115-F.46V\"> </a></td><td>Health Information Exchange and Care Coordination Across Payers</td></tr><tr><td style=\"white-space:nowrap\">CMS-9115-F.VI<a name=\"CmsInteroperabilityPolicyCodes-CMS-9115-F.46VI\"> </a></td><td>Care Coordination Through Trusted Exchange Networks</td></tr><tr><td style=\"white-space:nowrap\">CMS-9115-F.VII<a name=\"CmsInteroperabilityPolicyCodes-CMS-9115-F.46VII\"> </a></td><td>Improving the Medicare-Medicaid Dually Eligible Experience</td></tr><tr><td style=\"white-space:nowrap\">CMS-9115-F.VIII<a name=\"CmsInteroperabilityPolicyCodes-CMS-9115-F.46VIII\"> </a></td><td>Information Blocking Background and Public Reporting</td></tr><tr><td style=\"white-space:nowrap\">CMS-9115-F.IX<a name=\"CmsInteroperabilityPolicyCodes-CMS-9115-F.46IX\"> </a></td><td>Provider Digital Contact Information</td></tr><tr><td style=\"white-space:nowrap\">CMS-9115-F.X<a name=\"CmsInteroperabilityPolicyCodes-CMS-9115-F.46X\"> </a></td><td>Conditions of Participation for Hospitals and Critical Access Hospitals</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "https://gitlab.mitre.org/awatson/fast-access-control/CodeSystem/CmsInteroperabilityPolicyCodes"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0"];
+  fhir:CodeSystem.name [ fhir:value "CmsInteroperabilityPolicyCodes"];
+  fhir:CodeSystem.title [ fhir:value "CmsInteroperabilityPolicyCodes"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2022-10-25T00:45:51-05:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "MITRE"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "MITRE" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.mitre.org" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "Policy provisions defined under CMS-9115-F, CMS Interoperability and Patient Access final rule"];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "8"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "CMS-9115-F.III" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Provisions of Patient Access Through APIs" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "CMS-9115-F.IV" ];
+     fhir:CodeSystem.concept.display [ fhir:value "API Access to Published Provider Directory Data Provisions" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "CMS-9115-F.V" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Health Information Exchange and Care Coordination Across Payers" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "CMS-9115-F.VI" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Care Coordination Through Trusted Exchange Networks" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "CMS-9115-F.VII" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Improving the Medicare-Medicaid Dually Eligible Experience" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "CMS-9115-F.VIII" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Information Blocking Background and Public Reporting" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "CMS-9115-F.IX" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Provider Digital Contact Information" ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "CMS-9115-F.X" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Conditions of Participation for Hospitals and Critical Access Hospitals" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://gitlab.mitre.org/awatson/fast-access-control/CodeSystem/CmsInteroperabilityPolicyCodes.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

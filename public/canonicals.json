@@ -1,0 +1,155 @@
+[
+  {
+    "id": "leap-dnr",
+    "type": "Questionnaire",
+    "url": "http://34.94.253.50:8080/hapi-fhir-jpaserver/fhir/Questionnaire/leap-dnr",
+    "version": "0.1.0"
+  },
+  {
+    "id": "leap-livingwill",
+    "type": "Questionnaire",
+    "url": "http://34.94.253.50:8080/hapi-fhir-jpaserver/fhir/Questionnaire/leap-livingwill",
+    "version": "0.1.0"
+  },
+  {
+    "id": "leap-patient-privacy",
+    "type": "Questionnaire",
+    "url": "http://34.94.253.50:8080/hapi-fhir-jpaserver/fhir/Questionnaire/leap-patient-privacy",
+    "version": "0.1.0"
+  },
+  {
+    "id": "fast-patient-privacy",
+    "type": "Questionnaire",
+    "url": "http://34.94.253.50:8080/hapi-fhir-jpaserver/fhir/Questionnaire/leap-patient-privacy",
+    "version": "0.1.0"
+  },
+  {
+    "id": "leap-poahealthcare",
+    "type": "Questionnaire",
+    "url": "http://34.94.253.50:8080/hapi-fhir-jpaserver/fhir/Questionnaire/leap-poahealthcare",
+    "version": "0.1.0"
+  },
+  {
+    "id": "leap-poamentalhealth",
+    "type": "Questionnaire",
+    "url": "http://34.94.253.50:8080/hapi-fhir-jpaserver/fhir/Questionnaire/leap-poamentalhealth",
+    "version": "0.1.0"
+  },
+  {
+    "id": "leap-polst",
+    "type": "Questionnaire",
+    "url": "http://34.94.253.50:8080/hapi-fhir-jpaserver/fhir/Questionnaire/leap-polst",
+    "version": "0.1.0"
+  },
+  {
+    "id": "AccessControlRequirements",
+    "type": "CapabilityStatement",
+    "url": "https://gitlab.mitre.org/awatson/fast-access-control/CapabilityStatement/AccessControlRequirements",
+    "version": "0.1.0"
+  },
+  {
+    "id": "CmsInteroperabilityPolicyCodes",
+    "type": "CodeSystem",
+    "url": "https://gitlab.mitre.org/awatson/fast-access-control/CodeSystem/CmsInteroperabilityPolicyCodes",
+    "version": "0.1.0",
+    "name": "CmsInteroperabilityPolicyCodes"
+  },
+  {
+    "id": "ConsentExchangeRelationships",
+    "type": "CodeSystem",
+    "url": "https://gitlab.mitre.org/awatson/fast-access-control/CodeSystem/ConsentExchangeRelationships",
+    "version": "0.1.0",
+    "name": "ConsentExchangeRelationships"
+  },
+  {
+    "id": "PayorToPayorExchangePolicyCodes",
+    "type": "CodeSystem",
+    "url": "https://gitlab.mitre.org/awatson/fast-access-control/CodeSystem/PayorToPayorExchangePolicyCodes",
+    "version": "0.1.0",
+    "name": "PayorToPayorExchangePolicyCodes"
+  },
+  {
+    "id": "DnrToConsent",
+    "type": "ConceptMap",
+    "url": "https://gitlab.mitre.org/awatson/fast-access-control/ConceptMap/DnrToConsent",
+    "version": "0.1.0"
+  },
+  {
+    "id": "HipaaPrivacyToConsent",
+    "type": "ConceptMap",
+    "url": "https://gitlab.mitre.org/awatson/fast-access-control/ConceptMap/HipaaPrivacyToConsent",
+    "version": "0.1.0"
+  },
+  {
+    "id": "LivingWillToConsent",
+    "type": "ConceptMap",
+    "url": "https://gitlab.mitre.org/awatson/fast-access-control/ConceptMap/LivingWillToConsent",
+    "version": "0.1.0"
+  },
+  {
+    "id": "PoaContractToConsent",
+    "type": "ConceptMap",
+    "url": "https://gitlab.mitre.org/awatson/fast-access-control/ConceptMap/PoaContractToConsent",
+    "version": "0.1.0"
+  },
+  {
+    "id": "PoaMentalHealthToConsent",
+    "type": "ConceptMap",
+    "url": "https://gitlab.mitre.org/awatson/fast-access-control/ConceptMap/PoaMentalHealthToConsent",
+    "version": "0.1.0"
+  },
+  {
+    "id": "PoaQuestinonaireToConsent",
+    "type": "ConceptMap",
+    "url": "https://gitlab.mitre.org/awatson/fast-access-control/ConceptMap/PoaQuestinonaireToConsent",
+    "version": "0.1.0"
+  },
+  {
+    "id": "PolstToConsent",
+    "type": "ConceptMap",
+    "url": "https://gitlab.mitre.org/awatson/fast-access-control/ConceptMap/PolstToConsent",
+    "version": "0.1.0"
+  },
+  {
+    "id": "mitre.fast.access-control",
+    "type": "ImplementationGuide",
+    "url": "https://gitlab.mitre.org/awatson/fast-access-control/ImplementationGuide/mitre.fast.access-control",
+    "version": "0.1.0",
+    "name": "FastAccessControl"
+  },
+  {
+    "id": "ConsentToAcces",
+    "type": "StructureDefinition",
+    "url": "https://gitlab.mitre.org/awatson/fast-access-control/StructureDefinition/ConsentToAcces",
+    "version": "0.1.0",
+    "name": "ConsentToAcces"
+  },
+  {
+    "id": "ConsentExchangePolicies",
+    "type": "ValueSet",
+    "url": "https://gitlab.mitre.org/awatson/fast-access-control/ValueSet/ConsentExchangePolicies",
+    "version": "0.1.0",
+    "name": "ConsentExchangePolicies"
+  },
+  {
+    "id": "ConsentExchangeRelations",
+    "type": "ValueSet",
+    "url": "https://gitlab.mitre.org/awatson/fast-access-control/ValueSet/ConsentExchangeRelations",
+    "version": "0.1.0",
+    "name": "ConsentExchangeRelations"
+  },
+  {
+    "id": "consent-exchange-category-codes",
+    "type": "ValueSet",
+    "url": "https://gitlab.mitre.org/awatson/fast-access-control/ValueSet/consent-exchange-category-codes",
+    "version": "0.1.0",
+    "name": "ConsentExchangeCategoryCodes"
+  },
+  {
+    "id": "consent-exchange-scope-codes",
+    "type": "ValueSet",
+    "url": "https://gitlab.mitre.org/awatson/fast-access-control/ValueSet/consent-exchange-scope-codes",
+    "version": "0.1.0",
+    "name": "ConsentExchangeScopeCodes"
+  }
+]

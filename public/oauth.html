@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>MITRE.FAST.ACCESS-CONTROL\Oauth - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"4"}
+    h3,h4,h5,h6{--heading-prefix:"4"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Oauth</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">FastAccessControl - Local Development build (v0.1.0). See the <a href="https://gitlab.mitre.org/awatson/fast-access-control/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Oauth</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#smart-on-fhir" id="markdown-toc-smart-on-fhir">SMART on FHIR</a></li>
+  <li><a href="#dynamic-scopes" id="markdown-toc-dynamic-scopes">Dynamic Scopes</a></li>
+</ul>
+
+</div>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tempor commodo ullamcorper a lacus. Rutrum tellus pellentesque eu tincidunt. Praesent tristique magna sit amet. Orci porta non pulvinar neque laoreet suspendisse interdum. Id nibh tortor id aliquet lectus proin nibh nisl. Integer enim neque volutpat ac tincidunt vitae semper. Ullamcorper morbi tincidunt ornare massa eget. Ipsum suspendisse ultrices gravida dictum fusce ut placerat orci nulla. Turpis tincidunt id aliquet risus feugiat in. Libero nunc consequat interdum varius. Vitae congue eu consequat ac felis donec et odio pellentesque. Vel pretium lectus quam id leo in. Placerat vestibulum lectus mauris ultrices eros in. Tellus mauris a diam maecenas sed enim ut sem.</p>
+
+<h3 id="smart-on-fhir">SMART on FHIR</h3>
+<p>Pharetra diam sit amet nisl. Lorem ipsum dolor sit amet consectetur adipiscing elit ut. Sed turpis tincidunt id aliquet risus. Sed arcu non odio euismod lacinia at quis risus. Nisi est sit amet facilisis magna etiam tempor orci eu. Aliquam id diam maecenas ultricies mi. Tristique et egestas quis ipsum suspendisse ultrices. Rhoncus est pellentesque elit ullamcorper. Dis parturient montes nascetur ridiculus mus mauris vitae. Posuere urna nec tincidunt praesent. Ac placerat vestibulum lectus mauris ultrices eros. Consequat nisl vel pretium lectus quam id leo in vitae. Lacus sed viverra tellus in.</p>
+
+<h3 id="dynamic-scopes">Dynamic Scopes</h3>
+<p>Blandit volutpat maecenas volutpat blandit aliquam etiam erat. Elementum eu facilisis sed odio morbi quis commodo. Tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Vivamus at augue eget arcu dictum varius duis at. Et malesuada fames ac turpis egestas. Habitant morbi tristique senectus et netus et. Volutpat lacus laoreet non curabitur gravida arcu ac tortor. Vel quam elementum pulvinar etiam non quam. Velit scelerisque in dictum non. Dictumst vestibulum rhoncus est pellentesque elit. Pretium vulputate sapien nec sagittis aliquam malesuada bibendum. Sed velit dignissim sodales ut eu. Massa tempor nec feugiat nisl. Tortor dignissim convallis aenean et tortor at risus viverra. Ultricies integer quis auctor elit sed vulputate mi sit.</p>
+
+<p>Ut tortor pretium viverra suspendisse potenti nullam ac. Amet justo donec enim diam. Mi proin sed libero enim sed faucibus turpis in eu. Urna porttitor rhoncus dolor purus non enim praesent elementum facilisis. Aliquam sem fringilla ut morbi tincidunt augue interdum. Egestas pretium aenean pharetra magna ac placerat vestibulum. Justo nec ultrices dui sapien eget mi proin sed libero. Quis ipsum suspendisse ultrices gravida dictum fusce ut placerat orci. Ultrices dui sapien eget mi. Nibh mauris cursus mattis molestie. Est placerat in egestas erat imperdiet. Fusce ut placerat orci nulla pellentesque dignissim enim sit.</p>
+
+<p>Viverra aliquet eget sit amet tellus cras. Nunc aliquet bibendum enim facilisis gravida neque. Congue mauris rhoncus aenean vel. Risus viverra adipiscing at in tellus integer feugiat scelerisque varius. Maecenas ultricies mi eget mauris pharetra et ultrices neque. Orci eu lobortis elementum nibh. Ut ornare lectus sit amet est placerat in. Ultrices neque ornare aenean euismod elementum nisi. Mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien et. Et netus et malesuada fames ac turpis egestas integer. Nulla porttitor massa id neque aliquam.</p>
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org">MITRE</a>.  Package mitre.fast.access-control#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Oct 25, 2022 00:45-0500">2022-10-25</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

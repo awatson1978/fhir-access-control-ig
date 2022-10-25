@@ -1,0 +1,28 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "ConsentExchangeRelationships",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://gitlab.mitre.org/awatson/fast-access-control/CodeSystem/ConsentExchangeRelationships</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr></table></div>"
+  },
+  "url": "https://gitlab.mitre.org/awatson/fast-access-control/CodeSystem/ConsentExchangeRelationships",
+  "version": "0.1.0",
+  "name": "ConsentExchangeRelationships",
+  "title": "ConsentExchangeRelationships",
+  "status": "active",
+  "date": "2022-10-25T00:45:51-05:00",
+  "publisher": "MITRE",
+  "contact": [
+    {
+      "name": "MITRE",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.mitre.org"
+        }
+      ]
+    }
+  ],
+  "description": "Relationships used to model and exchange consent relationships",
+  "content": "complete"
+}

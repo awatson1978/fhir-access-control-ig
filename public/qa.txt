@@ -1,0 +1,251 @@
+﻿FastAccessControl : Validation Results
+=========================================
+
+err = 102, warn = 31, info = 26
+IG Publisher Version: 1.2.10
+Generated Tue Oct 25 00:46:25 CDT 2022. FHIR version 4.0.1 for mitre.fast.access-control#0.1.0 (canonical = https://gitlab.mitre.org/awatson/fast-access-control)
+ Build Errors : 5 / 4 / 0
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/CapabilityStatement-AccessControlRequirements : 3 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/CodeSystem-CmsInteroperabilityPolicyCodes : 0 / 2 / 2
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/CodeSystem-ConsentExchangeRelationships : 0 / 2 / 2
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/CodeSystem-PayorToPayorExchangePolicyCodes : 0 / 2 / 2
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/ConceptMap-DnrToConsent : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/ConceptMap-HipaaPrivacyToConsent : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/ConceptMap-LivingWillToConsent : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/ConceptMap-PoaContractToConsent : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/ConceptMap-PoaMentalHealthToConsent : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/ConceptMap-PoaQuestinonaireToConsent : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/ConceptMap-PolstToConsent : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Consent-ConsentAnonLoc : 1 / 1 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Consent-ConsentAnonOrg : 2 / 1 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Consent-ConsentAnonPrac : 1 / 1 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Consent-ConsentClinicianLoc : 1 / 1 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Consent-ConsentClinicianOrg : 1 / 1 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/ImplementationGuide-mitre.fast.access-control : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Organization-stdymphnas : 4 / 3 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Organization-stjames : 0 / 1 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Patient-patient-jane-doe : 12 / 1 / 3
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Patient-patient-jennifer-smith : 8 / 1 / 8
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Patient-patient-john-smith : 6 / 0 / 5
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Patient-patient-katie-klepti : 11 / 1 / 3
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Practitioner-practitioner-alison-camron : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Practitioner-practitioner-susan-social : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Questionnaire-fast-patient-privacy : 5 / 0 / 2
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Questionnaire-leap-dnr : 5 / 1 / 2
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Questionnaire-leap-livingwill : 3 / 0 / 2
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Questionnaire-leap-patient-privacy : 5 / 0 / 2
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Questionnaire-leap-poahealthcare : 13 / 0 / 2
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Questionnaire-leap-poamentalhealth : 6 / 0 / 2
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Questionnaire-leap-polst : 14 / 2 / 3
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureDefinition-ConsentToAcces : 1 / 1 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/ValueSet-ConsentExchangePolicies : 0 / 2 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/ValueSet-ConsentExchangeRelations : 0 / 1 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/ValueSet-consent-exchange-category-codes : 0 / 1 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/ValueSet-consent-exchange-scope-codes : 0 / 1 / 1
+</table>
+== n/a ==
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/Patient-patient-jane-doe.html#/html/body/div/div/div/div/div/div/table/tr/td/ul/li/a at Line 178, column 617: The link 'Practitioner/ractitioner-susan-social' for "Practitioner/ractitioner-susan-social: Susan Social" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/Patient-patient-jane-doe.html#/html/body/div/div/div/div/div/div/table/tr/td/ul/li/a at Line 178, column 751: The link 'Practitioner/practitioner-bernard-shuman' for "Practitioner/practitioner-bernard-shuman: Dr. Bernard Shuman" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/Patient-patient-jennifer-smith.html#/html/body/div/div/div/div/div/div/table/tr/td/ul/li/a at Line 178, column 734: The link 'Practitioner/ractitioner-susan-social' for "Practitioner/ractitioner-susan-social: Susan Social" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/Patient-patient-katie-klepti.html#/html/body/div/div/div/div/div/div/table/tr/td/ul/li/a at Line 178, column 621: The link 'Practitioner/ractitioner-susan-social' for "Practitioner/ractitioner-susan-social: Susan Social" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/datacollection.html#/html/body/div/div/div/div/div/p/img at Line 142, column 5: The image source 'ConsentStructuredDataCapture.png' cannot be resolved
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: The HTML fragment 'cross-version-analysis.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 3: The HTML fragment 'dependency-table.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/CapabilityStatement-AccessControlRequirements.json ==
+ERROR: CapabilityStatement/AccessControlRequirements: CapabilityStatement: Rule cpb-1: 'A Capability Statement SHALL have at least one of REST, messaging or document element.' Failed
+ERROR: CapabilityStatement/AccessControlRequirements: CapabilityStatement: Rule cpb-2: 'A Capability Statement SHALL have at least one of description, software, or implementation element.' Failed
+ERROR: CapabilityStatement/AccessControlRequirements: CapabilityStatement.text.div: Rule txt-2: 'The narrative SHALL have some non-whitespace content' Failed
+== fsh-generated/resources/CodeSystem-CmsInteroperabilityPolicyCodes.json ==
+INFORMATION: CodeSystem/CmsInteroperabilityPolicyCodes: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/CmsInteroperabilityPolicyCodes: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/CmsInteroperabilityPolicyCodes: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+== fsh-generated/resources/CodeSystem-ConsentExchangeRelationships.json ==
+INFORMATION: CodeSystem/ConsentExchangeRelationships: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/ConsentExchangeRelationships: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/ConsentExchangeRelationships: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+== fsh-generated/resources/CodeSystem-PayorToPayorExchangePolicyCodes.json ==
+INFORMATION: CodeSystem/PayorToPayorExchangePolicyCodes: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/PayorToPayorExchangePolicyCodes: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/PayorToPayorExchangePolicyCodes: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+== fsh-generated/resources/ConceptMap-DnrToConsent.json ==
+== fsh-generated/resources/ConceptMap-HipaaPrivacyToConsent.json ==
+== fsh-generated/resources/ConceptMap-LivingWillToConsent.json ==
+== fsh-generated/resources/ConceptMap-PoaContractToConsent.json ==
+== fsh-generated/resources/ConceptMap-PoaMentalHealthToConsent.json ==
+== fsh-generated/resources/ConceptMap-PoaQuestinonaireToConsent.json ==
+== fsh-generated/resources/ConceptMap-PolstToConsent.json ==
+== fsh-generated/resources/Consent-ConsentAnonLoc.json ==
+ERROR: Consent/ConsentAnonLoc: Consent.provision.provision[0].actor[0].reference: Unable to resolve resource with reference 'AnonRole'
+WARNING: Consent/ConsentAnonLoc: Consent.provision.provision[0].class[0]: A code with no system has no defined meaning. A system should be provided
+== fsh-generated/resources/Consent-ConsentAnonOrg.json ==
+ERROR: Consent/ConsentAnonOrg: Consent.organization[0]: Unable to resolve resource with reference 'https://national-directory.meteorapp.com/'
+ERROR: Consent/ConsentAnonOrg: Consent.provision.provision[0].actor[0].reference: Unable to resolve resource with reference 'AnonRole'
+WARNING: Consent/ConsentAnonOrg: Consent.provision.provision[0].class[0]: A code with no system has no defined meaning. A system should be provided
+== fsh-generated/resources/Consent-ConsentAnonPrac.json ==
+ERROR: Consent/ConsentAnonPrac: Consent.provision.provision[0].actor[0].reference: Unable to resolve resource with reference 'AnonRole'
+WARNING: Consent/ConsentAnonPrac: Consent.provision.provision[0].class[0]: A code with no system has no defined meaning. A system should be provided
+== fsh-generated/resources/Consent-ConsentClinicianLoc.json ==
+ERROR: Consent/ConsentClinicianLoc: Consent.provision.provision[0].actor[0].reference: Unable to resolve resource with reference 'CounselorRole1'
+WARNING: Consent/ConsentClinicianLoc: Consent.provision.provision[0].class[0]: A code with no system has no defined meaning. A system should be provided
+== fsh-generated/resources/Consent-ConsentClinicianOrg.json ==
+ERROR: Consent/ConsentClinicianOrg: Consent.provision.provision[0].actor[0].reference: Unable to resolve resource with reference 'CounselorRole1'
+WARNING: Consent/ConsentClinicianOrg: Consent.provision.provision[0].class[0]: A code with no system has no defined meaning. A system should be provided
+== fsh-generated/resources/ImplementationGuide-mitre.fast.access-control.json ==
+== fsh-generated/resources/Organization-stdymphnas.json ==
+ERROR: Organization/stdymphnas: Organization.meta.profile[0]: Canonical URL 'http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Organization' does not resolve
+ERROR: Organization/stdymphnas: Organization.meta.profile[1]: Canonical URL 'http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization' does not resolve
+WARNING: Organization/stdymphnas: Organization.meta.security[0]: A code with no system has no defined meaning. A system should be provided
+ERROR: Organization/stdymphnas: Organization.type[0].coding[0]: Unknown Code System 'http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/OrgTypeCS'
+ERROR: Organization/stdymphnas: Organization.type[0].coding[0].system: URL value 'http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/OrgTypeCS' does not resolve
+WARNING: Organization/stdymphnas: Organization.meta.profile[0]: Profile reference 'http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Organization' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+WARNING: Organization/stdymphnas: Organization.meta.profile[1]: Profile reference 'http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+== fsh-generated/resources/Organization-stjames.json ==
+WARNING: Organization/stjames: Organization.meta.security[0]: A code with no system has no defined meaning. A system should be provided
+== fsh-generated/resources/Patient-patient-jane-doe.json ==
+ERROR: Patient/patient-jane-doe: Patient.meta.profile[0]: Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient' does not resolve
+ERROR: Patient/patient-jane-doe: Patient.extension[0]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-race is unknown, and not allowed here
+INFORMATION: Patient/patient-jane-doe: Patient.extension[0].extension[0].value.ofType(Coding): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
+INFORMATION: Patient/patient-jane-doe: Patient.extension[0].extension[1].value.ofType(Coding): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
+ERROR: Patient/patient-jane-doe: Patient.extension[0].extension[2]: Rule ext-1: 'Must have either extensions or value[x], not both' Failed
+ERROR: Patient/patient-jane-doe: Patient.extension[0].url: URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-race' does not resolve
+ERROR: Patient/patient-jane-doe: Patient.extension[1]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity is unknown, and not allowed here
+ERROR: Patient/patient-jane-doe: Patient.extension[1].extension[0].value.ofType(Coding): Unknown Code System 'http://hl7.org/fhir/us/core/ValueSet/omb-ethnicity'
+ERROR: Patient/patient-jane-doe: Patient.extension[1].extension[0].value.ofType(Coding).system: URL value 'http://hl7.org/fhir/us/core/ValueSet/omb-ethnicity' does not resolve
+ERROR: Patient/patient-jane-doe: Patient.extension[1].url: URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity' does not resolve
+ERROR: Patient/patient-jane-doe: Patient.extension[2]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex is unknown, and not allowed here
+ERROR: Patient/patient-jane-doe: Patient.extension[2].url: URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex' does not resolve
+ERROR: Patient/patient-jane-doe: Patient.generalPractitioner[0]: Unable to resolve resource with reference 'Practitioner/ractitioner-susan-social'
+ERROR: Patient/patient-jane-doe: Patient.generalPractitioner[1]: Unable to resolve resource with reference 'Practitioner/practitioner-bernard-shuman'
+WARNING: Patient/patient-jane-doe: Patient.meta.profile[0]: Profile reference 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+== fsh-generated/resources/Patient-patient-jennifer-smith.json ==
+ERROR: Patient/patient-jennifer-smith: Patient.meta.profile[0]: Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient' does not resolve
+ERROR: Patient/patient-jennifer-smith: Patient.extension[0]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-race is unknown, and not allowed here
+INFORMATION: Patient/patient-jennifer-smith: Patient.extension[0].extension[0].value.ofType(Coding): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
+INFORMATION: Patient/patient-jennifer-smith: Patient.extension[0].extension[1].value.ofType(Coding): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
+INFORMATION: Patient/patient-jennifer-smith: Patient.extension[0].extension[2].value.ofType(Coding): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
+INFORMATION: Patient/patient-jennifer-smith: Patient.extension[0].extension[3].value.ofType(Coding): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
+ERROR: Patient/patient-jennifer-smith: Patient.extension[0].url: URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-race' does not resolve
+ERROR: Patient/patient-jennifer-smith: Patient.extension[1]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity is unknown, and not allowed here
+INFORMATION: Patient/patient-jennifer-smith: Patient.extension[1].extension[0].value.ofType(Coding): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
+INFORMATION: Patient/patient-jennifer-smith: Patient.extension[1].extension[1].value.ofType(Coding): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
+INFORMATION: Patient/patient-jennifer-smith: Patient.extension[1].extension[2].value.ofType(Coding): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
+ERROR: Patient/patient-jennifer-smith: Patient.extension[1].url: URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity' does not resolve
+ERROR: Patient/patient-jennifer-smith: Patient.extension[2]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex is unknown, and not allowed here
+ERROR: Patient/patient-jennifer-smith: Patient.extension[2].url: URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex' does not resolve
+ERROR: Patient/patient-jennifer-smith: Patient.generalPractitioner[0]: Unable to resolve resource with reference 'Practitioner/ractitioner-susan-social'
+WARNING: Patient/patient-jennifer-smith: Patient.meta.profile[0]: Profile reference 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+== fsh-generated/resources/Patient-patient-john-smith.json ==
+ERROR: Patient/patient-john-smith: Patient.extension[0]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-race is unknown, and not allowed here
+INFORMATION: Patient/patient-john-smith: Patient.extension[0].extension[0].value.ofType(Coding): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
+ERROR: Patient/patient-john-smith: Patient.extension[0].url: URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-race' does not resolve
+ERROR: Patient/patient-john-smith: Patient.extension[1]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity is unknown, and not allowed here
+INFORMATION: Patient/patient-john-smith: Patient.extension[1].extension[0].value.ofType(Coding): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
+INFORMATION: Patient/patient-john-smith: Patient.extension[1].extension[1].value.ofType(Coding): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
+INFORMATION: Patient/patient-john-smith: Patient.extension[1].extension[2].value.ofType(Coding): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
+ERROR: Patient/patient-john-smith: Patient.extension[1].url: URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity' does not resolve
+ERROR: Patient/patient-john-smith: Patient.extension[2]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex is unknown, and not allowed here
+ERROR: Patient/patient-john-smith: Patient.extension[2].url: URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex' does not resolve
+== fsh-generated/resources/Patient-patient-katie-klepti.json ==
+ERROR: Patient/patient-katie-klepti: Patient.meta.profile[0]: Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient' does not resolve
+ERROR: Patient/patient-katie-klepti: Patient.extension[0]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-race is unknown, and not allowed here
+INFORMATION: Patient/patient-katie-klepti: Patient.extension[0].extension[0].value.ofType(Coding): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
+INFORMATION: Patient/patient-katie-klepti: Patient.extension[0].extension[1].value.ofType(Coding): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
+ERROR: Patient/patient-katie-klepti: Patient.extension[0].extension[2]: Rule ext-1: 'Must have either extensions or value[x], not both' Failed
+ERROR: Patient/patient-katie-klepti: Patient.extension[0].url: URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-race' does not resolve
+ERROR: Patient/patient-katie-klepti: Patient.extension[1]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity is unknown, and not allowed here
+ERROR: Patient/patient-katie-klepti: Patient.extension[1].extension[0].value.ofType(Coding): Unknown Code System 'http://hl7.org/fhir/us/core/ValueSet/omb-ethnicity'
+ERROR: Patient/patient-katie-klepti: Patient.extension[1].extension[0].value.ofType(Coding).system: URL value 'http://hl7.org/fhir/us/core/ValueSet/omb-ethnicity' does not resolve
+ERROR: Patient/patient-katie-klepti: Patient.extension[1].url: URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity' does not resolve
+ERROR: Patient/patient-katie-klepti: Patient.extension[2]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex is unknown, and not allowed here
+ERROR: Patient/patient-katie-klepti: Patient.extension[2].url: URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex' does not resolve
+ERROR: Patient/patient-katie-klepti: Patient.generalPractitioner[0]: Unable to resolve resource with reference 'Practitioner/ractitioner-susan-social'
+WARNING: Patient/patient-katie-klepti: Patient.meta.profile[0]: Profile reference 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+== fsh-generated/resources/Practitioner-practitioner-alison-camron.json ==
+== fsh-generated/resources/Practitioner-practitioner-susan-social.json ==
+== fsh-generated/resources/Questionnaire-fast-patient-privacy.json ==
+INFORMATION: Questionnaire/fast-patient-privacy: Questionnaire.code[0]: Code System URI 'http://sdhealthconnect.com/leap/patient-privacy' is unknown so the code cannot be validated
+ERROR: Questionnaire/fast-patient-privacy: Questionnaire.item[0]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
+ERROR: Questionnaire/fast-patient-privacy: Questionnaire.item[5]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
+ERROR: Questionnaire/fast-patient-privacy: Questionnaire.item[9]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
+ERROR: Questionnaire/fast-patient-privacy: Questionnaire.item[14]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
+ERROR: Questionnaire/fast-patient-privacy: Questionnaire.item[19]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
+== fsh-generated/resources/Questionnaire-leap-dnr.json ==
+INFORMATION: Questionnaire/leap-dnr: Questionnaire.code[0]: Code System URI 'http://sdhealthconnect.com/leap/adr/dnr' is unknown so the code cannot be validated
+ERROR: Questionnaire/leap-dnr: Questionnaire.item[0]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
+WARNING: Questionnaire/leap-dnr: Questionnaire.item[1].text: value should not start or finish with whitespace 'In...procedures. '
+ERROR: Questionnaire/leap-dnr: Questionnaire.item[2]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
+ERROR: Questionnaire/leap-dnr: Questionnaire.item[5]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
+ERROR: Questionnaire/leap-dnr: Questionnaire.item[9]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
+ERROR: Questionnaire/leap-dnr: Questionnaire.item[12]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
+== fsh-generated/resources/Questionnaire-leap-livingwill.json ==
+INFORMATION: Questionnaire/leap-livingwill: Questionnaire.code[0]: Code System URI 'http://sdhealthconnect.com/leap/adr/livingwill' is unknown so the code cannot be validated
+ERROR: Questionnaire/leap-livingwill: Questionnaire.item[0]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
+ERROR: Questionnaire/leap-livingwill: Questionnaire.item[7]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
+ERROR: Questionnaire/leap-livingwill: Questionnaire.item[10]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
+== fsh-generated/resources/Questionnaire-leap-patient-privacy.json ==
+INFORMATION: Questionnaire/leap-patient-privacy: Questionnaire.code[0]: Code System URI 'http://sdhealthconnect.com/leap/patient-privacy' is unknown so the code cannot be validated
+ERROR: Questionnaire/leap-patient-privacy: Questionnaire.item[0]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
+ERROR: Questionnaire/leap-patient-privacy: Questionnaire.item[5]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
+ERROR: Questionnaire/leap-patient-privacy: Questionnaire.item[9]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
+ERROR: Questionnaire/leap-patient-privacy: Questionnaire.item[14]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
+ERROR: Questionnaire/leap-patient-privacy: Questionnaire.item[19]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
+== fsh-generated/resources/Questionnaire-leap-poahealthcare.json ==
+INFORMATION: Questionnaire/leap-poahealthcare: Questionnaire.code[0]: Code System URI 'http://sdhealthconnect.com/leap/adr/poahealthcare' is unknown so the code cannot be validated
+ERROR: Questionnaire/leap-poahealthcare: Questionnaire.item[0]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
+ERROR: Questionnaire/leap-poahealthcare: Questionnaire.item[1]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
+ERROR: Questionnaire/leap-poahealthcare: Questionnaire.item[7]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
+ERROR: Questionnaire/leap-poahealthcare: Questionnaire.item[15]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
+ERROR: Questionnaire/leap-poahealthcare: Questionnaire.item[19]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
+ERROR: Questionnaire/leap-poahealthcare: Questionnaire.item[24]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
+ERROR: Questionnaire/leap-poahealthcare: Questionnaire.item[29]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
+ERROR: Questionnaire/leap-poahealthcare: Questionnaire.item[35]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
+ERROR: Questionnaire/leap-poahealthcare: Questionnaire.item[39]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
+ERROR: Questionnaire/leap-poahealthcare: Questionnaire.item[47]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
+ERROR: Questionnaire/leap-poahealthcare: Questionnaire.item[51]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
+ERROR: Questionnaire/leap-poahealthcare: Questionnaire.item[54]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
+ERROR: Questionnaire/leap-poahealthcare: Questionnaire.item[57]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
+== fsh-generated/resources/Questionnaire-leap-poamentalhealth.json ==
+INFORMATION: Questionnaire/leap-poamentalhealth: Questionnaire.code[0]: Code System URI 'http://sdhealthconnect.com/leap/adr/poamentalhealth' is unknown so the code cannot be validated
+ERROR: Questionnaire/leap-poamentalhealth: Questionnaire.item[0]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
+ERROR: Questionnaire/leap-poamentalhealth: Questionnaire.item[1]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
+ERROR: Questionnaire/leap-poamentalhealth: Questionnaire.item[7]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
+ERROR: Questionnaire/leap-poamentalhealth: Questionnaire.item[13]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
+ERROR: Questionnaire/leap-poamentalhealth: Questionnaire.item[22]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
+ERROR: Questionnaire/leap-poamentalhealth: Questionnaire.item[25]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
+== fsh-generated/resources/Questionnaire-leap-polst.json ==
+INFORMATION: Questionnaire/leap-polst: Questionnaire.code[0]: Code System URI 'http://sdhealthconnect.com/leap/adr/polst' is unknown so the code cannot be validated
+ERROR: Questionnaire/leap-polst: Questionnaire.item[0]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
+ERROR: Questionnaire/leap-polst: Questionnaire.item[3]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
+INFORMATION: Questionnaire/leap-polst: Questionnaire.item[6].text: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+ERROR: Questionnaire/leap-polst: Questionnaire.item[8]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
+WARNING: Questionnaire/leap-polst: Questionnaire.item[8].text: value should not start or finish with whitespace 'D....tolerated)
+
+'
+ERROR: Questionnaire/leap-polst: Questionnaire.item[13]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
+ERROR: Questionnaire/leap-polst: Questionnaire.item[18]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
+WARNING: Questionnaire/leap-polst: Questionnaire.item[18].text: value should not start or finish with whitespace 'F....order]
+
+ '
+ERROR: Questionnaire/leap-polst: Questionnaire.item[22]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
+ERROR: Questionnaire/leap-polst: Questionnaire.item[26]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
+ERROR: Questionnaire/leap-polst: Questionnaire.item[29]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
+ERROR: Questionnaire/leap-polst: Questionnaire.item[34]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
+ERROR: Questionnaire/leap-polst: Questionnaire.item[37]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
+ERROR: Questionnaire/leap-polst: Questionnaire.item[41]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
+ERROR: Questionnaire/leap-polst: Questionnaire.item[47]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
+ERROR: Questionnaire/leap-polst: Questionnaire.item[54]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
+ERROR: Questionnaire/leap-polst: Questionnaire.item[58]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
+== fsh-generated/resources/StructureDefinition-ConsentToAcces.json ==
+ERROR: StructureDefinition/ConsentToAcces: StructureDefinition.snapshot.element[9].example[0].value.ofType(Identifier): if identifier.system is ''urn:ietf:rfc:3986'', then the identifier.value must be a full URI (e.g. start with a scheme)
+WARNING: StructureDefinition.where(url = 'https://gitlab.mitre.org/awatson/fast-access-control/StructureDefinition/ConsentToAcces'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/ValueSet-ConsentExchangePolicies.json ==
+WARNING: ValueSet/ConsentExchangePolicies: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet.where(id = 'ConsentExchangePolicies'): Error from server: Unable to provide support for code system http://mehi-ig.tranquildata.com/CodeSystem/PayorToPayorExchangePolicyCodes
+== fsh-generated/resources/ValueSet-ConsentExchangeRelations.json ==
+WARNING: ValueSet/ConsentExchangeRelations: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+== fsh-generated/resources/ValueSet-consent-exchange-category-codes.json ==
+WARNING: ValueSet/consent-exchange-category-codes: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+== fsh-generated/resources/ValueSet-consent-exchange-scope-codes.json ==
+WARNING: ValueSet/consent-exchange-scope-codes: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="practitioner-susan-social"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Practitioner</b><a name="practitioner-susan-social"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Practitioner "practitioner-susan-social" </p></div><p><b>active</b>: true</p><p><b>name</b>: SUSAN SOCIAL </p><p><b>telecom</b>: ph: 555-555-8818(HOME)</p><p><b>address</b>: 1235 Bay Ave. Boston MA 02101 US </p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1972-09-04</p></div>
+  </text>
+  <active value="true"/>
+  <name>
+    <family value="SOCIAL"/>
+    <given value="SUSAN"/>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="555-555-8818"/>
+    <use value="home"/>
+  </telecom>
+  <address>
+    <line value="1235 Bay Ave."/>
+    <city value="Boston"/>
+    <state value="MA"/>
+    <postalCode value="02101"/>
+    <country value="US"/>
+  </address>
+  <gender value="female"/>
+  <birthDate value="1972-09-04"/>
+</Practitioner>

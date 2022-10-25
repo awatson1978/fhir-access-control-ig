@@ -1,0 +1,12 @@
+{
+  "url": "https://gitlab.mitre.org/awatson/fast-access-control/ImplementationGuide/mitre.fast.access-control",
+  "name": "FastAccessControl",
+  "package-id": "mitre.fast.access-control",
+  "ig-ver": "0.1.0",
+  "date": "Tue, 25 Oct, 2022 00:45:51 -0500",
+  "errs": 102,
+  "warnings": 31,
+  "hints": 26,
+  "version": "4.0.1",
+  "tool": "5.0.0-ballot (3)"
+}

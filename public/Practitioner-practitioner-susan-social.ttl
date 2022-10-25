@@ -1,0 +1,50 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://gitlab.mitre.org/awatson/fast-access-control/Practitioner/practitioner-susan-social> a fhir:Practitioner;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "practitioner-susan-social"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"practitioner-susan-social\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner \"practitioner-susan-social\" </p></div><p><b>active</b>: true</p><p><b>name</b>: SUSAN SOCIAL </p><p><b>telecom</b>: ph: 555-555-8818(HOME)</p><p><b>address</b>: 1235 Bay Ave. Boston MA 02101 US </p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1972-09-04</p></div>"
+  ];
+  fhir:Practitioner.active [ fhir:value "true"^^xsd:boolean];
+  fhir:Practitioner.name [
+     fhir:index 0;
+     fhir:HumanName.family [ fhir:value "SOCIAL" ];
+     fhir:HumanName.given [
+       fhir:value "SUSAN";
+       fhir:index 0
+     ]
+  ];
+  fhir:Practitioner.telecom [
+     fhir:index 0;
+     fhir:ContactPoint.system [ fhir:value "phone" ];
+     fhir:ContactPoint.value [ fhir:value "555-555-8818" ];
+     fhir:ContactPoint.use [ fhir:value "home" ]
+  ];
+  fhir:Practitioner.address [
+     fhir:index 0;
+     fhir:Address.line [
+       fhir:value "1235 Bay Ave.";
+       fhir:index 0
+     ];
+     fhir:Address.city [ fhir:value "Boston" ];
+     fhir:Address.state [ fhir:value "MA" ];
+     fhir:Address.postalCode [ fhir:value "02101" ];
+     fhir:Address.country [ fhir:value "US" ]
+  ];
+  fhir:Practitioner.gender [ fhir:value "female"];
+  fhir:Practitioner.birthDate [ fhir:value "1972-09-04"^^xsd:date] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://gitlab.mitre.org/awatson/fast-access-control/Practitioner/practitioner-susan-social.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,58 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://gitlab.mitre.org/awatson/fast-access-control/CodeSystem/PayorToPayorExchangePolicyCodes> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "PayorToPayorExchangePolicyCodes"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://gitlab.mitre.org/awatson/fast-access-control/CodeSystem/PayorToPayorExchangePolicyCodes</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">CMS-9115-P<a name=\"PayorToPayorExchangePolicyCodes-CMS-9115-P\"> </a></td><td>CMS Interoperability and Patient Access proposed rule</td></tr><tr><td style=\"white-space:nowrap\">CMS-9115-F<a name=\"PayorToPayorExchangePolicyCodes-CMS-9115-F\"> </a></td><td>CMS Interoperability and Patient Access final rule</td></tr><tr><td style=\"white-space:nowrap\">CMS-9123-P<a name=\"PayorToPayorExchangePolicyCodes-CMS-9123-P\"> </a></td><td>CMS Reducing Provider and Patient Burdern proposed rule</td></tr><tr><td style=\"white-space:nowrap\">CMS-9123-F<a name=\"PayorToPayorExchangePolicyCodes-CMS-9123-F\"> </a></td><td>CMS Reducing Provider and Patient Burdern final rule</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "https://gitlab.mitre.org/awatson/fast-access-control/CodeSystem/PayorToPayorExchangePolicyCodes"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0"];
+  fhir:CodeSystem.name [ fhir:value "PayorToPayorExchangePolicyCodes"];
+  fhir:CodeSystem.title [ fhir:value "PayorToPayorExchangePolicyCodes"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2022-10-25T00:45:51-05:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "MITRE"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "MITRE" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.mitre.org" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "Policy codes used to define legal frameworks under which consent exchange occurs between payors."];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "4"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "CMS-9115-P" ];
+     fhir:CodeSystem.concept.display [ fhir:value "CMS Interoperability and Patient Access proposed rule" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "CMS-9115-F" ];
+     fhir:CodeSystem.concept.display [ fhir:value "CMS Interoperability and Patient Access final rule" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "CMS-9123-P" ];
+     fhir:CodeSystem.concept.display [ fhir:value "CMS Reducing Provider and Patient Burdern proposed rule" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "CMS-9123-F" ];
+     fhir:CodeSystem.concept.display [ fhir:value "CMS Reducing Provider and Patient Burdern final rule" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://gitlab.mitre.org/awatson/fast-access-control/CodeSystem/PayorToPayorExchangePolicyCodes.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

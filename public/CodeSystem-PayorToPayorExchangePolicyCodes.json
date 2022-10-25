@@ -1,0 +1,47 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "PayorToPayorExchangePolicyCodes",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://gitlab.mitre.org/awatson/fast-access-control/CodeSystem/PayorToPayorExchangePolicyCodes</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">CMS-9115-P<a name=\"PayorToPayorExchangePolicyCodes-CMS-9115-P\"> </a></td><td>CMS Interoperability and Patient Access proposed rule</td></tr><tr><td style=\"white-space:nowrap\">CMS-9115-F<a name=\"PayorToPayorExchangePolicyCodes-CMS-9115-F\"> </a></td><td>CMS Interoperability and Patient Access final rule</td></tr><tr><td style=\"white-space:nowrap\">CMS-9123-P<a name=\"PayorToPayorExchangePolicyCodes-CMS-9123-P\"> </a></td><td>CMS Reducing Provider and Patient Burdern proposed rule</td></tr><tr><td style=\"white-space:nowrap\">CMS-9123-F<a name=\"PayorToPayorExchangePolicyCodes-CMS-9123-F\"> </a></td><td>CMS Reducing Provider and Patient Burdern final rule</td></tr></table></div>"
+  },
+  "url": "https://gitlab.mitre.org/awatson/fast-access-control/CodeSystem/PayorToPayorExchangePolicyCodes",
+  "version": "0.1.0",
+  "name": "PayorToPayorExchangePolicyCodes",
+  "title": "PayorToPayorExchangePolicyCodes",
+  "status": "active",
+  "date": "2022-10-25T00:45:51-05:00",
+  "publisher": "MITRE",
+  "contact": [
+    {
+      "name": "MITRE",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.mitre.org"
+        }
+      ]
+    }
+  ],
+  "description": "Policy codes used to define legal frameworks under which consent exchange occurs between payors.",
+  "content": "complete",
+  "count": 4,
+  "concept": [
+    {
+      "code": "CMS-9115-P",
+      "display": "CMS Interoperability and Patient Access proposed rule"
+    },
+    {
+      "code": "CMS-9115-F",
+      "display": "CMS Interoperability and Patient Access final rule"
+    },
+    {
+      "code": "CMS-9123-P",
+      "display": "CMS Reducing Provider and Patient Burdern proposed rule"
+    },
+    {
+      "code": "CMS-9123-F",
+      "display": "CMS Reducing Provider and Patient Burdern final rule"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "PoaQuestinonaireToConsent",
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>null (https://gitlab.mitre.org/awatson/fast-access-control/ConceptMap/PoaQuestinonaireToConsent)</h2><p>Mapping from (not specified) to (not specified)</p><p>DRAFT. Published on 2022-10-25 12:45:51-0500 by MITRE (MITRE: <a href=\"https://www.mitre.org\">https://www.mitre.org</a>). </p><br/></div>"
+  },
+  "url": "https://gitlab.mitre.org/awatson/fast-access-control/ConceptMap/PoaQuestinonaireToConsent",
+  "version": "0.1.0",
+  "status": "draft",
+  "date": "2022-10-25T00:45:51-05:00",
+  "publisher": "MITRE",
+  "contact": [
+    {
+      "name": "MITRE",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.mitre.org"
+        }
+      ]
+    }
+  ]
+}
