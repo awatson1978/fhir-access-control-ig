@@ -1,0 +1,223 @@
+// {
+//     "resourceType": "TestScript",
+//     "id": "gszMyXpwsdoAjJZeh",
+//     "url": "http://",
+//     "status": "draft",
+//     "name": "SMART_Client_Registration",
+//     "title": "SMART on FHIR Client Registration",
+//     "date": "2022-06-14T23:24:46.024Z",
+//     "publisher": "FHIR at Scale Taskforce (FAST) && FHIR Foundry",
+//     "version": "0.0.1",
+//     "jurisdiction": [
+//       {
+//         "coding": [
+//           {
+//             "code": "US",
+//             "system": "urn:iso:std:iso:3166"
+//           }
+//         ]
+//       }
+//     ],
+//     "origin": [
+//       {
+//         "index": 1,
+//         "profile": {
+//           "code": "FHIR-Client"
+//         }
+//       }
+//     ],
+//     "destination": [
+//       {
+//         "index": 1,
+//         "profile": {
+//           "code": "FHIR-Server"
+//         }
+//       }
+//     ],
+//     "fixture": [
+//       {
+//         "id": "47be8943-2604-5d89-abb9-5c4e13a5120b",
+//         "autocreate": true,
+//         "autodelete": true
+//       },
+//       {
+//         "id": "8b3f5577-4344-5c5e-91a0-ac4942632496",
+//         "autocreate": true,
+//         "autodelete": true
+//       },
+//       {
+//         "id": "b079ec7f-b12a-5fec-bd06-338c44571163",
+//         "autocreate": true,
+//         "autodelete": true
+//       },
+//       {
+//         "id": "f6c54af2-61fd-586d-afde-2d402ebf33af",
+//         "autocreate": true,
+//         "autodelete": true
+//       },
+//       {
+//         "id": "ff897a54-61db-5461-aebb-a42fc4ed0e4d",
+//         "autocreate": true,
+//         "autodelete": true
+//       }
+//     ],
+//     "test": [
+//       {
+//         "id": "61dcf836-8376-5637-90e0-24ede617b7b7",
+//         "name": "National Directory - FHIR Metadata",
+//         "action": [
+//           {
+//             "operation": {
+//               "label": "National Directory - FHIR Metadata",
+//               "description": "GET /baseR4/metadata",
+//               "method": "get",
+//               "url": "/baseR4/metadata",
+//               "type": {
+//                 "code": "read",
+//                 "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
+//               },
+//               "accept": "json",
+//               "encodeRequestUrl": true
+//             }
+//           },
+//           {
+//             "assert": {
+//               "description": "Confirm that the returned HTTP status is 200(OK).",
+//               "response": "okay",
+//               "warningOnly": false
+//             }
+//           }
+//         ]
+//       },
+//       {
+//         "id": "e3daf953-6237-5170-8750-3100c0d76cb3",
+//         "name": "Registration (SMART on FHIR)",
+//         "action": [
+//           {
+//             "operation": {
+//               "label": "Registration (SMART on FHIR)",
+//               "description": "POST /oauth/registration",
+//               "method": "post",
+//               "url": "/oauth/registration",
+//               "type": {
+//                 "code": "create",
+//                 "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
+//               },
+//               "accept": "json",
+//               "encodeRequestUrl": true,
+//               "body": {
+//                 "client_name":"Inferno", 
+//                 "initiate_login_uri": "https://inferno.healthit.gov/community/oauth2/static/launch", 
+//                 "redirect_uris": ["https://inferno.healthit.gov/community/oauth2/static/redirect"], 
+//                 "grant_types": ["authorization_code"], 
+//                 "scope": "launch launch/patient offline_access openid profile user/*.* patient/*.*", 
+//                 "token_endpoint_auth_method": "none"
+//               }
+//             }
+//           },
+//           {
+//             "assert": {
+//               "description": "Confirm that the returned HTTP status is 201(Success).",
+//               "response": "created",
+//               "warningOnly": false
+//             }
+//           },
+//           {
+//             "assert": {
+//                 "description": "Body contains the following",
+//                 "response": {
+//                   "client_id": "xp4Hqg786ymDTAiLf",
+//                   "client_name": "Inferno Test Runner",
+//                   "scope": "launch/patient openid fhirUser offline_access patient/*.read"
+//                 },
+//                 "warningOnly": false
+//               }  
+//           }
+//         ]
+//       },
+//       {
+//         "id": "dcd8fa9d-767f-5c63-9648-dffa6974d322",
+//         "name": "Authorize - Stand Alone",
+//         "action": [
+//           {
+//             "operation": {
+//               "label": "Authorize - Stand Alone",
+//               "description": "GET /oauth/authorize",
+//               "method": "get",
+//               "url": "/oauth/authorize",
+//               "type": {
+//                 "code": "read",
+//                 "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
+//               },
+//               "accept": "json",
+//               "encodeRequestUrl": true,
+//               "body": {
+//                 "response_type": "code",
+//                 "client_id": "12345",
+//                 "redirect_uri": "https://inferno.healthit.gov/suites/custom/smart/redirect",
+//                 "scope": "launch fhirUser openid patient/*.rs, organization/*.rs,",
+//                 "state": "12345", 
+//                 "aud": "http://localhost:3000/baseR4"
+//               }
+//             }
+//           },
+//           {
+//             "assert": {
+//               "description": "Confirm that the returned HTTP status is 200(OK).",
+//               "response": "okay",
+//               "warningOnly": false
+//             }
+//           },
+//           {
+//             "assert": {
+//               "description": "Body contains the following",
+//               "response": {
+//                 "code": "yamBR8zwCtRT597KW",
+//                 "state": "12345"
+//               },
+//               "warningOnly": false
+//             }            
+//           }
+//         ]
+//       },
+//       {
+//         "id": "e61c9e92-fcdc-5ca3-8b0c-c80d55b50e4e",
+//         "name": "Token request",
+//         "action": [
+//           {
+//             "operation": {
+//               "label": "Token request",
+//               "description": "GET /oauth/token?client_id=12345&code=5KFP8pBZcbqkSuNnY&grant_type=authorization_code&redirect_uri=https%3A%2F%2Finferno.healthit.gov%2Fsuites%2Fcustom%2Fsmart%2Fredirect",
+//               "method": "get",
+//               "url": "/oauth/token",
+//               "type": {
+//                 "code": "read",
+//                 "system": "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"
+//               },
+//               "accept": "json",
+//               "encodeRequestUrl": true
+//             }
+//           },
+//           {
+//             "assert": {
+//               "description": "Confirm that the returned HTTP status is 200(OK).",
+//               "response": "okay",
+//               "warningOnly": false
+//             }  
+//           },
+//           {
+//             "assert": {
+//               "description": "Body contains the following",
+//               "response": {
+//                 "access_token": "gTJKma3CQMx3sDueP",
+//                 "token_type": "Bearer",
+//                 "scope": "openid fhirUser launch offline_access user/*.cruds",
+//                 "expires_in": 86400
+//               },
+//               "warningOnly": false
+//             }
+//           }
+//         ]
+//       }
+//     ]
+//   }
