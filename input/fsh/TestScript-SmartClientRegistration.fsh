@@ -1,3 +1,31 @@
+// Instance: 1
+// InstanceOf: OAuthRegistrationRequest
+// * resourceType = "OAuthRegistrationRequest"
+// * client_name = "Automaton 1"
+// * scope = "fhir organization/read location/read"
+// * token_endpoint_auth_method = "code"
+// * grant_types = "code"
+// * redirect_uris = "http://localhost:3000/redirect"
+
+Instance: OAuthRegistrationRequest1
+Description: "OAuth Registration of Test Harness"
+InstanceOf: Basic
+* code.coding[0].code = #adminact
+* code.coding[=].display = "Administrative Activity"
+* extension[0].url = "resourceType"
+* extension[=].valueString = "OAuthRegistrationRequest"
+* extension[+].url = "client_name"
+* extension[=].valueString = "Test Harness"
+* extension[+].url = "scope"
+* extension[=].valueString = "fhir organization/read location/read"
+* extension[+].url = "token_endpoint_auth_method"
+* extension[=].valueString = "code"
+* extension[+].url = "grant_types"
+* extension[=].valueString = "code"
+* extension[+].url = "redirect_uris"
+* extension[=].valueString = "http://localhost:3000/redirect"
+
+
 Instance: TestScript-gszMyXpwsdoAjJZeh
 InstanceOf: TestScript
 Description: "R4 TestScript - SMART on FHIR Client Registration"
@@ -18,6 +46,7 @@ Usage: #example
 * fixture[0].id = "47be8943-2604-5d89-abb9-5c4e13a5120b"
 * fixture[=].autocreate = true
 * fixture[=].autodelete = true
+* fixture[=].resource = Reference(Basic/OAuthRegistrationRequest1)  "Registration Payload 1"
 * fixture[+].id = "8b3f5577-4344-5c5e-91a0-ac4942632496"
 * fixture[=].autocreate = true
 * fixture[=].autodelete = true
@@ -51,6 +80,7 @@ Usage: #example
 * test[=].action[=].operation.type = http://terminology.hl7.org/CodeSystem/testscript-operation-codes#create
 * test[=].action[=].operation.accept = #json
 * test[=].action[=].operation.encodeRequestUrl = true
+* test[=].action[=].operation.sourceId = "47be8943-2604-5d89-abb9-5c4e13a5120b"
 // * test[=].action[=].operation.body.client_name = "Inferno"
 // * test[=].action[=].operation.body.initiate_login_uri = "https://inferno.healthit.gov/community/oauth2/static/launch"
 // * test[=].action[=].operation.body.redirect_uris = "https://inferno.healthit.gov/community/oauth2/static/redirect"

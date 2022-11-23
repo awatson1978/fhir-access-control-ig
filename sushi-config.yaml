@@ -20,6 +20,46 @@ publisher:
   url: https://www.mitre.org
   # email: test@example.org
 
+
+  # ╭──────────────────────────────────────ImplementationGuide───────────────────────────────────────╮
+# │  The properties below are used to create the ImplementationGuide resource. For a list of       │
+# │  supported properties, see: https://fshschool.org/docs/sushi/configuration/                    │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+# id: access-control.fast.ig.fhir
+# canonical: http://fast-access-control.awatson.mitre.org
+# name: FAST Access Control
+# status: draft
+# version: 0.4.1
+# fhirVersion: 4.0.1
+# copyrightYear: 2021+
+# releaseLabel: ci-build
+# publisher:
+#   name: MITRE, Inc
+#   url: https://gitlab.mitre.org/awatson/fast-access-control
+# dependencies:
+#   hl7.fhir.us.core: 3.2.0
+
+# ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
+# │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+menu:
+  Home: index.html
+  Data Mapping: datacollection.html
+  Access Control Lists: consentengine.html
+  Artifacts: artifacts.html
+
+pages:
+  index.md:
+    title: FAST Access Control Implementation Guide
+  datacollection.md:
+    title: Data Mapping
+  consentengine.md:
+    title: Consent Engine
+
+
+
+
 # The dependencies property corresponds to IG.dependsOn. The key is the
 # package id and the value is the version (or dev/current). For advanced
 # use cases, the value can be an object with keys for id, uri, and version.
@@ -72,9 +112,9 @@ publisher:
 # │ input/includes. To use a provided input/includes/menu.xml file, delete the "menu"              │
 # │ property below.                                                                                │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-menu:
-  Home: index.html
-  Artifacts: artifacts.html
+# menu:
+#   Home: index.html
+#   Artifacts: artifacts.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
