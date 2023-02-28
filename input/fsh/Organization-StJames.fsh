@@ -5,4 +5,4 @@ Title: "Org-StJames"
 Usage: #example
 * id = "stjames"
 * name = "St. James Infirmary"
-* meta.security = #N "normal"
+* meta.security = #U "unrestricted"
