@@ -1,5 +1,40 @@
 [
   {
+    "id": "TestScript-Scenario1",
+    "type": "TestScript",
+    "url": "http://",
+    "version": "0.1.0",
+    "name": "Scenario 1"
+  },
+  {
+    "id": "TestScript-Scenario2",
+    "type": "TestScript",
+    "url": "http://",
+    "version": "0.1.0",
+    "name": "Scenario 2"
+  },
+  {
+    "id": "TestScript-Scenario3",
+    "type": "TestScript",
+    "url": "http://",
+    "version": "0.1.0",
+    "name": "Scenario 3"
+  },
+  {
+    "id": "TestScript-Scenario4",
+    "type": "TestScript",
+    "url": "http://",
+    "version": "0.1.0",
+    "name": "Scenario 4"
+  },
+  {
+    "id": "TestScript-gszMyXpwsdoAjJZeh",
+    "type": "TestScript",
+    "url": "http://",
+    "version": "0.1.0",
+    "name": "SMART_Client_Registration"
+  },
+  {
     "id": "leap-dnr",
     "type": "Questionnaire",
     "url": "http://34.94.253.50:8080/hapi-fhir-jpaserver/fhir/Questionnaire/leap-dnr",
@@ -12,13 +47,13 @@
     "version": "0.1.0"
   },
   {
-    "id": "leap-patient-privacy",
+    "id": "fast-patient-privacy",
     "type": "Questionnaire",
     "url": "http://34.94.253.50:8080/hapi-fhir-jpaserver/fhir/Questionnaire/leap-patient-privacy",
     "version": "0.1.0"
   },
   {
-    "id": "fast-patient-privacy",
+    "id": "leap-patient-privacy",
     "type": "Questionnaire",
     "url": "http://34.94.253.50:8080/hapi-fhir-jpaserver/fhir/Questionnaire/leap-patient-privacy",
     "version": "0.1.0"
@@ -40,6 +75,41 @@
     "type": "Questionnaire",
     "url": "http://34.94.253.50:8080/hapi-fhir-jpaserver/fhir/Questionnaire/leap-polst",
     "version": "0.1.0"
+  },
+  {
+    "id": "OAuthAuthenticationRequest",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/tools/StructureDefinition/OAuthAuthenticationRequest",
+    "version": "0.1.0",
+    "name": "OAuthAuthenticationRequest"
+  },
+  {
+    "id": "OAuthAuthenticationResponse",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/tools/StructureDefinition/OAuthAuthenticationResponse",
+    "version": "0.1.0",
+    "name": "OAuthAuthenticationResponse"
+  },
+  {
+    "id": "OAuthRegistrationResponse",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/tools/StructureDefinition/OAuthRegistrationResponse",
+    "version": "0.1.0",
+    "name": "OAuthRegistrationResponse"
+  },
+  {
+    "id": "OAuthTokenRequest",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/tools/StructureDefinition/OAuthTokenRequest",
+    "version": "0.1.0",
+    "name": "OAuthTokenRequest"
+  },
+  {
+    "id": "OAuthTokenResponse",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/tools/StructureDefinition/OAuthTokenResponse",
+    "version": "0.1.0",
+    "name": "OAuthTokenResponse"
   },
   {
     "id": "AccessControlRequirements",

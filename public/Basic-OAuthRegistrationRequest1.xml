@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Basic xmlns="http://hl7.org/fhir">
+  <id value="OAuthRegistrationRequest1"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Basic</b><a name="OAuthRegistrationRequest1"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Basic "OAuthRegistrationRequest1" </p></div><p><b>code</b>: Administrative Activity <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#adminact)</span></p></div>
+  </text>
+  <extension url="resourceType">
+    <valueString value="OAuthRegistrationRequest"/>
+  </extension>
+  <extension url="client_name">
+    <valueString value="Test Harness"/>
+  </extension>
+  <extension url="scope">
+    <valueString value="fhir organization/read location/read"/>
+  </extension>
+  <extension url="token_endpoint_auth_method">
+    <valueString value="code"/>
+  </extension>
+  <extension url="grant_types">
+    <valueString value="code"/>
+  </extension>
+  <extension url="redirect_uris">
+    <valueString value="http://localhost:3000/redirect"/>
+  </extension>
+  <code>
+    <coding>
+      <code value="adminact"/>
+      <display value="Administrative Activity"/>
+    </coding>
+  </code>
+</Basic>

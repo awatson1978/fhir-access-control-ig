@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "name": "FastAccessControl",
   "status": "draft",
-  "date": "2022-10-25T00:45:51-05:00",
+  "date": "2022-10-31T00:13:59-05:00",
   "publisher": "MITRE",
   "contact": [
     {
@@ -71,7 +71,7 @@
           },
           {
             "url": "value",
-            "valueString": "true"
+            "valueString": "false"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -383,7 +383,7 @@
           },
           {
             "url": "value",
-            "valueString": "true"
+            "valueString": "false"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -681,6 +681,76 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:logical"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/OAuthAuthenticationRequest"
+        },
+        "name": "OAuth Authentication Request",
+        "description": "This structure is defined to allow the FHIR Validator to validate a OAuthRegistration Response body",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:logical"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/OAuthAuthenticationResponse"
+        },
+        "name": "OAuth Authentication Response",
+        "description": "This structure is defined to allow the FHIR Validator to validate a OAuthRegistration Response body",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:logical"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/OAuthRegistrationResponse"
+        },
+        "name": "OAuth Registration Response",
+        "description": "This structure is defined to allow the FHIR Validator to validate a OAuthRegistration Response body",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:logical"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/OAuthTokenRequest"
+        },
+        "name": "OAuth Token Request",
+        "description": "This structure is defined to allow the FHIR Validator to validate a OAuthRegistration Response body",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:logical"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/OAuthTokenResponse"
+        },
+        "name": "OAuth Token Response",
+        "description": "This structure is defined to allow the FHIR Validator to validate a OAuthRegistration Response body",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "ValueSet"
           }
         ],
@@ -905,6 +975,20 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Basic"
+          }
+        ],
+        "reference": {
+          "reference": "Basic/OAuthRegistrationRequest1"
+        },
+        "name": "OAuthRegistrationRequest1",
+        "description": "OAuth Registration of Test Harness",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "ConceptMap"
           }
         ],
@@ -956,6 +1040,76 @@
         "name": "PolstToConsent",
         "description": "Physician Orders for Life Sustaining Treatment (POLST) to Consent record",
         "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "TestScript"
+          }
+        ],
+        "reference": {
+          "reference": "TestScript/TestScript-Scenario1"
+        },
+        "name": "Scenario 1",
+        "description": "R4 TestScript - Directories With Restricted Data",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "TestScript"
+          }
+        ],
+        "reference": {
+          "reference": "TestScript/TestScript-Scenario2"
+        },
+        "name": "Scenario 2",
+        "description": "R4 TestScript - Patients Can Only Access Their Own Data",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "TestScript"
+          }
+        ],
+        "reference": {
+          "reference": "TestScript/TestScript-Scenario3"
+        },
+        "name": "Scenario 3",
+        "description": "R4 TestScript - Clinicians Can Access Any Patients Their Role Authorizes",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "TestScript"
+          }
+        ],
+        "reference": {
+          "reference": "TestScript/TestScript-Scenario4"
+        },
+        "name": "Scenario 4",
+        "description": "R4 TestScript - Patients Can Access Dependent’s Records (Custodial Access)",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "TestScript"
+          }
+        ],
+        "reference": {
+          "reference": "TestScript/TestScript-gszMyXpwsdoAjJZeh"
+        },
+        "name": "SMART Client Registration",
+        "description": "R4 TestScript - SMART on FHIR Client Registration",
+        "exampleBoolean": true
       },
       {
         "extension": [
@@ -1187,18 +1341,7 @@
             }
           ],
           "nameUrl": "index.html",
-          "title": "Home",
-          "generation": "markdown"
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-              "valueUrl": "consentengine.html"
-            }
-          ],
-          "nameUrl": "consentengine.html",
-          "title": "Consentengine",
+          "title": "FAST Access Control Implementation Guide",
           "generation": "markdown"
         },
         {
@@ -1209,29 +1352,18 @@
             }
           ],
           "nameUrl": "datacollection.html",
-          "title": "Datacollection",
+          "title": "Data Mapping",
           "generation": "markdown"
         },
         {
           "extension": [
             {
               "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-              "valueUrl": "oauth.html"
+              "valueUrl": "consentengine.html"
             }
           ],
-          "nameUrl": "oauth.html",
-          "title": "Oauth",
-          "generation": "markdown"
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-              "valueUrl": "scrap.html"
-            }
-          ],
-          "nameUrl": "scrap.html",
-          "title": "Scrap",
+          "nameUrl": "consentengine.html",
+          "title": "Consent Engine",
           "generation": "markdown"
         }
       ]

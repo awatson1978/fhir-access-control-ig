@@ -41,8 +41,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"6.14"}
-    h3,h4,h5,h6{--heading-prefix:"6.14"}</style>
+    <style type="text/css">h2{--heading-prefix:"4.19"}
+    h3,h4,h5,h6{--heading-prefix:"4.19"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -80,6 +80,12 @@
 <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li>
     <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="datacollection.html">Data Mapping</a>
+  </li>
+  <li>
+    <a href="consentengine.html">Access Control Lists</a>
   </li>
   <li>
     <a href="artifacts.html">Artifacts</a>
@@ -162,7 +168,7 @@
         
           Draft
           
-            as of 2022-10-25
+            as of 2022-10-31
           
         
       </td>
@@ -191,12 +197,12 @@
   <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;PoaMentalHealthToConsent&quot;];
   <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.text">fhir:DomainResource.text</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;extensions&quot; ];
-     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;h2&gt;null (https://gitlab.mitre.org/awatson/fast-access-control/ConceptMap/PoaMentalHealthToConsent)&lt;/h2&gt;&lt;p&gt;Mapping from (not specified) to (not specified)&lt;/p&gt;&lt;p&gt;DRAFT. Published on 2022-10-25 12:45:51-0500 by MITRE (MITRE: &lt;a href=\&quot;https://www.mitre.org\&quot;&gt;https://www.mitre.org&lt;/a&gt;). &lt;/p&gt;&lt;br/&gt;&lt;/div&gt;&quot;
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;h2&gt;null (https://gitlab.mitre.org/awatson/fast-access-control/ConceptMap/PoaMentalHealthToConsent)&lt;/h2&gt;&lt;p&gt;Mapping from (not specified) to (not specified)&lt;/p&gt;&lt;p&gt;DRAFT. Published on 2022-10-31 12:13:59-0500 by MITRE (MITRE: &lt;a href=\&quot;https://www.mitre.org\&quot;&gt;https://www.mitre.org&lt;/a&gt;). &lt;/p&gt;&lt;br/&gt;&lt;/div&gt;&quot;
   ];
   <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.url">fhir:ConceptMap.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://gitlab.mitre.org/awatson/fast-access-control/ConceptMap/PoaMentalHealthToConsent&quot;];
   <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.version">fhir:ConceptMap.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;0.1.0&quot;];
   <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.status">fhir:ConceptMap.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;draft&quot;];
-  <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.date">fhir:ConceptMap.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2022-10-25T00:45:51-05:00&quot;^^xsd:dateTime];
+  <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.date">fhir:ConceptMap.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2022-10-31T00:13:59-05:00&quot;^^xsd:dateTime];
   <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.publisher">fhir:ConceptMap.publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;MITRE&quot;];
   <a href="http://hl7.org/fhir/R4/conceptmap.html#ConceptMap.contact">fhir:ConceptMap.contact</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
@@ -243,7 +249,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org">MITRE</a>.  Package mitre.fast.access-control#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Oct 25, 2022 00:45-0500">2022-10-25</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org">MITRE</a>.  Package mitre.fast.access-control#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Oct 31, 2022 00:13-0500">2022-10-31</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

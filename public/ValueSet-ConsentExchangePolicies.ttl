@@ -17,7 +17,7 @@
   fhir:ValueSet.name [ fhir:value "ConsentExchangePolicies"];
   fhir:ValueSet.title [ fhir:value "ConsentExchangePolicies"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2022-10-25T00:45:51-05:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2022-10-31T00:13:59-05:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "MITRE"];
   fhir:ValueSet.contact [
      fhir:index 0;

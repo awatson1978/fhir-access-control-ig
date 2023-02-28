@@ -1,58 +1,128 @@
 ﻿FastAccessControl : Validation Results
 =========================================
 
-err = 102, warn = 31, info = 26
-IG Publisher Version: 1.2.10
-Generated Tue Oct 25 00:46:25 CDT 2022. FHIR version 4.0.1 for mitre.fast.access-control#0.1.0 (canonical = https://gitlab.mitre.org/awatson/fast-access-control)
- Build Errors : 5 / 4 / 0
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/CapabilityStatement-AccessControlRequirements : 3 / 0 / 1
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/CodeSystem-CmsInteroperabilityPolicyCodes : 0 / 2 / 2
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/CodeSystem-ConsentExchangeRelationships : 0 / 2 / 2
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/CodeSystem-PayorToPayorExchangePolicyCodes : 0 / 2 / 2
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/ConceptMap-DnrToConsent : 0 / 0 / 1
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/ConceptMap-HipaaPrivacyToConsent : 0 / 0 / 1
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/ConceptMap-LivingWillToConsent : 0 / 0 / 1
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/ConceptMap-PoaContractToConsent : 0 / 0 / 1
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/ConceptMap-PoaMentalHealthToConsent : 0 / 0 / 1
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/ConceptMap-PoaQuestinonaireToConsent : 0 / 0 / 1
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/ConceptMap-PolstToConsent : 0 / 0 / 1
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Consent-ConsentAnonLoc : 1 / 1 / 1
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Consent-ConsentAnonOrg : 2 / 1 / 1
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Consent-ConsentAnonPrac : 1 / 1 / 1
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Consent-ConsentClinicianLoc : 1 / 1 / 1
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Consent-ConsentClinicianOrg : 1 / 1 / 1
+err = 139, warn = 54, info = 26
+IG Publisher Version: 1.2.10 Out of date - current version is 1.2.12
+Generated Mon Oct 31 00:14:32 CDT 2022. FHIR version 4.0.1 for mitre.fast.access-control#0.1.0 (canonical = https://gitlab.mitre.org/awatson/fast-access-control)
+ Build Errors : 55 / 4 / 0
  /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/ImplementationGuide-mitre.fast.access-control : 0 / 0 / 1
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Organization-stdymphnas : 4 / 3 / 1
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Organization-stjames : 0 / 1 / 1
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Patient-patient-jane-doe : 12 / 1 / 3
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Patient-patient-jennifer-smith : 8 / 1 / 8
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Patient-patient-john-smith : 6 / 0 / 5
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Patient-patient-katie-klepti : 11 / 1 / 3
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Practitioner-practitioner-alison-camron : 0 / 0 / 1
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Practitioner-practitioner-susan-social : 0 / 0 / 1
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Questionnaire-fast-patient-privacy : 5 / 0 / 2
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Questionnaire-leap-dnr : 5 / 1 / 2
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Questionnaire-leap-livingwill : 3 / 0 / 2
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Questionnaire-leap-patient-privacy : 5 / 0 / 2
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Questionnaire-leap-poahealthcare : 13 / 0 / 2
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Questionnaire-leap-poamentalhealth : 6 / 0 / 2
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Questionnaire-leap-polst : 14 / 2 / 3
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureDefinition-ConsentToAcces : 1 / 1 / 1
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/ValueSet-ConsentExchangePolicies : 0 / 2 / 1
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/ValueSet-ConsentExchangeRelations : 0 / 1 / 1
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/ValueSet-consent-exchange-category-codes : 0 / 1 / 1
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/ValueSet-consent-exchange-scope-codes : 0 / 1 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/basic-OAuthRegistrationRequest1 : 6 / 1 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/capabilitystatement-AccessControlRequirements : 3 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/codesystem-CmsInteroperabilityPolicyCodes : 0 / 2 / 2
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/codesystem-ConsentExchangeRelationships : 0 / 2 / 2
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/codesystem-PayorToPayorExchangePolicyCodes : 0 / 2 / 2
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/conceptmap-DnrToConsent : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/conceptmap-HipaaPrivacyToConsent : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/conceptmap-LivingWillToConsent : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/conceptmap-PoaContractToConsent : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/conceptmap-PoaMentalHealthToConsent : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/conceptmap-PoaQuestinonaireToConsent : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/conceptmap-PolstToConsent : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/consent-ConsentAnonLoc : 1 / 1 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/consent-ConsentAnonOrg : 2 / 1 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/consent-ConsentAnonPrac : 1 / 1 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/consent-ConsentClinicianLoc : 1 / 1 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/consent-ConsentClinicianOrg : 1 / 1 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/organization-stdymphnas : 4 / 3 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/organization-stjames : 0 / 1 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/patient-patient-jane-doe : 12 / 1 / 3
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/patient-patient-jennifer-smith : 8 / 1 / 8
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/patient-patient-john-smith : 6 / 0 / 5
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/patient-patient-katie-klepti : 11 / 1 / 3
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/practitioner-practitioner-alison-camron : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/practitioner-practitioner-susan-social : 0 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/questionnaire-fast-patient-privacy : 5 / 0 / 2
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/questionnaire-leap-dnr : 5 / 1 / 2
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/questionnaire-leap-livingwill : 3 / 0 / 2
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/questionnaire-leap-patient-privacy : 5 / 0 / 2
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/questionnaire-leap-poahealthcare : 13 / 0 / 2
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/questionnaire-leap-poamentalhealth : 6 / 0 / 2
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/questionnaire-leap-polst : 14 / 2 / 3
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/structuredefinition-ConsentToAcces : 1 / 1 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/structuredefinition-OAuthAuthenticationRequest : 2 / 6 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/structuredefinition-OAuthAuthenticationResponse : 2 / 2 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/structuredefinition-OAuthRegistrationResponse : 2 / 4 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/structuredefinition-OAuthTokenRequest : 2 / 2 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/structuredefinition-OAuthTokenResponse : 2 / 2 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/testscript-TestScript-Scenario1 : 5 / 1 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/testscript-TestScript-Scenario2 : 5 / 1 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/testscript-TestScript-Scenario3 : 5 / 1 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/testscript-TestScript-Scenario4 : 5 / 1 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/testscript-TestScript-gszMyXpwsdoAjJZeh : 1 / 2 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/valueset-ConsentExchangePolicies : 0 / 2 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/valueset-ConsentExchangeRelations : 0 / 1 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/valueset-consent-exchange-category-codes : 0 / 1 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/valueset-consent-exchange-scope-codes : 0 / 1 / 1
 </table>
 == n/a ==
-ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/Patient-patient-jane-doe.html#/html/body/div/div/div/div/div/div/table/tr/td/ul/li/a at Line 178, column 617: The link 'Practitioner/ractitioner-susan-social' for "Practitioner/ractitioner-susan-social: Susan Social" cannot be resolved
-ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/Patient-patient-jane-doe.html#/html/body/div/div/div/div/div/div/table/tr/td/ul/li/a at Line 178, column 751: The link 'Practitioner/practitioner-bernard-shuman' for "Practitioner/practitioner-bernard-shuman: Dr. Bernard Shuman" cannot be resolved
-ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/Patient-patient-jennifer-smith.html#/html/body/div/div/div/div/div/div/table/tr/td/ul/li/a at Line 178, column 734: The link 'Practitioner/ractitioner-susan-social' for "Practitioner/ractitioner-susan-social: Susan Social" cannot be resolved
-ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/Patient-patient-katie-klepti.html#/html/body/div/div/div/div/div/div/table/tr/td/ul/li/a at Line 178, column 621: The link 'Practitioner/ractitioner-susan-social' for "Practitioner/ractitioner-susan-social: Susan Social" cannot be resolved
-ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/datacollection.html#/html/body/div/div/div/div/div/p/img at Line 142, column 5: The image source 'ConsentStructuredDataCapture.png' cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/Patient-patient-jane-doe.html#/html/body/div/div/div/div/div/div/table/tr/td/ul/li/a at Line 184, column 617: The link 'Practitioner/ractitioner-susan-social' for "Practitioner/ractitioner-susan-social: Susan Social" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/Patient-patient-jane-doe.html#/html/body/div/div/div/div/div/div/table/tr/td/ul/li/a at Line 184, column 751: The link 'Practitioner/practitioner-bernard-shuman' for "Practitioner/practitioner-bernard-shuman: Dr. Bernard Shuman" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/Patient-patient-jennifer-smith.html#/html/body/div/div/div/div/div/div/table/tr/td/ul/li/a at Line 184, column 734: The link 'Practitioner/ractitioner-susan-social' for "Practitioner/ractitioner-susan-social: Susan Social" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/Patient-patient-katie-klepti.html#/html/body/div/div/div/div/div/div/table/tr/td/ul/li/a at Line 184, column 621: The link 'Practitioner/ractitioner-susan-social' for "Practitioner/ractitioner-susan-social: Susan Social" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/StructureDefinition-OAuthAuthenticationResponse-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 240, column 115: The link 'http://hl7.org/fhir/tools/ValueSet/CDSIndicator' for "http://hl7.org/fhir/tools/ValueSet/CDSIndicator" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/StructureDefinition-OAuthAuthenticationResponse-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 268, column 115: The link 'http://hl7.org/fhir/tools/ValueSet/CDSIndicator' for "http://hl7.org/fhir/tools/ValueSet/CDSIndicator" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/StructureDefinition-OAuthAuthenticationResponse-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 296, column 115: The link 'http://hl7.org/fhir/tools/ValueSet/CDSIndicator' for "http://hl7.org/fhir/tools/ValueSet/CDSIndicator" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/StructureDefinition-OAuthAuthenticationResponse.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 300, column 1756: The link 'http://hl7.org/fhir/tools/ValueSet/CDSIndicator' for "http://hl7.org/fhir/tools/ValueSet/CDSIndicator" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/StructureDefinition-OAuthAuthenticationResponse.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 307, column 160: The link 'http://hl7.org/fhir/tools/ValueSet/CDSIndicator' for "http://hl7.org/fhir/tools/ValueSet/CDSIndicator" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/StructureDefinition-OAuthAuthenticationResponse.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 324, column 1755: The link 'http://hl7.org/fhir/tools/ValueSet/CDSIndicator' for "http://hl7.org/fhir/tools/ValueSet/CDSIndicator" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/StructureDefinition-OAuthAuthenticationResponse.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 330, column 160: The link 'http://hl7.org/fhir/tools/ValueSet/CDSIndicator' for "http://hl7.org/fhir/tools/ValueSet/CDSIndicator" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/StructureDefinition-OAuthAuthenticationResponse.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 347, column 1751: The link 'http://hl7.org/fhir/tools/ValueSet/CDSIndicator' for "http://hl7.org/fhir/tools/ValueSet/CDSIndicator" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/StructureDefinition-OAuthAuthenticationResponse.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 353, column 160: The link 'http://hl7.org/fhir/tools/ValueSet/CDSIndicator' for "http://hl7.org/fhir/tools/ValueSet/CDSIndicator" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/StructureDefinition-OAuthAuthenticationResponse.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 429, column 1756: The link 'http://hl7.org/fhir/tools/ValueSet/CDSIndicator' for "http://hl7.org/fhir/tools/ValueSet/CDSIndicator" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/StructureDefinition-OAuthAuthenticationResponse.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 435, column 160: The link 'http://hl7.org/fhir/tools/ValueSet/CDSIndicator' for "http://hl7.org/fhir/tools/ValueSet/CDSIndicator" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/StructureDefinition-OAuthAuthenticationResponse.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 452, column 1755: The link 'http://hl7.org/fhir/tools/ValueSet/CDSIndicator' for "http://hl7.org/fhir/tools/ValueSet/CDSIndicator" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/StructureDefinition-OAuthAuthenticationResponse.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 458, column 160: The link 'http://hl7.org/fhir/tools/ValueSet/CDSIndicator' for "http://hl7.org/fhir/tools/ValueSet/CDSIndicator" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/StructureDefinition-OAuthAuthenticationResponse.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 475, column 1751: The link 'http://hl7.org/fhir/tools/ValueSet/CDSIndicator' for "http://hl7.org/fhir/tools/ValueSet/CDSIndicator" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/StructureDefinition-OAuthAuthenticationResponse.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 481, column 160: The link 'http://hl7.org/fhir/tools/ValueSet/CDSIndicator' for "http://hl7.org/fhir/tools/ValueSet/CDSIndicator" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/StructureDefinition-OAuthTokenRequest-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 240, column 115: The link 'http://hl7.org/fhir/tools/ValueSet/CDSIndicator' for "http://hl7.org/fhir/tools/ValueSet/CDSIndicator" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/StructureDefinition-OAuthTokenRequest-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 268, column 115: The link 'http://hl7.org/fhir/tools/ValueSet/CDSIndicator' for "http://hl7.org/fhir/tools/ValueSet/CDSIndicator" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/StructureDefinition-OAuthTokenRequest-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 296, column 115: The link 'http://hl7.org/fhir/tools/ValueSet/CDSIndicator' for "http://hl7.org/fhir/tools/ValueSet/CDSIndicator" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/StructureDefinition-OAuthTokenRequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 300, column 1726: The link 'http://hl7.org/fhir/tools/ValueSet/CDSIndicator' for "http://hl7.org/fhir/tools/ValueSet/CDSIndicator" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/StructureDefinition-OAuthTokenRequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 307, column 150: The link 'http://hl7.org/fhir/tools/ValueSet/CDSIndicator' for "http://hl7.org/fhir/tools/ValueSet/CDSIndicator" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/StructureDefinition-OAuthTokenRequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 324, column 1725: The link 'http://hl7.org/fhir/tools/ValueSet/CDSIndicator' for "http://hl7.org/fhir/tools/ValueSet/CDSIndicator" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/StructureDefinition-OAuthTokenRequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 330, column 150: The link 'http://hl7.org/fhir/tools/ValueSet/CDSIndicator' for "http://hl7.org/fhir/tools/ValueSet/CDSIndicator" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/StructureDefinition-OAuthTokenRequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 347, column 1721: The link 'http://hl7.org/fhir/tools/ValueSet/CDSIndicator' for "http://hl7.org/fhir/tools/ValueSet/CDSIndicator" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/StructureDefinition-OAuthTokenRequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 353, column 150: The link 'http://hl7.org/fhir/tools/ValueSet/CDSIndicator' for "http://hl7.org/fhir/tools/ValueSet/CDSIndicator" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/StructureDefinition-OAuthTokenRequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 429, column 1726: The link 'http://hl7.org/fhir/tools/ValueSet/CDSIndicator' for "http://hl7.org/fhir/tools/ValueSet/CDSIndicator" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/StructureDefinition-OAuthTokenRequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 435, column 150: The link 'http://hl7.org/fhir/tools/ValueSet/CDSIndicator' for "http://hl7.org/fhir/tools/ValueSet/CDSIndicator" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/StructureDefinition-OAuthTokenRequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 452, column 1725: The link 'http://hl7.org/fhir/tools/ValueSet/CDSIndicator' for "http://hl7.org/fhir/tools/ValueSet/CDSIndicator" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/StructureDefinition-OAuthTokenRequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 458, column 150: The link 'http://hl7.org/fhir/tools/ValueSet/CDSIndicator' for "http://hl7.org/fhir/tools/ValueSet/CDSIndicator" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/StructureDefinition-OAuthTokenRequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 475, column 1721: The link 'http://hl7.org/fhir/tools/ValueSet/CDSIndicator' for "http://hl7.org/fhir/tools/ValueSet/CDSIndicator" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/StructureDefinition-OAuthTokenRequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 481, column 150: The link 'http://hl7.org/fhir/tools/ValueSet/CDSIndicator' for "http://hl7.org/fhir/tools/ValueSet/CDSIndicator" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/StructureDefinition-OAuthTokenResponse-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 240, column 115: The link 'http://hl7.org/fhir/tools/ValueSet/CDSIndicator' for "http://hl7.org/fhir/tools/ValueSet/CDSIndicator" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/StructureDefinition-OAuthTokenResponse-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 268, column 115: The link 'http://hl7.org/fhir/tools/ValueSet/CDSIndicator' for "http://hl7.org/fhir/tools/ValueSet/CDSIndicator" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/StructureDefinition-OAuthTokenResponse-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/a at Line 296, column 115: The link 'http://hl7.org/fhir/tools/ValueSet/CDSIndicator' for "http://hl7.org/fhir/tools/ValueSet/CDSIndicator" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/StructureDefinition-OAuthTokenResponse.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 300, column 1729: The link 'http://hl7.org/fhir/tools/ValueSet/CDSIndicator' for "http://hl7.org/fhir/tools/ValueSet/CDSIndicator" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/StructureDefinition-OAuthTokenResponse.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 307, column 151: The link 'http://hl7.org/fhir/tools/ValueSet/CDSIndicator' for "http://hl7.org/fhir/tools/ValueSet/CDSIndicator" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/StructureDefinition-OAuthTokenResponse.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 324, column 1728: The link 'http://hl7.org/fhir/tools/ValueSet/CDSIndicator' for "http://hl7.org/fhir/tools/ValueSet/CDSIndicator" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/StructureDefinition-OAuthTokenResponse.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 330, column 151: The link 'http://hl7.org/fhir/tools/ValueSet/CDSIndicator' for "http://hl7.org/fhir/tools/ValueSet/CDSIndicator" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/StructureDefinition-OAuthTokenResponse.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 347, column 1724: The link 'http://hl7.org/fhir/tools/ValueSet/CDSIndicator' for "http://hl7.org/fhir/tools/ValueSet/CDSIndicator" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/StructureDefinition-OAuthTokenResponse.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 353, column 151: The link 'http://hl7.org/fhir/tools/ValueSet/CDSIndicator' for "http://hl7.org/fhir/tools/ValueSet/CDSIndicator" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/StructureDefinition-OAuthTokenResponse.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 429, column 1729: The link 'http://hl7.org/fhir/tools/ValueSet/CDSIndicator' for "http://hl7.org/fhir/tools/ValueSet/CDSIndicator" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/StructureDefinition-OAuthTokenResponse.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 435, column 151: The link 'http://hl7.org/fhir/tools/ValueSet/CDSIndicator' for "http://hl7.org/fhir/tools/ValueSet/CDSIndicator" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/StructureDefinition-OAuthTokenResponse.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 452, column 1728: The link 'http://hl7.org/fhir/tools/ValueSet/CDSIndicator' for "http://hl7.org/fhir/tools/ValueSet/CDSIndicator" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/StructureDefinition-OAuthTokenResponse.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 458, column 151: The link 'http://hl7.org/fhir/tools/ValueSet/CDSIndicator' for "http://hl7.org/fhir/tools/ValueSet/CDSIndicator" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/StructureDefinition-OAuthTokenResponse.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 475, column 1724: The link 'http://hl7.org/fhir/tools/ValueSet/CDSIndicator' for "http://hl7.org/fhir/tools/ValueSet/CDSIndicator" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/StructureDefinition-OAuthTokenResponse.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 481, column 151: The link 'http://hl7.org/fhir/tools/ValueSet/CDSIndicator' for "http://hl7.org/fhir/tools/ValueSet/CDSIndicator" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/TestScript-TestScript-Scenario1.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 186, column 1175: The link 'PharmLoc2' for "PharmLoc2: OrgA CT Location 2" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/TestScript-TestScript-Scenario2.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 186, column 1182: The link 'PharmLoc2' for "PharmLoc2: OrgA CT Location 2" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/TestScript-TestScript-Scenario3.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 186, column 1199: The link 'PharmLoc2' for "PharmLoc2: OrgA CT Location 2" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/TestScript-TestScript-Scenario4.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 186, column 1201: The link 'PharmLoc2' for "PharmLoc2: OrgA CT Location 2" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/TestScript-TestScript-gszMyXpwsdoAjJZeh.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 186, column 1674: The link 'Basic/1' for "Basic/1: Registration Payload" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/datacollection.html#/html/body/div/div/div/div/div/p/img at Line 148, column 5: The image source 'ConsentStructuredDataCapture.png' cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: The HTML fragment 'cross-version-analysis.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 3: The HTML fragment 'dependency-table.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/ImplementationGuide-mitre.fast.access-control.json ==
+== fsh-generated/resources/Basic-OAuthRegistrationRequest1.json ==
+ERROR: Basic/OAuthRegistrationRequest1: Basic.extension[0]: Extension.url must be an absolute URL
+ERROR: Basic/OAuthRegistrationRequest1: Basic.extension[1]: Extension.url must be an absolute URL
+ERROR: Basic/OAuthRegistrationRequest1: Basic.extension[2]: Extension.url must be an absolute URL
+ERROR: Basic/OAuthRegistrationRequest1: Basic.extension[3]: Extension.url must be an absolute URL
+ERROR: Basic/OAuthRegistrationRequest1: Basic.extension[4]: Extension.url must be an absolute URL
+ERROR: Basic/OAuthRegistrationRequest1: Basic.extension[5]: Extension.url must be an absolute URL
+WARNING: Basic/OAuthRegistrationRequest1: Basic.code.coding[0]: A code with no system has no defined meaning. A system should be provided
 == fsh-generated/resources/CapabilityStatement-AccessControlRequirements.json ==
 ERROR: CapabilityStatement/AccessControlRequirements: CapabilityStatement: Rule cpb-1: 'A Capability Statement SHALL have at least one of REST, messaging or document element.' Failed
 ERROR: CapabilityStatement/AccessControlRequirements: CapabilityStatement: Rule cpb-2: 'A Capability Statement SHALL have at least one of description, software, or implementation element.' Failed
@@ -92,7 +162,6 @@ WARNING: Consent/ConsentClinicianLoc: Consent.provision.provision[0].class[0]: A
 == fsh-generated/resources/Consent-ConsentClinicianOrg.json ==
 ERROR: Consent/ConsentClinicianOrg: Consent.provision.provision[0].actor[0].reference: Unable to resolve resource with reference 'CounselorRole1'
 WARNING: Consent/ConsentClinicianOrg: Consent.provision.provision[0].class[0]: A code with no system has no defined meaning. A system should be provided
-== fsh-generated/resources/ImplementationGuide-mitre.fast.access-control.json ==
 == fsh-generated/resources/Organization-stdymphnas.json ==
 ERROR: Organization/stdymphnas: Organization.meta.profile[0]: Canonical URL 'http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Organization' does not resolve
 ERROR: Organization/stdymphnas: Organization.meta.profile[1]: Canonical URL 'http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization' does not resolve
@@ -240,6 +309,69 @@ ERROR: Questionnaire/leap-polst: Questionnaire.item[58]: Rule que-1: 'Group item
 == fsh-generated/resources/StructureDefinition-ConsentToAcces.json ==
 ERROR: StructureDefinition/ConsentToAcces: StructureDefinition.snapshot.element[9].example[0].value.ofType(Identifier): if identifier.system is ''urn:ietf:rfc:3986'', then the identifier.value must be a full URI (e.g. start with a scheme)
 WARNING: StructureDefinition.where(url = 'https://gitlab.mitre.org/awatson/fast-access-control/StructureDefinition/ConsentToAcces'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-OAuthAuthenticationRequest.json ==
+ERROR: StructureDefinition.where(url = 'http://hl7.org/fhir/tools/StructureDefinition/OAuthAuthenticationRequest'): Conformance resource /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureDefinition-OAuthAuthenticationRequest.json - the canonical URL (https://gitlab.mitre.org/awatson/fast-access-control/StructureDefinition/OAuthAuthenticationRequest) does not match the URL (http://hl7.org/fhir/tools/StructureDefinition/OAuthAuthenticationRequest)
+WARNING: StructureDefinition/OAuthAuthenticationRequest: StructureDefinition.snapshot.element[1]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/OAuthAuthenticationRequest: StructureDefinition.snapshot.element[2]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/OAuthAuthenticationRequest: StructureDefinition.snapshot.element[3]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/OAuthAuthenticationRequest: StructureDefinition.differential.element[1]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/OAuthAuthenticationRequest: StructureDefinition.differential.element[2]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/OAuthAuthenticationRequest: StructureDefinition.differential.element[3]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/structuredefinition-OAuthAuthenticationRequest: URL Mismatch https://gitlab.mitre.org/awatson/fast-access-control/StructureDefinition/OAuthAuthenticationRequest vs http://hl7.org/fhir/tools/StructureDefinition/OAuthAuthenticationRequest
+== fsh-generated/resources/StructureDefinition-OAuthAuthenticationResponse.json ==
+ERROR: StructureDefinition.where(url = 'http://hl7.org/fhir/tools/StructureDefinition/OAuthAuthenticationResponse'): Conformance resource /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureDefinition-OAuthAuthenticationResponse.json - the canonical URL (https://gitlab.mitre.org/awatson/fast-access-control/StructureDefinition/OAuthAuthenticationResponse) does not match the URL (http://hl7.org/fhir/tools/StructureDefinition/OAuthAuthenticationResponse)
+WARNING: StructureDefinition/OAuthAuthenticationResponse: StructureDefinition.differential.element[3].binding: The valueSet reference http://hl7.org/fhir/tools/ValueSet/CDSIndicator on element OAuthAuthenticationResponse.indicator could not be resolved
+WARNING: StructureDefinition/OAuthAuthenticationResponse: StructureDefinition.snapshot.element[3].binding: The valueSet reference http://hl7.org/fhir/tools/ValueSet/CDSIndicator on element OAuthAuthenticationResponse.indicator could not be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/structuredefinition-OAuthAuthenticationResponse: URL Mismatch https://gitlab.mitre.org/awatson/fast-access-control/StructureDefinition/OAuthAuthenticationResponse vs http://hl7.org/fhir/tools/StructureDefinition/OAuthAuthenticationResponse
+== fsh-generated/resources/StructureDefinition-OAuthRegistrationResponse.json ==
+ERROR: StructureDefinition.where(url = 'http://hl7.org/fhir/tools/StructureDefinition/OAuthRegistrationResponse'): Conformance resource /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureDefinition-OAuthRegistrationResponse.json - the canonical URL (https://gitlab.mitre.org/awatson/fast-access-control/StructureDefinition/OAuthRegistrationResponse) does not match the URL (http://hl7.org/fhir/tools/StructureDefinition/OAuthRegistrationResponse)
+WARNING: StructureDefinition/OAuthRegistrationResponse: StructureDefinition.snapshot.element[1]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/OAuthRegistrationResponse: StructureDefinition.snapshot.element[2]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/OAuthRegistrationResponse: StructureDefinition.differential.element[1]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/OAuthRegistrationResponse: StructureDefinition.differential.element[2]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/structuredefinition-OAuthRegistrationResponse: URL Mismatch https://gitlab.mitre.org/awatson/fast-access-control/StructureDefinition/OAuthRegistrationResponse vs http://hl7.org/fhir/tools/StructureDefinition/OAuthRegistrationResponse
+== fsh-generated/resources/StructureDefinition-OAuthTokenRequest.json ==
+ERROR: StructureDefinition.where(url = 'http://hl7.org/fhir/tools/StructureDefinition/OAuthTokenRequest'): Conformance resource /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureDefinition-OAuthTokenRequest.json - the canonical URL (https://gitlab.mitre.org/awatson/fast-access-control/StructureDefinition/OAuthTokenRequest) does not match the URL (http://hl7.org/fhir/tools/StructureDefinition/OAuthTokenRequest)
+WARNING: StructureDefinition/OAuthTokenRequest: StructureDefinition.differential.element[3].binding: The valueSet reference http://hl7.org/fhir/tools/ValueSet/CDSIndicator on element OAuthTokenRequest.indicator could not be resolved
+WARNING: StructureDefinition/OAuthTokenRequest: StructureDefinition.snapshot.element[3].binding: The valueSet reference http://hl7.org/fhir/tools/ValueSet/CDSIndicator on element OAuthTokenRequest.indicator could not be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/structuredefinition-OAuthTokenRequest: URL Mismatch https://gitlab.mitre.org/awatson/fast-access-control/StructureDefinition/OAuthTokenRequest vs http://hl7.org/fhir/tools/StructureDefinition/OAuthTokenRequest
+== fsh-generated/resources/StructureDefinition-OAuthTokenResponse.json ==
+ERROR: StructureDefinition.where(url = 'http://hl7.org/fhir/tools/StructureDefinition/OAuthTokenResponse'): Conformance resource /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureDefinition-OAuthTokenResponse.json - the canonical URL (https://gitlab.mitre.org/awatson/fast-access-control/StructureDefinition/OAuthTokenResponse) does not match the URL (http://hl7.org/fhir/tools/StructureDefinition/OAuthTokenResponse)
+WARNING: StructureDefinition/OAuthTokenResponse: StructureDefinition.differential.element[3].binding: The valueSet reference http://hl7.org/fhir/tools/ValueSet/CDSIndicator on element OAuthTokenResponse.indicator could not be resolved
+WARNING: StructureDefinition/OAuthTokenResponse: StructureDefinition.snapshot.element[3].binding: The valueSet reference http://hl7.org/fhir/tools/ValueSet/CDSIndicator on element OAuthTokenResponse.indicator could not be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/structuredefinition-OAuthTokenResponse: URL Mismatch https://gitlab.mitre.org/awatson/fast-access-control/StructureDefinition/OAuthTokenResponse vs http://hl7.org/fhir/tools/StructureDefinition/OAuthTokenResponse
+== fsh-generated/resources/TestScript-TestScript-Scenario1.json ==
+WARNING: TestScript/TestScript-Scenario1: TestScript: Rule tst-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: TestScript/TestScript-Scenario1: TestScript.fixture[0].resource: Unable to resolve resource with reference 'PharmLoc2'
+ERROR: TestScript/TestScript-Scenario1: TestScript.test[6]: Duplicate id value 'ed7f8206-22ad-4bce-b3d8-83980dc0af5e'
+ERROR: TestScript/TestScript-Scenario1: TestScript.test[7]: Duplicate id value 'ed7f8206-22ad-4bce-b3d8-83980dc0af5e'
+ERROR: TestScript/TestScript-Scenario1: TestScript.test[9]: Duplicate id value '486e9754-3a48-45c0-b43e-94e16e078d71'
+ERROR: TestScript/TestScript-Scenario1: TestScript.test[13]: Duplicate id value '595cab8f-6302-44f1-a930-6b02da515216'
+== fsh-generated/resources/TestScript-TestScript-Scenario2.json ==
+WARNING: TestScript/TestScript-Scenario2: TestScript: Rule tst-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: TestScript/TestScript-Scenario2: TestScript.fixture[0].resource: Unable to resolve resource with reference 'PharmLoc2'
+ERROR: TestScript/TestScript-Scenario2: TestScript.test[6]: Duplicate id value 'ed7f8206-22ad-4bce-b3d8-83980dc0af5e'
+ERROR: TestScript/TestScript-Scenario2: TestScript.test[7]: Duplicate id value 'ed7f8206-22ad-4bce-b3d8-83980dc0af5e'
+ERROR: TestScript/TestScript-Scenario2: TestScript.test[9]: Duplicate id value '486e9754-3a48-45c0-b43e-94e16e078d71'
+ERROR: TestScript/TestScript-Scenario2: TestScript.test[13]: Duplicate id value '595cab8f-6302-44f1-a930-6b02da515216'
+== fsh-generated/resources/TestScript-TestScript-Scenario3.json ==
+WARNING: TestScript/TestScript-Scenario3: TestScript: Rule tst-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: TestScript/TestScript-Scenario3: TestScript.fixture[0].resource: Unable to resolve resource with reference 'PharmLoc2'
+ERROR: TestScript/TestScript-Scenario3: TestScript.test[6]: Duplicate id value 'ed7f8206-22ad-4bce-b3d8-83980dc0af5e'
+ERROR: TestScript/TestScript-Scenario3: TestScript.test[7]: Duplicate id value 'ed7f8206-22ad-4bce-b3d8-83980dc0af5e'
+ERROR: TestScript/TestScript-Scenario3: TestScript.test[9]: Duplicate id value '486e9754-3a48-45c0-b43e-94e16e078d71'
+ERROR: TestScript/TestScript-Scenario3: TestScript.test[13]: Duplicate id value '595cab8f-6302-44f1-a930-6b02da515216'
+== fsh-generated/resources/TestScript-TestScript-Scenario4.json ==
+WARNING: TestScript/TestScript-Scenario4: TestScript: Rule tst-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: TestScript/TestScript-Scenario4: TestScript.fixture[0].resource: Unable to resolve resource with reference 'PharmLoc2'
+ERROR: TestScript/TestScript-Scenario4: TestScript.test[6]: Duplicate id value 'ed7f8206-22ad-4bce-b3d8-83980dc0af5e'
+ERROR: TestScript/TestScript-Scenario4: TestScript.test[7]: Duplicate id value 'ed7f8206-22ad-4bce-b3d8-83980dc0af5e'
+ERROR: TestScript/TestScript-Scenario4: TestScript.test[9]: Duplicate id value '486e9754-3a48-45c0-b43e-94e16e078d71'
+ERROR: TestScript/TestScript-Scenario4: TestScript.test[13]: Duplicate id value '595cab8f-6302-44f1-a930-6b02da515216'
+== fsh-generated/resources/TestScript-TestScript-gszMyXpwsdoAjJZeh.json ==
+WARNING: TestScript/TestScript-gszMyXpwsdoAjJZeh: TestScript.origin[0].profile: A code with no system has no defined meaning. A system should be provided
+WARNING: TestScript/TestScript-gszMyXpwsdoAjJZeh: TestScript.destination[0].profile: A code with no system has no defined meaning. A system should be provided
+ERROR: TestScript/TestScript-gszMyXpwsdoAjJZeh: TestScript.fixture[0].resource: Unable to resolve resource with reference 'Basic/1'
 == fsh-generated/resources/ValueSet-ConsentExchangePolicies.json ==
 WARNING: ValueSet/ConsentExchangePolicies: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 WARNING: ValueSet.where(id = 'ConsentExchangePolicies'): Error from server: Unable to provide support for code system http://mehi-ig.tranquildata.com/CodeSystem/PayorToPayorExchangePolicyCodes

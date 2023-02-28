@@ -17,7 +17,7 @@
   fhir:CodeSystem.name [ fhir:value "PayorToPayorExchangePolicyCodes"];
   fhir:CodeSystem.title [ fhir:value "PayorToPayorExchangePolicyCodes"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2022-10-25T00:45:51-05:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2022-10-31T00:13:59-05:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "MITRE"];
   fhir:CodeSystem.contact [
      fhir:index 0;

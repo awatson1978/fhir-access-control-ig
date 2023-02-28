@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>MITRE.FAST.ACCESS-CONTROL\Oauth - FHIR v4.0.1</title>
+    <title>MITRE.FAST.ACCESS-CONTROL\OAuthRegistrationRequest1 - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -39,8 +39,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"4"}
-    h3,h4,h5,h6{--heading-prefix:"4"}</style>
+    <style type="text/css">h2{--heading-prefix:"4.27"}
+    h3,h4,h5,h6{--heading-prefix:"4.27"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -80,6 +80,12 @@
     <a href="index.html">Home</a>
   </li>
   <li>
+    <a href="datacollection.html">Data Mapping</a>
+  </li>
+  <li>
+    <a href="consentengine.html">Access Control Lists</a>
+  </li>
+  <li>
     <a href="artifacts.html">Artifacts</a>
   </li>
 </ul>
@@ -94,7 +100,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Oauth</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>OAuthRegistrationRequest1</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -106,16 +112,9 @@
         <div class="row">
           <div class="inner-wrapper">
 
-<style type="text/css">
-h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
-h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
-h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
-h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
-h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
-</style>
 <div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">FastAccessControl - Local Development build (v0.1.0). See the <a href="https://gitlab.mitre.org/awatson/fast-access-control/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
-  <h2>Oauth</h2>
+
   
 
 
@@ -125,30 +124,69 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
 
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+  
+    <li>
+      <a href="Basic-OAuthRegistrationRequest1.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Basic-OAuthRegistrationRequest1.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Basic-OAuthRegistrationRequest1.ttl.html">TTL</a>
+    </li>
+  
 
 
 
-
-    <p><!-- white space is critical inside of capture --></p>
-<div class="markdown-toc">
-<ul id="markdown-toc">
-  <li><a href="#smart-on-fhir" id="markdown-toc-smart-on-fhir">SMART on FHIR</a></li>
-  <li><a href="#dynamic-scopes" id="markdown-toc-dynamic-scopes">Dynamic Scopes</a></li>
 </ul>
 
-</div>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tempor commodo ullamcorper a lacus. Rutrum tellus pellentesque eu tincidunt. Praesent tristique magna sit amet. Orci porta non pulvinar neque laoreet suspendisse interdum. Id nibh tortor id aliquet lectus proin nibh nisl. Integer enim neque volutpat ac tincidunt vitae semper. Ullamcorper morbi tincidunt ornare massa eget. Ipsum suspendisse ultrices gravida dictum fusce ut placerat orci nulla. Turpis tincidunt id aliquet risus feugiat in. Libero nunc consequat interdum varius. Vitae congue eu consequat ac felis donec et odio pellentesque. Vel pretium lectus quam id leo in. Placerat vestibulum lectus mauris ultrices eros in. Tellus mauris a diam maecenas sed enim ut sem.</p>
+  <a name="root"> </a>
 
-<h3 id="smart-on-fhir">SMART on FHIR</h3>
-<p>Pharetra diam sit amet nisl. Lorem ipsum dolor sit amet consectetur adipiscing elit ut. Sed turpis tincidunt id aliquet risus. Sed arcu non odio euismod lacinia at quis risus. Nisi est sit amet facilisis magna etiam tempor orci eu. Aliquam id diam maecenas ultricies mi. Tristique et egestas quis ipsum suspendisse ultrices. Rhoncus est pellentesque elit ullamcorper. Dis parturient montes nascetur ridiculus mus mauris vitae. Posuere urna nec tincidunt praesent. Ac placerat vestibulum lectus mauris ultrices eros. Consequat nisl vel pretium lectus quam id leo in vitae. Lacus sed viverra tellus in.</p>
 
-<h3 id="dynamic-scopes">Dynamic Scopes</h3>
-<p>Blandit volutpat maecenas volutpat blandit aliquam etiam erat. Elementum eu facilisis sed odio morbi quis commodo. Tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Vivamus at augue eget arcu dictum varius duis at. Et malesuada fames ac turpis egestas. Habitant morbi tristique senectus et netus et. Volutpat lacus laoreet non curabitur gravida arcu ac tortor. Vel quam elementum pulvinar etiam non quam. Velit scelerisque in dictum non. Dictumst vestibulum rhoncus est pellentesque elit. Pretium vulputate sapien nec sagittis aliquam malesuada bibendum. Sed velit dignissim sodales ut eu. Massa tempor nec feugiat nisl. Tortor dignissim convallis aenean et tortor at risus viverra. Ultricies integer quis auctor elit sed vulputate mi sit.</p>
+  <h2 id="root">Example Basic: OAuthRegistrationRequest1</h2>
 
-<p>Ut tortor pretium viverra suspendisse potenti nullam ac. Amet justo donec enim diam. Mi proin sed libero enim sed faucibus turpis in eu. Urna porttitor rhoncus dolor purus non enim praesent elementum facilisis. Aliquam sem fringilla ut morbi tincidunt augue interdum. Egestas pretium aenean pharetra magna ac placerat vestibulum. Justo nec ultrices dui sapien eget mi proin sed libero. Quis ipsum suspendisse ultrices gravida dictum fusce ut placerat orci. Ultrices dui sapien eget mi. Nibh mauris cursus mattis molestie. Est placerat in egestas erat imperdiet. Fusce ut placerat orci nulla pellentesque dignissim enim sit.</p>
+  <table class="colsi">
+    <tr>
 
-<p>Viverra aliquet eget sit amet tellus cras. Nunc aliquet bibendum enim facilisis gravida neque. Congue mauris rhoncus aenean vel. Risus viverra adipiscing at in tellus integer feugiat scelerisque varius. Maecenas ultricies mi eget mauris pharetra et ultrices neque. Orci eu lobortis elementum nibh. Ut ornare lectus sit amet est placerat in. Ultrices neque ornare aenean euismod elementum nisi. Mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien et. Et netus et malesuada fames ac turpis egestas integer. Nulla porttitor massa id neque aliquam.</p>
+      <td colspan="2">
+        
+          
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Basic</b><a name="OAuthRegistrationRequest1"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Basic &quot;OAuthRegistrationRequest1&quot; </p></div><p><b>code</b>: Administrative Activity <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#adminact)</span></p></div>
+
+  
+
+  <!-- insert notes if present -->
+  
 
 
 
@@ -174,7 +212,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org">MITRE</a>.  Package mitre.fast.access-control#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Oct 25, 2022 00:45-0500">2022-10-25</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org">MITRE</a>.  Package mitre.fast.access-control#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Oct 31, 2022 00:13-0500">2022-10-31</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -12,6 +12,12 @@
     ]
   },
   "usage": {
+    "client_name": [
+      "Basic"
+    ],
+    "grant_types": [
+      "Basic"
+    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
     ],
@@ -57,6 +63,18 @@
     ],
     "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race": [
       "Patient"
+    ],
+    "redirect_uris": [
+      "Basic"
+    ],
+    "resourceType": [
+      "Basic"
+    ],
+    "scope": [
+      "Basic"
+    ],
+    "token_endpoint_auth_method": [
+      "Basic"
     ]
   }
 }
