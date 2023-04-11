@@ -7,7 +7,7 @@
 
 <https://gitlab.mitre.org/awatson/fast-access-control/Patient/patient-jennifer-smith> a fhir:Patient;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "patient-jennifer-smith"];
+  fhir:Resource.id [ fhir:value "patient-jennifer-smith"]; # 
   fhir:Resource.meta [
      fhir:Meta.versionId [ fhir:value "1" ];
      fhir:Meta.lastUpdated [ fhir:value "2020-09-13T12:21:34.589+00:00"^^xsd:dateTime ];
@@ -17,11 +17,11 @@
        fhir:index 0;
        fhir:link <http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient>
      ]
-  ];
+  ]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>JENNIFER SMITH </b> female, DoB: 2005-02-20 ( Medical Record Number: 1042501(use: USUAL))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td colspan=\"3\">true</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Details:</td><td colspan=\"3\"><ul><li>ph: 555-555-5555(HOME)</li><li>49 Meadow St Birmingham AL 35242 US </li><li>183 Harbor View St Boston MA 02101 US </li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Patient Links\">Links:</td><td colspan=\"3\"><ul><li>General Practitioner: <a href=\"Practitioner/ractitioner-susan-social\">Practitioner/ractitioner-susan-social: Susan Social</a></li><li>Managing Organization: <a href=\"Organization-stjames.html\">Organization/stjames: St. James</a> \"St. James Infirmary\"</li></ul></td></tr></table></div>"
-  ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>JENNIFER SMITH </b> female, DoB: 2005-02-20 ( Medical Record Number: 1042501 (use: USUAL))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td colspan=\"3\">true</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Details:</td><td colspan=\"3\"><ul><li>ph: 555-555-5555(HOME)</li><li>49 Meadow St Birmingham AL 35242 US </li><li>183 Harbor View St Boston MA 02101 US </li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Patient Links\">Links:</td><td colspan=\"3\"><ul><li>General Practitioner: <a href=\"Practitioner/ractitioner-susan-social\">Practitioner/ractitioner-susan-social: Susan Social</a></li><li>Managing Organization: <a href=\"Organization-stjames.html\">Organization/stjames: St. James</a> &quot;St. James Infirmary&quot;</li></ul></td></tr></table></div>"
+  ]; # 
   fhir:DomainResource.extension [
      fhir:index 0;
      fhir:Element.extension [
@@ -98,7 +98,7 @@
      fhir:index 2;
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex" ];
      fhir:Extension.valueCode [ fhir:value "F" ]
-  ];
+  ]; # 
   fhir:Patient.identifier [
      fhir:index 0;
      fhir:Identifier.use [ fhir:value "usual" ];
@@ -113,8 +113,8 @@
      ];
      fhir:Identifier.system [ fhir:value "http://hospital.smarthealthit.org" ];
      fhir:Identifier.value [ fhir:value "1042501" ]
-  ];
-  fhir:Patient.active [ fhir:value "true"^^xsd:boolean];
+  ]; # 
+  fhir:Patient.active [ fhir:value "true"^^xsd:boolean]; # 
   fhir:Patient.name [
      fhir:index 0;
      fhir:HumanName.family [ fhir:value "SMITH" ];
@@ -122,15 +122,15 @@
        fhir:value "JENNIFER";
        fhir:index 0
      ]
-  ];
+  ]; # 
   fhir:Patient.telecom [
      fhir:index 0;
      fhir:ContactPoint.system [ fhir:value "phone" ];
      fhir:ContactPoint.value [ fhir:value "555-555-5555" ];
      fhir:ContactPoint.use [ fhir:value "home" ]
-  ];
-  fhir:Patient.gender [ fhir:value "female"];
-  fhir:Patient.birthDate [ fhir:value "2005-02-20"^^xsd:date];
+  ]; # 
+  fhir:Patient.gender [ fhir:value "female"]; # 
+  fhir:Patient.birthDate [ fhir:value "2005-02-20"^^xsd:date]; # 
   fhir:Patient.address [
      fhir:index 0;
      fhir:Address.line [
@@ -158,18 +158,18 @@
      fhir:Address.period [
        fhir:Period.start [ fhir:value "2020-06-15"^^xsd:date ]
      ]
-  ];
+  ]; # 
   fhir:Patient.generalPractitioner [
      fhir:index 0;
      fhir:link <https://gitlab.mitre.org/awatson/fast-access-control/Practitioner/ractitioner-susan-social>;
      fhir:Reference.reference [ fhir:value "Practitioner/ractitioner-susan-social" ];
      fhir:Reference.display [ fhir:value "Susan Social" ]
-  ];
+  ]; # 
   fhir:Patient.managingOrganization [
      fhir:link <https://gitlab.mitre.org/awatson/fast-access-control/Organization/stjames>;
      fhir:Reference.reference [ fhir:value "Organization/stjames" ];
      fhir:Reference.display [ fhir:value "St. James" ]
-  ] .
+  ] . # 
 
 # - ontology header ------------------------------------------------------------
 

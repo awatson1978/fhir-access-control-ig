@@ -1,6 +1,6 @@
 Instance: stdymphnas
 InstanceOf: Organization
-Description: "St. Dympha's Womens Shelter"
+Description: "Organization - St. Dympha's Womens Shelter"
 Title: "Org-StDymphnas"
 Usage: #example
 * id = "stdymphnas"

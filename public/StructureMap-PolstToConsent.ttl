@@ -1,0 +1,61 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://gitlab.mitre.org/awatson/fast-access-control/StructureMap/PolstToConsent> a fhir:StructureMap;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "PolstToConsent"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: StructureMap</b><a name=\"PolstToConsent\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource StructureMap &quot;PolstToConsent&quot; </p></div><p><b>url</b>: <code>http://</code></p><p><b>version</b>: 0.1.0</p><p><b>name</b>: PolstToConsent</p><p><b>status</b>: draft</p><p><b>date</b>: 2023-04-11 09:52:12-0500</p><p><b>publisher</b>: MITRE</p><p><b>contact</b>: MITRE: <a href=\"https://www.mitre.org\">https://www.mitre.org</a></p><blockquote><p><b>group</b></p><p><b>name</b>: First</p><p><b>typeMode</b>: types</p><h3>Inputs</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td><td><b>Mode</b></td></tr><tr><td>*</td><td>PolstToConsent</td><td>source</td></tr></table><blockquote><p><b>rule</b></p><p><b>name</b>: bNnp9yqshCL5AePDP</p><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Context</b></td><td><b>DefaultValue[x]</b></td></tr><tr><td>*</td><td>bNnp9yqshCL5AePDP</td><td>First</td></tr></table><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>ContextType</b></td><td><b>Variable</b></td></tr><tr><td>*</td><td>variable</td><td>name.given</td></tr></table></blockquote></blockquote></div>"
+  ]; # 
+  fhir:StructureMap.url [ fhir:value "http://"]; # 
+  fhir:StructureMap.version [ fhir:value "0.1.0"]; # 
+  fhir:StructureMap.name [ fhir:value "PolstToConsent"]; # 
+  fhir:StructureMap.status [ fhir:value "draft"]; # 
+  fhir:StructureMap.date [ fhir:value "2023-04-11T09:52:12-05:00"^^xsd:dateTime]; # 
+  fhir:StructureMap.publisher [ fhir:value "MITRE"]; # 
+  fhir:StructureMap.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "MITRE" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.mitre.org" ]
+     ]
+  ]; # 
+  fhir:StructureMap.group [
+     fhir:index 0;
+     fhir:StructureMap.group.name [ fhir:value "First" ];
+     fhir:StructureMap.group.typeMode [ fhir:value "types" ];
+     fhir:StructureMap.group.input [
+       fhir:index 0;
+       fhir:StructureMap.group.input.name [ fhir:value "PolstToConsent" ];
+       fhir:StructureMap.group.input.mode [ fhir:value "source" ]
+     ];
+     fhir:StructureMap.group.rule [
+       fhir:index 0;
+       fhir:StructureMap.group.rule.name [ fhir:value "bNnp9yqshCL5AePDP" ];
+       fhir:StructureMap.group.rule.source [
+         fhir:index 0;
+         fhir:StructureMap.group.rule.source.context [ fhir:value "bNnp9yqshCL5AePDP" ];
+         fhir:StructureMap.group.rule.source.defaultValueString [ fhir:value "First" ]
+       ];
+       fhir:StructureMap.group.rule.target [
+         fhir:index 0;
+         fhir:StructureMap.group.rule.target.contextType [ fhir:value "variable" ];
+         fhir:StructureMap.group.rule.target.variable [ fhir:value "name.given" ]
+       ]
+     ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<https://gitlab.mitre.org/awatson/fast-access-control/StructureMap/PolstToConsent.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -7,16 +7,16 @@
 
 <https://gitlab.mitre.org/awatson/fast-access-control/CapabilityStatement/AccessControlRequirements> a fhir:CapabilityStatement;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "AccessControlRequirements"];
+  fhir:Resource.id [ fhir:value "AccessControlRequirements"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2/></div>"
-  ];
-  fhir:CapabilityStatement.url [ fhir:value "https://gitlab.mitre.org/awatson/fast-access-control/CapabilityStatement/AccessControlRequirements"];
-  fhir:CapabilityStatement.version [ fhir:value "0.1.0"];
-  fhir:CapabilityStatement.status [ fhir:value "draft"];
-  fhir:CapabilityStatement.date [ fhir:value "2022-10-12"^^xsd:date];
-  fhir:CapabilityStatement.publisher [ fhir:value "MITRE"];
+  ]; # 
+  fhir:CapabilityStatement.url [ fhir:value "https://gitlab.mitre.org/awatson/fast-access-control/CapabilityStatement/AccessControlRequirements"]; # 
+  fhir:CapabilityStatement.version [ fhir:value "0.1.0"]; # 
+  fhir:CapabilityStatement.status [ fhir:value "draft"]; # 
+  fhir:CapabilityStatement.date [ fhir:value "2022-10-12"^^xsd:date]; # 
+  fhir:CapabilityStatement.publisher [ fhir:value "MITRE"]; # 
   fhir:CapabilityStatement.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "MITRE" ];
@@ -25,13 +25,13 @@
        fhir:ContactPoint.system [ fhir:value "url" ];
        fhir:ContactPoint.value [ fhir:value "https://www.mitre.org" ]
      ]
-  ];
-  fhir:CapabilityStatement.kind [ fhir:value "requirements"];
-  fhir:CapabilityStatement.fhirVersion [ fhir:value "4.0.1"];
+  ]; # 
+  fhir:CapabilityStatement.kind [ fhir:value "requirements"]; # 
+  fhir:CapabilityStatement.fhirVersion [ fhir:value "4.0.1"]; # 
   fhir:CapabilityStatement.format [
      fhir:value "json";
      fhir:index 0
-  ] .
+  ] . # 
 
 # - ontology header ------------------------------------------------------------
 

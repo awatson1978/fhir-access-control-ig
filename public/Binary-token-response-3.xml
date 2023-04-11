@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Binary xmlns="http://hl7.org/fhir">
+  <id value="token-response-3"/>
+  <contentType value="application/fhir+json"/>
+  <data value="ewogICAgInJlc291cmNlVHlwZSI6ICJPQXV0aFRva2VuUmVzcG9uc2UiLAogICAgImlkIjogInRva2VuLXJlc3BvbnNlLTMiLAogICAgImFjY2Vzc190b2tlbiI6ICJqWUNXeXVjSnpZOEFjTEt2SCIsCiAgICAidG9rZW5fdHlwZSI6ICJCZWFyZXIiLAogICAgInNjb3BlIjogIm9wZW5pZCBmaGlyVXNlciBsYXVuY2ggb2ZmbGluZV9hY2Nlc3MgdXNlci8qLmNydWRzIiwKICAgICJleHBpcmVzX2luIjogODY0MDAKCn0="/>
+</Binary>

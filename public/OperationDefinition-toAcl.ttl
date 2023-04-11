@@ -1,0 +1,100 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://gitlab.mitre.org/awatson/fast-access-control/OperationDefinition/toAcl> a fhir:OperationDefinition;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "toAcl"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>URL: [base]/Consent/[id]/$toAcl</p><p>Parameters</p><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>patient</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/references.html#Reference\">Reference</a></td><td/><td><div><p>Usage:  GET /Consent/$toAcl?patient=Patient/{patientId}</p>\n</div></td></tr><tr><td>IN</td><td>consentor</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/references.html#Reference\">Reference</a></td><td/><td><div><p>Usage:  GET /Consent/$toAcl?consentor=RelatedPerson/{relatedPersonId}</p>\n</div></td></tr><tr><td>IN</td><td>practitioner</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/references.html#Reference\">Reference</a></td><td/><td><div><p>Usage:  GET /Consent/$toAcl?practitioner=Practitioner/{practitionerId}</p>\n</div></td></tr><tr><td>IN</td><td>organization</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/references.html#Reference\">Reference</a></td><td/><td><div><p>Usage:  GET /Consent/$toAcl?organization=Organization/{organizationId}</p>\n</div></td></tr></table></div>"
+  ]; # 
+  fhir:OperationDefinition.url [ fhir:value "http://h7.org/fhir/OperationDefinition/example"]; # 
+  fhir:OperationDefinition.version [ fhir:value "0.1.0"]; # 
+  fhir:OperationDefinition.name [ fhir:value "Consent To Access Control List"]; # 
+  fhir:OperationDefinition.status [ fhir:value "draft"]; # 
+  fhir:OperationDefinition.kind [ fhir:value "operation"]; # 
+  fhir:OperationDefinition.date [ fhir:value "2015-08-04"^^xsd:date]; # 
+  fhir:OperationDefinition.publisher [ fhir:value "MITRE"]; # 
+  fhir:OperationDefinition.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "MITRE" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.mitre.org" ]
+     ]
+  ]; # 
+  fhir:OperationDefinition.description [ fhir:value "Return the access control list for a user."]; # 
+  fhir:OperationDefinition.code [ fhir:value "toAcl"]; # 
+  fhir:OperationDefinition.base [
+     fhir:value "OperationDefinition/Consent-toAcl";
+     fhir:link <https://gitlab.mitre.org/awatson/fast-access-control/OperationDefinition/Consent-toAcl>
+  ]; # 
+  fhir:OperationDefinition.resource [
+     fhir:value "Consent";
+     fhir:index 0
+  ]; # 
+  fhir:OperationDefinition.system [ fhir:value "false"^^xsd:boolean]; # 
+  fhir:OperationDefinition.type [ fhir:value "false"^^xsd:boolean]; # 
+  fhir:OperationDefinition.instance [ fhir:value "true"^^xsd:boolean]; # 
+  fhir:OperationDefinition.parameter [
+     fhir:index 0;
+     fhir:OperationDefinition.parameter.name [ fhir:value "patient" ];
+     fhir:OperationDefinition.parameter.use [ fhir:value "in" ];
+     fhir:OperationDefinition.parameter.min [ fhir:value "1"^^xsd:integer ];
+     fhir:OperationDefinition.parameter.max [ fhir:value "1" ];
+     fhir:OperationDefinition.parameter.documentation [ fhir:value "Usage:  GET /Consent/$toAcl?patient=Patient/{patientId}" ];
+     fhir:OperationDefinition.parameter.type [ fhir:value "Reference" ]
+  ], [
+     fhir:index 1;
+     fhir:OperationDefinition.parameter.name [ fhir:value "consentor" ];
+     fhir:OperationDefinition.parameter.use [ fhir:value "in" ];
+     fhir:OperationDefinition.parameter.min [ fhir:value "0"^^xsd:integer ];
+     fhir:OperationDefinition.parameter.max [ fhir:value "1" ];
+     fhir:OperationDefinition.parameter.documentation [ fhir:value "Usage:  GET /Consent/$toAcl?consentor=RelatedPerson/{relatedPersonId}" ];
+     fhir:OperationDefinition.parameter.type [ fhir:value "Reference" ]
+  ], [
+     fhir:index 2;
+     fhir:OperationDefinition.parameter.name [ fhir:value "practitioner" ];
+     fhir:OperationDefinition.parameter.use [ fhir:value "in" ];
+     fhir:OperationDefinition.parameter.min [ fhir:value "0"^^xsd:integer ];
+     fhir:OperationDefinition.parameter.max [ fhir:value "1" ];
+     fhir:OperationDefinition.parameter.documentation [ fhir:value "Usage:  GET /Consent/$toAcl?practitioner=Practitioner/{practitionerId}" ];
+     fhir:OperationDefinition.parameter.type [ fhir:value "Reference" ]
+  ], [
+     fhir:index 3;
+     fhir:OperationDefinition.parameter.name [ fhir:value "organization" ];
+     fhir:OperationDefinition.parameter.use [ fhir:value "in" ];
+     fhir:OperationDefinition.parameter.min [ fhir:value "0"^^xsd:integer ];
+     fhir:OperationDefinition.parameter.max [ fhir:value "1" ];
+     fhir:OperationDefinition.parameter.documentation [ fhir:value "Usage:  GET /Consent/$toAcl?organization=Organization/{organizationId}" ];
+     fhir:OperationDefinition.parameter.type [ fhir:value "Reference" ]
+  ]; # 
+  fhir:OperationDefinition.overload [
+     fhir:index 0;
+     fhir:OperationDefinition.overload.parameterName [
+       fhir:value "patient";
+       fhir:index 0
+     ], [
+       fhir:value "consentor";
+       fhir:index 1
+     ], [
+       fhir:value "practitioner";
+       fhir:index 2
+     ], [
+       fhir:value "organization";
+       fhir:index 3
+     ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<https://gitlab.mitre.org/awatson/fast-access-control/OperationDefinition/toAcl.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

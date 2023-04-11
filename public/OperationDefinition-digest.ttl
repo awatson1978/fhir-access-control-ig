@@ -1,0 +1,51 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://gitlab.mitre.org/awatson/fast-access-control/OperationDefinition/digest> a fhir:OperationDefinition;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "digest"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>URL: [base]/Bundle/[id]/$digest</p><p>Parameters</p><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr></table></div>"
+  ]; # 
+  fhir:OperationDefinition.url [ fhir:value "http://h7.org/fhir/OperationDefinition/example"]; # 
+  fhir:OperationDefinition.version [ fhir:value "0.1.0"]; # 
+  fhir:OperationDefinition.name [ fhir:value "Consent Bundle Digest"]; # 
+  fhir:OperationDefinition.status [ fhir:value "draft"]; # 
+  fhir:OperationDefinition.kind [ fhir:value "operation"]; # 
+  fhir:OperationDefinition.date [ fhir:value "2015-08-04"^^xsd:date]; # 
+  fhir:OperationDefinition.publisher [ fhir:value "MITRE"]; # 
+  fhir:OperationDefinition.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "MITRE" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.mitre.org" ]
+     ]
+  ]; # 
+  fhir:OperationDefinition.description [ fhir:value "Input a Bundle which contains list of 1 or more Consent records; Returns a flattened Consent that has merged the records"]; # 
+  fhir:OperationDefinition.code [ fhir:value "digest"]; # 
+  fhir:OperationDefinition.base [
+     fhir:value "OperationDefinition/Consent-digest";
+     fhir:link <https://gitlab.mitre.org/awatson/fast-access-control/OperationDefinition/Consent-digest>
+  ]; # 
+  fhir:OperationDefinition.resource [
+     fhir:value "Bundle";
+     fhir:index 0
+  ]; # 
+  fhir:OperationDefinition.system [ fhir:value "false"^^xsd:boolean]; # 
+  fhir:OperationDefinition.type [ fhir:value "false"^^xsd:boolean]; # 
+  fhir:OperationDefinition.instance [ fhir:value "true"^^xsd:boolean] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<https://gitlab.mitre.org/awatson/fast-access-control/OperationDefinition/digest.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

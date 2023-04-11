@@ -26,7 +26,7 @@ This implementation guide recognizes the following Consent record types.  For ea
 
 #### Questionnaire to Consent Data Mapping  
 
-One particularly important use case of interest is the mapping between a HIPAA Patient Privacy form and the Consent resourcs.  
+One particularly important use case of interest is the mapping between a HIPAA Patient Privacy form and the Consent resourcs.  Our concern here is not simply collecting advance directives; but doing so in a way that will allow us to compute access control.  To do this, we need to map Questionnaire items to Consent records.  
 
 - Questionnaire Item 1.3   > `Consent.dateTime`  
 - Questionnaire Item 1.4.1 > `Consent.provision.period.start`  

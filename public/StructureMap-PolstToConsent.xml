@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureMap xmlns="http://hl7.org/fhir">
+  <id value="PolstToConsent"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: StructureMap</b><a name="PolstToConsent"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource StructureMap &quot;PolstToConsent&quot; </p></div><p><b>url</b>: <code>http://</code></p><p><b>version</b>: 0.1.0</p><p><b>name</b>: PolstToConsent</p><p><b>status</b>: draft</p><p><b>date</b>: 2023-04-11 09:52:12-0500</p><p><b>publisher</b>: MITRE</p><p><b>contact</b>: MITRE: <a href="https://www.mitre.org">https://www.mitre.org</a></p><blockquote><p><b>group</b></p><p><b>name</b>: First</p><p><b>typeMode</b>: types</p><h3>Inputs</h3><table class="grid"><tr><td>-</td><td><b>Name</b></td><td><b>Mode</b></td></tr><tr><td>*</td><td>PolstToConsent</td><td>source</td></tr></table><blockquote><p><b>rule</b></p><p><b>name</b>: bNnp9yqshCL5AePDP</p><h3>Sources</h3><table class="grid"><tr><td>-</td><td><b>Context</b></td><td><b>DefaultValue[x]</b></td></tr><tr><td>*</td><td>bNnp9yqshCL5AePDP</td><td>First</td></tr></table><h3>Targets</h3><table class="grid"><tr><td>-</td><td><b>ContextType</b></td><td><b>Variable</b></td></tr><tr><td>*</td><td>variable</td><td>name.given</td></tr></table></blockquote></blockquote></div>
+  </text>
+  <url value="http://"/>
+  <version value="0.1.0"/>
+  <name value="PolstToConsent"/>
+  <status value="draft"/>
+  <date value="2023-04-11T09:52:12-05:00"/>
+  <publisher value="MITRE"/>
+  <contact>
+    <name value="MITRE"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.mitre.org"/>
+    </telecom>
+  </contact>
+  <group>
+    <name value="First"/>
+    <typeMode value="types"/>
+    <input>
+      <name value="PolstToConsent"/>
+      <mode value="source"/>
+    </input>
+    <rule>
+      <name value="bNnp9yqshCL5AePDP"/>
+      <source>
+        <context value="bNnp9yqshCL5AePDP"/>
+        <defaultValueString value="First"/>
+      </source>
+      <target>
+        <contextType value="variable"/>
+        <variable value="name.given"/>
+      </target>
+    </rule>
+  </group>
+</StructureMap>

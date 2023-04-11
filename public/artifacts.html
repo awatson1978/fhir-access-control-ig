@@ -39,8 +39,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"4"}
-    h3,h4,h5,h6{--heading-prefix:"4.0"}</style>
+    <style type="text/css">h2{--heading-prefix:"5"}
+    h3,h4,h5,h6{--heading-prefix:"5.0"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -83,7 +83,10 @@
     <a href="datacollection.html">Data Mapping</a>
   </li>
   <li>
-    <a href="consentengine.html">Access Control Lists</a>
+    <a href="consentengine.html">Consent Engine</a>
+  </li>
+  <li>
+    <a href="testing.html">Functional Testing</a>
   </li>
   <li>
     <a href="artifacts.html">Artifacts</a>
@@ -135,22 +138,28 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#1">Behavior: Capability Statements</a>
       </li>
       <li>
-         <a href="#2">Structures: Logical Models</a>
+         <a href="#2">Behavior: Operation Definitions</a>
       </li>
       <li>
-         <a href="#3">Structures: Resource Profiles</a>
+         <a href="#3">Structures: Logical Models</a>
       </li>
       <li>
-         <a href="#4">Terminology: Value Sets</a>
+         <a href="#4">Structures: Resource Profiles</a>
       </li>
       <li>
-         <a href="#5">Terminology: Code Systems</a>
+         <a href="#5">Terminology: Value Sets</a>
       </li>
       <li>
-         <a href="#6">Terminology: Concept Maps</a>
+         <a href="#6">Terminology: Code Systems</a>
       </li>
       <li>
-         <a href="#7">Example: Example Instances</a>
+         <a href="#7">Terminology: Structure Maps</a>
+      </li>
+      <li>
+         <a href="#8">Example: Example Instances</a>
+      </li>
+      <li>
+         <a href="#9">Other</a>
       </li>
    </ul>
 </div>
@@ -180,6 +189,88 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       </table>
    </p>
    <a name="2"> </a>
+   <h3>Behavior: Operation Definitions </h3>
+   <p>
+    <p>These are custom operations that can be supported by and/or invoked by systems conforming to this implementation guide.</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="OperationDefinition-canAccess.html"
+                     title="OperationDefinition/canAccess">canAccess</a>
+               </td>
+               <td>
+<p>Determine if a user can access a particular record</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="OperationDefinition-diff.html" title="OperationDefinition/diff">diff</a>
+               </td>
+               <td>
+<p>Determine differential between two Consent records</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="OperationDefinition-digest.html"
+                     title="OperationDefinition/digest">digest</a>
+               </td>
+               <td>
+<p>Input a Bundle which contains list of 1 or more Consent records; Returns a flattened Consent that has merged the records</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="OperationDefinition-equals.html"
+                     title="OperationDefinition/equals">equals</a>
+               </td>
+               <td>
+<p>Determines if two Consent records are equal</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="OperationDefinition-oauthScopes.html"
+                     title="OperationDefinition/oauthScopes">oauthScopes</a>
+               </td>
+               <td>
+<p>Return a list of OAuth scopes</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="OperationDefinition-parseToBundle.html"
+                     title="OperationDefinition/parseToBundle">parseToBundle</a>
+               </td>
+               <td>
+<p>Rollup multiple Consent records into a Bundle</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="OperationDefinition-rollup.html"
+                     title="OperationDefinition/rollup">rollup</a>
+               </td>
+               <td>
+<p>Rollup multiple Consent records into a Bundle</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="OperationDefinition-toAcl.html" title="OperationDefinition/toAcl">toAcl</a>
+               </td>
+               <td>
+<p>Return the access control list for a user.</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="3"> </a>
    <h3>Structures: Logical Models </h3>
    <p>
     <p>These define data models that represent the domain covered by this implementation guide in more business-friendly terms than the underlying FHIR resources.</p>
@@ -194,7 +285,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                      title="StructureDefinition/OAuthAuthenticationRequest">OAuth Authentication Request</a>
                </td>
                <td>
-<p>This structure is defined to allow the FHIR Validator to validate a OAuthRegistration Response body</p>
+<p>This structure defines an OAuth authentication response body</p>
 </td>
             </tr>
             <tr>
@@ -203,7 +294,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                      title="StructureDefinition/OAuthAuthenticationResponse">OAuth Authentication Response</a>
                </td>
                <td>
-<p>This structure is defined to allow the FHIR Validator to validate a OAuthRegistration Response body</p>
+<p>This structure defines an OAuth authentication response body</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-OAuthRegistrationRequest.html"
+                     title="StructureDefinition/OAuthRegistrationRequest">OAuth Registration Request</a>
+               </td>
+               <td>
+<p>This structure defines an OAuth registration request body</p>
 </td>
             </tr>
             <tr>
@@ -212,16 +312,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                      title="StructureDefinition/OAuthRegistrationResponse">OAuth Registration Response</a>
                </td>
                <td>
-<p>This structure is defined to allow the FHIR Validator to validate a OAuthRegistration Response body</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-OAuthTokenRequest.html"
-                     title="StructureDefinition/OAuthTokenRequest">OAuth Token Request</a>
-               </td>
-               <td>
-<p>This structure is defined to allow the FHIR Validator to validate a OAuthRegistration Response body</p>
+<p>This structure defines an OAuth registration response body</p>
 </td>
             </tr>
             <tr>
@@ -230,16 +321,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                      title="StructureDefinition/OAuthTokenResponse">OAuth Token Response</a>
                </td>
                <td>
-<p>This structure is defined to allow the FHIR Validator to validate a OAuthRegistration Response body</p>
+<p>This structure defines an OAuth token response body</p>
 </td>
             </tr>
          </tbody>
       </table>
    </p>
-   <a name="3"> </a>
+   <a name="4"> </a>
    <h3>Structures: Resource Profiles </h3>
    <p>
-    <p>These define constraints on FHIR resources for systems conforming to this implementation guide</p>
+    <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
 </p>
    <p>
       <table class="grid">
@@ -257,10 +348,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tbody>
       </table>
    </p>
-   <a name="4"> </a>
+   <a name="5"> </a>
    <h3>Terminology: Value Sets </h3>
    <p>
-    <p>These define sets of codes used by systems conforming to this implementation guide</p>
+    <p>These define sets of codes used by systems conforming to this implementation guide.</p>
 </p>
    <p>
       <table class="grid">
@@ -305,10 +396,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tbody>
       </table>
    </p>
-   <a name="5"> </a>
+   <a name="6"> </a>
    <h3>Terminology: Code Systems </h3>
    <p>
-    <p>These define new code systems used by systems conforming to this implementation guide</p>
+    <p>These define new code systems used by systems conforming to this implementation guide.</p>
 </p>
    <p>
       <table class="grid">
@@ -344,10 +435,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tbody>
       </table>
    </p>
-   <a name="6"> </a>
-   <h3>Terminology: Concept Maps </h3>
+   <a name="7"> </a>
+   <h3>Terminology: Structure Maps </h3>
    <p>
-    <p>These define transformations to convert between codes by systems conforming with this implementation guide</p>
+    <p>These define transformations to convert between data structures used by systems conforming to this implementation guide.</p>
 </p>
    <p>
       <table class="grid">
@@ -355,7 +446,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="ConceptMap-DnrToConsent.html" title="ConceptMap/DnrToConsent">DnrToConsent</a>
+                  <a href="StructureMap-DnrToConsent.html" title="StructureMap/DnrToConsent">DnrToConsent</a>
                </td>
                <td>
 <p>Do Not Recussitate questionnaire to Consent record</p>
@@ -363,8 +454,17 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ConceptMap-HipaaPrivacyToConsent.html"
-                     title="ConceptMap/HipaaPrivacyToConsent">HipaaPrivacyToConsent</a>
+                  <a href="StructureMap-FirstNameToGiven.html"
+                     title="StructureMap/FirstNameToGiven">FirstNameToGiven</a>
+               </td>
+               <td>
+<p>First name to given name</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureMap-HipaaPrivacyToConsent.html"
+                     title="StructureMap/HipaaPrivacyToConsent">HipaaPrivacyToConsent</a>
                </td>
                <td>
 <p>HIPAA Privacy questionnaire to Consent record</p>
@@ -372,8 +472,17 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ConceptMap-LivingWillToConsent.html"
-                     title="ConceptMap/LivingWillToConsent">LivingWillToConsent</a>
+                  <a href="StructureMap-LastNameToFamily.html"
+                     title="StructureMap/LastNameToFamily">LastNameToFamily</a>
+               </td>
+               <td>
+<p>Last name to family name</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureMap-LivingWillToConsent.html"
+                     title="StructureMap/LivingWillToConsent">LivingWillToConsent</a>
                </td>
                <td>
 <p>Living Will questionnaire to Consent record</p>
@@ -381,8 +490,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ConceptMap-PoaContractToConsent.html"
-                     title="ConceptMap/PoaContractToConsent">PoaContractToConsent</a>
+                  <a href="StructureMap-PoaContractToConsent.html"
+                     title="StructureMap/PoaContractToConsent">PoaContractToConsent</a>
                </td>
                <td>
 <p>Power of Attorney contract to Consent record</p>
@@ -390,8 +499,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ConceptMap-PoaMentalHealthToConsent.html"
-                     title="ConceptMap/PoaMentalHealthToConsent">PoaMentalHealthToConsent</a>
+                  <a href="StructureMap-PoaMentalHealthToConsent.html"
+                     title="StructureMap/PoaMentalHealthToConsent">PoaMentalHealthToConsent</a>
                </td>
                <td>
 <p>Power of Attorney Mental Health questionnaire to Consent record</p>
@@ -399,8 +508,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ConceptMap-PoaQuestinonaireToConsent.html"
-                     title="ConceptMap/PoaQuestinonaireToConsent">PoaQuestinonaireToConsent</a>
+                  <a href="StructureMap-PoaQuestinonaireToConsent.html"
+                     title="StructureMap/PoaQuestinonaireToConsent">PoaQuestinonaireToConsent</a>
                </td>
                <td>
 <p>Power of Attorney questionnaire to Consent record</p>
@@ -408,7 +517,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ConceptMap-PolstToConsent.html" title="ConceptMap/PolstToConsent">PolstToConsent</a>
+                  <a href="StructureMap-PolstToConsent.html"
+                     title="StructureMap/PolstToConsent">PolstToConsent</a>
                </td>
                <td>
 <p>Physician Orders for Life Sustaining Treatment (POLST) to Consent record</p>
@@ -417,10 +527,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tbody>
       </table>
    </p>
-   <a name="7"> </a>
+   <a name="8"> </a>
    <h3>Example: Example Instances </h3>
    <p>
-    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like</p>
+    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
 </p>
    <p>
       <table class="grid">
@@ -479,20 +589,65 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="TestScript-TestScript-Scenario1.html"
-                     title="TestScript/TestScript-Scenario1">Scenario 1</a>
+                  <a href="TestScript-TestScript-Scenario1A.html"
+                     title="TestScript/TestScript-Scenario1A">Scenario 1A</a>
                </td>
                <td>
-<p>R4 TestScript - Directories With Restricted Data</p>
+<p>R4 TestScript - Directories with Anonymous Access (Work in Progress)</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="TestScript-TestScript-Scenario2.html"
-                     title="TestScript/TestScript-Scenario2">Scenario 2</a>
+                  <a href="TestScript-TestScript-Scenario1B.html"
+                     title="TestScript/TestScript-Scenario1B">Scenario 1B</a>
                </td>
                <td>
-<p>R4 TestScript - Patients Can Only Access Their Own Data</p>
+<p>R4 TestScript - Directories With Restricted Data (Work in Progress)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="TestScript-TestScript-Scenario2A.html"
+                     title="TestScript/TestScript-Scenario2A">Scenario 2A</a>
+               </td>
+               <td>
+<p>R4 TestScript - PHI System - Anonymous Access (Work in Progress)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="TestScript-TestScript-Scenario2B.html"
+                     title="TestScript/TestScript-Scenario2B">Scenario 2B</a>
+               </td>
+               <td>
+<p>R4 TestScript - PHI System - Patient Self Access (Work in Progress)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="TestScript-TestScript-Scenario2C.html"
+                     title="TestScript/TestScript-Scenario2C">Scenario 2C</a>
+               </td>
+               <td>
+<p>R4 TestScript - PHI System - Patient Multi-User Access (Work in Progress)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="TestScript-TestScript-Scenario2D.html"
+                     title="TestScript/TestScript-Scenario2D">Scenario 2D</a>
+               </td>
+               <td>
+<p>R4 TestScript - PHI System - General Practitioner Access (Work in Progress)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="TestScript-TestScript-Scenario2E.html"
+                     title="TestScript/TestScript-Scenario2E">Scenario 2E</a>
+               </td>
+               <td>
+<p>R4 TestScript - PHI System - Dependents Access (Work in Progress)</p>
 </td>
             </tr>
             <tr>
@@ -501,16 +656,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                      title="TestScript/TestScript-Scenario3">Scenario 3</a>
                </td>
                <td>
-<p>R4 TestScript - Clinicians Can Access Any Patients Their Role Authorizes</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="TestScript-TestScript-Scenario4.html"
-                     title="TestScript/TestScript-Scenario4">Scenario 4</a>
-               </td>
-               <td>
-<p>R4 TestScript - Patients Can Access Dependent’s Records (Custodial Access)</p>
+<p>R4 TestScript - Back End Acces</p>
 </td>
             </tr>
             <tr>
@@ -588,7 +734,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   <a href="Patient-patient-jane-doe.html" title="Patient/patient-jane-doe">patient-jane-doe</a>
                </td>
                <td>
-<p>Jane Doe patient not part of relationship model, used for checking security access.</p>
+<p>Patient - Jane Doe patient not part of relationship model, used for checking security access.</p>
 </td>
             </tr>
             <tr>
@@ -597,7 +743,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                      title="Patient/patient-jennifer-smith">patient-jennifer-smith</a>
                </td>
                <td>
-<p>Jennifer Smith - Patient demographics record.</p>
+<p>Patient - Jennifer Smith - Patient demographics record.</p>
 </td>
             </tr>
             <tr>
@@ -606,7 +752,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                      title="Patient/patient-john-smith">patient-john-smith</a>
                </td>
                <td>
-<p>John Smith - Patient demographics record.</p>
+<p>Patient - John Smith - Patient demographics record.</p>
 </td>
             </tr>
             <tr>
@@ -615,7 +761,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                      title="Patient/patient-katie-klepti">patient-katie-klepti</a>
                </td>
                <td>
-<p>Katie Klepti - a woman without much sense of boundaries or traditional notions of property ownership.</p>
+<p>Patient - Katie Klepti - a woman without much sense of boundaries or traditional notions of property ownership.</p>
 </td>
             </tr>
             <tr>
@@ -624,7 +770,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                      title="Practitioner/practitioner-alison-camron">practitioner-alison-camron</a>
                </td>
                <td>
-<p>Dr. Alison Camron, Attending Physician</p>
+<p>Practitioner - Dr. Alison Camron, Attending Physician</p>
 </td>
             </tr>
             <tr>
@@ -633,7 +779,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                      title="Practitioner/practitioner-susan-social">practitioner-susan-social</a>
                </td>
                <td>
-<p>Susan Social - Social Worker</p>
+<p>Practitioner - Susan Social - Social Worker</p>
 </td>
             </tr>
             <tr>
@@ -641,7 +787,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   <a href="Organization-stdymphnas.html" title="Organization/stdymphnas">Org-StDymphnas</a>
                </td>
                <td>
-<p>St. Dympha’s Womens Shelter</p>
+<p>Organization - St. Dympha’s Womens Shelter</p>
 </td>
             </tr>
             <tr>
@@ -649,7 +795,61 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   <a href="Organization-stjames.html" title="Organization/stjames">Org-StJames</a>
                </td>
                <td>
-<p>St. Jame’s Infirmary</p>
+<p>Organization - St. Jame’s Infirmary</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="9"> </a>
+   <h3>Other </h3>
+   <p>
+    <p>These are resources that are used within this implementation guide that do not fit into one of the other categories.</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Binary-registration-request-3.html"
+                     title="Binary/registration-request-3">registration-request-3</a>
+               </td>
+               <td>
+<p>Backend Service - Registration Request</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Binary-registration-response-3.html"
+                     title="Binary/registration-response-3">registration-response-3</a>
+               </td>
+               <td>
+<p>Backend Service - Registration Response</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Binary-auth-request-3.html" title="Binary/auth-request-3">auth-request-3</a>
+               </td>
+               <td>
+<p>Backend Service - Authorization Reques</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Binary-auth-response-3.html" title="Binary/auth-response-3">auth-response-3</a>
+               </td>
+               <td>
+<p>Backend Service - Authorization Response</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Binary-token-response-3.html" title="Binary/token-response-3">token-response-3</a>
+               </td>
+               <td>
+<p>Backend Service - Token Response</p>
 </td>
             </tr>
          </tbody>
@@ -679,7 +879,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org">MITRE</a>.  Package mitre.fast.access-control#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Oct 31, 2022 00:13-0500">2022-10-31</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org">MITRE</a>.  Package mitre.fast.access-control#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Apr 11, 2023 09:52-0500">2023-04-11</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

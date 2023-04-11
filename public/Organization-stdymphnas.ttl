@@ -7,7 +7,7 @@
 
 <https://gitlab.mitre.org/awatson/fast-access-control/Organization/stdymphnas> a fhir:Organization;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "stdymphnas"];
+  fhir:Resource.id [ fhir:value "stdymphnas"]; # 
   fhir:Resource.meta [
      fhir:Meta.lastUpdated [ fhir:value "2020-07-07T13:26:22.0314215+00:00"^^xsd:dateTime ];
      fhir:Meta.profile [
@@ -24,18 +24,18 @@
        fhir:Coding.code [ fhir:value "R" ];
        fhir:Coding.display [ fhir:value "restricted" ]
      ]
-  ];
-  fhir:Resource.language [ fhir:value "en-US"];
+  ]; # 
+  fhir:Resource.language [ fhir:value "en-US"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-US\" lang=\"en-US\"><p><b>Generated Narrative: Organization</b><a name=\"stdymphnas\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization \"stdymphnas\" Updated \"2020-07-07 01:26:22+0000\"  (Language \"en-US\") </p><p style=\"margin-bottom: 0px\">Profiles: <code>http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Organization</code>, <code>http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization</code></p><p style=\"margin-bottom: 0px\">Security Labels: <span title=\"{null null}\"></span></p></div><p><b>identifier</b>: id: NPI999</p><p><b>active</b>: true</p><p><b>type</b>: Facility <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (OrgTypeCS#fac)</span></p><p><b>name</b>: St. Dymphna's Women's Shelter</p><p><b>telecom</b>: ph: (111)-222-3333, <a href=\"https://www.stdymphna.com\">https://www.stdymphna.com</a></p><p><b>address</b>: 555 Side Street Hartford CT 00014-1234 </p><h3>Contacts</h3><table class=\"grid\"><tr><td>-</td><td><b>Telecom</b></td></tr><tr><td>*</td><td>ph: (111)-222-3333</td></tr></table></div>"
-  ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-US\" lang=\"en-US\"><p><b>Generated Narrative: Organization</b><a name=\"stdymphnas\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;stdymphnas&quot; Updated &quot;2020-07-07 13:26:22+0000&quot;  (Language &quot;en-US&quot;) </p><p style=\"margin-bottom: 0px\">Profiles: <code>http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Organization</code>, <code>http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization</code></p><p style=\"margin-bottom: 0px\">Security Labels: <span title=\"{null null}\"/></p></div><p><b>identifier</b>: id: NPI999</p><p><b>active</b>: true</p><p><b>type</b>: Facility <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (OrgTypeCS#fac)</span></p><p><b>name</b>: St. Dymphna's Women's Shelter</p><p><b>telecom</b>: ph: (111)-222-3333, <a href=\"https://www.stdymphna.com\">https://www.stdymphna.com</a></p><p><b>address</b>: 555 Side Street Hartford CT 00014-1234 </p><h3>Contacts</h3><table class=\"grid\"><tr><td>-</td><td><b>Telecom</b></td></tr><tr><td>*</td><td>ph: (111)-222-3333</td></tr></table></div>"
+  ]; # 
   fhir:Organization.identifier [
      fhir:index 0;
      fhir:Identifier.system [ fhir:value "http://hl7.org/fhir/sid/us-npi" ];
      fhir:Identifier.value [ fhir:value "NPI999" ]
-  ];
-  fhir:Organization.active [ fhir:value "true"^^xsd:boolean];
+  ]; # 
+  fhir:Organization.active [ fhir:value "true"^^xsd:boolean]; # 
   fhir:Organization.type [
      fhir:index 0;
      fhir:CodeableConcept.coding [
@@ -44,8 +44,8 @@
        fhir:Coding.code [ fhir:value "fac" ];
        fhir:Coding.display [ fhir:value "Facility" ]
      ]
-  ];
-  fhir:Organization.name [ fhir:value "St. Dymphna's Women's Shelter"];
+  ]; # 
+  fhir:Organization.name [ fhir:value "St. Dymphna's Women's Shelter"]; # 
   fhir:Organization.telecom [
      fhir:index 0;
      fhir:ContactPoint.system [ fhir:value "phone" ];
@@ -56,7 +56,7 @@
      fhir:ContactPoint.system [ fhir:value "url" ];
      fhir:ContactPoint.value [ fhir:value "https://www.stdymphna.com" ];
      fhir:ContactPoint.rank [ fhir:value "1"^^xsd:positiveInteger ]
-  ];
+  ]; # 
   fhir:Organization.address [
      fhir:index 0;
      fhir:Address.line [
@@ -66,7 +66,7 @@
      fhir:Address.city [ fhir:value "Hartford" ];
      fhir:Address.state [ fhir:value "CT" ];
      fhir:Address.postalCode [ fhir:value "00014-1234" ]
-  ];
+  ]; # 
   fhir:Organization.contact [
      fhir:index 0;
      fhir:Organization.contact.telecom [
@@ -75,7 +75,7 @@
        fhir:ContactPoint.value [ fhir:value "(111)-222-3333" ];
        fhir:ContactPoint.rank [ fhir:value "1"^^xsd:positiveInteger ]
      ]
-  ] .
+  ] . # 
 
 # - ontology header ------------------------------------------------------------
 

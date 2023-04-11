@@ -41,8 +41,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"4.42"}
-    h3,h4,h5,h6{--heading-prefix:"4.42"}</style>
+    <style type="text/css">h2{--heading-prefix:"5.56"}
+    h3,h4,h5,h6{--heading-prefix:"5.56"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -85,7 +85,10 @@
     <a href="datacollection.html">Data Mapping</a>
   </li>
   <li>
-    <a href="consentengine.html">Access Control Lists</a>
+    <a href="consentengine.html">Consent Engine</a>
+  </li>
+  <li>
+    <a href="testing.html">Functional Testing</a>
   </li>
   <li>
     <a href="artifacts.html">Artifacts</a>
@@ -130,6 +133,7 @@
   <li>
     <a href="Patient-patient-john-smith.html">Narrative Content</a>
   </li>
+
 
 
   
@@ -192,11 +196,11 @@
 
  a fhir:Patient;
   <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
-  <a href="http://hl7.org/fhir/R4/patient.html#Patient.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;patient-john-smith&quot;];
+  <a href="http://hl7.org/fhir/R4/patient.html#Patient.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;patient-john-smith&quot;]; # 
   <a href="http://hl7.org/fhir/R4/patient.html#Patient.text">fhir:DomainResource.text</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
-     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p style=\&quot;border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\&quot;&gt;&lt;b&gt;JOHN SMITH &lt;/b&gt; male, DoB: 1980-04-14 ( Medical Record Number: 2002501(use: USUAL))&lt;/p&gt;&lt;hr/&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;Record is active\&quot;&gt;Active:&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;true&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;Ways to contact the Patient\&quot;&gt;Contact Details:&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;&lt;ul&gt;&lt;li&gt;ph: 555-555-5553(HOME)&lt;/li&gt;&lt;li&gt;49 Meadow St Birmingham AL 35242 US &lt;/li&gt;&lt;li&gt;183 Harbor View St Boston MA 02101 US &lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;
-  ];
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p style=\&quot;border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\&quot;&gt;&lt;b&gt;JOHN SMITH &lt;/b&gt; male, DoB: 1980-04-14 ( Medical Record Number: 2002501 (use: USUAL))&lt;/p&gt;&lt;hr/&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;Record is active\&quot;&gt;Active:&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;true&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;Ways to contact the Patient\&quot;&gt;Contact Details:&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;&lt;ul&gt;&lt;li&gt;ph: 555-555-5553(HOME)&lt;/li&gt;&lt;li&gt;49 Meadow St Birmingham AL 35242 US &lt;/li&gt;&lt;li&gt;183 Harbor View St Boston MA 02101 US &lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;
+  ]; # 
   <a href="http://hl7.org/fhir/R4/patient.html#Patient.extension">fhir:DomainResource.extension</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
      <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.extension">fhir:Element.extension</a> [
@@ -236,7 +240,7 @@
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 2;
      <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex&quot; ];
      <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueCode</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;M&quot; ]
-  ];
+  ]; # 
   <a href="http://hl7.org/fhir/R4/patient.html#Patient.identifier">fhir:Patient.identifier</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
      <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">fhir:Identifier.use</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;usual&quot; ];
@@ -249,23 +253,23 @@
        <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:CodeableConcept.text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Medical Record Number&quot; ]     ];
      <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:Identifier.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://hospital.smarthealthit.org&quot; ];
      <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:Identifier.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;2002501&quot; ]
-  ];
-  <a href="http://hl7.org/fhir/R4/patient.html#Patient.active">fhir:Patient.active</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:value</a> &quot;true&quot;^^xsd:boolean];
+  ]; # 
+  <a href="http://hl7.org/fhir/R4/patient.html#Patient.active">fhir:Patient.active</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:value</a> &quot;true&quot;^^xsd:boolean]; # 
   <a href="http://hl7.org/fhir/R4/patient.html#Patient.name">fhir:Patient.name</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
      <a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.family">fhir:HumanName.family</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;SMITH&quot; ];
      <a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.given">fhir:HumanName.given</a> [
        <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;JOHN&quot;;
        <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0     ]
-  ];
+  ]; # 
   <a href="http://hl7.org/fhir/R4/patient.html#Patient.telecom">fhir:Patient.telecom</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
      <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:ContactPoint.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;phone&quot; ];
      <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:ContactPoint.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;555-555-5553&quot; ];
      <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.use">fhir:ContactPoint.use</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;home&quot; ]
-  ];
-  <a href="http://hl7.org/fhir/R4/patient.html#Patient.gender">fhir:Patient.gender</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;male&quot;];
-  <a href="http://hl7.org/fhir/R4/patient.html#Patient.birthDate">fhir:Patient.birthDate</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#date">fhir:value</a> &quot;1980-04-14&quot;^^xsd:date];
+  ]; # 
+  <a href="http://hl7.org/fhir/R4/patient.html#Patient.gender">fhir:Patient.gender</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;male&quot;]; # 
+  <a href="http://hl7.org/fhir/R4/patient.html#Patient.birthDate">fhir:Patient.birthDate</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#date">fhir:value</a> &quot;1980-04-14&quot;^^xsd:date]; # 
   <a href="http://hl7.org/fhir/R4/patient.html#Patient.address">fhir:Patient.address</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
      <a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.line">fhir:Address.line</a> [
@@ -289,7 +293,7 @@
      <a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.country">fhir:Address.country</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;US&quot; ];
      <a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.period">fhir:Address.period</a> [
        <a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">fhir:Period.start</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2020-06-15&quot;^^xsd:date ]     ]
-  ].
+  ]. # 
 
 # - ontology header ------------------------------------------------------------
 
@@ -327,7 +331,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org">MITRE</a>.  Package mitre.fast.access-control#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Oct 31, 2022 00:13-0500">2022-10-31</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org">MITRE</a>.  Package mitre.fast.access-control#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Apr 11, 2023 09:52-0500">2023-04-11</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

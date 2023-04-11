@@ -1,7 +1,7 @@
 
 Instance: practitioner-alison-camron
 InstanceOf: Practitioner
-Description: "Dr. Alison Camron, Attending Physician"
+Description: "Practitioner - Dr. Alison Camron, Attending Physician"
 Usage: #example
 * active = true
 * name.family = "CAMRON"

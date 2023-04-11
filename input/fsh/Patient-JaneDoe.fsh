@@ -2,7 +2,7 @@ Alias: $v2-0203 = http://terminology.hl7.org/CodeSystem/v2-0203
 
 Instance: patient-jane-doe
 InstanceOf: Patient
-Description: "Jane Doe patient not part of relationship model, used for checking security access."
+Description: "Patient - Jane Doe patient not part of relationship model, used for checking security access."
 Usage: #example
 * meta.versionId = "1"
 * meta.lastUpdated = "2020-09-13T12:21:34.589+00:00"

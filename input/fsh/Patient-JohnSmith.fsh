@@ -1,7 +1,7 @@
 
 Instance: patient-john-smith
 InstanceOf: Patient
-Description: "John Smith - Patient demographics record."
+Description: "Patient - John Smith - Patient demographics record."
 Usage: #example
 * extension[0].url = "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
 * extension[=].extension.url = "ombCategory"

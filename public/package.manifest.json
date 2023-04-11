@@ -1,8 +1,6 @@
 {
-  "version": "0.1.0",
-  "fhirVersion": [
-    "4.0.1"
-  ],
-  "date": "20221031001337",
-  "name": "mitre.fast.access-control"
+  "version" : "0.1.0",
+  "fhirVersion" : ["4.0.1"],
+  "date" : "20230411095129",
+  "name" : "mitre.fast.access-control"
 }

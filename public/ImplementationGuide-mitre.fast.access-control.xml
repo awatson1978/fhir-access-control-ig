@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="FastAccessControl"/>
   <status value="draft"/>
-  <date value="2022-10-31T00:13:59-05:00"/>
+  <date value="2023-04-11T09:52:12-05:00"/>
   <publisher value="MITRE"/>
   <contact>
     <name value="MITRE"/>
@@ -22,9 +22,12 @@
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
   <dependsOn id="hl7tx">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on HL7 Terminology"/>
+    </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="4.0.0"/>
+    <version value="5.0.0"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -48,7 +51,7 @@
         <valueString value="autoload-resources"/>
       </extension>
       <extension url="value">
-        <valueString value="false"/>
+        <valueString value="true"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -240,7 +243,7 @@
         <valueString value="autoload-resources"/>
       </extension>
       <extension url="value">
-        <valueString value="false"/>
+        <valueString value="true"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -430,7 +433,7 @@
         <reference value="StructureDefinition/OAuthAuthenticationRequest"/>
       </reference>
       <name value="OAuth Authentication Request"/>
-      <description value="This structure is defined to allow the FHIR Validator to validate a OAuthRegistration Response body"/>
+      <description value="This structure defines an OAuth authentication response body"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -441,7 +444,18 @@
         <reference value="StructureDefinition/OAuthAuthenticationResponse"/>
       </reference>
       <name value="OAuth Authentication Response"/>
-      <description value="This structure is defined to allow the FHIR Validator to validate a OAuthRegistration Response body"/>
+      <description value="This structure defines an OAuth authentication response body"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/OAuthRegistrationRequest"/>
+      </reference>
+      <name value="OAuth Registration Request"/>
+      <description value="This structure defines an OAuth registration request body"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -452,18 +466,7 @@
         <reference value="StructureDefinition/OAuthRegistrationResponse"/>
       </reference>
       <name value="OAuth Registration Response"/>
-      <description value="This structure is defined to allow the FHIR Validator to validate a OAuthRegistration Response body"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/OAuthTokenRequest"/>
-      </reference>
-      <name value="OAuth Token Request"/>
-      <description value="This structure is defined to allow the FHIR Validator to validate a OAuthRegistration Response body"/>
+      <description value="This structure defines an OAuth registration response body"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -474,7 +477,7 @@
         <reference value="StructureDefinition/OAuthTokenResponse"/>
       </reference>
       <name value="OAuth Token Response"/>
-      <description value="This structure is defined to allow the FHIR Validator to validate a OAuthRegistration Response body"/>
+      <description value="This structure defines an OAuth token response body"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -622,10 +625,10 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ConceptMap"/>
+        <valueString value="StructureMap"/>
       </extension>
       <reference>
-        <reference value="ConceptMap/DnrToConsent"/>
+        <reference value="StructureMap/DnrToConsent"/>
       </reference>
       <name value="DnrToConsent"/>
       <description value="Do Not Recussitate questionnaire to Consent record"/>
@@ -633,10 +636,21 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ConceptMap"/>
+        <valueString value="StructureMap"/>
       </extension>
       <reference>
-        <reference value="ConceptMap/HipaaPrivacyToConsent"/>
+        <reference value="StructureMap/FirstNameToGiven"/>
+      </reference>
+      <name value="FirstNameToGiven"/>
+      <description value="First name to given name"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureMap"/>
+      </extension>
+      <reference>
+        <reference value="StructureMap/HipaaPrivacyToConsent"/>
       </reference>
       <name value="HipaaPrivacyToConsent"/>
       <description value="HIPAA Privacy questionnaire to Consent record"/>
@@ -644,10 +658,21 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ConceptMap"/>
+        <valueString value="StructureMap"/>
       </extension>
       <reference>
-        <reference value="ConceptMap/LivingWillToConsent"/>
+        <reference value="StructureMap/LastNameToFamily"/>
+      </reference>
+      <name value="LastNameToFamily"/>
+      <description value="Last name to family name"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureMap"/>
+      </extension>
+      <reference>
+        <reference value="StructureMap/LivingWillToConsent"/>
       </reference>
       <name value="LivingWillToConsent"/>
       <description value="Living Will questionnaire to Consent record"/>
@@ -666,10 +691,10 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ConceptMap"/>
+        <valueString value="StructureMap"/>
       </extension>
       <reference>
-        <reference value="ConceptMap/PoaContractToConsent"/>
+        <reference value="StructureMap/PoaContractToConsent"/>
       </reference>
       <name value="PoaContractToConsent"/>
       <description value="Power of Attorney contract to Consent record"/>
@@ -677,10 +702,10 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ConceptMap"/>
+        <valueString value="StructureMap"/>
       </extension>
       <reference>
-        <reference value="ConceptMap/PoaMentalHealthToConsent"/>
+        <reference value="StructureMap/PoaMentalHealthToConsent"/>
       </reference>
       <name value="PoaMentalHealthToConsent"/>
       <description value="Power of Attorney Mental Health questionnaire to Consent record"/>
@@ -688,10 +713,10 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ConceptMap"/>
+        <valueString value="StructureMap"/>
       </extension>
       <reference>
-        <reference value="ConceptMap/PoaQuestinonaireToConsent"/>
+        <reference value="StructureMap/PoaQuestinonaireToConsent"/>
       </reference>
       <name value="PoaQuestinonaireToConsent"/>
       <description value="Power of Attorney questionnaire to Consent record"/>
@@ -699,10 +724,10 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ConceptMap"/>
+        <valueString value="StructureMap"/>
       </extension>
       <reference>
-        <reference value="ConceptMap/PolstToConsent"/>
+        <reference value="StructureMap/PolstToConsent"/>
       </reference>
       <name value="PolstToConsent"/>
       <description value="Physician Orders for Life Sustaining Treatment (POLST) to Consent record"/>
@@ -713,10 +738,10 @@
         <valueString value="TestScript"/>
       </extension>
       <reference>
-        <reference value="TestScript/TestScript-Scenario1"/>
+        <reference value="TestScript/TestScript-Scenario1A"/>
       </reference>
-      <name value="Scenario 1"/>
-      <description value="R4 TestScript - Directories With Restricted Data"/>
+      <name value="Scenario 1A"/>
+      <description value="R4 TestScript - Directories with Anonymous Access (Work in Progress)"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -724,10 +749,65 @@
         <valueString value="TestScript"/>
       </extension>
       <reference>
-        <reference value="TestScript/TestScript-Scenario2"/>
+        <reference value="TestScript/TestScript-Scenario1B"/>
       </reference>
-      <name value="Scenario 2"/>
-      <description value="R4 TestScript - Patients Can Only Access Their Own Data"/>
+      <name value="Scenario 1B"/>
+      <description value="R4 TestScript - Directories With Restricted Data (Work in Progress)"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="TestScript"/>
+      </extension>
+      <reference>
+        <reference value="TestScript/TestScript-Scenario2A"/>
+      </reference>
+      <name value="Scenario 2A"/>
+      <description value="R4 TestScript - PHI System - Anonymous Access (Work in Progress)"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="TestScript"/>
+      </extension>
+      <reference>
+        <reference value="TestScript/TestScript-Scenario2B"/>
+      </reference>
+      <name value="Scenario 2B"/>
+      <description value="R4 TestScript - PHI System - Patient Self Access (Work in Progress)"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="TestScript"/>
+      </extension>
+      <reference>
+        <reference value="TestScript/TestScript-Scenario2C"/>
+      </reference>
+      <name value="Scenario 2C"/>
+      <description value="R4 TestScript - PHI System - Patient Multi-User Access (Work in Progress)"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="TestScript"/>
+      </extension>
+      <reference>
+        <reference value="TestScript/TestScript-Scenario2D"/>
+      </reference>
+      <name value="Scenario 2D"/>
+      <description value="R4 TestScript - PHI System - General Practitioner Access (Work in Progress)"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="TestScript"/>
+      </extension>
+      <reference>
+        <reference value="TestScript/TestScript-Scenario2E"/>
+      </reference>
+      <name value="Scenario 2E"/>
+      <description value="R4 TestScript - PHI System - Dependents Access (Work in Progress)"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -738,18 +818,7 @@
         <reference value="TestScript/TestScript-Scenario3"/>
       </reference>
       <name value="Scenario 3"/>
-      <description value="R4 TestScript - Clinicians Can Access Any Patients Their Role Authorizes"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="TestScript"/>
-      </extension>
-      <reference>
-        <reference value="TestScript/TestScript-Scenario4"/>
-      </reference>
-      <name value="Scenario 4"/>
-      <description value="R4 TestScript - Patients Can Access Dependent’s Records (Custodial Access)"/>
+      <description value="R4 TestScript - Back End Acces"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -762,6 +831,50 @@
       <name value="SMART Client Registration"/>
       <description value="R4 TestScript - SMART on FHIR Client Registration"/>
       <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="OperationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="OperationDefinition/canAccess"/>
+      </reference>
+      <name value="canAccess"/>
+      <description value="Determine if a user can access a particular record"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="OperationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="OperationDefinition/diff"/>
+      </reference>
+      <name value="diff"/>
+      <description value="Determine differential between two Consent records"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="OperationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="OperationDefinition/digest"/>
+      </reference>
+      <name value="digest"/>
+      <description value="Input a Bundle which contains list of 1 or more Consent records; Returns a flattened Consent that has merged the records"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="OperationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="OperationDefinition/equals"/>
+      </reference>
+      <name value="equals"/>
+      <description value="Determines if two Consent records are equal"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -842,13 +955,35 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="OperationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="OperationDefinition/oauthScopes"/>
+      </reference>
+      <name value="oauthScopes"/>
+      <description value="Return a list of OAuth scopes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="OperationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="OperationDefinition/parseToBundle"/>
+      </reference>
+      <name value="parseToBundle"/>
+      <description value="Rollup multiple Consent records into a Bundle"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Patient"/>
       </extension>
       <reference>
         <reference value="Patient/patient-jane-doe"/>
       </reference>
       <name value="patient-jane-doe"/>
-      <description value="Jane Doe patient not part of relationship model, used for checking security access."/>
+      <description value="Patient - Jane Doe patient not part of relationship model, used for checking security access."/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -859,7 +994,7 @@
         <reference value="Patient/patient-jennifer-smith"/>
       </reference>
       <name value="patient-jennifer-smith"/>
-      <description value="Jennifer Smith - Patient demographics record."/>
+      <description value="Patient - Jennifer Smith - Patient demographics record."/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -870,7 +1005,7 @@
         <reference value="Patient/patient-john-smith"/>
       </reference>
       <name value="patient-john-smith"/>
-      <description value="John Smith - Patient demographics record."/>
+      <description value="Patient - John Smith - Patient demographics record."/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -881,7 +1016,7 @@
         <reference value="Patient/patient-katie-klepti"/>
       </reference>
       <name value="patient-katie-klepti"/>
-      <description value="Katie Klepti - a woman without much sense of boundaries or traditional notions of property ownership."/>
+      <description value="Patient - Katie Klepti - a woman without much sense of boundaries or traditional notions of property ownership."/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -892,7 +1027,7 @@
         <reference value="Practitioner/practitioner-alison-camron"/>
       </reference>
       <name value="practitioner-alison-camron"/>
-      <description value="Dr. Alison Camron, Attending Physician"/>
+      <description value="Practitioner - Dr. Alison Camron, Attending Physician"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -903,8 +1038,19 @@
         <reference value="Practitioner/practitioner-susan-social"/>
       </reference>
       <name value="practitioner-susan-social"/>
-      <description value="Susan Social - Social Worker"/>
+      <description value="Practitioner - Susan Social - Social Worker"/>
       <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="OperationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="OperationDefinition/rollup"/>
+      </reference>
+      <name value="rollup"/>
+      <description value="Rollup multiple Consent records into a Bundle"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -914,7 +1060,7 @@
         <reference value="Organization/stdymphnas"/>
       </reference>
       <name value="Org-StDymphnas"/>
-      <description value="St. Dympha's Womens Shelter"/>
+      <description value="Organization - St. Dympha's Womens Shelter"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -925,8 +1071,84 @@
         <reference value="Organization/stjames"/>
       </reference>
       <name value="Org-StJames"/>
-      <description value="St. Jame's Infirmary"/>
+      <description value="Organization - St. Jame's Infirmary"/>
       <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="OperationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="OperationDefinition/toAcl"/>
+      </reference>
+      <name value="toAcl"/>
+      <description value="Return the access control list for a user."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-resource-format">
+        <valueCode value="application/fhir+json"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Binary"/>
+      </extension>
+      <reference>
+        <reference value="Binary/registration-request-3"/>
+      </reference>
+      <name value="registration-request-3"/>
+      <description value="Backend Service - Registration Request"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-resource-format">
+        <valueCode value="application/fhir+json"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Binary"/>
+      </extension>
+      <reference>
+        <reference value="Binary/registration-response-3"/>
+      </reference>
+      <name value="registration-response-3"/>
+      <description value="Backend Service - Registration Response"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-resource-format">
+        <valueCode value="application/fhir+json"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Binary"/>
+      </extension>
+      <reference>
+        <reference value="Binary/auth-request-3"/>
+      </reference>
+      <name value="auth-request-3"/>
+      <description value="Backend Service - Authorization Reques"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-resource-format">
+        <valueCode value="application/fhir+json"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Binary"/>
+      </extension>
+      <reference>
+        <reference value="Binary/auth-response-3"/>
+      </reference>
+      <name value="auth-response-3"/>
+      <description value="Backend Service - Authorization Response"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-resource-format">
+        <valueCode value="application/fhir+json"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Binary"/>
+      </extension>
+      <reference>
+        <reference value="Binary/token-response-3"/>
+      </reference>
+      <name value="token-response-3"/>
+      <description value="Backend Service - Token Response"/>
     </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
@@ -940,7 +1162,7 @@
           <valueUrl value="index.html"/>
         </extension>
         <nameUrl value="index.html"/>
-        <title value="FAST Access Control Implementation Guide"/>
+        <title value="Access Control Implementation Guide"/>
         <generation value="markdown"/>
       </page>
       <page>
@@ -948,7 +1170,7 @@
           <valueUrl value="datacollection.html"/>
         </extension>
         <nameUrl value="datacollection.html"/>
-        <title value="Data Mapping"/>
+        <title value="Data Collection"/>
         <generation value="markdown"/>
       </page>
       <page>
@@ -957,6 +1179,14 @@
         </extension>
         <nameUrl value="consentengine.html"/>
         <title value="Consent Engine"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="testing.html"/>
+        </extension>
+        <nameUrl value="testing.html"/>
+        <title value="Functional Testing"/>
         <generation value="markdown"/>
       </page>
     </page>

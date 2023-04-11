@@ -46,16 +46,19 @@ publisher:
 menu:
   Home: index.html
   Data Mapping: datacollection.html
-  Access Control Lists: consentengine.html
+  Consent Engine: consentengine.html
+  Functional Testing: testing.html
   Artifacts: artifacts.html
 
 pages:
   index.md:
-    title: FAST Access Control Implementation Guide
+    title: Access Control Implementation Guide
   datacollection.md:
-    title: Data Mapping
+    title: Data Collection
   consentengine.md:
     title: Consent Engine
+  testing.md:
+    title: Functional Testing
 
 
 
@@ -161,6 +164,43 @@ pages:
 # The following are simple examples to demonstrate what this might
 # look like:
 #
+
+
+
+resources:
+  Binary/registration-request-3:
+    extension:
+      - url: http://hl7.org/fhir/StructureDefinition/implementationguide-resource-format
+        valueCode: application/fhir+json
+    name: registration-request-3
+    description: "Backend Service - Registration Request"
+  Binary/registration-response-3:
+    extension:
+      - url: http://hl7.org/fhir/StructureDefinition/implementationguide-resource-format
+        valueCode: application/fhir+json
+    name: registration-response-3
+    description: "Backend Service - Registration Response"
+
+  Binary/auth-request-3:
+    extension:
+      - url: http://hl7.org/fhir/StructureDefinition/implementationguide-resource-format
+        valueCode: application/fhir+json
+    name: auth-request-3
+    description: "Backend Service - Authorization Reques"
+  Binary/auth-response-3:
+    extension:
+      - url: http://hl7.org/fhir/StructureDefinition/implementationguide-resource-format
+        valueCode: application/fhir+json
+    name: auth-response-3
+    description: "Backend Service - Authorization Response"
+
+  Binary/token-response-3:
+    extension:
+      - url: http://hl7.org/fhir/StructureDefinition/implementationguide-resource-format
+        valueCode: application/fhir+json
+    name: token-response-3
+    description: "Backend Service - Token Response"
+
 # resources:
 #   Patient/my-example-patient:
 #     name: My Example Patient

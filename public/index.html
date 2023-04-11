@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>MITRE.FAST.ACCESS-CONTROL\FAST Access Control Implementation Guide - FHIR v4.0.1</title>
+    <title>MITRE.FAST.ACCESS-CONTROL\Access Control Implementation Guide - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -83,7 +83,10 @@
     <a href="datacollection.html">Data Mapping</a>
   </li>
   <li>
-    <a href="consentengine.html">Access Control Lists</a>
+    <a href="consentengine.html">Consent Engine</a>
+  </li>
+  <li>
+    <a href="testing.html">Functional Testing</a>
   </li>
   <li>
     <a href="artifacts.html">Artifacts</a>
@@ -100,7 +103,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>FAST Access Control Implementation Guide</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Access Control Implementation Guide</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -121,7 +124,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </style>
 <div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">FastAccessControl - Local Development build (v0.1.0). See the <a href="https://gitlab.mitre.org/awatson/fast-access-control/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
-  <h2>FAST Access Control Implementation Guide</h2>
+  <h2>Access Control Implementation Guide</h2>
   
 
 
@@ -151,7 +154,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         
           Draft
           
-            as of 2022-10-31
+            as of 2023-04-11
           
         
       </td>
@@ -179,8 +182,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ul id="markdown-toc">
   <li><a href="#background" id="markdown-toc-background">Background</a></li>
   <li><a href="#purpose" id="markdown-toc-purpose">Purpose</a></li>
+  <li><a href="#coat-check-analogy" id="markdown-toc-coat-check-analogy">Coat Check Analogy</a></li>
+  <li><a href="#clinical-scenario" id="markdown-toc-clinical-scenario">Clinical Scenario</a></li>
+  <li><a href="#use-cases" id="markdown-toc-use-cases">Use Cases</a></li>
   <li><a href="#prior-art-references" id="markdown-toc-prior-art-references">Prior Art References</a></li>
-  <li><a href="#use-case-scenarios" id="markdown-toc-use-case-scenarios">Use Case Scenarios</a></li>
   <li><a href="#sponsors" id="markdown-toc-sponsors">Sponsors</a></li>
   <li><a href="#learning-resources--background-information" id="markdown-toc-learning-resources--background-information">Learning Resources &amp; Background Information</a></li>
   <li><a href="#contact-info" id="markdown-toc-contact-info">Contact Info</a>    <ul>
@@ -199,6 +204,78 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>The purpose of this implementation guide is to help developers implement systems that exchange consent and advance directives data to be used in generating access control lists.  These systems may range widely from Electronic Medical Records (EHR) running in data warehouses, to Personal Health Records (PHR) running on personal mobile devices, to dedicated Consent Engine services, to graph databases, to blockchains, and many other services or products yet to be imagined.</p>
 
+<h3 id="coat-check-analogy">Coat Check Analogy</h3>
+
+<p>Regarding the access of other people’s data, the critical vulnerability that this implementation guide is addressing is that of access control tokens.  To explain the issue, consider the following analogy:</p>
+
+<p>Person A goes to a conference or night club, and checks in a thrift store coat and gets coat check ticket 13.  Person B attending the same event checks in a nice Burberry coat and gets coat check ticket 18.  Person A then uses a pen and changes their ticket from a 13 to an 18; returns the modified ticket to coat check, and walks out with an expensive Burberry coat.</p>
+
+<p>This entire implementation guide is intended to test that a)  users have correct access to the appropriate records, per the specified Consent records; and b) modifying access control tokens wont spill data from another account.</p>
+
+<h3 id="clinical-scenario">Clinical Scenario</h3>
+
+<p>Jane Doe is a divorsed single mother, with a 5 year old son named Timmy.  She has a history of domestic violence with her estranged husband, John Doe, who has a history of getting into fist fights and has served 6 months in prison.  Jane and her son are housing insecure, and have moved apartments 3 times in the past 3 years.</p>
+
+<p>After a recent hurricane, the first floor apartment Jane and Timmy are staying in is drenched in a foot of water, and Jane twists her ankle in the commotion.  Jane goes to the state provider directory, and searches for nearby services, and find information for St. James Infirmary.</p>
+
+<p>After a visit to the St. James emergency room, she is seen by Dr. Camron, who determines that Jane and Timmy need shelter services.  Dr. Camron uses the state provider directory to look up local shelters; and her role as a physician allows her access to the restricted data of which shelters exist and where.</p>
+
+<p>After referal to the shelter, Jane’s records are sent over, and she is given access to the shelter’s Patient Portal.  The records are sent over on a daily basis by a system account, using a batch transfer process.</p>
+
+<p>Upon enrollment, Susan Social, the social worker responsible for managing the shelter, is assigned as a general practitioner for both Jane and Timmy.  Doing so gives her access to both patient records for review.</p>
+
+<p>After arriving at the shelter, Jane logs into the Patient Portal, which provides her various forms and rules about staying there; as well as copies of her own records, as well as those of her son’s.</p>
+
+<p>While at the shelter, Jane has an altercation with another guest, Kathy Klepto.  Kathy has a history of incarceration and homelessness, and has vague concepts of personal property.  She habitually picks up other people’s belongings, especially cell phones and electronic devices.  When presented the opportunity, she tries to turn the devices on and see what apps she can open.  During the incident, Kathy picks up Jane’s phone, and tries to open the shelter’s Patient Portal and access Jane’s records.</p>
+
+<h3 id="use-cases">Use Cases</h3>
+
+<p><strong>Scenario 1A - Directories with Anonymous Access</strong><br />
+Only unrestricted data is published to client via HTTP or websockets.</p>
+
+<p><strong>Scenario 1B - Directories With Restricted Data</strong><br />
+For the protection of the domestic violence survivors, shelters (St. Dymphna’s) are labeled as restricted data, so as not to be listed in public directories.  Only licensed healthcare practicitions (Susan Social, Dr. Camron) have access to the fact that the shelters exists, and where they are located.</p>
+
+<p><strong>Scenario 2A - PHI System - Anonymous Access</strong><br />
+No patient data is published to client via HTTP nor websockets.  Only public, unrestricted records are sent to client (i.e. sample records).</p>
+
+<p><strong>Scenario 2B - PHI System - Patient Self Access</strong> <br />
+Patient  (Jane Doe) registers and authenticates and receives an access token.  A single Patient record is available via HTTP.  If using FHIR-over-websockets or Subscription API, the user’s own Patient record is sent to the client.  Upon logout, user session variables and subscriptions are cleared, and user is no longer able to access patient data (except for the public, unrestricted records).</p>
+
+<p><strong>Scenario 2C - PHI System - Patient Multi-User Access</strong> 
+A second patient registers (Kathy).  Kathy has access to Kathy’s own records, but not to Jane’s.  At the same time, Jane has access to Jane’s records, but not to Kathy’s.  HTTP access and websocket publications/subscriptions are updated accordingly; send the user’s own data, but not sending anybody elses.  Upon logout, session variables are cleared, and no access is available.</p>
+
+<p><strong>Scenario 2D - PHI System - General Practitioner Access</strong>
+General practitioners have access to patients assigned to them.  A clinician / social worker registers (Susan Social), who has access to her own records (self access), as well as both Jane and Kathy’s records.  Susan is listed as a general practitioner on both Jane and Kathy’s Patient records.  Neither Kathy nor Jane have access to Susan’s records.  When Susan logs out, she no longer has access to any of records.</p>
+
+<p><strong>Scenario 2E - PHI System - Dependents Access</strong>
+Patient’s (Jane Doe) have access to the healthcare records of their children (Timmy) and dependents (i.e. elder care), by way of custodial records.</p>
+
+<p><strong>Scenario 3 - Back End Access</strong>
+Organizations can register a client via oauth data flows.  Using the registered client id and secret, an external app can present a Bearer token and operate an $export to synchronize databases.</p>
+
+<!-- #### Use Case 1 - Directories With Restricted Data 
+For the protection of the domestic violence survivors it houses, St. Dymphna's shelter is labeled as restricted data., so as not to be listed in public directories.  Only licensed healthcare practicitions have access to the fact that St. Dymphnas exists, and where it is located.
+
+> When using the local healthcare directory, Dr. Allison Campron authenticates as a physician, and has access to St. Dymphnia's restricted contact and location information.  As a registered social worker, Florence also has access.  As a non-authorized civilian, John Doe does not.  
+
+#### Use Case 2 - Patients Can Only Access Their Own Data  
+Boarders at St. Dymphna's have access to a patient portal, where they can access their medical records.  Each patient has access to their own medical records, but not to anybody else's.  
+
+> When using the patient portal, Jane has access to Jane's records, not Katies.  Katie has access to Katie's records, not Jane's.   
+
+
+#### Use Case 3 - Clinicians Can Access Any Patients Their Role Authorizes   
+Social workers 
+
+> When using the clinciian portal, Florence has access to all three patients currently staying at the shelter - Jane, Timmy, and Katie.  
+
+
+#### Use Case 4 - Patients Can Access Dependent's Records (Custodial Access)   
+Patient's have access to the healthcare records of their children and dependents (i.e. elder care), by way of custodial records.  
+
+> When using the patient portal, Jane has access to both Jane and Timmy's records.  Timmy has access to Timmy's records, but not Jane's.  Katie has access to neither Jane nor Timmy's records. -->
+
 <h3 id="prior-art-references">Prior Art References</h3>
 
 <ul>
@@ -208,42 +285,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="https://github.com/fhir-consent-exchange/implementation-guide">MEHI Consent Exchange</a></li>
   <li><a href="https://build.fhir.org/ig/HL7/fhir-directory-attestation/branches/sept22-preview/">FAST National Direcotory - Attestation</a></li>
 </ul>
-
-<h3 id="use-case-scenarios">Use Case Scenarios</h3>
-
-<p>Jane Doe is a divorsed single mother, with a 5 year old son named Timmy.  She has a history of domestic violence with her estranged husband, John Doe, who has a history of getting into fist fights and has served 6 months in prison.  Jane and her son are housing insecure, and have moved apartments 3 times in the past 3 years.</p>
-
-<p>After a recent hurricane, the first floor apartment Jane and Timmy are staying in is drenched in a foot of water, and Jane twists her ankle in the commotion.  After a visit to St. James Infirmary emergency room, social workers refer Jane and Timmy to St. Dymphna’s, a local shelter for women and children that provides up to 3 months of free housing and relocation assistance.</p>
-
-<p>Dr. Allison Camron is the attending physician at the St. James Infirmary.  Florence is the social worker.  And Katie is another woman sheltering at St. Dymphna.</p>
-
-<h4 id="use-case-1---directories-with-restricted-data">Use Case 1 - Directories With Restricted Data</h4>
-<p>For the protection of the domestic violence survivors it houses, St. Dymphna’s shelter is labeled as restricted data., so as not to be listed in public directories.  Only licensed healthcare practicitions have access to the fact that St. Dymphnas exists, and where it is located.</p>
-
-<blockquote>
-  <p>When using the local healthcare directory, Dr. Allison Campron authenticates as a physician, and has access to St. Dymphnia’s restricted contact and location information.  As a registered social worker, Florence also has access.  As a non-authorized civilian, John Doe does not.</p>
-</blockquote>
-
-<h4 id="use-case-2---patients-can-only-access-their-own-data">Use Case 2 - Patients Can Only Access Their Own Data</h4>
-<p>Boarders at St. Dymphna’s have access to a patient portal, where they can access their medical records.  Each patient has access to their own medical records, but not to anybody else’s.</p>
-
-<blockquote>
-  <p>When using the patient portal, Jane has access to Jane’s records, not Katies.  Katie has access to Katie’s records, not Jane’s.</p>
-</blockquote>
-
-<h4 id="use-case-3---clinicians-can-access-any-patients-their-role-authorizes">Use Case 3 - Clinicians Can Access Any Patients Their Role Authorizes</h4>
-<p>Social workers</p>
-
-<blockquote>
-  <p>When using the clinciian portal, Florence has access to all three patients currently staying at the shelter - Jane, Timmy, and Katie.</p>
-</blockquote>
-
-<h4 id="use-case-4---patients-can-access-dependents-records-custodial-access">Use Case 4 - Patients Can Access Dependent’s Records (Custodial Access)</h4>
-<p>Patient’s have access to the healthcare records of their children and dependents (i.e. elder care), by way of custodial records.</p>
-
-<blockquote>
-  <p>When using the patient portal, Jane has access to both Jane and Timmy’s records.  Timmy has access to Timmy’s records, but not Jane’s.  Katie has access to neither Jane nor Timmy’s records.</p>
-</blockquote>
 
 <h3 id="sponsors">Sponsors</h3>
 
@@ -299,7 +340,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org">MITRE</a>.  Package mitre.fast.access-control#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Oct 31, 2022 00:13-0500">2022-10-31</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org">MITRE</a>.  Package mitre.fast.access-control#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Apr 11, 2023 09:52-0500">2023-04-11</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

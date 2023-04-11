@@ -1,264 +1,280 @@
 {
-  "resourceType": "StructureDefinition",
-  "id": "OAuthAuthenticationRequest",
-  "text": {
-    "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-OAuthAuthenticationRequest-definitions.html#OAuthAuthenticationRequest\" title=\"The response to the discovery endpoint\">OAuthAuthenticationRequest</a><a name=\"OAuthAuthenticationRequest\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/types.html#Base\">Base</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">The response to the discovery endpoint</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-OAuthAuthenticationRequest-definitions.html#OAuthAuthenticationRequest.response-type\" title=\"Response code\">response_type</a><a name=\"OAuthAuthenticationRequest.response_type\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Response code</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-OAuthAuthenticationRequest-definitions.html#OAuthAuthenticationRequest.client-id\" title=\"Client ID\">client_id</a><a name=\"OAuthAuthenticationRequest.client_id\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Client ID</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-OAuthAuthenticationRequest-definitions.html#OAuthAuthenticationRequest.redirect-uri\" title=\"Redirect URI\">redirect_uri</a><a name=\"OAuthAuthenticationRequest.redirect_uri\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Redirect URI</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-OAuthAuthenticationRequest-definitions.html#OAuthAuthenticationRequest.scope\" title=\"Scope\">scope</a><a name=\"OAuthAuthenticationRequest.scope\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Scope</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-OAuthAuthenticationRequest-definitions.html#OAuthAuthenticationRequest.state\" title=\"State\">state</a><a name=\"OAuthAuthenticationRequest.state\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">State</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-OAuthAuthenticationRequest-definitions.html#OAuthAuthenticationRequest.aud\" title=\"Audience\">aud</a><a name=\"OAuthAuthenticationRequest.aud\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Audience</td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+  "resourceType" : "StructureDefinition",
+  "id" : "OAuthAuthenticationRequest",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-OAuthAuthenticationRequest-definitions.html#OAuthAuthenticationRequest\" title=\"The response to the discovery endpoint\">OAuthAuthenticationRequest</a><a name=\"OAuthAuthenticationRequest\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://build.fhir.org/types.html#Base\">Base</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">The response to the discovery endpoint</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-OAuthAuthenticationRequest-definitions.html#OAuthAuthenticationRequest.resourceType\" title=\"Resource type\">resourceType</a><a name=\"OAuthAuthenticationRequest.resourceType\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Resource type</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-OAuthAuthenticationRequest-definitions.html#OAuthAuthenticationRequest.id\" title=\"identifer\">id</a><a name=\"OAuthAuthenticationRequest.id\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">identifer</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-OAuthAuthenticationRequest-definitions.html#OAuthAuthenticationRequest.response-type\" title=\"Response code\">response_type</a><a name=\"OAuthAuthenticationRequest.response_type\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Response code</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-OAuthAuthenticationRequest-definitions.html#OAuthAuthenticationRequest.client-id\" title=\"Client ID\">client_id</a><a name=\"OAuthAuthenticationRequest.client_id\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Client ID</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-OAuthAuthenticationRequest-definitions.html#OAuthAuthenticationRequest.redirect-uri\" title=\"Redirect URI\">redirect_uri</a><a name=\"OAuthAuthenticationRequest.redirect_uri\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Redirect URI</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-OAuthAuthenticationRequest-definitions.html#OAuthAuthenticationRequest.scope\" title=\"Scope\">scope</a><a name=\"OAuthAuthenticationRequest.scope\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Scope</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-OAuthAuthenticationRequest-definitions.html#OAuthAuthenticationRequest.state\" title=\"State\">state</a><a name=\"OAuthAuthenticationRequest.state\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">State</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-OAuthAuthenticationRequest-definitions.html#OAuthAuthenticationRequest.aud\" title=\"Audience\">aud</a><a name=\"OAuthAuthenticationRequest.aud\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Audience</td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
   },
-  "url": "http://hl7.org/fhir/tools/StructureDefinition/OAuthAuthenticationRequest",
-  "version": "0.1.0",
-  "name": "OAuthAuthenticationRequest",
-  "title": "OAuth Authentication Request",
-  "status": "draft",
-  "date": "2022-10-31T00:13:59-05:00",
-  "publisher": "MITRE",
-  "contact": [
+  "url" : "http://hl7.org/fhir/tools/StructureDefinition/OAuthAuthenticationRequest",
+  "version" : "0.1.0",
+  "name" : "OAuthAuthenticationRequest",
+  "title" : "OAuth Authentication Request",
+  "status" : "draft",
+  "date" : "2023-04-11T09:52:12-05:00",
+  "publisher" : "MITRE",
+  "contact" : [{
+    "name" : "MITRE",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.mitre.org"
+    }]
+  }],
+  "description" : "This structure defines an OAuth authentication response body",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001"
+    }]
+  }],
+  "fhirVersion" : "4.0.1",
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
+  "kind" : "logical",
+  "abstract" : false,
+  "type" : "OAuthAuthenticationRequest",
+  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Base",
+  "derivation" : "specialization",
+  "snapshot" : {
+    "element" : [{
+      "id" : "OAuthAuthenticationRequest",
+      "path" : "OAuthAuthenticationRequest",
+      "short" : "The response to the discovery endpoint",
+      "definition" : "The response to the discovery endpoint",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Base",
+        "min" : 0,
+        "max" : "*"
+      },
+      "isModifier" : false
+    },
     {
-      "name": "MITRE",
-      "telecom": [
-        {
-          "system": "url",
-          "value": "https://www.mitre.org"
-        }
-      ]
-    }
-  ],
-  "description": "This structure is defined to allow the FHIR Validator to validate a OAuthRegistration Response body",
-  "jurisdiction": [
+      "id" : "OAuthAuthenticationRequest.resourceType",
+      "path" : "OAuthAuthenticationRequest.resourceType",
+      "short" : "Resource type",
+      "definition" : "Resource type",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "OAuthAuthenticationRequest.resourceType",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
     {
-      "coding": [
-        {
-          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "code": "001"
-        }
-      ]
-    }
-  ],
-  "fhirVersion": "4.0.1",
-  "mapping": [
+      "id" : "OAuthAuthenticationRequest.id",
+      "path" : "OAuthAuthenticationRequest.id",
+      "short" : "identifer",
+      "definition" : "identifer",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "OAuthAuthenticationRequest.id",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
     {
-      "identity": "rim",
-      "uri": "http://hl7.org/v3",
-      "name": "RIM Mapping"
-    }
-  ],
-  "kind": "logical",
-  "abstract": false,
-  "type": "OAuthAuthenticationRequest",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Base",
-  "derivation": "specialization",
-  "snapshot": {
-    "element": [
-      {
-        "id": "OAuthAuthenticationRequest",
-        "path": "OAuthAuthenticationRequest",
-        "short": "The response to the discovery endpoint",
-        "definition": "The response to the discovery endpoint",
-        "min": 0,
-        "max": "*",
-        "base": {
-          "path": "Base",
-          "min": 0,
-          "max": "*"
-        },
-        "isModifier": false
+      "id" : "OAuthAuthenticationRequest.response-type",
+      "path" : "OAuthAuthenticationRequest.response_type",
+      "short" : "Response code",
+      "definition" : "Response code",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "OAuthAuthenticationRequest.response_type",
+        "min" : 1,
+        "max" : "1"
       },
-      {
-        "id": "OAuthAuthenticationRequest.response-type",
-        "path": "OAuthAuthenticationRequest.response_type",
-        "short": "Response code",
-        "definition": "Response code",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "OAuthAuthenticationRequest.response_type",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "string"
-          }
-        ]
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "OAuthAuthenticationRequest.client-id",
+      "path" : "OAuthAuthenticationRequest.client_id",
+      "short" : "Client ID",
+      "definition" : "Client ID",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "OAuthAuthenticationRequest.client_id",
+        "min" : 1,
+        "max" : "1"
       },
-      {
-        "id": "OAuthAuthenticationRequest.client-id",
-        "path": "OAuthAuthenticationRequest.client_id",
-        "short": "Client ID",
-        "definition": "Client ID",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "OAuthAuthenticationRequest.client_id",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "string"
-          }
-        ]
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "OAuthAuthenticationRequest.redirect-uri",
+      "path" : "OAuthAuthenticationRequest.redirect_uri",
+      "short" : "Redirect URI",
+      "definition" : "Redirect URI",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "OAuthAuthenticationRequest.redirect_uri",
+        "min" : 1,
+        "max" : "1"
       },
-      {
-        "id": "OAuthAuthenticationRequest.redirect-uri",
-        "path": "OAuthAuthenticationRequest.redirect_uri",
-        "short": "Redirect URI",
-        "definition": "Redirect URI",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "OAuthAuthenticationRequest.redirect_uri",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "string"
-          }
-        ]
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "OAuthAuthenticationRequest.scope",
+      "path" : "OAuthAuthenticationRequest.scope",
+      "short" : "Scope",
+      "definition" : "Scope",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "OAuthAuthenticationRequest.scope",
+        "min" : 1,
+        "max" : "1"
       },
-      {
-        "id": "OAuthAuthenticationRequest.scope",
-        "path": "OAuthAuthenticationRequest.scope",
-        "short": "Scope",
-        "definition": "Scope",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "OAuthAuthenticationRequest.scope",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "string"
-          }
-        ]
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "OAuthAuthenticationRequest.state",
+      "path" : "OAuthAuthenticationRequest.state",
+      "short" : "State",
+      "definition" : "State",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "OAuthAuthenticationRequest.state",
+        "min" : 1,
+        "max" : "1"
       },
-      {
-        "id": "OAuthAuthenticationRequest.state",
-        "path": "OAuthAuthenticationRequest.state",
-        "short": "State",
-        "definition": "State",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "OAuthAuthenticationRequest.state",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "string"
-          }
-        ]
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "OAuthAuthenticationRequest.aud",
+      "path" : "OAuthAuthenticationRequest.aud",
+      "short" : "Audience",
+      "definition" : "Audience",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "OAuthAuthenticationRequest.aud",
+        "min" : 1,
+        "max" : "1"
       },
-      {
-        "id": "OAuthAuthenticationRequest.aud",
-        "path": "OAuthAuthenticationRequest.aud",
-        "short": "Audience",
-        "definition": "Audience",
-        "min": 1,
-        "max": "1",
-        "base": {
-          "path": "OAuthAuthenticationRequest.aud",
-          "min": 1,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "string"
-          }
-        ]
-      }
-    ]
+      "type" : [{
+        "code" : "string"
+      }]
+    }]
   },
-  "differential": {
-    "element": [
-      {
-        "id": "OAuthAuthenticationRequest",
-        "path": "OAuthAuthenticationRequest",
-        "short": "The response to the discovery endpoint",
-        "definition": "The response to the discovery endpoint"
-      },
-      {
-        "id": "OAuthAuthenticationRequest.response-type",
-        "path": "OAuthAuthenticationRequest.response_type",
-        "short": "Response code",
-        "definition": "Response code",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "string"
-          }
-        ]
-      },
-      {
-        "id": "OAuthAuthenticationRequest.client-id",
-        "path": "OAuthAuthenticationRequest.client_id",
-        "short": "Client ID",
-        "definition": "Client ID",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "string"
-          }
-        ]
-      },
-      {
-        "id": "OAuthAuthenticationRequest.redirect-uri",
-        "path": "OAuthAuthenticationRequest.redirect_uri",
-        "short": "Redirect URI",
-        "definition": "Redirect URI",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "string"
-          }
-        ]
-      },
-      {
-        "id": "OAuthAuthenticationRequest.scope",
-        "path": "OAuthAuthenticationRequest.scope",
-        "short": "Scope",
-        "definition": "Scope",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "string"
-          }
-        ]
-      },
-      {
-        "id": "OAuthAuthenticationRequest.state",
-        "path": "OAuthAuthenticationRequest.state",
-        "short": "State",
-        "definition": "State",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "string"
-          }
-        ]
-      },
-      {
-        "id": "OAuthAuthenticationRequest.aud",
-        "path": "OAuthAuthenticationRequest.aud",
-        "short": "Audience",
-        "definition": "Audience",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "string"
-          }
-        ]
-      }
-    ]
+  "differential" : {
+    "element" : [{
+      "id" : "OAuthAuthenticationRequest",
+      "path" : "OAuthAuthenticationRequest",
+      "short" : "The response to the discovery endpoint",
+      "definition" : "The response to the discovery endpoint"
+    },
+    {
+      "id" : "OAuthAuthenticationRequest.resourceType",
+      "path" : "OAuthAuthenticationRequest.resourceType",
+      "short" : "Resource type",
+      "definition" : "Resource type",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "OAuthAuthenticationRequest.id",
+      "path" : "OAuthAuthenticationRequest.id",
+      "short" : "identifer",
+      "definition" : "identifer",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "OAuthAuthenticationRequest.response-type",
+      "path" : "OAuthAuthenticationRequest.response_type",
+      "short" : "Response code",
+      "definition" : "Response code",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "OAuthAuthenticationRequest.client-id",
+      "path" : "OAuthAuthenticationRequest.client_id",
+      "short" : "Client ID",
+      "definition" : "Client ID",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "OAuthAuthenticationRequest.redirect-uri",
+      "path" : "OAuthAuthenticationRequest.redirect_uri",
+      "short" : "Redirect URI",
+      "definition" : "Redirect URI",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "OAuthAuthenticationRequest.scope",
+      "path" : "OAuthAuthenticationRequest.scope",
+      "short" : "Scope",
+      "definition" : "Scope",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "OAuthAuthenticationRequest.state",
+      "path" : "OAuthAuthenticationRequest.state",
+      "short" : "State",
+      "definition" : "State",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "OAuthAuthenticationRequest.aud",
+      "path" : "OAuthAuthenticationRequest.aud",
+      "short" : "Audience",
+      "definition" : "Audience",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "string"
+      }]
+    }]
   }
 }

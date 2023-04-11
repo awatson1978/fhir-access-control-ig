@@ -7,17 +7,17 @@
 
 <https://gitlab.mitre.org/awatson/fast-access-control/ImplementationGuide/mitre.fast.access-control> a fhir:ImplementationGuide;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "mitre.fast.access-control"];
+  fhir:Resource.id [ fhir:value "mitre.fast.access-control"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>FastAccessControl</h2><p>The official URL for this implementation guide is: </p><pre>https://gitlab.mitre.org/awatson/fast-access-control/ImplementationGuide/mitre.fast.access-control</pre></div>"
-  ];
-  fhir:ImplementationGuide.url [ fhir:value "https://gitlab.mitre.org/awatson/fast-access-control/ImplementationGuide/mitre.fast.access-control"];
-  fhir:ImplementationGuide.version [ fhir:value "0.1.0"];
-  fhir:ImplementationGuide.name [ fhir:value "FastAccessControl"];
-  fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-10-31T00:13:59-05:00"^^xsd:dateTime];
-  fhir:ImplementationGuide.publisher [ fhir:value "MITRE"];
+  ]; # 
+  fhir:ImplementationGuide.url [ fhir:value "https://gitlab.mitre.org/awatson/fast-access-control/ImplementationGuide/mitre.fast.access-control"]; # 
+  fhir:ImplementationGuide.version [ fhir:value "0.1.0"]; # 
+  fhir:ImplementationGuide.name [ fhir:value "FastAccessControl"]; # 
+  fhir:ImplementationGuide.status [ fhir:value "draft"]; # 
+  fhir:ImplementationGuide.date [ fhir:value "2023-04-11T09:52:12-05:00"^^xsd:dateTime]; # 
+  fhir:ImplementationGuide.publisher [ fhir:value "MITRE"]; # 
   fhir:ImplementationGuide.contact [
      fhir:index 0;
      fhir:ContactDetail.name [ fhir:value "MITRE" ];
@@ -26,23 +26,28 @@
        fhir:ContactPoint.system [ fhir:value "url" ];
        fhir:ContactPoint.value [ fhir:value "https://www.mitre.org" ]
      ]
-  ];
-  fhir:ImplementationGuide.packageId [ fhir:value "mitre.fast.access-control"];
-  fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"];
+  ]; # 
+  fhir:ImplementationGuide.packageId [ fhir:value "mitre.fast.access-control"]; # 
+  fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"]; # 
   fhir:ImplementationGuide.fhirVersion [
      fhir:value "4.0.1";
      fhir:index 0
-  ];
+  ]; # 
   fhir:ImplementationGuide.dependsOn [
      fhir:index 0;
      fhir:Element.id [ fhir:value "hl7tx" ];
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment" ];
+       fhir:Extension.valueMarkdown [ fhir:value "Automatically added as a dependency - all IGs depend on HL7 Terminology" ]
+     ];
      fhir:ImplementationGuide.dependsOn.uri [
        fhir:value "http://terminology.hl7.org/ImplementationGuide/hl7.terminology";
        fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ];
      fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.terminology.r4" ];
-     fhir:ImplementationGuide.dependsOn.version [ fhir:value "4.0.0" ]
-  ];
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "5.0.0" ]
+  ]; # 
   fhir:ImplementationGuide.definition [
      fhir:Element.extension [
        fhir:index 0;
@@ -77,7 +82,7 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "value" ];
-         fhir:Extension.valueString [ fhir:value "false" ]
+         fhir:Extension.valueString [ fhir:value "true" ]
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
@@ -365,7 +370,7 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "value" ];
-         fhir:Extension.valueString [ fhir:value "false" ]
+         fhir:Extension.valueString [ fhir:value "true" ]
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
@@ -647,7 +652,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/OAuthAuthenticationRequest" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "OAuth Authentication Request" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This structure is defined to allow the FHIR Validator to validate a OAuthRegistration Response body" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This structure defines an OAuth authentication response body" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 2;
@@ -661,10 +666,24 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/OAuthAuthenticationResponse" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "OAuth Authentication Response" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This structure is defined to allow the FHIR Validator to validate a OAuthRegistration Response body" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This structure defines an OAuth authentication response body" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://gitlab.mitre.org/awatson/fast-access-control/StructureDefinition/OAuthRegistrationRequest>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/OAuthRegistrationRequest" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "OAuth Registration Request" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This structure defines an OAuth registration request body" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 4;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -675,21 +694,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/OAuthRegistrationResponse" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "OAuth Registration Response" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This structure is defined to allow the FHIR Validator to validate a OAuthRegistration Response body" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 4;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://gitlab.mitre.org/awatson/fast-access-control/StructureDefinition/OAuthTokenRequest>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/OAuthTokenRequest" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "OAuth Token Request" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This structure is defined to allow the FHIR Validator to validate a OAuthRegistration Response body" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This structure defines an OAuth registration response body" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 5;
@@ -703,7 +708,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/OAuthTokenResponse" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "OAuth Token Response" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This structure is defined to allow the FHIR Validator to validate a OAuthRegistration Response body" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This structure defines an OAuth token response body" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 6;
@@ -892,11 +897,11 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ConceptMap" ]
+         fhir:Extension.valueString [ fhir:value "StructureMap" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://gitlab.mitre.org/awatson/fast-access-control/ConceptMap/DnrToConsent>;
-         fhir:Reference.reference [ fhir:value "ConceptMap/DnrToConsent" ]
+         fhir:link <https://gitlab.mitre.org/awatson/fast-access-control/StructureMap/DnrToConsent>;
+         fhir:Reference.reference [ fhir:value "StructureMap/DnrToConsent" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DnrToConsent" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Do Not Recussitate questionnaire to Consent record" ];
@@ -906,31 +911,59 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ConceptMap" ]
+         fhir:Extension.valueString [ fhir:value "StructureMap" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://gitlab.mitre.org/awatson/fast-access-control/ConceptMap/HipaaPrivacyToConsent>;
-         fhir:Reference.reference [ fhir:value "ConceptMap/HipaaPrivacyToConsent" ]
+         fhir:link <https://gitlab.mitre.org/awatson/fast-access-control/StructureMap/FirstNameToGiven>;
+         fhir:Reference.reference [ fhir:value "StructureMap/FirstNameToGiven" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HipaaPrivacyToConsent" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "HIPAA Privacy questionnaire to Consent record" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "FirstNameToGiven" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "First name to given name" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 21;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ConceptMap" ]
+         fhir:Extension.valueString [ fhir:value "StructureMap" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://gitlab.mitre.org/awatson/fast-access-control/ConceptMap/LivingWillToConsent>;
-         fhir:Reference.reference [ fhir:value "ConceptMap/LivingWillToConsent" ]
+         fhir:link <https://gitlab.mitre.org/awatson/fast-access-control/StructureMap/HipaaPrivacyToConsent>;
+         fhir:Reference.reference [ fhir:value "StructureMap/HipaaPrivacyToConsent" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HipaaPrivacyToConsent" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "HIPAA Privacy questionnaire to Consent record" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 22;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureMap" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://gitlab.mitre.org/awatson/fast-access-control/StructureMap/LastNameToFamily>;
+         fhir:Reference.reference [ fhir:value "StructureMap/LastNameToFamily" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "LastNameToFamily" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Last name to family name" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 23;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureMap" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://gitlab.mitre.org/awatson/fast-access-control/StructureMap/LivingWillToConsent>;
+         fhir:Reference.reference [ fhir:value "StructureMap/LivingWillToConsent" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "LivingWillToConsent" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Living Will questionnaire to Consent record" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 22;
+       fhir:index 24;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -944,91 +977,161 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "OAuth Registration of Test Harness" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 23;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ConceptMap" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://gitlab.mitre.org/awatson/fast-access-control/ConceptMap/PoaContractToConsent>;
-         fhir:Reference.reference [ fhir:value "ConceptMap/PoaContractToConsent" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PoaContractToConsent" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Power of Attorney contract to Consent record" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 24;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ConceptMap" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://gitlab.mitre.org/awatson/fast-access-control/ConceptMap/PoaMentalHealthToConsent>;
-         fhir:Reference.reference [ fhir:value "ConceptMap/PoaMentalHealthToConsent" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PoaMentalHealthToConsent" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Power of Attorney Mental Health questionnaire to Consent record" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
        fhir:index 25;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ConceptMap" ]
+         fhir:Extension.valueString [ fhir:value "StructureMap" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://gitlab.mitre.org/awatson/fast-access-control/ConceptMap/PoaQuestinonaireToConsent>;
-         fhir:Reference.reference [ fhir:value "ConceptMap/PoaQuestinonaireToConsent" ]
+         fhir:link <https://gitlab.mitre.org/awatson/fast-access-control/StructureMap/PoaContractToConsent>;
+         fhir:Reference.reference [ fhir:value "StructureMap/PoaContractToConsent" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PoaQuestinonaireToConsent" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Power of Attorney questionnaire to Consent record" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PoaContractToConsent" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Power of Attorney contract to Consent record" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 26;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ConceptMap" ]
+         fhir:Extension.valueString [ fhir:value "StructureMap" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://gitlab.mitre.org/awatson/fast-access-control/ConceptMap/PolstToConsent>;
-         fhir:Reference.reference [ fhir:value "ConceptMap/PolstToConsent" ]
+         fhir:link <https://gitlab.mitre.org/awatson/fast-access-control/StructureMap/PoaMentalHealthToConsent>;
+         fhir:Reference.reference [ fhir:value "StructureMap/PoaMentalHealthToConsent" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PolstToConsent" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Physician Orders for Life Sustaining Treatment (POLST) to Consent record" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PoaMentalHealthToConsent" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Power of Attorney Mental Health questionnaire to Consent record" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 27;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "TestScript" ]
+         fhir:Extension.valueString [ fhir:value "StructureMap" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://gitlab.mitre.org/awatson/fast-access-control/TestScript/TestScript-Scenario1>;
-         fhir:Reference.reference [ fhir:value "TestScript/TestScript-Scenario1" ]
+         fhir:link <https://gitlab.mitre.org/awatson/fast-access-control/StructureMap/PoaQuestinonaireToConsent>;
+         fhir:Reference.reference [ fhir:value "StructureMap/PoaQuestinonaireToConsent" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Scenario 1" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "R4 TestScript - Directories With Restricted Data" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PoaQuestinonaireToConsent" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Power of Attorney questionnaire to Consent record" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 28;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureMap" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://gitlab.mitre.org/awatson/fast-access-control/StructureMap/PolstToConsent>;
+         fhir:Reference.reference [ fhir:value "StructureMap/PolstToConsent" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PolstToConsent" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Physician Orders for Life Sustaining Treatment (POLST) to Consent record" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 29;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "TestScript" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://gitlab.mitre.org/awatson/fast-access-control/TestScript/TestScript-Scenario2>;
-         fhir:Reference.reference [ fhir:value "TestScript/TestScript-Scenario2" ]
+         fhir:link <https://gitlab.mitre.org/awatson/fast-access-control/TestScript/TestScript-Scenario1A>;
+         fhir:Reference.reference [ fhir:value "TestScript/TestScript-Scenario1A" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Scenario 2" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "R4 TestScript - Patients Can Only Access Their Own Data" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Scenario 1A" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "R4 TestScript - Directories with Anonymous Access (Work in Progress)" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 29;
+       fhir:index 30;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "TestScript" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://gitlab.mitre.org/awatson/fast-access-control/TestScript/TestScript-Scenario1B>;
+         fhir:Reference.reference [ fhir:value "TestScript/TestScript-Scenario1B" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Scenario 1B" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "R4 TestScript - Directories With Restricted Data (Work in Progress)" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 31;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "TestScript" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://gitlab.mitre.org/awatson/fast-access-control/TestScript/TestScript-Scenario2A>;
+         fhir:Reference.reference [ fhir:value "TestScript/TestScript-Scenario2A" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Scenario 2A" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "R4 TestScript - PHI System - Anonymous Access (Work in Progress)" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 32;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "TestScript" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://gitlab.mitre.org/awatson/fast-access-control/TestScript/TestScript-Scenario2B>;
+         fhir:Reference.reference [ fhir:value "TestScript/TestScript-Scenario2B" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Scenario 2B" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "R4 TestScript - PHI System - Patient Self Access (Work in Progress)" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 33;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "TestScript" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://gitlab.mitre.org/awatson/fast-access-control/TestScript/TestScript-Scenario2C>;
+         fhir:Reference.reference [ fhir:value "TestScript/TestScript-Scenario2C" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Scenario 2C" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "R4 TestScript - PHI System - Patient Multi-User Access (Work in Progress)" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 34;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "TestScript" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://gitlab.mitre.org/awatson/fast-access-control/TestScript/TestScript-Scenario2D>;
+         fhir:Reference.reference [ fhir:value "TestScript/TestScript-Scenario2D" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Scenario 2D" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "R4 TestScript - PHI System - General Practitioner Access (Work in Progress)" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 35;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "TestScript" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://gitlab.mitre.org/awatson/fast-access-control/TestScript/TestScript-Scenario2E>;
+         fhir:Reference.reference [ fhir:value "TestScript/TestScript-Scenario2E" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Scenario 2E" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "R4 TestScript - PHI System - Dependents Access (Work in Progress)" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 36;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1039,24 +1142,10 @@
          fhir:Reference.reference [ fhir:value "TestScript/TestScript-Scenario3" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Scenario 3" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "R4 TestScript - Clinicians Can Access Any Patients Their Role Authorizes" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "R4 TestScript - Back End Acces" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 30;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "TestScript" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://gitlab.mitre.org/awatson/fast-access-control/TestScript/TestScript-Scenario4>;
-         fhir:Reference.reference [ fhir:value "TestScript/TestScript-Scenario4" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Scenario 4" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "R4 TestScript - Patients Can Access Dependent’s Records (Custodial Access)" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
-     ], [
-       fhir:index 31;
+       fhir:index 37;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1070,7 +1159,63 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "R4 TestScript - SMART on FHIR Client Registration" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 32;
+       fhir:index 38;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "OperationDefinition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://gitlab.mitre.org/awatson/fast-access-control/OperationDefinition/canAccess>;
+         fhir:Reference.reference [ fhir:value "OperationDefinition/canAccess" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "canAccess" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Determine if a user can access a particular record" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 39;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "OperationDefinition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://gitlab.mitre.org/awatson/fast-access-control/OperationDefinition/diff>;
+         fhir:Reference.reference [ fhir:value "OperationDefinition/diff" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "diff" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Determine differential between two Consent records" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 40;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "OperationDefinition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://gitlab.mitre.org/awatson/fast-access-control/OperationDefinition/digest>;
+         fhir:Reference.reference [ fhir:value "OperationDefinition/digest" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "digest" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Input a Bundle which contains list of 1 or more Consent records; Returns a flattened Consent that has merged the records" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 41;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "OperationDefinition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://gitlab.mitre.org/awatson/fast-access-control/OperationDefinition/equals>;
+         fhir:Reference.reference [ fhir:value "OperationDefinition/equals" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "equals" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Determines if two Consent records are equal" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 42;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1084,7 +1229,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Sample Legal Document - FAST Patient Privacy (HIPAA)" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 33;
+       fhir:index 43;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1098,7 +1243,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Sample Legal Document - Do Not Rescussitate" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 34;
+       fhir:index 44;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1112,7 +1257,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Sample Legal Document - Living Will" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 35;
+       fhir:index 45;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1126,7 +1271,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Sample Legal Document - HIPAA Patient Privacy" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 36;
+       fhir:index 46;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1140,7 +1285,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Sample Legal Document - Power of Attorney" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 37;
+       fhir:index 47;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1154,7 +1299,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Sample Legal Document - Power of Attorney - Mental Health" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 38;
+       fhir:index 48;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1168,7 +1313,35 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Sample Legal Document - National Portable Medical Order" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 39;
+       fhir:index 49;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "OperationDefinition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://gitlab.mitre.org/awatson/fast-access-control/OperationDefinition/oauthScopes>;
+         fhir:Reference.reference [ fhir:value "OperationDefinition/oauthScopes" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "oauthScopes" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Return a list of OAuth scopes" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 50;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "OperationDefinition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://gitlab.mitre.org/awatson/fast-access-control/OperationDefinition/parseToBundle>;
+         fhir:Reference.reference [ fhir:value "OperationDefinition/parseToBundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "parseToBundle" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Rollup multiple Consent records into a Bundle" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 51;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1179,10 +1352,10 @@
          fhir:Reference.reference [ fhir:value "Patient/patient-jane-doe" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "patient-jane-doe" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Jane Doe patient not part of relationship model, used for checking security access." ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patient - Jane Doe patient not part of relationship model, used for checking security access." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 40;
+       fhir:index 52;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1193,10 +1366,10 @@
          fhir:Reference.reference [ fhir:value "Patient/patient-jennifer-smith" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "patient-jennifer-smith" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Jennifer Smith - Patient demographics record." ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patient - Jennifer Smith - Patient demographics record." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 41;
+       fhir:index 53;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1207,10 +1380,10 @@
          fhir:Reference.reference [ fhir:value "Patient/patient-john-smith" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "patient-john-smith" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "John Smith - Patient demographics record." ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patient - John Smith - Patient demographics record." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 42;
+       fhir:index 54;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1221,10 +1394,10 @@
          fhir:Reference.reference [ fhir:value "Patient/patient-katie-klepti" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "patient-katie-klepti" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Katie Klepti - a woman without much sense of boundaries or traditional notions of property ownership." ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Patient - Katie Klepti - a woman without much sense of boundaries or traditional notions of property ownership." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 43;
+       fhir:index 55;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1235,10 +1408,10 @@
          fhir:Reference.reference [ fhir:value "Practitioner/practitioner-alison-camron" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "practitioner-alison-camron" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Dr. Alison Camron, Attending Physician" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Practitioner - Dr. Alison Camron, Attending Physician" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 44;
+       fhir:index 56;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1249,10 +1422,24 @@
          fhir:Reference.reference [ fhir:value "Practitioner/practitioner-susan-social" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "practitioner-susan-social" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Susan Social - Social Worker" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Practitioner - Susan Social - Social Worker" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 45;
+       fhir:index 57;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "OperationDefinition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://gitlab.mitre.org/awatson/fast-access-control/OperationDefinition/rollup>;
+         fhir:Reference.reference [ fhir:value "OperationDefinition/rollup" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "rollup" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Rollup multiple Consent records into a Bundle" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 58;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1263,10 +1450,10 @@
          fhir:Reference.reference [ fhir:value "Organization/stdymphnas" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Org-StDymphnas" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "St. Dympha's Womens Shelter" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Organization - St. Dympha's Womens Shelter" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 46;
+       fhir:index 59;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1277,8 +1464,107 @@
          fhir:Reference.reference [ fhir:value "Organization/stjames" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Org-StJames" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "St. Jame's Infirmary" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Organization - St. Jame's Infirmary" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 60;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "OperationDefinition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://gitlab.mitre.org/awatson/fast-access-control/OperationDefinition/toAcl>;
+         fhir:Reference.reference [ fhir:value "OperationDefinition/toAcl" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "toAcl" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Return the access control list for a user." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 61;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-resource-format" ];
+         fhir:Extension.valueCode [ fhir:value "application/fhir+json" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Binary" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://gitlab.mitre.org/awatson/fast-access-control/Binary/registration-request-3>;
+         fhir:Reference.reference [ fhir:value "Binary/registration-request-3" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "registration-request-3" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Backend Service - Registration Request" ]
+     ], [
+       fhir:index 62;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-resource-format" ];
+         fhir:Extension.valueCode [ fhir:value "application/fhir+json" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Binary" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://gitlab.mitre.org/awatson/fast-access-control/Binary/registration-response-3>;
+         fhir:Reference.reference [ fhir:value "Binary/registration-response-3" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "registration-response-3" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Backend Service - Registration Response" ]
+     ], [
+       fhir:index 63;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-resource-format" ];
+         fhir:Extension.valueCode [ fhir:value "application/fhir+json" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Binary" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://gitlab.mitre.org/awatson/fast-access-control/Binary/auth-request-3>;
+         fhir:Reference.reference [ fhir:value "Binary/auth-request-3" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "auth-request-3" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Backend Service - Authorization Reques" ]
+     ], [
+       fhir:index 64;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-resource-format" ];
+         fhir:Extension.valueCode [ fhir:value "application/fhir+json" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Binary" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://gitlab.mitre.org/awatson/fast-access-control/Binary/auth-response-3>;
+         fhir:Reference.reference [ fhir:value "Binary/auth-response-3" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "auth-response-3" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Backend Service - Authorization Response" ]
+     ], [
+       fhir:index 65;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-resource-format" ];
+         fhir:Extension.valueCode [ fhir:value "application/fhir+json" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Binary" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://gitlab.mitre.org/awatson/fast-access-control/Binary/token-response-3>;
+         fhir:Reference.reference [ fhir:value "Binary/token-response-3" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "token-response-3" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Backend Service - Token Response" ]
      ];
      fhir:ImplementationGuide.definition.page [
        fhir:Element.extension [
@@ -1297,7 +1583,7 @@
            fhir:Extension.valueUrl [ fhir:value "index.html" ]
          ];
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "index.html" ];
-         fhir:ImplementationGuide.definition.page.title [ fhir:value "FAST Access Control Implementation Guide" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Access Control Implementation Guide" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
          fhir:index 1;
@@ -1307,7 +1593,7 @@
            fhir:Extension.valueUrl [ fhir:value "datacollection.html" ]
          ];
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "datacollection.html" ];
-         fhir:ImplementationGuide.definition.page.title [ fhir:value "Data Mapping" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Data Collection" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
          fhir:index 2;
@@ -1318,6 +1604,16 @@
          ];
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "consentengine.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Consent Engine" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 3;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
+           fhir:Extension.valueUrl [ fhir:value "testing.html" ]
+         ];
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "testing.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Functional Testing" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ]
      ];
@@ -1382,7 +1678,7 @@
        fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-tx-cache" ];
        fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input-cache/txcache" ]
      ]
-  ] .
+  ] . # 
 
 # - ontology header ------------------------------------------------------------
 

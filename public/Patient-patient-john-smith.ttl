@@ -7,11 +7,11 @@
 
 <https://gitlab.mitre.org/awatson/fast-access-control/Patient/patient-john-smith> a fhir:Patient;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "patient-john-smith"];
+  fhir:Resource.id [ fhir:value "patient-john-smith"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>JOHN SMITH </b> male, DoB: 1980-04-14 ( Medical Record Number: 2002501(use: USUAL))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td colspan=\"3\">true</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Details:</td><td colspan=\"3\"><ul><li>ph: 555-555-5553(HOME)</li><li>49 Meadow St Birmingham AL 35242 US </li><li>183 Harbor View St Boston MA 02101 US </li></ul></td></tr></table></div>"
-  ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>JOHN SMITH </b> male, DoB: 1980-04-14 ( Medical Record Number: 2002501 (use: USUAL))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td colspan=\"3\">true</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Details:</td><td colspan=\"3\"><ul><li>ph: 555-555-5553(HOME)</li><li>49 Meadow St Birmingham AL 35242 US </li><li>183 Harbor View St Boston MA 02101 US </li></ul></td></tr></table></div>"
+  ]; # 
   fhir:DomainResource.extension [
      fhir:index 0;
      fhir:Element.extension [
@@ -60,7 +60,7 @@
      fhir:index 2;
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex" ];
      fhir:Extension.valueCode [ fhir:value "M" ]
-  ];
+  ]; # 
   fhir:Patient.identifier [
      fhir:index 0;
      fhir:Identifier.use [ fhir:value "usual" ];
@@ -75,8 +75,8 @@
      ];
      fhir:Identifier.system [ fhir:value "http://hospital.smarthealthit.org" ];
      fhir:Identifier.value [ fhir:value "2002501" ]
-  ];
-  fhir:Patient.active [ fhir:value "true"^^xsd:boolean];
+  ]; # 
+  fhir:Patient.active [ fhir:value "true"^^xsd:boolean]; # 
   fhir:Patient.name [
      fhir:index 0;
      fhir:HumanName.family [ fhir:value "SMITH" ];
@@ -84,15 +84,15 @@
        fhir:value "JOHN";
        fhir:index 0
      ]
-  ];
+  ]; # 
   fhir:Patient.telecom [
      fhir:index 0;
      fhir:ContactPoint.system [ fhir:value "phone" ];
      fhir:ContactPoint.value [ fhir:value "555-555-5553" ];
      fhir:ContactPoint.use [ fhir:value "home" ]
-  ];
-  fhir:Patient.gender [ fhir:value "male"];
-  fhir:Patient.birthDate [ fhir:value "1980-04-14"^^xsd:date];
+  ]; # 
+  fhir:Patient.gender [ fhir:value "male"]; # 
+  fhir:Patient.birthDate [ fhir:value "1980-04-14"^^xsd:date]; # 
   fhir:Patient.address [
      fhir:index 0;
      fhir:Address.line [
@@ -120,7 +120,7 @@
      fhir:Address.period [
        fhir:Period.start [ fhir:value "2020-06-15"^^xsd:date ]
      ]
-  ] .
+  ] . # 
 
 # - ontology header ------------------------------------------------------------
 

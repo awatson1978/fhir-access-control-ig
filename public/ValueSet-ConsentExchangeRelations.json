@@ -1,56 +1,40 @@
 {
-  "resourceType": "ValueSet",
-  "id": "ConsentExchangeRelations",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"http://hl7.org/fhir/R4/valueset-relatedperson-relationshiptype.html\">http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype</a></li><li>Import all the codes that are contained in <a href=\"http://hl7.org/fhir/R4/valueset-practitioner-role.html\">http://hl7.org/fhir/ValueSet/practitioner-role</a></li><li>Import all the codes that are contained in <a href=\"http://hl7.org/fhir/R4/valueset-participant-role.html\">http://hl7.org/fhir/ValueSet/participant-role</a></li><li>Import all the codes that are contained in <a href=\"http://hl7.org/fhir/R4/valueset-security-role-type.html\">http://hl7.org/fhir/ValueSet/security-role-type</a></li><li>Import all the codes that are contained in <a href=\"http://hl7.org/fhir/R4/valueset-organization-type.html\">http://hl7.org/fhir/ValueSet/organization-type</a></li></ul></div>"
+  "resourceType" : "ValueSet",
+  "id" : "ConsentExchangeRelations",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"http://hl7.org/fhir/R4/valueset-relatedperson-relationshiptype.html\">Patient relationship type</a></li><li>Import all the codes that are contained in <a href=\"http://hl7.org/fhir/R4/valueset-practitioner-role.html\">Practitioner role</a></li><li>Import all the codes that are contained in <a href=\"http://hl7.org/fhir/R4/valueset-participant-role.html\">Participant Roles</a></li><li>Import all the codes that are contained in <a href=\"http://hl7.org/fhir/R4/valueset-security-role-type.html\">SecurityRoleType</a></li><li>Import all the codes that are contained in <a href=\"http://hl7.org/fhir/R4/valueset-organization-type.html\">Organization type</a></li></ul></div>"
   },
-  "url": "https://gitlab.mitre.org/awatson/fast-access-control/ValueSet/ConsentExchangeRelations",
-  "version": "0.1.0",
-  "name": "ConsentExchangeRelations",
-  "title": "ConsentExchangeRelations",
-  "status": "active",
-  "date": "2022-10-31T00:13:59-05:00",
-  "publisher": "MITRE",
-  "contact": [
+  "url" : "https://gitlab.mitre.org/awatson/fast-access-control/ValueSet/ConsentExchangeRelations",
+  "version" : "0.1.0",
+  "name" : "ConsentExchangeRelations",
+  "title" : "ConsentExchangeRelations",
+  "status" : "active",
+  "date" : "2023-04-11T09:52:12-05:00",
+  "publisher" : "MITRE",
+  "contact" : [{
+    "name" : "MITRE",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.mitre.org"
+    }]
+  }],
+  "description" : "Consent Exchange - Relationships",
+  "compose" : {
+    "include" : [{
+      "valueSet" : ["http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype"]
+    },
     {
-      "name": "MITRE",
-      "telecom": [
-        {
-          "system": "url",
-          "value": "https://www.mitre.org"
-        }
-      ]
-    }
-  ],
-  "description": "Consent Exchange - Relationships",
-  "compose": {
-    "include": [
-      {
-        "valueSet": [
-          "http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype"
-        ]
-      },
-      {
-        "valueSet": [
-          "http://hl7.org/fhir/ValueSet/practitioner-role"
-        ]
-      },
-      {
-        "valueSet": [
-          "http://hl7.org/fhir/ValueSet/participant-role"
-        ]
-      },
-      {
-        "valueSet": [
-          "http://hl7.org/fhir/ValueSet/security-role-type"
-        ]
-      },
-      {
-        "valueSet": [
-          "http://hl7.org/fhir/ValueSet/organization-type"
-        ]
-      }
-    ]
+      "valueSet" : ["http://hl7.org/fhir/ValueSet/practitioner-role"]
+    },
+    {
+      "valueSet" : ["http://hl7.org/fhir/ValueSet/participant-role"]
+    },
+    {
+      "valueSet" : ["http://hl7.org/fhir/ValueSet/security-role-type"]
+    },
+    {
+      "valueSet" : ["http://hl7.org/fhir/ValueSet/organization-type"]
+    }]
   }
 }

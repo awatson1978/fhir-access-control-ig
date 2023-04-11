@@ -1,72 +1,58 @@
 {
-  "resourceType": "ValueSet",
-  "id": "consent-exchange-category-codes",
-  "text": {
-    "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"http://hl7.org/fhir/R4/valueset-consent-category.html\">http://hl7.org/fhir/ValueSet/consent-category</a></li></ul><p>This value set excludes codes based on the following rules:</p><ul><li>Exclude these codes as defined in <a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-consentcategorycodes.html\"><code>http://terminology.hl7.org/CodeSystem/consentcategorycodes</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-consentcategorycodes.html#consentcategorycodes-acd\">acd</a></td><td>Advance Directive</td><td>Any instructions, written or given verbally by a patient to a health care provider in anticipation of potential need for medical treatment. [2005 Honor My Wishes]</td></tr><tr><td><a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-consentcategorycodes.html#consentcategorycodes-dnr\">dnr</a></td><td>Do Not Resuscitate</td><td>A legal document, signed by both the patient and their provider, stating a desire not to have CPR initiated in case of a cardiac event. Note: This form was replaced in 2003 with the Physician Orders for Life-Sustaining Treatment [POLST].</td></tr><tr><td><a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-consentcategorycodes.html#consentcategorycodes-hcd\">hcd</a></td><td>Health Care Directive</td><td>Patient's document telling patient's health care provider what the patient wants or does not want if the patient is diagnosed as being terminally ill and in a persistent vegetative state or in a permanently unconscious condition.[2005 Honor My Wishes]</td></tr><tr><td><a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-consentcategorycodes.html#consentcategorycodes-npp\">npp</a></td><td>Notice of Privacy Practices</td><td>Acknowledgement of custodian notice of privacy practices. Usage Notes: This type of consent directive acknowledges a custodian's notice of privacy practices including its permitted collection, access, use and disclosure of health information to users and for purposes of use specified. [ActConsentDirective (2.16.840.1.113883.1.11.20425)]</td></tr><tr><td><a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-consentcategorycodes.html#consentcategorycodes-polst\">polst</a></td><td>POLST</td><td>The Physician Order for Life-Sustaining Treatment form records a person's health care wishes for end of life emergency treatment and translates them into an order by the physician. It must be reviewed and signed by both the patient and the physician, Advanced Registered Nurse Practitioner or Physician Assistant. [2005 Honor My Wishes] Comment: Opt-in Consent Directive with restrictions.</td></tr></table></li><li>Exclude these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/57016-8.html\">57016-8</a></td><td>Privacy policy acknowledgment Document</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/57017-6.html\">57017-6</a></td><td>Privacy policy Organization Document</td></tr><tr><td><a href=\"http://details.loinc.org/LOINC/64292-6.html\">64292-6</a></td><td>Release of information consent Document</td></tr></table></li></ul></div>"
+  "resourceType" : "ValueSet",
+  "id" : "consent-exchange-category-codes",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"http://hl7.org/fhir/R4/valueset-consent-category.html\">Consent Category Codes</a></li></ul><p>This value set excludes codes based on the following rules:</p><ul><li>Exclude these codes as defined in <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-consentcategorycodes.html\"><code>http://terminology.hl7.org/CodeSystem/consentcategorycodes</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-consentcategorycodes.html#consentcategorycodes-acd\">acd</a></td><td>Advance Directive</td><td>Any instructions, written or given verbally by a patient to a health care provider in anticipation of potential need for medical treatment. [2005 Honor My Wishes]</td></tr><tr><td><a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-consentcategorycodes.html#consentcategorycodes-dnr\">dnr</a></td><td>Do Not Resuscitate</td><td>A legal document, signed by both the patient and their provider, stating a desire not to have CPR initiated in case of a cardiac event. Note: This form was replaced in 2003 with the Physician Orders for Life-Sustaining Treatment [POLST].</td></tr><tr><td><a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-consentcategorycodes.html#consentcategorycodes-hcd\">hcd</a></td><td>Health Care Directive</td><td>Patient's document telling patient's health care provider what the patient wants or does not want if the patient is diagnosed as being terminally ill and in a persistent vegetative state or in a permanently unconscious condition.[2005 Honor My Wishes]</td></tr><tr><td><a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-consentcategorycodes.html#consentcategorycodes-npp\">npp</a></td><td>Notice of Privacy Practices</td><td>Acknowledgement of custodian notice of privacy practices. Usage Notes: This type of consent directive acknowledges a custodian's notice of privacy practices including its permitted collection, access, use and disclosure of health information to users and for purposes of use specified. [ActConsentDirective (2.16.840.1.113883.1.11.20425)]</td></tr><tr><td><a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-consentcategorycodes.html#consentcategorycodes-polst\">polst</a></td><td>POLST</td><td>The Physician Order for Life-Sustaining Treatment form records a person's health care wishes for end of life emergency treatment and translates them into an order by the physician. It must be reviewed and signed by both the patient and the physician, Advanced Registered Nurse Practitioner or Physician Assistant. [2005 Honor My Wishes] Comment: Opt-in Consent Directive with restrictions.</td></tr></table></li><li>Exclude these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"https://loinc.org/57016-8/\">57016-8</a></td><td>Privacy policy acknowledgment Document</td></tr><tr><td><a href=\"https://loinc.org/57017-6/\">57017-6</a></td><td>Privacy policy Organization Document</td></tr><tr><td><a href=\"https://loinc.org/64292-6/\">64292-6</a></td><td>Release of information consent Document</td></tr></table></li></ul></div>"
   },
-  "url": "https://gitlab.mitre.org/awatson/fast-access-control/ValueSet/consent-exchange-category-codes",
-  "version": "0.1.0",
-  "name": "ConsentExchangeCategoryCodes",
-  "title": "ConsentExchangeCategoryCodes",
-  "status": "active",
-  "date": "2022-10-31T00:13:59-05:00",
-  "publisher": "MITRE",
-  "contact": [
-    {
-      "name": "MITRE",
-      "telecom": [
-        {
-          "system": "url",
-          "value": "https://www.mitre.org"
-        }
-      ]
-    }
-  ],
-  "description": "Consent Exchange - Category Codes",
-  "compose": {
-    "include": [
-      {
-        "valueSet": [
-          "http://hl7.org/fhir/ValueSet/consent-category"
-        ]
-      }
-    ],
-    "exclude": [
-      {
-        "system": "http://terminology.hl7.org/CodeSystem/consentcategorycodes",
-        "concept": [
-          {
-            "code": "acd"
-          },
-          {
-            "code": "dnr"
-          },
-          {
-            "code": "hcd"
-          },
-          {
-            "code": "npp"
-          },
-          {
-            "code": "polst"
-          }
-        ]
+  "url" : "https://gitlab.mitre.org/awatson/fast-access-control/ValueSet/consent-exchange-category-codes",
+  "version" : "0.1.0",
+  "name" : "ConsentExchangeCategoryCodes",
+  "title" : "ConsentExchangeCategoryCodes",
+  "status" : "active",
+  "date" : "2023-04-11T09:52:12-05:00",
+  "publisher" : "MITRE",
+  "contact" : [{
+    "name" : "MITRE",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.mitre.org"
+    }]
+  }],
+  "description" : "Consent Exchange - Category Codes",
+  "compose" : {
+    "include" : [{
+      "valueSet" : ["http://hl7.org/fhir/ValueSet/consent-category"]
+    }],
+    "exclude" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/consentcategorycodes",
+      "concept" : [{
+        "code" : "acd"
       },
       {
-        "system": "http://loinc.org",
-        "concept": [
-          {
-            "code": "57016-8"
-          },
-          {
-            "code": "57017-6"
-          },
-          {
-            "code": "64292-6"
-          }
-        ]
-      }
-    ]
+        "code" : "dnr"
+      },
+      {
+        "code" : "hcd"
+      },
+      {
+        "code" : "npp"
+      },
+      {
+        "code" : "polst"
+      }]
+    },
+    {
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "57016-8"
+      },
+      {
+        "code" : "57017-6"
+      },
+      {
+        "code" : "64292-6"
+      }]
+    }]
   }
 }

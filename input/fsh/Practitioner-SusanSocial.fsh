@@ -1,6 +1,6 @@
 Instance: practitioner-susan-social
 InstanceOf: Practitioner
-Description: "Susan Social - Social Worker"
+Description: "Practitioner - Susan Social - Social Worker"
 Usage: #example
 * active = true
 * name.family = "SOCIAL"

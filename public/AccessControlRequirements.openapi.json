@@ -1,7 +1,7 @@
 ﻿{
   "openapi": "3.0.2",
   "info": {
-    "title": "CapabilityStatement[https://gitlab.mitre.org/awatson/fast-access-control/CapabilityStatement/AccessControlRequirements]",
+    "title": "CapabilityStatement[https://gitlab.mitre.org/awatson/fast-access-control/CapabilityStatement/AccessControlRequirements|0.1.0]",
     "license": {
       "name": "Creative Commons Zero v1.0 Universal",
       "url": "http://spdx.org/licenses/CC0-1.0.html"

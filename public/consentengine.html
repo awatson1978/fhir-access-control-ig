@@ -83,7 +83,10 @@
     <a href="datacollection.html">Data Mapping</a>
   </li>
   <li>
-    <a href="consentengine.html">Access Control Lists</a>
+    <a href="consentengine.html">Consent Engine</a>
+  </li>
+  <li>
+    <a href="testing.html">Functional Testing</a>
   </li>
   <li>
     <a href="artifacts.html">Artifacts</a>
@@ -140,44 +143,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
 </div>
 
-<p>Many first time implementors of guides that include a Consent resource find themselves encountering a common delimma:  the spend weeks or months implementing the Consent records per the FHIR specification, setting up API endpoints, loading example resources into a database, validating the API endpoints return the correct records… and then they hit a wall.  The wall is the following:  how do we connect these Consents records to our security infrastructure?  How do we scope user access to what’s in the records?  Which then leads to questions like:  what data should be going into the Consent records to make them into computable consent?</p>
+<p>Many first time implementors of guides that include a Consent resource find themselves encountering a common delimma:  they spend weeks or months implementing the Consent records per the FHIR specification, setting up API endpoints, loading example resources into a database, validating the API endpoints return the correct records… and then they hit a wall.  The wall is the following:  how do we connect these Consents records to our security infrastructure?  How do we scope user access to what’s in the records?  Which then leads to questions like:  what data should be going into the Consent records to make them into computable consent?</p>
 
 <p>When answering these questions, whether they be for a dedicated service or distributed app such as a blockchain wallet, implementors find themselves often asking how to implement operations on Consents… comparing consent records, rolling up multiple records into a single record, calculating consent differentials, converting to access control lists, creating dynamic OAuth scopes, and so forth.</p>
 
 <p>For lack of other nomenclature, this collection of functionality is sometimes referred to as a Consent Engine.</p>
 
 <p>Since Consent Engine functionality involves operations, it doesn’t immediately translate to core HTTP API functionality.  Instead, the functionality must either be implemented via in-memory classes or objects, or via the <a href="https://www.hl7.org/fhir/operations.html">FHIR operation infrastructure</a>.  The details regarding how this is done is left to the implementor.  However, we can define a standard API which proxies these functions, as well as functional acceptance tests for how they should behave.</p>
-
-<h2 id="functional-testing">Functional Testing</h2>
-
-<p>Regarding the access of other people’s data, the preferred analogy that is typically used is that of a coat check.  Person A checks in a thrift store coat and gets coat check ticket 13.  Person B checks in a nice Burberry coat and gets coat check ticket 18.  Person A then uses a pen and changes their ticket from a 13 to an 18; returns the modified ticket to coat check, and walks out with an expensive Burberry coat.</p>
-
-<p>To protect against this simply involves negative testing instead of happy-path testing, which would be expressed as the following in FHIR API parlance:</p>
-
-<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Test script preamble / setup</span>
-PUT /Patient/patient13
-PUT /Patient/patient18
-
-<span class="c"># Authentication</span>
-Authenticate patient 13
-
-<span class="c"># API Tests</span>
-GET /Patient?_id<span class="o">=</span>patient13  <span class="c">#(should return TRUE)</span>
-GET /Patient?_id<span class="o">=</span>patient18  <span class="c">#(should return FALSE)</span>
-</code></pre></div></div>
-
-<p>Behind the scenes, implementors will need to know how to implement a database driven access-control-list.  The simple case is one patient one record, so the login ID scopes down to the appropriate records.  For instance:</p>
-
-<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Authenticate patient 13</span>
-GET /Patient                <span class="c">#(BAD, returns everything)</span>
-GET /Patient?_id<span class="o">=</span>patient13  <span class="c">#(GOOD, should returns just patient record)</span>
-</code></pre></div></div>
-
-<p>Note:  make sure that patient13 is logged in and has an active session, which requires an additional database lookup; and is more difficult than simply checking for a Bearer token.  But otherwise, .</p>
-
-<p>The above discribes the relatively simple case of a basic 1-record-to-1-person schema, which generally maps to an n-tree or file system layout.</p>
-
-<p>Tthe challenge the FHIR ecosystem is currently facing is that implementors figure this much out on their own, but then stall when it comes time to implement dependent relations (children, elder care) or things like Power of Attorney.  Suddenly, what used to be a 1-to-1 relationship requires linked trees, graph databases, recursive parsing algorithms and similar algorithmic solutions.  Which is typically out of scope for an initial prototype, and gets punted untill the next round of funding</p>
 
 <h2 id="operations-infrastructure--methods-and-functions">Operations Infrastructure:  Methods and Functions</h2>
 
@@ -202,8 +174,7 @@ GET /Patient?_id<span class="o">=</span>patient13  <span class="c">#(GOOD, shoul
 <span class="kd">let</span> <span class="nx">fhirBundle</span> <span class="o">=</span> <span class="nx">ConsentEngine</span><span class="p">.</span><span class="nx">rollup</span><span class="p">(</span><span class="nx">consent1</span><span class="p">,</span> <span class="nx">consent2</span><span class="p">,</span> <span class="nx">consent3</span><span class="p">);</span>
 </code></pre></div></div>
 
-<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-<span class="c"># HTTP API</span>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># HTTP API</span>
 GET /Consent/<span class="nv">$parseToBundle</span>?patient<span class="o">=</span>Patient/<span class="o">{</span>patientId<span class="o">}</span>
 <span class="c"># returns all consent records belonging to a specific patient, rolled up into a single file</span>
 
@@ -216,8 +187,9 @@ GET /Consent/<span class="nv">$parseToBundle</span>?practitioner<span class="o">
 GET /Consent/<span class="nv">$parseToBundle</span>?organization<span class="o">=</span>Organization/<span class="o">{</span>organizationId<span class="o">}</span>
 <span class="c"># returns all consent records belonging to a specific organization, rolled into a single file </span>
 <span class="c"># may not be performant; may be advisable to add additional requirements</span>
+</code></pre></div></div>
 
-<span class="c"># TESTING EXAMPLES  </span>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># TESTING EXAMPLES  </span>
 GET /Consent/?patient<span class="o">=</span>Patient/jennifer-smith
 <span class="c"># should return a Bundle of Consent records</span>
 <span class="c"># see Bundle/Jennifer-Consents-MA</span>
@@ -246,8 +218,9 @@ GET /Consent/<span class="nv">$rollup</span>?patient<span class="o">=</span>Pati
 PUT /Consent/<span class="o">{</span>bundleId<span class="o">}</span>/<span class="nv">$digest</span>
 <span class="c"># input a Bundle which contains list of 1 or more Consent records</span>
 <span class="c"># returns a flattened Consent that has merged the records</span>
+</code></pre></div></div>
 
-<span class="c"># TESTING EXAMPLES  </span>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># TESTING EXAMPLES  </span>
 PUT /Consent/Jennifer-Consents-MA/<span class="nv">$digest</span> 
 <span class="c"># Jennifer-Consents-MA is a Bundle that contains two consent records from MA</span>
 <span class="c"># returns Jennifer-MA-Rollup (most implementations will use a system generated ID)</span>
@@ -276,8 +249,8 @@ POST /Consent/<span class="o">{</span>consentId<span class="o">)</span>/<span cl
 <span class="c"># note we are using a POST and not a PUT</span>
 <span class="c"># intent with $equals is to compare the incoming payload with the existing record</span>
 <span class="c"># and return true/false if they match</span>
-
-<span class="c"># TESTING EXAMPLES  </span>
+</code></pre></div></div>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># TESTING EXAMPLES  </span>
 POST /Consent/Jennifer-Consents-MA/<span class="nv">$equals</span> 
 <span class="c"># post the Jennifer-Consents-MA record as a payload, should return true</span>
 <span class="c"># post the jennifersmith-ma-2 record as a payload, should return false</span>
@@ -302,8 +275,9 @@ POST /Consent/Jennifer-Consents-MA/<span class="nv">$equals</span>
 
 <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># HTTP API</span>
 POST /Consent/<span class="o">{</span>consentId<span class="o">}</span>/<span class="nv">$diff</span>
+</code></pre></div></div>
 
-<span class="c"># TESTING EXAMPLES  </span>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># TESTING EXAMPLES  </span>
 POST /Consent/Jennifer-Consents-MA/<span class="nv">$diff</span> 
 <span class="c"># post the Jennifer-Consents-MA record as a payload, should return nil</span>
 <span class="c"># post the jennifersmith-ma-1 record as a payload, should return jennifersmith-ma-2</span>
@@ -321,8 +295,9 @@ POST /Consent/Jennifer-Consents-MA/<span class="nv">$diff</span>
 GET /Consent/<span class="nv">$toAcl</span>?patient<span class="o">=</span>Patient/<span class="o">{</span>patientId<span class="o">}</span>
 GET /Consent/<span class="nv">$toAcl</span>?organization<span class="o">=</span>Organization/<span class="o">{</span>organizationId<span class="o">}</span>
 GET /Consent/<span class="nv">$toAcl</span>?consentor<span class="o">=</span>RelatedPerson/<span class="o">{</span>relatedPersonId<span class="o">}</span>
+</code></pre></div></div>
 
-<span class="c"># TESTING EXAMPLES  </span>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># TESTING EXAMPLES  </span>
 GET /Consent/<span class="nv">$toAcl</span>?patient<span class="o">=</span>Patient/jennifer-smith
 <span class="c"># return the access control list for jennifer-smith</span>
 <span class="c"># redirect to: GET /Consent/?patient=Patient/jennifer-smith</span>
@@ -344,8 +319,9 @@ GET /Consent/<span class="nv">$toAcl</span>?patient<span class="o">=</span>Patie
 GET /Consent/<span class="nv">$oauthScopes</span>?patient<span class="o">=</span>Patient/<span class="o">{</span>patientId<span class="o">}</span>
 GET /Consent/<span class="nv">$oauthScopes</span>?organization<span class="o">=</span>Organization/<span class="o">{</span>organizationId<span class="o">}</span>
 GET /Consent/<span class="nv">$oauthScopes</span>?consentor<span class="o">=</span>RelatedPerson/<span class="o">{</span>relatedPersonId<span class="o">}</span>
+</code></pre></div></div>
 
-<span class="c"># TESTING EXAMPLES  </span>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># TESTING EXAMPLES  </span>
 
 GET /Consent/<span class="nv">$oauthScopes</span>?patient<span class="o">=</span>Patient/jennifer-smith
 <span class="c"># return the oauth scopes approved by jennifer-smith</span>
@@ -364,76 +340,6 @@ GET /Consent/<span class="nv">$oauthScopes</span>?patient<span class="o">=</span
 
 <span class="c"># Authenticated: jane-doe</span>
 <span class="c"># should return []</span>
-</code></pre></div></div>
-
-<h2 id="certification-example">Certification Example</h2>
-
-<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Test script preamble / setup</span>
-PUT /Patient/jennifer-smith
-PUT /Patient/jane-doe
-PUT /RelatedPerson/related-person-jane-smith
-PUT /RelatedPerson/related-person-john-smith
-PUT /RelatedPerson/stranger-001
-PUT /Practitioner/alice-yin
-PUT /Consent/jennifersmith-ma-1
-PUT /Consent/jennifersmith-ma-2
-
-<span class="c"># Authentication</span>
-Authenticate:  Patient/jennifer-smith
-
-<span class="c"># API Tests</span>
-GET /Patient?_id<span class="o">=</span>Patient/jennifer-smith  <span class="c">#(should return TRUE)</span>
-GET /Patient?_id<span class="o">=</span>Patient/jane-doe  <span class="c">#(should return FALSE)</span>
-</code></pre></div></div>
-
-<p>Behind the scenes, implementors will need to know how to implement a database driven access-control-list.  The simple case is one patient one record, so the login ID scopes down to the appropriate records.  For instance:</p>
-
-<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Authenticate: jennifer-smith</span>
-GET /Patient                                    <span class="c">#(LIMITED, should not be accessible; or only return jennifer-smith records)</span>
-GET /Patient?_id<span class="o">=</span>Patient/jennifer-smith         <span class="c">#(GOOD, should returns just patient record)</span>
-GET /Patient?_id<span class="o">=</span>Patient/jane-doe               <span class="c">#(BAD, should not return record)</span>
-GET /RelatedPerson?_id<span class="o">=</span>Patient/jennifer-smith   <span class="c">#(GOOD, should return jane-smith record)</span>
-GET /RelatedPerson?_id<span class="o">=</span>Patient/jane-doe         <span class="c">#(BAD, should not return record)</span>
-GET /RelatedPerson/jane-smith                   <span class="c">#(GOOD, should return record)</span>
-GET /RelatedPerson/stranger-001                 <span class="c">#(BAD, should not return record)</span>
-
-<span class="c"># Authenticate: jane-doe</span>
-GET /Patient                                    <span class="c">#(LIMITED, should not be accessible; or only return jane-doe records)</span>
-GET /Patient?_id<span class="o">=</span>Patient/jennifer-smith         <span class="c">#(BAD, should not return record) </span>
-GET /Patient?_id<span class="o">=</span>Patient/jane-doe               <span class="c">#(GOOD, should returns just patient record)</span>
-GET /RelatedPerson?_id<span class="o">=</span>Patient/jennifer-smith   <span class="c">#(BAD, should not return record)</span>
-GET /RelatedPerson?_id<span class="o">=</span>Patient/jane-doe         <span class="c">#(GOOD, should return jane-smith record)</span>
-GET /RelatedPerson/jane-smith                   <span class="c">#(BAD, should not return record)</span>
-GET /RelatedPerson/stranger-001                 <span class="c">#(BAD, should not return record)</span>
-
-<span class="c"># Authenticate: alice-yin</span>
-GET /RelatedPerson                              <span class="c">#(GOOD, should return jane-doe and jennifer-smith records)</span>
-GET /Patient?_id<span class="o">=</span>Patient/jennifer-smith         <span class="c">#(GOOD, should return record) </span>
-GET /Patient?_id<span class="o">=</span>Patient/jane-doe               <span class="c">#(GOOD, should return record) </span>
-
-<span class="c"># Authenticate: jane-smith</span>
-GET /RelatedPerson                              <span class="c">#(LIMITED, should return jane-smith records)</span>
-GET /RelatedPerson/stranger-001                 <span class="c">#(BAD, should not return record) </span>
-GET /Patient                                    <span class="c">#(LIMITED, should return jane-smith and jennifer-smith records)</span>
-GET /Patient?_id<span class="o">=</span>Patient/jennifer-smith         <span class="c">#(GOOD, should return record) </span>
-GET /Patient?_id<span class="o">=</span>Patient/jane-smith             <span class="c">#(GOOD, should return record) </span>
-GET /Patient?_id<span class="o">=</span>Patient/jane-doe               <span class="c">#(BAD, should not return record) </span>
-
-GET /Consent/<span class="nv">$canAccess</span>?actor<span class="o">=</span>RelatedPerson/jennifer-smith
-<span class="c"># return list of consents Jennifer Smith has access to, including all children (and husband)</span>
-
-GET /Consent/<span class="nv">$canAccess</span>?_id<span class="o">=</span>Patient/jennifer-smith&amp;actor<span class="o">=</span>RelatedPerson/jennifer-smith
-<span class="c"># if daughter's record returns, should be true</span>
-<span class="c"># if no records return, no records match, and cannot access</span>
-
-GET /Consent/<span class="nv">$oauthScopes</span>?actor<span class="o">=</span>RelatedPerson/jennifer-smith
-<span class="c"># ["AllergyIntolerance", "Condition", "CareTeam", "Immunization", "Medication", "MedicationStatement", "Patient", "Practitioner", "Observation", "Procedure", "RelatedPerson"]</span>
-
-GET /Consent/<span class="nv">$oauthScopes</span>?actor<span class="o">=</span>RelatedPerson/jennifer-smith&amp;class<span class="o">=</span>Medication
-<span class="c"># true</span>
-
-GET /Consent/<span class="nv">$oauthScopes</span>?actor<span class="o">=</span>RelatedPerson/john-smith&amp;class<span class="o">=</span>Medication
-<span class="c"># false</span>
 </code></pre></div></div>
 
 <h4 id="identity--logins">Identity &amp; Logins</h4>
@@ -466,7 +372,7 @@ GET /Consent/<span class="nv">$oauthScopes</span>?actor<span class="o">=</span>R
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org">MITRE</a>.  Package mitre.fast.access-control#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Oct 31, 2022 00:13-0500">2022-10-31</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org">MITRE</a>.  Package mitre.fast.access-control#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Apr 11, 2023 09:52-0500">2023-04-11</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

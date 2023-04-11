@@ -1,0 +1,20 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://gitlab.mitre.org/awatson/fast-access-control/Binary/auth-response-3> a fhir:Binary;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "auth-response-3"]; # 
+  fhir:Binary.contentType [ fhir:value "application/fhir+json"]; # 
+  fhir:Binary.data [ fhir:value "ewogICAgInJlc291cmNlVHlwZSI6ICJPQXV0aEF1dGhlbnRpY2F0aW9uUmVzcG9uc2UiLAogICAgImlkIjogImF1dGgtcmVzcG9uc2UtMyIsCiAgICAiY29kZSI6ICJzZ0o0NndxOWl1eHFUUEZIcyIsCiAgICAic3RhdGUiOiAiMTIzNDUiLAogICAgIm1lc3NhZ2UiOiAiTm8gcmVkaXJlY3QgVVJJIHByb3ZpZGVkLiBVc2luZyB3aGF0IHdhcyBwcm92aWRlZCBkdXJpbmcgcmVnaXN0cmF0aW9uLiIKfQ=="^^xsd:base64Binary] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<https://gitlab.mitre.org/awatson/fast-access-control/Binary/auth-response-3.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

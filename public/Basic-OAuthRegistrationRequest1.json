@@ -1,42 +1,38 @@
 {
-  "resourceType": "Basic",
-  "id": "OAuthRegistrationRequest1",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Basic</b><a name=\"OAuthRegistrationRequest1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Basic \"OAuthRegistrationRequest1\" </p></div><p><b>code</b>: Administrative Activity <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#adminact)</span></p></div>"
+  "resourceType" : "Basic",
+  "id" : "OAuthRegistrationRequest1",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Basic</b><a name=\"OAuthRegistrationRequest1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Basic &quot;OAuthRegistrationRequest1&quot; </p></div><p><b>code</b>: Administrative Activity <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#adminact)</span></p></div>"
   },
-  "extension": [
-    {
-      "url": "resourceType",
-      "valueString": "OAuthRegistrationRequest"
-    },
-    {
-      "url": "client_name",
-      "valueString": "Test Harness"
-    },
-    {
-      "url": "scope",
-      "valueString": "fhir organization/read location/read"
-    },
-    {
-      "url": "token_endpoint_auth_method",
-      "valueString": "code"
-    },
-    {
-      "url": "grant_types",
-      "valueString": "code"
-    },
-    {
-      "url": "redirect_uris",
-      "valueString": "http://localhost:3000/redirect"
-    }
-  ],
-  "code": {
-    "coding": [
-      {
-        "code": "adminact",
-        "display": "Administrative Activity"
-      }
-    ]
+  "extension" : [{
+    "url" : "resourceType",
+    "valueString" : "OAuthRegistrationRequest"
+  },
+  {
+    "url" : "client_name",
+    "valueString" : "Test Harness"
+  },
+  {
+    "url" : "scope",
+    "valueString" : "fhir organization/read location/read"
+  },
+  {
+    "url" : "token_endpoint_auth_method",
+    "valueString" : "code"
+  },
+  {
+    "url" : "grant_types",
+    "valueString" : "code"
+  },
+  {
+    "url" : "redirect_uris",
+    "valueString" : "http://localhost:3000/redirect"
+  }],
+  "code" : {
+    "coding" : [{
+      "code" : "adminact",
+      "display" : "Administrative Activity"
+    }]
   }
 }

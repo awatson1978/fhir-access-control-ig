@@ -2,7 +2,7 @@ Alias: $v2-0203 = http://terminology.hl7.org/CodeSystem/v2-0203
 
 Instance: patient-katie-klepti
 InstanceOf: Patient
-Description: "Katie Klepti - a woman without much sense of boundaries or traditional notions of property ownership."
+Description: "Patient - Katie Klepti - a woman without much sense of boundaries or traditional notions of property ownership."
 Usage: #example
 * meta.versionId = "1"
 * meta.lastUpdated = "2020-09-13T12:21:34.589+00:00"

@@ -1,8 +1,7 @@
 "Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
-"OAuthAuthenticationResponse","OAuthAuthenticationResponse","","","",0,*,"","","","","The response to the discovery endpoint","The response to the discovery endpoint","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
-"OAuthAuthenticationResponse.summary","OAuthAuthenticationResponse.summary","","","",1,1,"","","","string {[]} {[]}
-","Summary message for display to the user (<140 char)","One-sentence, <140-character summary message for display to the user inside of this card.","","","","","","","","","",,,,,"",,,,"OAuthAuthenticationResponse.summary",1,1,"",""
-"OAuthAuthenticationResponse.detail","OAuthAuthenticationResponse.detail","","","",0,1,"","","","markdown {[]} {[]}
-","Optional detailed information to display (GitHub Flavored Markdown)","Optional detailed information to display; if provided MUST be represented in (GitHub Flavored) Markdown. (For non-urgent cards, the CDS Client MAY hide these details until the user clicks a link like 'view more details...').","","","","","","","","","",,,,,"",,,,"OAuthAuthenticationResponse.detail",0,1,"",""
-"OAuthAuthenticationResponse.indicator","OAuthAuthenticationResponse.indicator","","","",0,1,"","","","code {[]} {[]}
-","info, warning, critical - Urgency/importance of what this card conveys","Urgency/importance of what this card conveys. Allowed values, in order of increasing urgency, are: info, warning, critical.","The CDS Client MAY use this field to help make UI display decisions such as sort order or coloring.","","","","","","","","",,"required","","http://hl7.org/fhir/tools/ValueSet/CDSIndicator","",,,,"OAuthAuthenticationResponse.indicator",0,1,"",""
+"OAuthAuthenticationResponse","OAuthAuthenticationResponse","","","",0,*,"","","","null {[]} {[]}
+","The response to the discovery endpoint","The response to the discovery endpoint","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"OAuthAuthenticationResponse.resourceType","OAuthAuthenticationResponse.resourceType","","","",0,1,"","","","string {[]} {[]}
+","Resource type","Resource type","","","","","","","","","",,,,,"",,,,"OAuthAuthenticationResponse.resourceType",0,1,"",""
+"OAuthAuthenticationResponse.id","OAuthAuthenticationResponse.id","","","",0,1,"","","","string {[]} {[]}
+","identifer","identifer","","","","","","","","","",,,,,"",,,,"OAuthAuthenticationResponse.id",0,1,"",""

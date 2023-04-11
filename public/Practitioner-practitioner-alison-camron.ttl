@@ -7,12 +7,12 @@
 
 <https://gitlab.mitre.org/awatson/fast-access-control/Practitioner/practitioner-alison-camron> a fhir:Practitioner;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "practitioner-alison-camron"];
+  fhir:Resource.id [ fhir:value "practitioner-alison-camron"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"practitioner-alison-camron\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner \"practitioner-alison-camron\" </p></div><p><b>active</b>: true</p><p><b>name</b>: ALISON CAMRON </p><p><b>telecom</b>: ph: 555-555-1120(HOME)</p><p><b>address</b>: 1120 Maple St Birmingham AL 35242 US </p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1965-03-24</p></div>"
-  ];
-  fhir:Practitioner.active [ fhir:value "true"^^xsd:boolean];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"practitioner-alison-camron\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;practitioner-alison-camron&quot; </p></div><p><b>active</b>: true</p><p><b>name</b>: ALISON CAMRON </p><p><b>telecom</b>: ph: 555-555-1120(HOME)</p><p><b>address</b>: 1120 Maple St Birmingham AL 35242 US </p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1965-03-24</p></div>"
+  ]; # 
+  fhir:Practitioner.active [ fhir:value "true"^^xsd:boolean]; # 
   fhir:Practitioner.name [
      fhir:index 0;
      fhir:HumanName.family [ fhir:value "CAMRON" ];
@@ -20,13 +20,13 @@
        fhir:value "ALISON";
        fhir:index 0
      ]
-  ];
+  ]; # 
   fhir:Practitioner.telecom [
      fhir:index 0;
      fhir:ContactPoint.system [ fhir:value "phone" ];
      fhir:ContactPoint.value [ fhir:value "555-555-1120" ];
      fhir:ContactPoint.use [ fhir:value "home" ]
-  ];
+  ]; # 
   fhir:Practitioner.address [
      fhir:index 0;
      fhir:Address.line [
@@ -37,9 +37,9 @@
      fhir:Address.state [ fhir:value "AL" ];
      fhir:Address.postalCode [ fhir:value "35242" ];
      fhir:Address.country [ fhir:value "US" ]
-  ];
-  fhir:Practitioner.gender [ fhir:value "male"];
-  fhir:Practitioner.birthDate [ fhir:value "1965-03-24"^^xsd:date] .
+  ]; # 
+  fhir:Practitioner.gender [ fhir:value "male"]; # 
+  fhir:Practitioner.birthDate [ fhir:value "1965-03-24"^^xsd:date] . # 
 
 # - ontology header ------------------------------------------------------------
 

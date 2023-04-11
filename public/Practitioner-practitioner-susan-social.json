@@ -1,37 +1,27 @@
 {
-  "resourceType": "Practitioner",
-  "id": "practitioner-susan-social",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"practitioner-susan-social\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner \"practitioner-susan-social\" </p></div><p><b>active</b>: true</p><p><b>name</b>: SUSAN SOCIAL </p><p><b>telecom</b>: ph: 555-555-8818(HOME)</p><p><b>address</b>: 1235 Bay Ave. Boston MA 02101 US </p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1972-09-04</p></div>"
+  "resourceType" : "Practitioner",
+  "id" : "practitioner-susan-social",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"practitioner-susan-social\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;practitioner-susan-social&quot; </p></div><p><b>active</b>: true</p><p><b>name</b>: SUSAN SOCIAL </p><p><b>telecom</b>: ph: 555-555-8818(HOME)</p><p><b>address</b>: 1235 Bay Ave. Boston MA 02101 US </p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1972-09-04</p></div>"
   },
-  "active": true,
-  "name": [
-    {
-      "family": "SOCIAL",
-      "given": [
-        "SUSAN"
-      ]
-    }
-  ],
-  "telecom": [
-    {
-      "system": "phone",
-      "value": "555-555-8818",
-      "use": "home"
-    }
-  ],
-  "address": [
-    {
-      "line": [
-        "1235 Bay Ave."
-      ],
-      "city": "Boston",
-      "state": "MA",
-      "postalCode": "02101",
-      "country": "US"
-    }
-  ],
-  "gender": "female",
-  "birthDate": "1972-09-04"
+  "active" : true,
+  "name" : [{
+    "family" : "SOCIAL",
+    "given" : ["SUSAN"]
+  }],
+  "telecom" : [{
+    "system" : "phone",
+    "value" : "555-555-8818",
+    "use" : "home"
+  }],
+  "address" : [{
+    "line" : ["1235 Bay Ave."],
+    "city" : "Boston",
+    "state" : "MA",
+    "postalCode" : "02101",
+    "country" : "US"
+  }],
+  "gender" : "female",
+  "birthDate" : "1972-09-04"
 }

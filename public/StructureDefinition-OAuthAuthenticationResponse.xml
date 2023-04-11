@@ -3,18 +3,17 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="OAuthAuthenticationResponse"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Minimum and Maximum # of times the the element can appear in the instance">Card.</a></th><th style="width: 100px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-OAuthAuthenticationResponse-definitions.html#OAuthAuthenticationResponse" title="The response to the discovery endpoint">OAuthAuthenticationResponse</a><a name="OAuthAuthenticationResponse"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://build.fhir.org/types.html#Base">Base</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The response to the discovery endpoint</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-OAuthAuthenticationResponse-definitions.html#OAuthAuthenticationResponse.summary" title="One-sentence, &lt;140-character summary message for display to the user inside of this card.">summary</a><a name="OAuthAuthenticationResponse.summary"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Summary message for display to the user (&lt;140 char)</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-OAuthAuthenticationResponse-definitions.html#OAuthAuthenticationResponse.detail" title="Optional detailed information to display; if provided MUST be represented in (GitHub Flavored) Markdown. (For non-urgent cards, the CDS Client MAY hide these details until the user clicks a link like 'view more details...').">detail</a><a name="OAuthAuthenticationResponse.detail"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#markdown">markdown</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Optional detailed information to display (GitHub Flavored Markdown)</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-OAuthAuthenticationResponse-definitions.html#OAuthAuthenticationResponse.indicator" title="Urgency/importance of what this card conveys. Allowed values, in order of increasing urgency, are: info, warning, critical.">indicator</a><a name="OAuthAuthenticationResponse.indicator"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">info, warning, critical - Urgency/importance of what this card conveys<br/><span style="font-weight:bold">Binding: </span><a href="http://hl7.org/fhir/tools/ValueSet/CDSIndicator">http://hl7.org/fhir/tools/ValueSet/CDSIndicator</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set.">required</a>)</td></tr>
-<tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the the element can appear in the instance">Card.</a></th><th style="width: 100px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-OAuthAuthenticationResponse-definitions.html#OAuthAuthenticationResponse" title="The response to the discovery endpoint">OAuthAuthenticationResponse</a><a name="OAuthAuthenticationResponse"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://build.fhir.org/types.html#Base">Base</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The response to the discovery endpoint</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-OAuthAuthenticationResponse-definitions.html#OAuthAuthenticationResponse.resourceType" title="Resource type">resourceType</a><a name="OAuthAuthenticationResponse.resourceType"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Resource type</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-OAuthAuthenticationResponse-definitions.html#OAuthAuthenticationResponse.id" title="identifer">id</a><a name="OAuthAuthenticationResponse.id"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">identifer</td></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
   </text>
   <url value="http://hl7.org/fhir/tools/StructureDefinition/OAuthAuthenticationResponse"/>
   <version value="0.1.0"/>
   <name value="OAuthAuthenticationResponse"/>
   <title value="OAuth Authentication Response"/>
   <status value="draft"/>
-  <date value="2022-10-31T00:13:59-05:00"/>
+  <date value="2023-04-11T09:52:12-05:00"/>
   <publisher value="MITRE"/>
   <contact>
     <name value="MITRE"/>
@@ -23,7 +22,7 @@
       <value value="https://www.mitre.org"/>
     </telecom>
   </contact>
-  <description value="This structure is defined to allow the FHIR Validator to validate a OAuthRegistration Response body"/>
+  <description value="This structure defines an OAuth authentication response body"/>
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
@@ -55,55 +54,35 @@
       </base>
       <isModifier value="false"/>
     </element>
-    <element id="OAuthAuthenticationResponse.summary">
-      <path value="OAuthAuthenticationResponse.summary"/>
-      <short value="Summary message for display to the user (&lt;140 char)"/>
-      <definition value="One-sentence, &lt;140-character summary message for display to the user inside of this card."/>
-      <min value="1"/>
+    <element id="OAuthAuthenticationResponse.resourceType">
+      <path value="OAuthAuthenticationResponse.resourceType"/>
+      <short value="Resource type"/>
+      <definition value="Resource type"/>
+      <min value="0"/>
       <max value="1"/>
       <base>
-        <path value="OAuthAuthenticationResponse.summary"/>
-        <min value="1"/>
+        <path value="OAuthAuthenticationResponse.resourceType"/>
+        <min value="0"/>
         <max value="1"/>
       </base>
       <type>
         <code value="string"/>
       </type>
     </element>
-    <element id="OAuthAuthenticationResponse.detail">
-      <path value="OAuthAuthenticationResponse.detail"/>
-      <short value="Optional detailed information to display (GitHub Flavored Markdown)"/>
-      <definition value="Optional detailed information to display; if provided MUST be represented in (GitHub Flavored) Markdown. (For non-urgent cards, the CDS Client MAY hide these details until the user clicks a link like 'view more details...')."/>
+    <element id="OAuthAuthenticationResponse.id">
+      <path value="OAuthAuthenticationResponse.id"/>
+      <short value="identifer"/>
+      <definition value="identifer"/>
       <min value="0"/>
       <max value="1"/>
       <base>
-        <path value="OAuthAuthenticationResponse.detail"/>
+        <path value="OAuthAuthenticationResponse.id"/>
         <min value="0"/>
         <max value="1"/>
       </base>
       <type>
-        <code value="markdown"/>
+        <code value="string"/>
       </type>
-    </element>
-    <element id="OAuthAuthenticationResponse.indicator">
-      <path value="OAuthAuthenticationResponse.indicator"/>
-      <short value="info, warning, critical - Urgency/importance of what this card conveys"/>
-      <definition value="Urgency/importance of what this card conveys. Allowed values, in order of increasing urgency, are: info, warning, critical."/>
-      <comment value="The CDS Client MAY use this field to help make UI display decisions such as sort order or coloring."/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="OAuthAuthenticationResponse.indicator"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="code"/>
-      </type>
-      <binding>
-        <strength value="required"/>
-        <valueSet value="http://hl7.org/fhir/tools/ValueSet/CDSIndicator"/>
-      </binding>
     </element>
   </snapshot>
   <differential>
@@ -112,40 +91,25 @@
       <short value="The response to the discovery endpoint"/>
       <definition value="The response to the discovery endpoint"/>
     </element>
-    <element id="OAuthAuthenticationResponse.summary">
-      <path value="OAuthAuthenticationResponse.summary"/>
-      <short value="Summary message for display to the user (&lt;140 char)"/>
-      <definition value="One-sentence, &lt;140-character summary message for display to the user inside of this card."/>
-      <min value="1"/>
+    <element id="OAuthAuthenticationResponse.resourceType">
+      <path value="OAuthAuthenticationResponse.resourceType"/>
+      <short value="Resource type"/>
+      <definition value="Resource type"/>
+      <min value="0"/>
       <max value="1"/>
       <type>
         <code value="string"/>
       </type>
     </element>
-    <element id="OAuthAuthenticationResponse.detail">
-      <path value="OAuthAuthenticationResponse.detail"/>
-      <short value="Optional detailed information to display (GitHub Flavored Markdown)"/>
-      <definition value="Optional detailed information to display; if provided MUST be represented in (GitHub Flavored) Markdown. (For non-urgent cards, the CDS Client MAY hide these details until the user clicks a link like 'view more details...')."/>
+    <element id="OAuthAuthenticationResponse.id">
+      <path value="OAuthAuthenticationResponse.id"/>
+      <short value="identifer"/>
+      <definition value="identifer"/>
       <min value="0"/>
       <max value="1"/>
       <type>
-        <code value="markdown"/>
+        <code value="string"/>
       </type>
-    </element>
-    <element id="OAuthAuthenticationResponse.indicator">
-      <path value="OAuthAuthenticationResponse.indicator"/>
-      <short value="info, warning, critical - Urgency/importance of what this card conveys"/>
-      <definition value="Urgency/importance of what this card conveys. Allowed values, in order of increasing urgency, are: info, warning, critical."/>
-      <comment value="The CDS Client MAY use this field to help make UI display decisions such as sort order or coloring."/>
-      <min value="0"/>
-      <max value="1"/>
-      <type>
-        <code value="code"/>
-      </type>
-      <binding>
-        <strength value="required"/>
-        <valueSet value="http://hl7.org/fhir/tools/ValueSet/CDSIndicator"/>
-      </binding>
     </element>
   </differential>
 </StructureDefinition>
