@@ -6,7 +6,7 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>URL: [base]/Bundle/[id]/$digest</p><p>Parameters</p><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr></table></div>"
   },
   "url" : "http://h7.org/fhir/OperationDefinition/example",
-  "version" : "0.1.0",
+  "version" : "0.2.1",
   "name" : "Consent Bundle Digest",
   "status" : "draft",
   "kind" : "operation",

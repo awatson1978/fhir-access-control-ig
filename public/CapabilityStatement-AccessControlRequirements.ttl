@@ -5,38 +5,29 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://gitlab.mitre.org/awatson/fast-access-control/CapabilityStatement/AccessControlRequirements> a fhir:CapabilityStatement;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "AccessControlRequirements"]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2/></div>"
-  ]; # 
-  fhir:CapabilityStatement.url [ fhir:value "https://gitlab.mitre.org/awatson/fast-access-control/CapabilityStatement/AccessControlRequirements"]; # 
-  fhir:CapabilityStatement.version [ fhir:value "0.1.0"]; # 
-  fhir:CapabilityStatement.status [ fhir:value "draft"]; # 
-  fhir:CapabilityStatement.date [ fhir:value "2022-10-12"^^xsd:date]; # 
-  fhir:CapabilityStatement.publisher [ fhir:value "MITRE"]; # 
-  fhir:CapabilityStatement.contact [
-     fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "MITRE" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "https://www.mitre.org" ]
-     ]
-  ]; # 
-  fhir:CapabilityStatement.kind [ fhir:value "requirements"]; # 
-  fhir:CapabilityStatement.fhirVersion [ fhir:value "4.0.1"]; # 
-  fhir:CapabilityStatement.format [
-     fhir:value "json";
-     fhir:index 0
-  ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<https://gitlab.mitre.org/awatson/fast-access-control/CapabilityStatement/AccessControlRequirements.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+<https://gitlab.mitre.org/awatson/fast-access-control/CapabilityStatement/AccessControlRequirements> a fhir:CapabilityStatement ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "AccessControlRequirements"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2/><div><p>Access Control Capability Statement</p>\n</div></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://gitlab.mitre.org/awatson/fast-access-control/CapabilityStatement/AccessControlRequirements"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.2.1"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2022-10-12"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Access Control Capability Statement"] ; # 
+  fhir:kind [ fhir:v "requirements"] ; # 
+  fhir:fhirVersion [ fhir:v "4.0.1"] ; # 
+  fhir:format ( [ fhir:v "json"] ) . # 
 
 # -------------------------------------------------------------------------------------
 

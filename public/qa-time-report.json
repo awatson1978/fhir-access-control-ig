@@ -1,0 +1,2545 @@
+{
+  "date" : "Wed, 09 Aug, 2023 02:35:23 -0500",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [
+    {
+      "name" : "/fsh-generated/resources/ImplementationGuide-mitre.fast.access-control.json",
+      "size" : 18603,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 37,
+          "length" : 352
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 40,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 40,
+          "length" : 359
+        },
+        {
+          "activity" : "validate",
+          "start" : 45,
+          "length" : 580
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 46,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 47,
+          "length" : 127
+        },
+        {
+          "activity" : "generate2",
+          "start" : 51,
+          "length" : 96
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 67,
+          "length" : 3
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Organization-stjames.json",
+      "size" : 201,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 35,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 40,
+          "length" : 31
+        },
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 47,
+          "length" : 7
+        },
+        {
+          "activity" : "generate2",
+          "start" : 51,
+          "length" : 13
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Questionnaire-leap-dnr.json",
+      "size" : 3103,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 35,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 37,
+          "length" : 8
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 40,
+          "length" : 24
+        },
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 15
+        },
+        {
+          "activity" : "generate1",
+          "start" : 47,
+          "length" : 56
+        },
+        {
+          "activity" : "generate2",
+          "start" : 51,
+          "length" : 22
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 67,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Consent-ConsentAnonPatient.json",
+      "size" : 1889,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 35,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 40,
+          "length" : 171
+        },
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 61
+        },
+        {
+          "activity" : "generate1",
+          "start" : 47,
+          "length" : 11
+        },
+        {
+          "activity" : "generate2",
+          "start" : 51,
+          "length" : 17
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/TestScript-TestScript-Scenario2A.json",
+      "size" : 13152,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 35,
+          "length" : 10
+        },
+        {
+          "activity" : "load",
+          "start" : 37,
+          "length" : 15
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 40,
+          "length" : 63
+        },
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 52
+        },
+        {
+          "activity" : "generate1",
+          "start" : 47,
+          "length" : 58
+        },
+        {
+          "activity" : "generate2",
+          "start" : 51,
+          "length" : 27
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 67,
+          "length" : 1
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 75,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Questionnaire-leap-poamentalhealth.json",
+      "size" : 5906,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 35,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 37,
+          "length" : 5
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 40,
+          "length" : 33
+        },
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 18
+        },
+        {
+          "activity" : "generate1",
+          "start" : 47,
+          "length" : 93
+        },
+        {
+          "activity" : "generate2",
+          "start" : 51,
+          "length" : 43
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 67,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureMap-PoaQuestinonaireToConsent.json",
+      "size" : 761,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 35,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 37,
+          "length" : 18
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 40,
+          "length" : 11
+        },
+        {
+          "activity" : "validate",
+          "start" : 45,
+          "length" : 11
+        },
+        {
+          "activity" : "generate1",
+          "start" : 47,
+          "length" : 8
+        },
+        {
+          "activity" : "generate2",
+          "start" : 51,
+          "length" : 27
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureMap-PoaContractToConsent.json",
+      "size" : 741,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 35,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 37,
+          "length" : 3
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 40,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 40,
+          "length" : 8
+        },
+        {
+          "activity" : "validate",
+          "start" : 45,
+          "length" : 4
+        },
+        {
+          "activity" : "generate1",
+          "start" : 47,
+          "length" : 6
+        },
+        {
+          "activity" : "generate2",
+          "start" : 51,
+          "length" : 18
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 67,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Basic-OAuthRegistrationRequest1.json",
+      "size" : 728,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 35,
+          "length" : 10
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 40,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 10
+        },
+        {
+          "activity" : "generate1",
+          "start" : 47,
+          "length" : 6
+        },
+        {
+          "activity" : "generate2",
+          "start" : 51,
+          "length" : 10
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureMap-LivingWillToConsent.json",
+      "size" : 737,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 35,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 37,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 40,
+          "length" : 15
+        },
+        {
+          "activity" : "validate",
+          "start" : 45,
+          "length" : 3
+        },
+        {
+          "activity" : "generate1",
+          "start" : 47,
+          "length" : 5
+        },
+        {
+          "activity" : "generate2",
+          "start" : 51,
+          "length" : 13
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Organization-stdymphnas.json",
+      "size" : 1387,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 35,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 40,
+          "length" : 10
+        },
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 7
+        },
+        {
+          "activity" : "generate1",
+          "start" : 47,
+          "length" : 9
+        },
+        {
+          "activity" : "generate2",
+          "start" : 51,
+          "length" : 15
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/OperationDefinition-oauthScopes.json",
+      "size" : 1733,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 35,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 37,
+          "length" : 10
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 40,
+          "length" : 22
+        },
+        {
+          "activity" : "validate",
+          "start" : 45,
+          "length" : 14
+        },
+        {
+          "activity" : "generate1",
+          "start" : 47,
+          "length" : 8
+        },
+        {
+          "activity" : "generate2",
+          "start" : 51,
+          "length" : 9
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Patient-patient-jennifer-smith.json",
+      "size" : 3772,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 35,
+          "length" : 29
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 40,
+          "length" : 11
+        },
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 33
+        },
+        {
+          "activity" : "generate1",
+          "start" : 47,
+          "length" : 14
+        },
+        {
+          "activity" : "generate2",
+          "start" : 51,
+          "length" : 15
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/OperationDefinition-digest.json",
+      "size" : 758,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 35,
+          "length" : 1
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 36,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 37,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 40,
+          "length" : 8
+        },
+        {
+          "activity" : "validate",
+          "start" : 45,
+          "length" : 5
+        },
+        {
+          "activity" : "generate1",
+          "start" : 47,
+          "length" : 4
+        },
+        {
+          "activity" : "generate2",
+          "start" : 51,
+          "length" : 8
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Patient-patient-john-smith.json",
+      "size" : 2540,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 35,
+          "length" : 18
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 40,
+          "length" : 5
+        },
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 13
+        },
+        {
+          "activity" : "generate1",
+          "start" : 47,
+          "length" : 13
+        },
+        {
+          "activity" : "generate2",
+          "start" : 51,
+          "length" : 10
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-ConsentExchangePolicies.json",
+      "size" : 569,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 36,
+          "length" : 1
+        },
+        {
+          "activity" : "loadDepInfo",
+          "start" : 36,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 36,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 40,
+          "length" : 112
+        },
+        {
+          "activity" : "validate",
+          "start" : 43,
+          "length" : 316
+        },
+        {
+          "activity" : "generate1",
+          "start" : 47,
+          "length" : 5
+        },
+        {
+          "activity" : "generate2",
+          "start" : 51,
+          "length" : 5425
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/OperationDefinition-toAcl.json",
+      "size" : 1713,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 36,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 37,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 40,
+          "length" : 7
+        },
+        {
+          "activity" : "validate",
+          "start" : 45,
+          "length" : 9
+        },
+        {
+          "activity" : "generate1",
+          "start" : 47,
+          "length" : 9
+        },
+        {
+          "activity" : "generate2",
+          "start" : 56,
+          "length" : 10
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureMap-PoaMentalHealthToConsent.json",
+      "size" : 772,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 36,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 37,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 40,
+          "length" : 6
+        },
+        {
+          "activity" : "validate",
+          "start" : 45,
+          "length" : 4
+        },
+        {
+          "activity" : "generate1",
+          "start" : 47,
+          "length" : 6
+        },
+        {
+          "activity" : "generate2",
+          "start" : 56,
+          "length" : 14
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 75,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/TestScript-TestScript-Scenario1A.json",
+      "size" : 13155,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 36,
+          "length" : 8
+        },
+        {
+          "activity" : "load",
+          "start" : 37,
+          "length" : 9
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 40,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 40,
+          "length" : 50
+        },
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 37
+        },
+        {
+          "activity" : "generate1",
+          "start" : 47,
+          "length" : 57
+        },
+        {
+          "activity" : "generate2",
+          "start" : 56,
+          "length" : 20
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 67,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-ConsentToAcces.json",
+      "size" : 4059,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 36,
+          "length" : 170
+        },
+        {
+          "activity" : "load",
+          "start" : 36,
+          "length" : 189
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 37,
+          "length" : 1239
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 40,
+          "length" : 1241
+        },
+        {
+          "activity" : "validate",
+          "start" : 43,
+          "length" : 1166
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 46,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 47,
+          "length" : 273
+        },
+        {
+          "activity" : "generate2",
+          "start" : 56,
+          "length" : 1992
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 67,
+          "length" : 9
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 75,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-consent-exchange-category-codes.json",
+      "size" : 1148,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 36,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 36,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 42,
+          "length" : 7
+        },
+        {
+          "activity" : "validate",
+          "start" : 43,
+          "length" : 10
+        },
+        {
+          "activity" : "generate1",
+          "start" : 47,
+          "length" : 13
+        },
+        {
+          "activity" : "generate2",
+          "start" : 58,
+          "length" : 73
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-PayorToPayorExchangePolicyCodes.json",
+      "size" : 927,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 36,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 36,
+          "length" : 4
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 42,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 43,
+          "length" : 19
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 46,
+          "length" : 3
+        },
+        {
+          "activity" : "generate1",
+          "start" : 47,
+          "length" : 8
+        },
+        {
+          "activity" : "generate2",
+          "start" : 59,
+          "length" : 27
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 67,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureMap-FirstNameToGiven.json",
+      "size" : 706,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 36,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 37,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 42,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 45,
+          "length" : 3
+        },
+        {
+          "activity" : "generate1",
+          "start" : 47,
+          "length" : 6
+        },
+        {
+          "activity" : "generate2",
+          "start" : 59,
+          "length" : 13
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Practitioner-practitioner-susan-social.json",
+      "size" : 524,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 36,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 42,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 3
+        },
+        {
+          "activity" : "generate1",
+          "start" : 47,
+          "length" : 4
+        },
+        {
+          "activity" : "generate2",
+          "start" : 59,
+          "length" : 12
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureMap-DnrToConsent.json",
+      "size" : 723,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 36,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 37,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 42,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 45,
+          "length" : 3
+        },
+        {
+          "activity" : "generate1",
+          "start" : 47,
+          "length" : 6
+        },
+        {
+          "activity" : "generate2",
+          "start" : 59,
+          "length" : 15
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureMap-HipaaPrivacyToConsent.json",
+      "size" : 745,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 36,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 37,
+          "length" : 7
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 42,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 45,
+          "length" : 4
+        },
+        {
+          "activity" : "generate1",
+          "start" : 47,
+          "length" : 6
+        },
+        {
+          "activity" : "generate2",
+          "start" : 59,
+          "length" : 12
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-OAuthTokenResponse.json",
+      "size" : 3121,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 36,
+          "length" : 84
+        },
+        {
+          "activity" : "load",
+          "start" : 36,
+          "length" : 88
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 39,
+          "length" : 167
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 42,
+          "length" : 170
+        },
+        {
+          "activity" : "validate",
+          "start" : 45,
+          "length" : 238
+        },
+        {
+          "activity" : "generate1",
+          "start" : 47,
+          "length" : 41
+        },
+        {
+          "activity" : "generate2",
+          "start" : 59,
+          "length" : 114
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 67,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Consent-ConsentClinicianPatient.json",
+      "size" : 2093,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 36,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 42,
+          "length" : 7
+        },
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 7
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 11
+        },
+        {
+          "activity" : "generate2",
+          "start" : 59,
+          "length" : 9
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 75,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/TestScript-TestScript-Scenario2E.json",
+      "size" : 13153,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 36,
+          "length" : 7
+        },
+        {
+          "activity" : "load",
+          "start" : 37,
+          "length" : 8
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 42,
+          "length" : 30
+        },
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 38
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 57
+        },
+        {
+          "activity" : "generate2",
+          "start" : 59,
+          "length" : 19
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 67,
+          "length" : 1
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 75,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Practitioner-practitioner-alison-camron.json",
+      "size" : 528,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 36,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 42,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 3
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 9
+        },
+        {
+          "activity" : "generate2",
+          "start" : 59,
+          "length" : 7
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-CmsInteroperabilityPolicyCodes.json",
+      "size" : 1411,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 36,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 36,
+          "length" : 2
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 40,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 42,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 43,
+          "length" : 12
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 10
+        },
+        {
+          "activity" : "generate2",
+          "start" : 59,
+          "length" : 27
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Questionnaire-leap-livingwill.json",
+      "size" : 4194,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 36,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 37,
+          "length" : 4
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 42,
+          "length" : 8
+        },
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 18
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 64
+        },
+        {
+          "activity" : "generate2",
+          "start" : 59,
+          "length" : 15
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 67,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-ConsentExchangeRelations.json",
+      "size" : 914,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 36,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 36,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 42,
+          "length" : 5
+        },
+        {
+          "activity" : "validate",
+          "start" : 43,
+          "length" : 32
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 6
+        },
+        {
+          "activity" : "generate2",
+          "start" : 59,
+          "length" : 170
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Patient-patient-jane-doe.json",
+      "size" : 2552,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 36,
+          "length" : 18
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 42,
+          "length" : 5
+        },
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 15
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 13
+        },
+        {
+          "activity" : "generate2",
+          "start" : 59,
+          "length" : 11
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/TestScript-TestScript-Scenario1B.json",
+      "size" : 13155,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 36,
+          "length" : 7
+        },
+        {
+          "activity" : "load",
+          "start" : 37,
+          "length" : 9
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 42,
+          "length" : 107
+        },
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 37
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 64
+        },
+        {
+          "activity" : "generate2",
+          "start" : 59,
+          "length" : 20
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureMap-PolstToConsent.json",
+      "size" : 751,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 36,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 37,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 42,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 45,
+          "length" : 3
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 7
+        },
+        {
+          "activity" : "generate2",
+          "start" : 59,
+          "length" : 13
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 67,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-ConsentExchangeRelationships.json",
+      "size" : 394,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 36,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 36,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 42,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 43,
+          "length" : 3
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 5
+        },
+        {
+          "activity" : "generate2",
+          "start" : 59,
+          "length" : 23
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Questionnaire-leap-poahealthcare.json",
+      "size" : 10559,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 36,
+          "length" : 7
+        },
+        {
+          "activity" : "load",
+          "start" : 37,
+          "length" : 10
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 40,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 42,
+          "length" : 22
+        },
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 37
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 181
+        },
+        {
+          "activity" : "generate2",
+          "start" : 59,
+          "length" : 32
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 67,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-OAuthRegistrationResponse.json",
+      "size" : 2916,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 36,
+          "length" : 70
+        },
+        {
+          "activity" : "load",
+          "start" : 37,
+          "length" : 72
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 39,
+          "length" : 156
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 42,
+          "length" : 145
+        },
+        {
+          "activity" : "validate",
+          "start" : 45,
+          "length" : 29
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 36
+        },
+        {
+          "activity" : "generate2",
+          "start" : 59,
+          "length" : 118
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 67,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/TestScript-TestScript-gszMyXpwsdoAjJZeh.json",
+      "size" : 5257,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 36,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 37,
+          "length" : 5
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 42,
+          "length" : 15
+        },
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 17
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 28
+        },
+        {
+          "activity" : "generate2",
+          "start" : 59,
+          "length" : 15
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Questionnaire-leap-patient-privacy.json",
+      "size" : 5389,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 36,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 37,
+          "length" : 6
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 42,
+          "length" : 11
+        },
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 24
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 95
+        },
+        {
+          "activity" : "generate2",
+          "start" : 59,
+          "length" : 20
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 67,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-consent-exchange-scope-codes.json",
+      "size" : 735,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 36,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 36,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 42,
+          "length" : 4
+        },
+        {
+          "activity" : "validate",
+          "start" : 43,
+          "length" : 5
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 6
+        },
+        {
+          "activity" : "generate2",
+          "start" : 59,
+          "length" : 54
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/TestScript-TestScript-Scenario2D.json",
+      "size" : 13163,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 36,
+          "length" : 7
+        },
+        {
+          "activity" : "load",
+          "start" : 37,
+          "length" : 9
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 42,
+          "length" : 26
+        },
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 37
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 53
+        },
+        {
+          "activity" : "generate2",
+          "start" : 59,
+          "length" : 19
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Consent-ConsentAnonOrg.json",
+      "size" : 1895,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 36,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 42,
+          "length" : 4
+        },
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 6
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 11
+        },
+        {
+          "activity" : "generate2",
+          "start" : 59,
+          "length" : 9
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/OperationDefinition-parseToBundle.json",
+      "size" : 1759,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 36,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 37,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 42,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 45,
+          "length" : 8
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 8
+        },
+        {
+          "activity" : "generate2",
+          "start" : 59,
+          "length" : 10
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 67,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Patient-patient-katie-klepti.json",
+      "size" : 2446,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 36,
+          "length" : 18
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 40,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 42,
+          "length" : 4
+        },
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 13
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 11
+        },
+        {
+          "activity" : "generate2",
+          "start" : 59,
+          "length" : 10
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Consent-ConsentPatientOwner.json",
+      "size" : 1887,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 36,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 42,
+          "length" : 4
+        },
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 7
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 10
+        },
+        {
+          "activity" : "generate2",
+          "start" : 59,
+          "length" : 9
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CapabilityStatement-AccessControlRequirements.json",
+      "size" : 375,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 36,
+          "length" : 1
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 36,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 37,
+          "length" : 5
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 42,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 45,
+          "length" : 5
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 3
+        },
+        {
+          "activity" : "generate2",
+          "start" : 59,
+          "length" : 19
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Consent-ConsentClinicianOrg.json",
+      "size" : 2103,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 36,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 42,
+          "length" : 6
+        },
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 8
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 12
+        },
+        {
+          "activity" : "generate2",
+          "start" : 59,
+          "length" : 10
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/TestScript-TestScript-Scenario2C.json",
+      "size" : 7495,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 36,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 37,
+          "length" : 5
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 42,
+          "length" : 17
+        },
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 21
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 34
+        },
+        {
+          "activity" : "generate2",
+          "start" : 59,
+          "length" : 16
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 75,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Consent-ConsentSystemPatient.json",
+      "size" : 2075,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 36,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 42,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 7
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 11
+        },
+        {
+          "activity" : "generate2",
+          "start" : 59,
+          "length" : 9
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/TestScript-TestScript-Scenario3.json",
+      "size" : 1793,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 36,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 37,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 42,
+          "length" : 7
+        },
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 8
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 12
+        },
+        {
+          "activity" : "generate2",
+          "start" : 59,
+          "length" : 9
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-OAuthAuthenticationResponse.json",
+      "size" : 2015,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 36,
+          "length" : 35
+        },
+        {
+          "activity" : "load",
+          "start" : 37,
+          "length" : 42
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 39,
+          "length" : 80
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 42,
+          "length" : 74
+        },
+        {
+          "activity" : "validate",
+          "start" : 45,
+          "length" : 18
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 26
+        },
+        {
+          "activity" : "generate2",
+          "start" : 59,
+          "length" : 90
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 67,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Consent-ConsentAnonPractitioner.json",
+      "size" : 2068,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 36,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 42,
+          "length" : 4
+        },
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 7
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 10
+        },
+        {
+          "activity" : "generate2",
+          "start" : 59,
+          "length" : 10
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/OperationDefinition-rollup.json",
+      "size" : 1707,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 36,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 37,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 42,
+          "length" : 4
+        },
+        {
+          "activity" : "validate",
+          "start" : 45,
+          "length" : 9
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 9
+        },
+        {
+          "activity" : "generate2",
+          "start" : 60,
+          "length" : 9
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Questionnaire-leap-polst.json",
+      "size" : 10912,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 36,
+          "length" : 8
+        },
+        {
+          "activity" : "load",
+          "start" : 37,
+          "length" : 11
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 42,
+          "length" : 18
+        },
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 56
+        },
+        {
+          "activity" : "generate1",
+          "start" : 48,
+          "length" : 170
+        },
+        {
+          "activity" : "generate2",
+          "start" : 60,
+          "length" : 27
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 67,
+          "length" : 3
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/OperationDefinition-canAccess.json",
+      "size" : 1010,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 36,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 37,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 42,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 45,
+          "length" : 5
+        },
+        {
+          "activity" : "generate1",
+          "start" : 49,
+          "length" : 6
+        },
+        {
+          "activity" : "generate2",
+          "start" : 60,
+          "length" : 9
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/OperationDefinition-diff.json",
+      "size" : 889,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 36,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 37,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 42,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 45,
+          "length" : 5
+        },
+        {
+          "activity" : "generate1",
+          "start" : 49,
+          "length" : 5
+        },
+        {
+          "activity" : "generate2",
+          "start" : 60,
+          "length" : 8
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Questionnaire-fast-patient-privacy.json",
+      "size" : 5389,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 36,
+          "length" : 6
+        },
+        {
+          "activity" : "load",
+          "start" : 37,
+          "length" : 6
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 40,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 42,
+          "length" : 11
+        },
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 28
+        },
+        {
+          "activity" : "generate1",
+          "start" : 49,
+          "length" : 89
+        },
+        {
+          "activity" : "generate2",
+          "start" : 60,
+          "length" : 17
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 67,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/TestScript-TestScript-Scenario2B.json",
+      "size" : 13155,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 36,
+          "length" : 7
+        },
+        {
+          "activity" : "load",
+          "start" : 37,
+          "length" : 10
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 42,
+          "length" : 30
+        },
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 34
+        },
+        {
+          "activity" : "generate1",
+          "start" : 49,
+          "length" : 58
+        },
+        {
+          "activity" : "generate2",
+          "start" : 60,
+          "length" : 18
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-OAuthAuthenticationRequest.json",
+      "size" : 3852,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 36,
+          "length" : 108
+        },
+        {
+          "activity" : "load",
+          "start" : 37,
+          "length" : 106
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 39,
+          "length" : 221
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 43,
+          "length" : 232
+        },
+        {
+          "activity" : "validate",
+          "start" : 45,
+          "length" : 40
+        },
+        {
+          "activity" : "generate1",
+          "start" : 49,
+          "length" : 46
+        },
+        {
+          "activity" : "generate2",
+          "start" : 60,
+          "length" : 126
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 67,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-OAuthRegistrationRequest.json",
+      "size" : 4007,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 36,
+          "length" : 103
+        },
+        {
+          "activity" : "load",
+          "start" : 37,
+          "length" : 108
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 39,
+          "length" : 222
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 43,
+          "length" : 230
+        },
+        {
+          "activity" : "validate",
+          "start" : 45,
+          "length" : 39
+        },
+        {
+          "activity" : "generate1",
+          "start" : 49,
+          "length" : 54
+        },
+        {
+          "activity" : "generate2",
+          "start" : 60,
+          "length" : 245
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureMap-LastNameToFamily.json",
+      "size" : 705,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 36,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 37,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 43,
+          "length" : 4
+        },
+        {
+          "activity" : "validate",
+          "start" : 45,
+          "length" : 3
+        },
+        {
+          "activity" : "generate1",
+          "start" : 49,
+          "length" : 6
+        },
+        {
+          "activity" : "generate2",
+          "start" : 60,
+          "length" : 14
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 67,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/OperationDefinition-equals.json",
+      "size" : 896,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 36,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 37,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 43,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 45,
+          "length" : 6
+        },
+        {
+          "activity" : "generate1",
+          "start" : 49,
+          "length" : 5
+        },
+        {
+          "activity" : "generate2",
+          "start" : 60,
+          "length" : 9
+        }
+      ]
+    },
+    {
+      "name" : "/input/examples/Binary-auth-request-3.fsh",
+      "size" : 309,
+      "processes" : [
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 49,
+          "length" : 3
+        },
+        {
+          "activity" : "generate2",
+          "start" : 60,
+          "length" : 7
+        }
+      ]
+    },
+    {
+      "name" : "/input/examples/Binary-auth-response-3.fsh",
+      "size" : 226,
+      "processes" : [
+        {
+          "activity" : "generate1",
+          "start" : 49,
+          "length" : 2
+        },
+        {
+          "activity" : "generate2",
+          "start" : 60,
+          "length" : 5
+        }
+      ]
+    },
+    {
+      "name" : "/input/examples/Binary-registration-request-3.fsh",
+      "size" : 241,
+      "processes" : [
+        {
+          "activity" : "generate1",
+          "start" : 49,
+          "length" : 2
+        },
+        {
+          "activity" : "generate2",
+          "start" : 60,
+          "length" : 5
+        }
+      ]
+    },
+    {
+      "name" : "/input/examples/Binary-registration-response-3.fsh",
+      "size" : 201,
+      "processes" : [
+        {
+          "activity" : "validate",
+          "start" : 46,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 49,
+          "length" : 3
+        },
+        {
+          "activity" : "generate2",
+          "start" : 60,
+          "length" : 6
+        }
+      ]
+    },
+    {
+      "name" : "/input/examples/Binary-token-response-3.fsh",
+      "size" : 236,
+      "processes" : [
+        {
+          "activity" : "generate1",
+          "start" : 49,
+          "length" : 2
+        },
+        {
+          "activity" : "generate2",
+          "start" : 60,
+          "length" : 6
+        }
+      ]
+    }
+  ]
+}

@@ -5,16 +5,11 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://gitlab.mitre.org/awatson/fast-access-control/Binary/registration-response-3> a fhir:Binary;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "registration-response-3"]; # 
-  fhir:Binary.contentType [ fhir:value "application/fhir+json"]; # 
-  fhir:Binary.data [ fhir:value "ewogICAgInJlc291cmNlVHlwZSI6ICJPQXV0aFJlZ2lzdHJhdGlvblJlc3BvbnNlIiwKICAgICJpZCI6ICJyZWdpc3RyYXRpb24tcmVzcG9uc2UtMyIsCiAgICAiY2xpZW50X25hbWUiOiJDeWJzZXJzZWN1cml0eSBBdWRpdCAtIEJhY2tlbmQgU2VydmljZXMiLCAKICAgICJjbGllbnRfaWQiOiAiY3liZXJzZWN1cml0eV9iYWNrZW5kX3NlcnZpY2VzIgp9"^^xsd:base64Binary] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<https://gitlab.mitre.org/awatson/fast-access-control/Binary/registration-response-3.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+<https://gitlab.mitre.org/awatson/fast-access-control/Binary/registration-response-3> a fhir:Binary ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "registration-response-3"] ; # 
+  fhir:contentType [ fhir:v "application/fhir+json"] ; # 
+  fhir:data [ fhir:v "ewogICAgInJlc291cmNlVHlwZSI6ICJPQXV0aFJlZ2lzdHJhdGlvblJlc3BvbnNlIiwKICAgICJpZCI6ICJyZWdpc3RyYXRpb24tcmVzcG9uc2UtMyIsCiAgICAiY2xpZW50X25hbWUiOiJDeWJzZXJzZWN1cml0eSBBdWRpdCAtIEJhY2tlbmQgU2VydmljZXMiLCAKICAgICJjbGllbnRfaWQiOiAiY3liZXJzZWN1cml0eV9iYWNrZW5kX3NlcnZpY2VzIgp9"^^xsd:base64Binary] . # 
 
 # -------------------------------------------------------------------------------------
 

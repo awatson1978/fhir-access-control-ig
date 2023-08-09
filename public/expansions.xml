@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="302fca66-dccb-4895-b729-f222fe77218b"/>
+  <id value="04d04722-2a84-4131-8514-1546959866b5"/>
   <meta>
-    <lastUpdated value="2023-04-11T09:52:12.760-05:00"/>
+    <lastUpdated value="2023-08-09T02:35:23.107-05:00"/>
   </meta>
   <type value="collection"/>
   <entry>
     <fullUrl value="https://gitlab.mitre.org/awatson/fast-access-control/ValueSet/consent-exchange-category-codes"/>
     <resource>
       <ValueSet>
-        <id value="consent-exchange-category-codes"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -24,13 +23,13 @@
                 <li>
                   <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActCode.html">ActCode v7.0.0 (CodeSystem)</a>
                 </li>
+                <li>Loinc v2.73</li>
                 <li>
                   <a href="http://terminology.hl7.org/5.0.0/ValueSet-v3-ActConsentType.html">ActConsentType v2.0.0 (ValueSet)</a>
                 </li>
                 <li>
                   <a href="http://terminology.hl7.org/5.0.0/CodeSystem-consentcategorycodes.html">Consent Category Codes v0.1.0 (CodeSystem)</a>
                 </li>
-                <li>Loinc v2.73</li>
               </ul>
             </div>
             <table class="codes">
@@ -289,23 +288,14 @@
           </div>
         </text>
         <url value="https://gitlab.mitre.org/awatson/fast-access-control/ValueSet/consent-exchange-category-codes"/>
-        <version value="0.1.0"/>
+        <version value="0.2.1"/>
         <name value="ConsentExchangeCategoryCodes"/>
         <title value="ConsentExchangeCategoryCodes"/>
-        <status value="active"/>
-        <date value="2023-04-11T09:52:12-05:00"/>
-        <publisher value="MITRE"/>
-        <contact>
-          <name value="MITRE"/>
-          <telecom>
-            <system value="url"/>
-            <value value="https://www.mitre.org"/>
-          </telecom>
-        </contact>
-        <description value="Consent Exchange - Category Codes"/>
+        <status value="draft"/>
+        <date value="2023-08-09T02:35:23-05:00"/>
         <expansion>
-          <identifier value="urn:uuid:142284e5-87a9-4773-bcd7-03ea54d8923c"/>
-          <timestamp value="2023-04-11T09:52:34-05:00"/>
+          <identifier value="urn:uuid:23f6d5e0-689f-4271-ab37-9b2632a58923"/>
+          <timestamp value="2023-08-09T02:35:45-05:00"/>
           <total value="15"/>
           <parameter>
             <name value="excludeNested"/>
@@ -326,6 +316,10 @@
           <parameter>
             <name value="version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/v3-ActCode|7.0.0"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="null"/>
           </parameter>
           <parameter>
             <name value="limitedExpansion"/>
@@ -423,11 +417,10 @@
     <fullUrl value="https://gitlab.mitre.org/awatson/fast-access-control/ValueSet/ConsentExchangeRelations"/>
     <resource>
       <ValueSet>
-        <id value="ConsentExchangeRelations"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 1174 concepts</p>
+            <p>This value set contains 1163 concepts</p>
             <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
               <p>Expansion based on: </p>
               <ul>
@@ -444,25 +437,10 @@
                   <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ParticipationFunction.html">ParticipationFunction v2.1.0 (CodeSystem)</a>
                 </li>
                 <li>
-                  <a href="http://hl7.org/fhir/R4/valueset-security-role-type.html">SecurityRoleType v4.0.1 (ValueSet)</a>
-                </li>
-                <li>
                   <a href="http://terminology.hl7.org/5.0.0/CodeSystem-contractsignertypecodes.html">Contract Signer Type Codes v0.1.0 (CodeSystem)</a>
                 </li>
                 <li>
-                  <a href="http://hl7.org/fhir/R4/valueset-organization-type.html">Organization type v4.0.1 (ValueSet)</a>
-                </li>
-                <li>
-                  <a href="http://hl7.org/fhir/R4/codesystem-dicom-dcim.html">DICOM Controlled Terminology Definitions v01 (CodeSystem)</a>
-                </li>
-                <li>
                   <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v2-0131.html">contactRole2 v2.1.0 (CodeSystem)</a>
-                </li>
-                <li>
-                  <a href="http://hl7.org/fhir/R4/valueset-relatedperson-relationshiptype.html">Patient relationship type v4.0.1 (ValueSet)</a>
-                </li>
-                <li>
-                  <a href="http://hl7.org/fhir/R4/valueset-participant-role.html">Participant Roles v4.0.1 (ValueSet)</a>
                 </li>
                 <li>
                   <a href="http://terminology.hl7.org/5.0.0/CodeSystem-organization-type.html">Organization type v0.1.0 (CodeSystem)</a>
@@ -470,12 +448,12 @@
                 <li>
                   <a href="http://terminology.hl7.org/5.0.0/CodeSystem-practitioner-role.html">Practitioner role v0.1.0 (CodeSystem)</a>
                 </li>
-                <li>
-                  <a href="http://hl7.org/fhir/R4/valueset-practitioner-role.html">Practitioner role v4.0.1 (ValueSet)</a>
-                </li>
-                <li>SNOMED CT International edition 31-Jul 2022</li>
+                <li>SNOMED CT International edition 31-Jan 2023</li>
                 <li>
                   <a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ParticipationType.html">ParticipationType v3.1.1 (CodeSystem)</a>
+                </li>
+                <li>
+                  <a href="http://hl7.org/fhir/R4/codesystem-dicom-dcim.html">DICOM Controlled Terminology Definitions v01 (CodeSystem)</a>
                 </li>
               </ul>
             </div>
@@ -2343,7 +2321,7 @@
                   <a href="http://snomed.info/id/1421009">1421009</a>
                 </td>
                 <td>http://snomed.info/sct</td>
-                <td>Specialized surgeon</td>
+                <td>Specialised surgeon</td>
                 <td>
                   <div/>
                 </td>
@@ -2398,7 +2376,7 @@
                   <a href="http://snomed.info/id/6816002">6816002</a>
                 </td>
                 <td>http://snomed.info/sct</td>
-                <td>Specialized nurse</td>
+                <td>Specialised nurse</td>
                 <td>
                   <div/>
                 </td>
@@ -2541,7 +2519,7 @@
                   <a href="http://snomed.info/id/21365001">21365001</a>
                 </td>
                 <td>http://snomed.info/sct</td>
-                <td>Specialized dentist</td>
+                <td>Specialised dentist</td>
                 <td>
                   <div/>
                 </td>
@@ -2981,7 +2959,7 @@
                   <a href="http://snomed.info/id/59169001">59169001</a>
                 </td>
                 <td>http://snomed.info/sct</td>
-                <td>Orthopedic technician</td>
+                <td>Orthopaedic technician</td>
                 <td>
                   <div/>
                 </td>
@@ -3135,7 +3113,7 @@
                   <a href="http://snomed.info/id/69280009">69280009</a>
                 </td>
                 <td>http://snomed.info/sct</td>
-                <td>Specialized physician</td>
+                <td>Specialised physician</td>
                 <td>
                   <div/>
                 </td>
@@ -3378,17 +3356,6 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Dentist</td>
-                <td>
-                  <div/>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-106291005"> </a>  
-                  <a href="http://snomed.info/id/106291005">106291005</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Dietician AND/OR public health nutritionist</td>
                 <td>
                   <div/>
                 </td>
@@ -4477,7 +4444,7 @@
                   <a href="http://snomed.info/id/224562001">224562001</a>
                 </td>
                 <td>http://snomed.info/sct</td>
-                <td>Pediatric nurse</td>
+                <td>Paediatric nurse</td>
                 <td>
                   <div/>
                 </td>
@@ -4521,7 +4488,7 @@
                   <a href="http://snomed.info/id/224566003">224566003</a>
                 </td>
                 <td>http://snomed.info/sct</td>
-                <td>Hemodialysis nurse</td>
+                <td>Haemodialysis nurse</td>
                 <td>
                   <div/>
                 </td>
@@ -4697,7 +4664,7 @@
                   <a href="http://snomed.info/id/224584001">224584001</a>
                 </td>
                 <td>http://snomed.info/sct</td>
-                <td>Behavior therapy assistant</td>
+                <td>Behaviour therapy assistant</td>
                 <td>
                   <div/>
                 </td>
@@ -4818,7 +4785,7 @@
                   <a href="http://snomed.info/id/224595007">224595007</a>
                 </td>
                 <td>http://snomed.info/sct</td>
-                <td>Professional counselor (occupation)</td>
+                <td>Professional counsellor</td>
                 <td>
                   <div/>
                 </td>
@@ -4829,7 +4796,7 @@
                   <a href="http://snomed.info/id/224596008">224596008</a>
                 </td>
                 <td>http://snomed.info/sct</td>
-                <td>Marriage guidance counselor (occupation)</td>
+                <td>Marriage guidance counsellor</td>
                 <td>
                   <div/>
                 </td>
@@ -4840,7 +4807,7 @@
                   <a href="http://snomed.info/id/224597004">224597004</a>
                 </td>
                 <td>http://snomed.info/sct</td>
-                <td>Trained nurse counselor (occupation)</td>
+                <td>Trained nurse counsellor</td>
                 <td>
                   <div/>
                 </td>
@@ -4851,7 +4818,7 @@
                   <a href="http://snomed.info/id/224598009">224598009</a>
                 </td>
                 <td>http://snomed.info/sct</td>
-                <td>Trained social worker counselor (occupation)</td>
+                <td>Trained social worker counsellor</td>
                 <td>
                   <div/>
                 </td>
@@ -4862,7 +4829,7 @@
                   <a href="http://snomed.info/id/224599001">224599001</a>
                 </td>
                 <td>http://snomed.info/sct</td>
-                <td>Trained personnel counselor (occupation)</td>
+                <td>Trained personnel counsellor</td>
                 <td>
                   <div/>
                 </td>
@@ -5104,7 +5071,7 @@
                   <a href="http://snomed.info/id/225727002">225727002</a>
                 </td>
                 <td>http://snomed.info/sct</td>
-                <td>Midwife counselor (occupation)</td>
+                <td>Midwife counsellor</td>
                 <td>
                   <div/>
                 </td>
@@ -5203,7 +5170,7 @@
                   <a href="http://snomed.info/id/304291006">304291006</a>
                 </td>
                 <td>http://snomed.info/sct</td>
-                <td>Bereavement counselor (occupation)</td>
+                <td>Bereavement counsellor</td>
                 <td>
                   <div/>
                 </td>
@@ -5346,7 +5313,7 @@
                   <a href="http://snomed.info/id/309329001">309329001</a>
                 </td>
                 <td>http://snomed.info/sct</td>
-                <td>Community pediatrician</td>
+                <td>Community paediatrician</td>
                 <td>
                   <div/>
                 </td>
@@ -5379,7 +5346,7 @@
                   <a href="http://snomed.info/id/309332003">309332003</a>
                 </td>
                 <td>http://snomed.info/sct</td>
-                <td>Pediatric gastroenterologist</td>
+                <td>Paediatric gastroenterologist</td>
                 <td>
                   <div/>
                 </td>
@@ -5401,7 +5368,7 @@
                   <a href="http://snomed.info/id/309334002">309334002</a>
                 </td>
                 <td>http://snomed.info/sct</td>
-                <td>Pediatric neurologist</td>
+                <td>Paediatric neurologist</td>
                 <td>
                   <div/>
                 </td>
@@ -5423,7 +5390,7 @@
                   <a href="http://snomed.info/id/309336000">309336000</a>
                 </td>
                 <td>http://snomed.info/sct</td>
-                <td>Pediatric oncologist</td>
+                <td>Paediatric oncologist</td>
                 <td>
                   <div/>
                 </td>
@@ -6545,7 +6512,7 @@
                   <a href="http://snomed.info/id/310170009">310170009</a>
                 </td>
                 <td>http://snomed.info/sct</td>
-                <td>Pediatric audiologist</td>
+                <td>Paediatric audiologist</td>
                 <td>
                   <div/>
                 </td>
@@ -6743,7 +6710,7 @@
                   <a href="http://snomed.info/id/310189009">310189009</a>
                 </td>
                 <td>http://snomed.info/sct</td>
-                <td>Genetic counselor (occupation)</td>
+                <td>Genetic counsellor</td>
                 <td>
                   <div/>
                 </td>
@@ -6754,7 +6721,7 @@
                   <a href="http://snomed.info/id/310190000">310190000</a>
                 </td>
                 <td>http://snomed.info/sct</td>
-                <td>Mental health counselor (occupation)</td>
+                <td>Mental health counsellor</td>
                 <td>
                   <div/>
                 </td>
@@ -7458,7 +7425,7 @@
                   <a href="http://snomed.info/id/768826009">768826009</a>
                 </td>
                 <td>http://snomed.info/sct</td>
-                <td>Crisis counselor (occupation)</td>
+                <td>Crisis counsellor</td>
                 <td>
                   <div/>
                 </td>
@@ -7668,6 +7635,237 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Intellectual disability nurse (occupation)</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-1251537007"> </a>  
+                  <a href="http://snomed.info/id/1251537007">1251537007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Sport medicine specialist (occupation)</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-1251542004"> </a>  
+                  <a href="http://snomed.info/id/1251542004">1251542004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Medical coder (occupation)</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-1251548000"> </a>  
+                  <a href="http://snomed.info/id/1251548000">1251548000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Neuroradiologist (occupation)</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-1254982001"> </a>  
+                  <a href="http://snomed.info/id/1254982001">1254982001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Medical surgical nurse</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-1254983006"> </a>  
+                  <a href="http://snomed.info/id/1254983006">1254983006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Chronic care nurse (occupation)</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-1254984000"> </a>  
+                  <a href="http://snomed.info/id/1254984000">1254984000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Rehabilitation nurse (occupation)</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-1255370008"> </a>  
+                  <a href="http://snomed.info/id/1255370008">1255370008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Specialist in naturopathy</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-1255371007"> </a>  
+                  <a href="http://snomed.info/id/1255371007">1255371007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Specialist in homeopathy (occupation)</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-1255372000"> </a>  
+                  <a href="http://snomed.info/id/1255372000">1255372000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Phytotherapist</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-1255373005"> </a>  
+                  <a href="http://snomed.info/id/1255373005">1255373005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Specialist in traditional Chinese medicine (occupation)</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-1255374004"> </a>  
+                  <a href="http://snomed.info/id/1255374004">1255374004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Clinical nutritionist (occupation)</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-1255514008"> </a>  
+                  <a href="http://snomed.info/id/1255514008">1255514008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Regulatory affairs pharmacist (occupation)</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-1255515009"> </a>  
+                  <a href="http://snomed.info/id/1255515009">1255515009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Pharmacogenomics pharmacist (occupation)</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-1255516005"> </a>  
+                  <a href="http://snomed.info/id/1255516005">1255516005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Clinical analysis pharmacist (occupation)</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-1255517001"> </a>  
+                  <a href="http://snomed.info/id/1255517001">1255517001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Intern in healthcare (occupation)</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-1255518006"> </a>  
+                  <a href="http://snomed.info/id/1255518006">1255518006</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Organisational and social psychologist</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-1255519003"> </a>  
+                  <a href="http://snomed.info/id/1255519003">1255519003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Cardiopulmonary technician (occupation)</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-1255719001"> </a>  
+                  <a href="http://snomed.info/id/1255719001">1255719001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Neurophysiology technician</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-1256114007"> </a>  
+                  <a href="http://snomed.info/id/1256114007">1256114007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Nuclear medicine technologist</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-1259214004"> </a>  
+                  <a href="http://snomed.info/id/1259214004">1259214004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Immunohemotherapy specialist (occupation)</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-1259964002"> </a>  
+                  <a href="http://snomed.info/id/1259964002">1259964002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Oral medicine specialist (occupation)</td>
                 <td>
                   <div/>
                 </td>
@@ -10175,7 +10373,7 @@
                   <a href="http://snomed.info/id/257505008">257505008</a>
                 </td>
                 <td>http://snomed.info/sct</td>
-                <td>Person traveling on outside of train (person)</td>
+                <td>Person travelling on outside of train</td>
                 <td>
                   <div/>
                 </td>
@@ -10990,17 +11188,6 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Guardian (person)</td>
-                <td>
-                  <div/>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-394738000"> </a>  
-                  <a href="http://snomed.info/id/394738000">394738000</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Other related persons (person)</td>
                 <td>
                   <div/>
                 </td>
@@ -11997,88 +12184,11 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-444052006"> </a>  
-                  <a href="http://snomed.info/id/444052006">444052006</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Spouse of subject (person)</td>
-                <td>
-                  <div/>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-444053001"> </a>  
-                  <a href="http://snomed.info/id/444053001">444053001</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Husband of subject (person)</td>
-                <td>
-                  <div/>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-444054007"> </a>  
-                  <a href="http://snomed.info/id/444054007">444054007</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Wife of subject (person)</td>
-                <td>
-                  <div/>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-444055008"> </a>  
-                  <a href="http://snomed.info/id/444055008">444055008</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Uncle of subject (person)</td>
-                <td>
-                  <div/>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
                   <a name="http---snomed.info-sct-444145006"> </a>  
                   <a href="http://snomed.info/id/444145006">444145006</a>
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Partner in relationship with subject (person)</td>
-                <td>
-                  <div/>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-444146007"> </a>  
-                  <a href="http://snomed.info/id/444146007">444146007</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Boyfriend of subject (person)</td>
-                <td>
-                  <div/>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-444147003"> </a>  
-                  <a href="http://snomed.info/id/444147003">444147003</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Girlfriend of subject (person)</td>
-                <td>
-                  <div/>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-444148008"> </a>  
-                  <a href="http://snomed.info/id/444148008">444148008</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Person in family of subject (person)</td>
                 <td>
                   <div/>
                 </td>
@@ -12107,264 +12217,11 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-444191003"> </a>  
-                  <a href="http://snomed.info/id/444191003">444191003</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Aunt of subject (person)</td>
-                <td>
-                  <div/>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-444192005"> </a>  
-                  <a href="http://snomed.info/id/444192005">444192005</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Child of subject (person)</td>
-                <td>
-                  <div/>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-444193000"> </a>  
-                  <a href="http://snomed.info/id/444193000">444193000</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>First degree blood relative of subject (person)</td>
-                <td>
-                  <div/>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-444194006"> </a>  
-                  <a href="http://snomed.info/id/444194006">444194006</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Daughter of subject (person)</td>
-                <td>
-                  <div/>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-444199001"> </a>  
-                  <a href="http://snomed.info/id/444199001">444199001</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Friend of subject (person)</td>
-                <td>
-                  <div/>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
                   <a name="http---snomed.info-sct-444210007"> </a>  
                   <a href="http://snomed.info/id/444210007">444210007</a>
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Cohabitee in relationship with subject (person)</td>
-                <td>
-                  <div/>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-444211006"> </a>  
-                  <a href="http://snomed.info/id/444211006">444211006</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Common law husband of subject (person)</td>
-                <td>
-                  <div/>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-444212004"> </a>  
-                  <a href="http://snomed.info/id/444212004">444212004</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Common law wife of subject (person)</td>
-                <td>
-                  <div/>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-444213009"> </a>  
-                  <a href="http://snomed.info/id/444213009">444213009</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Domestic partner of subject (person)</td>
-                <td>
-                  <div/>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-444241008"> </a>  
-                  <a href="http://snomed.info/id/444241008">444241008</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Son of subject (person)</td>
-                <td>
-                  <div/>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-444242001"> </a>  
-                  <a href="http://snomed.info/id/444242001">444242001</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Grandparent of subject (person)</td>
-                <td>
-                  <div/>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-444243006"> </a>  
-                  <a href="http://snomed.info/id/444243006">444243006</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Maternal grandfather of subject (person)</td>
-                <td>
-                  <div/>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-444244000"> </a>  
-                  <a href="http://snomed.info/id/444244000">444244000</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Maternal grandmother of subject (person)</td>
-                <td>
-                  <div/>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-444278006"> </a>  
-                  <a href="http://snomed.info/id/444278006">444278006</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Fiancé of subject (person)</td>
-                <td>
-                  <div/>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-444279003"> </a>  
-                  <a href="http://snomed.info/id/444279003">444279003</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Female fiancé of subject (person)</td>
-                <td>
-                  <div/>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-444280000"> </a>  
-                  <a href="http://snomed.info/id/444280000">444280000</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Male fiancé of subject (person)</td>
-                <td>
-                  <div/>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-444292000"> </a>  
-                  <a href="http://snomed.info/id/444292000">444292000</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Paternal grandfather of subject (person)</td>
-                <td>
-                  <div/>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-444293005"> </a>  
-                  <a href="http://snomed.info/id/444293005">444293005</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Paternal grandmother of subject (person)</td>
-                <td>
-                  <div/>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-444294004"> </a>  
-                  <a href="http://snomed.info/id/444294004">444294004</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Parent of subject (person)</td>
-                <td>
-                  <div/>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-444295003"> </a>  
-                  <a href="http://snomed.info/id/444295003">444295003</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Father of subject (person)</td>
-                <td>
-                  <div/>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-444301002"> </a>  
-                  <a href="http://snomed.info/id/444301002">444301002</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Mother of subject (person)</td>
-                <td>
-                  <div/>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-444302009"> </a>  
-                  <a href="http://snomed.info/id/444302009">444302009</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Sibling of subject (person)</td>
-                <td>
-                  <div/>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-444303004"> </a>  
-                  <a href="http://snomed.info/id/444303004">444303004</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Brother of subject (person)</td>
-                <td>
-                  <div/>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-444304005"> </a>  
-                  <a href="http://snomed.info/id/444304005">444304005</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Sister of subject (person)</td>
                 <td>
                   <div/>
                 </td>
@@ -12420,17 +12277,6 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>Second degree blood relative (person)</td>
-                <td>
-                  <div/>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-699111006"> </a>  
-                  <a href="http://snomed.info/id/699111006">699111006</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Second degree blood relative of subject (person)</td>
                 <td>
                   <div/>
                 </td>
@@ -12701,28 +12547,6 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-739683002"> </a>  
-                  <a href="http://snomed.info/id/739683002">739683002</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Infant of subject (person)</td>
-                <td>
-                  <div/>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-767308003"> </a>  
-                  <a href="http://snomed.info/id/767308003">767308003</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Second degree female blood relative of subject</td>
-                <td>
-                  <div/>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
                   <a name="http---snomed.info-sct-1148563002"> </a>  
                   <a href="http://snomed.info/id/1148563002">1148563002</a>
                 </td>
@@ -12767,6 +12591,39 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-1236822007"> </a>  
+                  <a href="http://snomed.info/id/1236822007">1236822007</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Second degree female blood relative (person)</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-1258960001"> </a>  
+                  <a href="http://snomed.info/id/1258960001">1258960001</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Son-in-law (person)</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-1258961002"> </a>  
+                  <a href="http://snomed.info/id/1258961002">1258961002</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Daughter-in-law (person)</td>
+                <td>
+                  <div/>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
                   <a name="http---snomed.info-sct-471000122100"> </a>  
                   <a href="http://snomed.info/id/471000122100">471000122100</a>
                 </td>
@@ -12804,7 +12661,7 @@
                   <a href="http://snomed.info/id/5181000124106">5181000124106</a>
                 </td>
                 <td>http://snomed.info/sct</td>
-                <td>Mother in-law (person)</td>
+                <td>Mother-in-law (person)</td>
                 <td>
                   <div/>
                 </td>
@@ -12848,7 +12705,7 @@
                   <a href="http://snomed.info/id/394730007">394730007</a>
                 </td>
                 <td>http://snomed.info/sct</td>
-                <td>Healthcare related organization</td>
+                <td>Healthcare related organisation</td>
                 <td>
                   <div/>
                 </td>
@@ -14162,31 +14019,30 @@
           </div>
         </text>
         <url value="https://gitlab.mitre.org/awatson/fast-access-control/ValueSet/ConsentExchangeRelations"/>
-        <version value="0.1.0"/>
+        <version value="0.2.1"/>
         <name value="ConsentExchangeRelations"/>
         <title value="ConsentExchangeRelations"/>
-        <status value="active"/>
-        <date value="2023-04-11T09:52:12-05:00"/>
-        <publisher value="MITRE"/>
-        <contact>
-          <name value="MITRE"/>
-          <telecom>
-            <system value="url"/>
-            <value value="https://www.mitre.org"/>
-          </telecom>
-        </contact>
-        <description value="Consent Exchange - Relationships"/>
+        <status value="draft"/>
+        <date value="2023-07-27T09:36:58-05:00"/>
         <expansion>
-          <identifier value="urn:uuid:ed5ec69c-e516-4a0f-8980-375c3eab57ff"/>
-          <timestamp value="2023-04-11T09:52:35-05:00"/>
-          <total value="1175"/>
+          <identifier value="urn:uuid:1b2cf1b2-daaf-42ff-afb1-15e14d19d5a9"/>
+          <timestamp value="2023-07-27T14:37:25.783Z"/>
+          <total value="1164"/>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
-            <name value="version"/>
-            <valueUri value="http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype|4.0.1"/>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
           </parameter>
           <parameter>
             <name value="version"/>
@@ -14197,12 +14053,20 @@
             <valueUri value="http://terminology.hl7.org/CodeSystem/v3-RoleCode|2.2.0"/>
           </parameter>
           <parameter>
-            <name value="version"/>
-            <valueUri value="http://hl7.org/fhir/ValueSet/practitioner-role|4.0.1"/>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
           </parameter>
           <parameter>
             <name value="version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/practitioner-role|0.1.0"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230131"/>
           </parameter>
           <parameter>
             <name value="limitedExpansion"/>
@@ -14210,19 +14074,19 @@
           </parameter>
           <parameter>
             <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230131"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
             <valueBoolean value="true"/>
           </parameter>
           <parameter>
-            <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220731"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://hl7.org/fhir/ValueSet/participant-role|4.0.1"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://hl7.org/fhir/ValueSet/security-role-type|4.0.1"/>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
           </parameter>
           <parameter>
             <name value="version"/>
@@ -14231,6 +14095,10 @@
           <parameter>
             <name value="version"/>
             <valueUri value="http://terminology.hl7.org/CodeSystem/v3-RoleClass|3.1.0"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/v3-RoleCode|2.2.0"/>
           </parameter>
           <parameter>
             <name value="version"/>
@@ -14249,8 +14117,12 @@
             <valueUri value="http://dicom.nema.org/resources/ontology/DCM|01"/>
           </parameter>
           <parameter>
-            <name value="version"/>
-            <valueUri value="http://hl7.org/fhir/ValueSet/organization-type|4.0.1"/>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
           </parameter>
           <parameter>
             <name value="version"/>
@@ -14917,7 +14789,7 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="1421009"/>
-            <display value="Specialized surgeon"/>
+            <display value="Specialised surgeon"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -14942,7 +14814,7 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="6816002"/>
-            <display value="Specialized nurse"/>
+            <display value="Specialised nurse"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -15007,7 +14879,7 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="21365001"/>
-            <display value="Specialized dentist"/>
+            <display value="Specialised dentist"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -15207,7 +15079,7 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="59169001"/>
-            <display value="Orthopedic technician"/>
+            <display value="Orthopaedic technician"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -15277,7 +15149,7 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="69280009"/>
-            <display value="Specialized physician"/>
+            <display value="Specialised physician"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -15388,11 +15260,6 @@
             <system value="http://snomed.info/sct"/>
             <code value="106289002"/>
             <display value="Dentist"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="106291005"/>
-            <display value="Dietician AND/OR public health nutritionist"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -15887,7 +15754,7 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="224562001"/>
-            <display value="Pediatric nurse"/>
+            <display value="Paediatric nurse"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -15907,7 +15774,7 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="224566003"/>
-            <display value="Hemodialysis nurse"/>
+            <display value="Haemodialysis nurse"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -15987,7 +15854,7 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="224584001"/>
-            <display value="Behavior therapy assistant"/>
+            <display value="Behaviour therapy assistant"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -16042,27 +15909,27 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="224595007"/>
-            <display value="Professional counselor (occupation)"/>
+            <display value="Professional counsellor"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="224596008"/>
-            <display value="Marriage guidance counselor (occupation)"/>
+            <display value="Marriage guidance counsellor"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="224597004"/>
-            <display value="Trained nurse counselor (occupation)"/>
+            <display value="Trained nurse counsellor"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="224598009"/>
-            <display value="Trained social worker counselor (occupation)"/>
+            <display value="Trained social worker counsellor"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="224599001"/>
-            <display value="Trained personnel counselor (occupation)"/>
+            <display value="Trained personnel counsellor"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -16172,7 +16039,7 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="225727002"/>
-            <display value="Midwife counselor (occupation)"/>
+            <display value="Midwife counsellor"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -16217,7 +16084,7 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="304291006"/>
-            <display value="Bereavement counselor (occupation)"/>
+            <display value="Bereavement counsellor"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -16282,7 +16149,7 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="309329001"/>
-            <display value="Community pediatrician"/>
+            <display value="Community paediatrician"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -16297,7 +16164,7 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="309332003"/>
-            <display value="Pediatric gastroenterologist"/>
+            <display value="Paediatric gastroenterologist"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -16307,7 +16174,7 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="309334002"/>
-            <display value="Pediatric neurologist"/>
+            <display value="Paediatric neurologist"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -16317,7 +16184,7 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="309336000"/>
-            <display value="Pediatric oncologist"/>
+            <display value="Paediatric oncologist"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -16827,7 +16694,7 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="310170009"/>
-            <display value="Pediatric audiologist"/>
+            <display value="Paediatric audiologist"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -16917,12 +16784,12 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="310189009"/>
-            <display value="Genetic counselor (occupation)"/>
+            <display value="Genetic counsellor"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="310190000"/>
-            <display value="Mental health counselor (occupation)"/>
+            <display value="Mental health counsellor"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -17242,7 +17109,7 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="768826009"/>
-            <display value="Crisis counselor (occupation)"/>
+            <display value="Crisis counsellor"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -17338,6 +17205,111 @@
             <system value="http://snomed.info/sct"/>
             <code value="1186914001"/>
             <display value="Intellectual disability nurse (occupation)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1251537007"/>
+            <display value="Sport medicine specialist (occupation)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1251542004"/>
+            <display value="Medical coder (occupation)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1251548000"/>
+            <display value="Neuroradiologist (occupation)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1254982001"/>
+            <display value="Medical surgical nurse"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1254983006"/>
+            <display value="Chronic care nurse (occupation)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1254984000"/>
+            <display value="Rehabilitation nurse (occupation)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1255370008"/>
+            <display value="Specialist in naturopathy"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1255371007"/>
+            <display value="Specialist in homeopathy (occupation)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1255372000"/>
+            <display value="Phytotherapist"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1255373005"/>
+            <display value="Specialist in traditional Chinese medicine (occupation)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1255374004"/>
+            <display value="Clinical nutritionist (occupation)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1255514008"/>
+            <display value="Regulatory affairs pharmacist (occupation)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1255515009"/>
+            <display value="Pharmacogenomics pharmacist (occupation)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1255516005"/>
+            <display value="Clinical analysis pharmacist (occupation)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1255517001"/>
+            <display value="Intern in healthcare (occupation)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1255518006"/>
+            <display value="Organisational and social psychologist"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1255519003"/>
+            <display value="Cardiopulmonary technician (occupation)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1255719001"/>
+            <display value="Neurophysiology technician"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1256114007"/>
+            <display value="Nuclear medicine technologist"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1259214004"/>
+            <display value="Immunohemotherapy specialist (occupation)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1259964002"/>
+            <display value="Oral medicine specialist (occupation)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -18477,7 +18449,7 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="257505008"/>
-            <display value="Person traveling on outside of train (person)"/>
+            <display value="Person travelling on outside of train"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -18848,11 +18820,6 @@
             <system value="http://snomed.info/sct"/>
             <code value="394619001"/>
             <display value="Guardian (person)"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="394738000"/>
-            <display value="Other related persons (person)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -19306,43 +19273,8 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="444052006"/>
-            <display value="Spouse of subject (person)"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="444053001"/>
-            <display value="Husband of subject (person)"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="444054007"/>
-            <display value="Wife of subject (person)"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="444055008"/>
-            <display value="Uncle of subject (person)"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
             <code value="444145006"/>
             <display value="Partner in relationship with subject (person)"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="444146007"/>
-            <display value="Boyfriend of subject (person)"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="444147003"/>
-            <display value="Girlfriend of subject (person)"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="444148008"/>
-            <display value="Person in family of subject (person)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -19356,123 +19288,8 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="444191003"/>
-            <display value="Aunt of subject (person)"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="444192005"/>
-            <display value="Child of subject (person)"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="444193000"/>
-            <display value="First degree blood relative of subject (person)"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="444194006"/>
-            <display value="Daughter of subject (person)"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="444199001"/>
-            <display value="Friend of subject (person)"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
             <code value="444210007"/>
             <display value="Cohabitee in relationship with subject (person)"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="444211006"/>
-            <display value="Common law husband of subject (person)"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="444212004"/>
-            <display value="Common law wife of subject (person)"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="444213009"/>
-            <display value="Domestic partner of subject (person)"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="444241008"/>
-            <display value="Son of subject (person)"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="444242001"/>
-            <display value="Grandparent of subject (person)"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="444243006"/>
-            <display value="Maternal grandfather of subject (person)"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="444244000"/>
-            <display value="Maternal grandmother of subject (person)"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="444278006"/>
-            <display value="Fiancé of subject (person)"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="444279003"/>
-            <display value="Female fiancé of subject (person)"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="444280000"/>
-            <display value="Male fiancé of subject (person)"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="444292000"/>
-            <display value="Paternal grandfather of subject (person)"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="444293005"/>
-            <display value="Paternal grandmother of subject (person)"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="444294004"/>
-            <display value="Parent of subject (person)"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="444295003"/>
-            <display value="Father of subject (person)"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="444301002"/>
-            <display value="Mother of subject (person)"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="444302009"/>
-            <display value="Sibling of subject (person)"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="444303004"/>
-            <display value="Brother of subject (person)"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="444304005"/>
-            <display value="Sister of subject (person)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -19498,11 +19315,6 @@
             <system value="http://snomed.info/sct"/>
             <code value="699110007"/>
             <display value="Second degree blood relative (person)"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="699111006"/>
-            <display value="Second degree blood relative of subject (person)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -19626,16 +19438,6 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="739683002"/>
-            <display value="Infant of subject (person)"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="767308003"/>
-            <display value="Second degree female blood relative of subject"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
             <code value="1148563002"/>
             <display value="Live donor for lung transplant"/>
           </contains>
@@ -19656,6 +19458,21 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <code value="1236822007"/>
+            <display value="Second degree female blood relative (person)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1258960001"/>
+            <display value="Son-in-law (person)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1258961002"/>
+            <display value="Daughter-in-law (person)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
             <code value="471000122100"/>
             <display value="Multi-organ donor (person)"/>
           </contains>
@@ -19672,7 +19489,7 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="5181000124106"/>
-            <display value="Mother in-law (person)"/>
+            <display value="Mother-in-law (person)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -19691,8 +19508,9 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <inactive value="true"/>
             <code value="394730007"/>
-            <display value="Healthcare related organization"/>
+            <display value="Healthcare related organisation"/>
           </contains>
           <contains>
             <system value="http://terminology.hl7.org/CodeSystem/contractsignertypecodes"/>
@@ -20142,7 +19960,6 @@
     <fullUrl value="https://gitlab.mitre.org/awatson/fast-access-control/ValueSet/consent-exchange-scope-codes"/>
     <resource>
       <ValueSet>
-        <id value="consent-exchange-scope-codes"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -20191,23 +20008,14 @@
           </div>
         </text>
         <url value="https://gitlab.mitre.org/awatson/fast-access-control/ValueSet/consent-exchange-scope-codes"/>
-        <version value="0.1.0"/>
+        <version value="0.2.1"/>
         <name value="ConsentExchangeScopeCodes"/>
         <title value="ConsentExchangeScopeCodes"/>
-        <status value="active"/>
-        <date value="2023-04-11T09:52:12-05:00"/>
-        <publisher value="MITRE"/>
-        <contact>
-          <name value="MITRE"/>
-          <telecom>
-            <system value="url"/>
-            <value value="https://www.mitre.org"/>
-          </telecom>
-        </contact>
-        <description value="Consent Exchange - Scope Codes"/>
+        <status value="draft"/>
+        <date value="2023-08-09T02:35:23-05:00"/>
         <expansion>
-          <identifier value="urn:uuid:abe4bbcd-5347-4310-ad43-b83a6c85317b"/>
-          <timestamp value="2023-04-11T09:52:36-05:00"/>
+          <identifier value="urn:uuid:8f1cbe21-d09d-4ace-b1c5-d3d1ed4db778"/>
+          <timestamp value="2023-08-09T02:35:46-05:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>

@@ -5,73 +5,56 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://gitlab.mitre.org/awatson/fast-access-control/ValueSet/ConsentExchangeRelations> a fhir:ValueSet;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "ConsentExchangeRelations"]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"http://hl7.org/fhir/R4/valueset-relatedperson-relationshiptype.html\">Patient relationship type</a></li><li>Import all the codes that are contained in <a href=\"http://hl7.org/fhir/R4/valueset-practitioner-role.html\">Practitioner role</a></li><li>Import all the codes that are contained in <a href=\"http://hl7.org/fhir/R4/valueset-participant-role.html\">Participant Roles</a></li><li>Import all the codes that are contained in <a href=\"http://hl7.org/fhir/R4/valueset-security-role-type.html\">SecurityRoleType</a></li><li>Import all the codes that are contained in <a href=\"http://hl7.org/fhir/R4/valueset-organization-type.html\">Organization type</a></li></ul></div>"
-  ]; # 
-  fhir:ValueSet.url [ fhir:value "https://gitlab.mitre.org/awatson/fast-access-control/ValueSet/ConsentExchangeRelations"]; # 
-  fhir:ValueSet.version [ fhir:value "0.1.0"]; # 
-  fhir:ValueSet.name [ fhir:value "ConsentExchangeRelations"]; # 
-  fhir:ValueSet.title [ fhir:value "ConsentExchangeRelations"]; # 
-  fhir:ValueSet.status [ fhir:value "active"]; # 
-  fhir:ValueSet.date [ fhir:value "2023-04-11T09:52:12-05:00"^^xsd:dateTime]; # 
-  fhir:ValueSet.publisher [ fhir:value "MITRE"]; # 
-  fhir:ValueSet.contact [
-     fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "MITRE" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "https://www.mitre.org" ]
-     ]
-  ]; # 
-  fhir:ValueSet.description [ fhir:value "Consent Exchange - Relationships"]; # 
-  fhir:ValueSet.compose [
-     fhir:ValueSet.compose.include [
-       fhir:index 0;
-       fhir:ValueSet.compose.include.valueSet [
-         fhir:value "http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype";
-         fhir:index 0;
+<https://gitlab.mitre.org/awatson/fast-access-control/ValueSet/ConsentExchangeRelations> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ConsentExchangeRelations"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"http://hl7.org/fhir/R4/valueset-relatedperson-relationshiptype.html\">Patient relationship type</a></li><li>Import all the codes that are contained in <a href=\"http://hl7.org/fhir/R4/valueset-practitioner-role.html\">Practitioner role</a></li><li>Import all the codes that are contained in <a href=\"http://hl7.org/fhir/R4/valueset-participant-role.html\">Participant Roles</a></li><li>Import all the codes that are contained in <a href=\"http://hl7.org/fhir/R4/valueset-security-role-type.html\">SecurityRoleType</a></li><li>Import all the codes that are contained in <a href=\"http://hl7.org/fhir/R4/valueset-organization-type.html\">Organization type</a></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://gitlab.mitre.org/awatson/fast-access-control/ValueSet/ConsentExchangeRelations"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.2.1"] ; # 
+  fhir:name [ fhir:v "ConsentExchangeRelations"] ; # 
+  fhir:title [ fhir:v "ConsentExchangeRelations"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2023-08-09T02:35:23-05:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Consent Exchange - Relationships"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:valueSet ( [
+         fhir:v "http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype"^^xsd:anyURI ;
          fhir:link <http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype>
-       ]
-     ], [
-       fhir:index 1;
-       fhir:ValueSet.compose.include.valueSet [
-         fhir:value "http://hl7.org/fhir/ValueSet/practitioner-role";
-         fhir:index 0;
+       ] )
+     ] [
+       fhir:valueSet ( [
+         fhir:v "http://hl7.org/fhir/ValueSet/practitioner-role"^^xsd:anyURI ;
          fhir:link <http://hl7.org/fhir/ValueSet/practitioner-role>
-       ]
-     ], [
-       fhir:index 2;
-       fhir:ValueSet.compose.include.valueSet [
-         fhir:value "http://hl7.org/fhir/ValueSet/participant-role";
-         fhir:index 0;
+       ] )
+     ] [
+       fhir:valueSet ( [
+         fhir:v "http://hl7.org/fhir/ValueSet/participant-role"^^xsd:anyURI ;
          fhir:link <http://hl7.org/fhir/ValueSet/participant-role>
-       ]
-     ], [
-       fhir:index 3;
-       fhir:ValueSet.compose.include.valueSet [
-         fhir:value "http://hl7.org/fhir/ValueSet/security-role-type";
-         fhir:index 0;
+       ] )
+     ] [
+       fhir:valueSet ( [
+         fhir:v "http://hl7.org/fhir/ValueSet/security-role-type"^^xsd:anyURI ;
          fhir:link <http://hl7.org/fhir/ValueSet/security-role-type>
-       ]
-     ], [
-       fhir:index 4;
-       fhir:ValueSet.compose.include.valueSet [
-         fhir:value "http://hl7.org/fhir/ValueSet/organization-type";
-         fhir:index 0;
+       ] )
+     ] [
+       fhir:valueSet ( [
+         fhir:v "http://hl7.org/fhir/ValueSet/organization-type"^^xsd:anyURI ;
          fhir:link <http://hl7.org/fhir/ValueSet/organization-type>
-       ]
-     ]
+       ] )
+     ] )
   ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<https://gitlab.mitre.org/awatson/fast-access-control/ValueSet/ConsentExchangeRelations.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

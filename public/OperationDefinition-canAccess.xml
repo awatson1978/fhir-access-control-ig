@@ -7,7 +7,7 @@
 </div></td></tr></table></div>
   </text>
   <url value="http://h7.org/fhir/OperationDefinition/example"/>
-  <version value="0.1.0"/>
+  <version value="0.2.1"/>
   <name value="User Can Access"/>
   <status value="draft"/>
   <kind value="operation"/>

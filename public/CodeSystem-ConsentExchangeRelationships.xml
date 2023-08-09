@@ -6,11 +6,11 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>https://gitlab.mitre.org/awatson/fast-access-control/CodeSystem/ConsentExchangeRelationships</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td></tr></table></div>
   </text>
   <url value="https://gitlab.mitre.org/awatson/fast-access-control/CodeSystem/ConsentExchangeRelationships"/>
-  <version value="0.1.0"/>
+  <version value="0.2.1"/>
   <name value="ConsentExchangeRelationships"/>
   <title value="ConsentExchangeRelationships"/>
-  <status value="active"/>
-  <date value="2023-04-11T09:52:12-05:00"/>
+  <status value="draft"/>
+  <date value="2023-08-09T02:35:23-05:00"/>
   <publisher value="MITRE"/>
   <contact>
     <name value="MITRE"/>

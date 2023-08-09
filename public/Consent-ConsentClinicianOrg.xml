@@ -7,7 +7,7 @@
     <lastUpdated value="2022-09-19T00:02:41.128Z"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Consent</b><a name="ConsentClinicianOrg"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Consent &quot;ConsentClinicianOrg&quot; Version &quot;1&quot; Updated &quot;2022-09-19 00:02:41+0000&quot; </p></div><p><b>status</b>: active</p><p><b>scope</b>: Privacy Consent <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-consentscope.html">Consent Scope Codes</a>#patient-privacy)</span></p><p><b>category</b>: information disclosure <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActCode.html">ActCode</a>#IDSCL)</span></p><p><b>dateTime</b>: 2022-09-18 00:00:00+0000</p><h3>Policies</h3><table class="grid"><tr><td>-</td><td><b>Uri</b></td></tr><tr><td>*</td><td><a href="https://docs.google.com/document/d/10Y-rEtVQiTWTy7tU-Slw5urAv5RVN38DwSGMVz84Phg/edit?usp=sharing">https://docs.google.com/document/d/10Y-rEtVQiTWTy7tU-Slw5urAv5RVN38DwSGMVz84Phg/edit?usp=sharing</a></td></tr></table><blockquote><p><b>provision</b></p><p><b>type</b>: deny</p><blockquote><p><b>provision</b></p><p><b>type</b>: permit</p><p><b>securityLabel</b>: restricted (Details: http://terminology.hl7.org/CodeSystem/v3-Confidentiality code R = 'restricted', stated as 'restricted')</p><p><b>class</b>: Organization (Details: [not stated] code Organization = 'Organization', stated as 'Organization')</p></blockquote></blockquote></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Consent</b><a name="ConsentClinicianOrg"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Consent &quot;ConsentClinicianOrg&quot; Version &quot;1&quot; Updated &quot;2022-09-19 00:02:41+0000&quot; </p></div><p><b>status</b>: active</p><p><b>scope</b>: Privacy Consent <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-consentscope.html">Consent Scope Codes</a>#patient-privacy)</span></p><p><b>category</b>: information disclosure <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActCode.html">ActCode</a>#IDSCL)</span></p><p><b>dateTime</b>: 2022-09-18 00:00:00+0000</p><h3>Policies</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Uri</b></td></tr><tr><td style="display: none">*</td><td><a href="https://docs.google.com/document/d/10Y-rEtVQiTWTy7tU-Slw5urAv5RVN38DwSGMVz84Phg/edit?usp=sharing">https://docs.google.com/document/d/10Y-rEtVQiTWTy7tU-Slw5urAv5RVN38DwSGMVz84Phg/edit?usp=sharing</a></td></tr></table><blockquote><p><b>provision</b></p><p><b>type</b>: deny</p><blockquote><p><b>provision</b></p><p><b>type</b>: permit</p><blockquote><p><b>actor</b></p></blockquote><p><b>action</b>: Access <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-consentaction.html">Consent Action Codes</a>#access; <a href="http://terminology.hl7.org/5.0.0/CodeSystem-consentaction.html">Consent Action Codes</a>#correct &quot;Correct&quot;)</span></p><p><b>securityLabel</b>: restricted (Details: http://terminology.hl7.org/CodeSystem/v3-Confidentiality code R = 'restricted', stated as 'restricted')</p><p><b>class</b>: Organization (Details: [not stated] code Organization = 'Organization', stated as 'Organization')</p></blockquote></blockquote></div>
   </text>
   <status value="active"/>
   <scope>
@@ -38,18 +38,28 @@
             <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass"/>
             <code value="PROV"/>
             <display value="healthcare provider"/>
-            <userSelected value="true"/>
           </coding>
         </role>
         <reference>
           <reference value="CounselorRole1"/>
         </reference>
       </actor>
+      <action>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/consentaction"/>
+          <code value="access"/>
+          <display value="Access"/>
+        </coding>
+        <coding>
+          <system value="http://terminology.hl7.org/CodeSystem/consentaction"/>
+          <code value="correct"/>
+          <display value="Correct"/>
+        </coding>
+      </action>
       <securityLabel>
         <system value="http://terminology.hl7.org/CodeSystem/v3-Confidentiality"/>
         <code value="R"/>
         <display value="restricted"/>
-        <userSelected value="true"/>
       </securityLabel>
       <class>
         <code value="Organization"/>

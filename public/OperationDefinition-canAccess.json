@@ -6,7 +6,7 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>URL: [base]/Consent/[id]/$canAccess</p><p>Parameters</p><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>actor</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td/><td><div><p>GET /Consent/$canAccess?actor=RelatedPerson/jennifer-smith</p>\n</div></td></tr></table></div>"
   },
   "url" : "http://h7.org/fhir/OperationDefinition/example",
-  "version" : "0.1.0",
+  "version" : "0.2.1",
   "name" : "User Can Access",
   "status" : "draft",
   "kind" : "operation",

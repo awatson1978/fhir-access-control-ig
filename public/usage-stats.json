@@ -1,6 +1,6 @@
 {
   "package": "mitre.fast.access-control",
-  "version": "0.1.0",
+  "version": "0.2.1",
   "fhirVersion": "4.0.1",
   "extensions": [],
   "profiles": {
@@ -36,17 +36,14 @@
     "http://hl7.org/fhir/StructureDefinition/implementationguide-resource-format": [
       "ImplementationGuide.definition.resource"
     ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
-      "StructureDefinition"
-    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
       "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"
     ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category": [
-      "StructureDefinition"
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
       "ImplementationGuide.definition.page",

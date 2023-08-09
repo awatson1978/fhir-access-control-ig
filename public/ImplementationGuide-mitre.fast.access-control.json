@@ -6,10 +6,10 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>FastAccessControl</h2><p>The official URL for this implementation guide is: </p><pre>https://gitlab.mitre.org/awatson/fast-access-control/ImplementationGuide/mitre.fast.access-control</pre></div>"
   },
   "url" : "https://gitlab.mitre.org/awatson/fast-access-control/ImplementationGuide/mitre.fast.access-control",
-  "version" : "0.1.0",
+  "version" : "0.2.1",
   "name" : "FastAccessControl",
   "status" : "draft",
-  "date" : "2023-04-11T09:52:12-05:00",
+  "date" : "2023-08-09T02:35:23-05:00",
   "publisher" : "MITRE",
   "contact" : [{
     "name" : "MITRE",
@@ -30,6 +30,16 @@
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
     "version" : "5.0.0"
+  },
+  {
+    "id" : "hl7ext",
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+      "valueMarkdown" : "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"
+    }],
+    "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
+    "packageId" : "hl7.fhir.uv.extensions.r4",
+    "version" : "1.0.0"
   }],
   "definition" : {
     "extension" : [{
@@ -297,9 +307,13 @@
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
     {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
+      "valueCode" : "hl7.fhir.uv.tools#current"
+    },
+    {
       "extension" : [{
         "url" : "code",
-        "valueString" : "copyrightyear"
+        "valueCode" : "copyrightyear"
       },
       {
         "url" : "value",
@@ -310,7 +324,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "releaselabel"
+        "valueCode" : "releaselabel"
       },
       {
         "url" : "value",
@@ -321,7 +335,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "autoload-resources"
+        "valueCode" : "autoload-resources"
       },
       {
         "url" : "value",
@@ -332,7 +346,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "path-liquid"
+        "valueCode" : "path-liquid"
       },
       {
         "url" : "value",
@@ -343,7 +357,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "path-liquid"
+        "valueCode" : "path-liquid"
       },
       {
         "url" : "value",
@@ -354,7 +368,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "path-qa"
+        "valueCode" : "path-qa"
       },
       {
         "url" : "value",
@@ -365,7 +379,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "path-temp"
+        "valueCode" : "path-temp"
       },
       {
         "url" : "value",
@@ -376,7 +390,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "path-output"
+        "valueCode" : "path-output"
       },
       {
         "url" : "value",
@@ -387,7 +401,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "path-suppressed-warnings"
+        "valueCode" : "path-suppressed-warnings"
       },
       {
         "url" : "value",
@@ -398,7 +412,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "path-history"
+        "valueCode" : "path-history"
       },
       {
         "url" : "value",
@@ -409,7 +423,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "template-html"
+        "valueCode" : "template-html"
       },
       {
         "url" : "value",
@@ -420,7 +434,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "template-md"
+        "valueCode" : "template-md"
       },
       {
         "url" : "value",
@@ -431,7 +445,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "apply-contact"
+        "valueCode" : "apply-contact"
       },
       {
         "url" : "value",
@@ -442,7 +456,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "apply-context"
+        "valueCode" : "apply-context"
       },
       {
         "url" : "value",
@@ -453,7 +467,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "apply-copyright"
+        "valueCode" : "apply-copyright"
       },
       {
         "url" : "value",
@@ -464,7 +478,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "apply-jurisdiction"
+        "valueCode" : "apply-jurisdiction"
       },
       {
         "url" : "value",
@@ -475,7 +489,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "apply-license"
+        "valueCode" : "apply-license"
       },
       {
         "url" : "value",
@@ -486,7 +500,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "apply-publisher"
+        "valueCode" : "apply-publisher"
       },
       {
         "url" : "value",
@@ -497,7 +511,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "apply-version"
+        "valueCode" : "apply-version"
       },
       {
         "url" : "value",
@@ -508,7 +522,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "active-tables"
+        "valueCode" : "active-tables"
       },
       {
         "url" : "value",
@@ -519,7 +533,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "fmm-definition"
+        "valueCode" : "fmm-definition"
       },
       {
         "url" : "value",
@@ -530,7 +544,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "propagate-status"
+        "valueCode" : "propagate-status"
       },
       {
         "url" : "value",
@@ -541,7 +555,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "excludelogbinaryformat"
+        "valueCode" : "excludelogbinaryformat"
       },
       {
         "url" : "value",
@@ -552,7 +566,7 @@
     {
       "extension" : [{
         "url" : "code",
-        "valueString" : "tabbed-snapshots"
+        "valueCode" : "tabbed-snapshots"
       },
       {
         "url" : "value",
@@ -570,6 +584,389 @@
       },
       "name" : "AccessControlConsent",
       "description" : "Restriction on use/release of exchanged information",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CapabilityStatement"
+      }],
+      "reference" : {
+        "reference" : "CapabilityStatement/AccessControlRequirements"
+      },
+      "name" : "AccessControlRequirements",
+      "description" : "Access Control Capability Statement",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/auth-request-3"
+      },
+      "name" : "auth-request-3",
+      "description" : "Backend Service - Authorization Reques"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/auth-response-3"
+      },
+      "name" : "auth-response-3",
+      "description" : "Backend Service - Authorization Response"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "OperationDefinition"
+      }],
+      "reference" : {
+        "reference" : "OperationDefinition/canAccess"
+      },
+      "name" : "canAccess",
+      "description" : "Determine if a user can access a particular record",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/CmsInteroperabilityPolicyCodes"
+      },
+      "name" : "CmsInteroperabilityPolicyCodes",
+      "description" : "Policy provisions defined under CMS-9115-F, CMS Interoperability and Patient Access final rule",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Consent"
+      }],
+      "reference" : {
+        "reference" : "Consent/ConsentAnonOrg"
+      },
+      "name" : "ConsentAnonOrg",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Consent"
+      }],
+      "reference" : {
+        "reference" : "Consent/ConsentAnonPatient"
+      },
+      "name" : "ConsentAnonPatient",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Consent"
+      }],
+      "reference" : {
+        "reference" : "Consent/ConsentAnonPractitioner"
+      },
+      "name" : "ConsentAnonPractitioner",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Consent"
+      }],
+      "reference" : {
+        "reference" : "Consent/ConsentClinicianOrg"
+      },
+      "name" : "ConsentClinicianOrg",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Consent"
+      }],
+      "reference" : {
+        "reference" : "Consent/ConsentClinicianPatient"
+      },
+      "name" : "ConsentClinicianPatient",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/consent-exchange-category-codes"
+      },
+      "name" : "ConsentExchangeCategoryCodes",
+      "description" : "Consent Exchange - Category Codes",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/ConsentExchangePolicies"
+      },
+      "name" : "ConsentExchangePolicies",
+      "description" : "Consent Exchange - Policies",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/ConsentExchangeRelations"
+      },
+      "name" : "ConsentExchangeRelations",
+      "description" : "Consent Exchange - Relationships",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/ConsentExchangeRelationships"
+      },
+      "name" : "ConsentExchangeRelationships",
+      "description" : "Relationships used to model and exchange consent relationships",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/consent-exchange-scope-codes"
+      },
+      "name" : "ConsentExchangeScopeCodes",
+      "description" : "Consent Exchange - Scope Codes",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Consent"
+      }],
+      "reference" : {
+        "reference" : "Consent/ConsentPatientOwner"
+      },
+      "name" : "ConsentPatientOwner",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Consent"
+      }],
+      "reference" : {
+        "reference" : "Consent/ConsentSystemPatient"
+      },
+      "name" : "ConsentSystemPatient",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "OperationDefinition"
+      }],
+      "reference" : {
+        "reference" : "OperationDefinition/diff"
+      },
+      "name" : "diff",
+      "description" : "Determine differential between two Consent records",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "OperationDefinition"
+      }],
+      "reference" : {
+        "reference" : "OperationDefinition/digest"
+      },
+      "name" : "digest",
+      "description" : "Input a Bundle which contains list of 1 or more Consent records; Returns a flattened Consent that has merged the records",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureMap"
+      }],
+      "reference" : {
+        "reference" : "StructureMap/DnrToConsent"
+      },
+      "name" : "DnrToConsent",
+      "description" : "Do Not Recussitate questionnaire to Consent record",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "OperationDefinition"
+      }],
+      "reference" : {
+        "reference" : "OperationDefinition/equals"
+      },
+      "name" : "equals",
+      "description" : "Determines if two Consent records are equal",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/fast-patient-privacy"
+      },
+      "name" : "fast-patient-privacy",
+      "description" : "Sample Legal Document - FAST Patient Privacy (HIPAA)",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureMap"
+      }],
+      "reference" : {
+        "reference" : "StructureMap/FirstNameToGiven"
+      },
+      "name" : "FirstNameToGiven",
+      "description" : "First name to given name",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureMap"
+      }],
+      "reference" : {
+        "reference" : "StructureMap/HipaaPrivacyToConsent"
+      },
+      "name" : "HipaaPrivacyToConsent",
+      "description" : "HIPAA Privacy questionnaire to Consent record",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureMap"
+      }],
+      "reference" : {
+        "reference" : "StructureMap/LastNameToFamily"
+      },
+      "name" : "LastNameToFamily",
+      "description" : "Last name to family name",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/leap-dnr"
+      },
+      "name" : "leap-dnr",
+      "description" : "Sample Legal Document - Do Not Rescussitate",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/leap-livingwill"
+      },
+      "name" : "leap-livingwill",
+      "description" : "Sample Legal Document - Living Will",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/leap-patient-privacy"
+      },
+      "name" : "leap-patient-privacy",
+      "description" : "Sample Legal Document - HIPAA Patient Privacy",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/leap-poahealthcare"
+      },
+      "name" : "leap-poahealthcare",
+      "description" : "Sample Legal Document - Power of Attorney",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/leap-poamentalhealth"
+      },
+      "name" : "leap-poamentalhealth",
+      "description" : "Sample Legal Document - Power of Attorney - Mental Health",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/leap-polst"
+      },
+      "name" : "leap-polst",
+      "description" : "Sample Legal Document - National Portable Medical Order",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureMap"
+      }],
+      "reference" : {
+        "reference" : "StructureMap/LivingWillToConsent"
+      },
+      "name" : "LivingWillToConsent",
+      "description" : "Living Will questionnaire to Consent record",
       "exampleBoolean" : false
     },
     {
@@ -635,74 +1032,110 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
+        "valueString" : "Basic"
       }],
       "reference" : {
-        "reference" : "ValueSet/consent-exchange-category-codes"
+        "reference" : "Basic/OAuthRegistrationRequest1"
       },
-      "name" : "ConsentExchangeCategoryCodes",
-      "description" : "Consent Exchange - Category Codes",
+      "name" : "OAuthRegistrationRequest1",
+      "description" : "OAuth Registration of Test Harness",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "OperationDefinition"
+      }],
+      "reference" : {
+        "reference" : "OperationDefinition/oauthScopes"
+      },
+      "name" : "oauthScopes",
+      "description" : "Return a list of OAuth scopes",
       "exampleBoolean" : false
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
+        "valueString" : "Organization"
       }],
       "reference" : {
-        "reference" : "ValueSet/ConsentExchangePolicies"
+        "reference" : "Organization/stdymphnas"
       },
-      "name" : "ConsentExchangePolicies",
-      "description" : "Consent Exchange - Policies",
+      "name" : "Org-StDymphnas",
+      "description" : "Organization - St. Dympha's Womens Shelter",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/stjames"
+      },
+      "name" : "Org-StJames",
+      "description" : "Organization - St. Jame's Infirmary",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "OperationDefinition"
+      }],
+      "reference" : {
+        "reference" : "OperationDefinition/parseToBundle"
+      },
+      "name" : "parseToBundle",
+      "description" : "Rollup multiple Consent records into a Bundle",
       "exampleBoolean" : false
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
+        "valueString" : "Patient"
       }],
       "reference" : {
-        "reference" : "ValueSet/ConsentExchangeRelations"
+        "reference" : "Patient/patient-jane-doe"
       },
-      "name" : "ConsentExchangeRelations",
-      "description" : "Consent Exchange - Relationships",
-      "exampleBoolean" : false
+      "name" : "patient-jane-doe",
+      "description" : "Patient - Jane Doe patient not part of relationship model, used for checking security access.",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
+        "valueString" : "Patient"
       }],
       "reference" : {
-        "reference" : "ValueSet/consent-exchange-scope-codes"
+        "reference" : "Patient/patient-jennifer-smith"
       },
-      "name" : "ConsentExchangeScopeCodes",
-      "description" : "Consent Exchange - Scope Codes",
-      "exampleBoolean" : false
+      "name" : "patient-jennifer-smith",
+      "description" : "Patient - Jennifer Smith - Patient demographics record.",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
+        "valueString" : "Patient"
       }],
       "reference" : {
-        "reference" : "CodeSystem/CmsInteroperabilityPolicyCodes"
+        "reference" : "Patient/patient-john-smith"
       },
-      "name" : "CmsInteroperabilityPolicyCodes",
-      "description" : "Policy provisions defined under CMS-9115-F, CMS Interoperability and Patient Access final rule",
-      "exampleBoolean" : false
+      "name" : "patient-john-smith",
+      "description" : "Patient - John Smith - Patient demographics record.",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
+        "valueString" : "Patient"
       }],
       "reference" : {
-        "reference" : "CodeSystem/ConsentExchangeRelationships"
+        "reference" : "Patient/patient-katie-klepti"
       },
-      "name" : "ConsentExchangeRelationships",
-      "description" : "Relationships used to model and exchange consent relationships",
-      "exampleBoolean" : false
+      "name" : "patient-katie-klepti",
+      "description" : "Patient - Katie Klepti - a woman without much sense of boundaries or traditional notions of property ownership.",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -715,150 +1148,6 @@
       "name" : "PayorToPayorExchangePolicyCodes",
       "description" : "Policy codes used to define legal frameworks under which consent exchange occurs between payors.",
       "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CapabilityStatement"
-      }],
-      "reference" : {
-        "reference" : "CapabilityStatement/AccessControlRequirements"
-      },
-      "name" : "AccessControlRequirements",
-      "description" : "Access Control Capability Statement",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Consent"
-      }],
-      "reference" : {
-        "reference" : "Consent/ConsentAnonLoc"
-      },
-      "name" : "ConsentAnonLoc",
-      "description" : "Policy rule to allow general citizenry and anonymous users access to public listings of Location records.",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Consent"
-      }],
-      "reference" : {
-        "reference" : "Consent/ConsentAnonOrg"
-      },
-      "name" : "ConsentAnonOrg",
-      "description" : "Policy rule to allow general citizenry and anonymous users access to public listings of Organization records.",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Consent"
-      }],
-      "reference" : {
-        "reference" : "Consent/ConsentAnonPrac"
-      },
-      "name" : "ConsentAnonPrac",
-      "description" : "Policy rule to allow general citizenry and anonymous users access to public listings of Practitioner records.",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Consent"
-      }],
-      "reference" : {
-        "reference" : "Consent/ConsentClinicianLoc"
-      },
-      "name" : "ConsentClinicianLoc",
-      "description" : "Policy rule to allow authenticated healthcare practitioners access to restricted Location records.",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Consent"
-      }],
-      "reference" : {
-        "reference" : "Consent/ConsentClinicianOrg"
-      },
-      "name" : "ConsentClinicianOrg",
-      "description" : "Policy rule to allow authenticated healthcare practitioners access to restricted Organization records.",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureMap"
-      }],
-      "reference" : {
-        "reference" : "StructureMap/DnrToConsent"
-      },
-      "name" : "DnrToConsent",
-      "description" : "Do Not Recussitate questionnaire to Consent record",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureMap"
-      }],
-      "reference" : {
-        "reference" : "StructureMap/FirstNameToGiven"
-      },
-      "name" : "FirstNameToGiven",
-      "description" : "First name to given name",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureMap"
-      }],
-      "reference" : {
-        "reference" : "StructureMap/HipaaPrivacyToConsent"
-      },
-      "name" : "HipaaPrivacyToConsent",
-      "description" : "HIPAA Privacy questionnaire to Consent record",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureMap"
-      }],
-      "reference" : {
-        "reference" : "StructureMap/LastNameToFamily"
-      },
-      "name" : "LastNameToFamily",
-      "description" : "Last name to family name",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureMap"
-      }],
-      "reference" : {
-        "reference" : "StructureMap/LivingWillToConsent"
-      },
-      "name" : "LivingWillToConsent",
-      "description" : "Living Will questionnaire to Consent record",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Basic"
-      }],
-      "reference" : {
-        "reference" : "Basic/OAuthRegistrationRequest1"
-      },
-      "name" : "OAuthRegistrationRequest1",
-      "description" : "OAuth Registration of Test Harness",
-      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -906,6 +1195,72 @@
       },
       "name" : "PolstToConsent",
       "description" : "Physician Orders for Life Sustaining Treatment (POLST) to Consent record",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Practitioner"
+      }],
+      "reference" : {
+        "reference" : "Practitioner/practitioner-alison-camron"
+      },
+      "name" : "practitioner-alison-camron",
+      "description" : "Practitioner - Dr. Alison Camron, Attending Physician",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Practitioner"
+      }],
+      "reference" : {
+        "reference" : "Practitioner/practitioner-susan-social"
+      },
+      "name" : "practitioner-susan-social",
+      "description" : "Practitioner - Susan Social - Social Worker",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/registration-request-3"
+      },
+      "name" : "registration-request-3",
+      "description" : "Backend Service - Registration Request"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/registration-response-3"
+      },
+      "name" : "registration-response-3",
+      "description" : "Backend Service - Registration Response"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "OperationDefinition"
+      }],
+      "reference" : {
+        "reference" : "OperationDefinition/rollup"
+      },
+      "name" : "rollup",
+      "description" : "Rollup multiple Consent records into a Bundle",
       "exampleBoolean" : false
     },
     {
@@ -1022,335 +1377,11 @@
         "valueString" : "OperationDefinition"
       }],
       "reference" : {
-        "reference" : "OperationDefinition/canAccess"
-      },
-      "name" : "canAccess",
-      "description" : "Determine if a user can access a particular record",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "OperationDefinition"
-      }],
-      "reference" : {
-        "reference" : "OperationDefinition/diff"
-      },
-      "name" : "diff",
-      "description" : "Determine differential between two Consent records",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "OperationDefinition"
-      }],
-      "reference" : {
-        "reference" : "OperationDefinition/digest"
-      },
-      "name" : "digest",
-      "description" : "Input a Bundle which contains list of 1 or more Consent records; Returns a flattened Consent that has merged the records",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "OperationDefinition"
-      }],
-      "reference" : {
-        "reference" : "OperationDefinition/equals"
-      },
-      "name" : "equals",
-      "description" : "Determines if two Consent records are equal",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Questionnaire"
-      }],
-      "reference" : {
-        "reference" : "Questionnaire/fast-patient-privacy"
-      },
-      "name" : "fast-patient-privacy",
-      "description" : "Sample Legal Document - FAST Patient Privacy (HIPAA)",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Questionnaire"
-      }],
-      "reference" : {
-        "reference" : "Questionnaire/leap-dnr"
-      },
-      "name" : "leap-dnr",
-      "description" : "Sample Legal Document - Do Not Rescussitate",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Questionnaire"
-      }],
-      "reference" : {
-        "reference" : "Questionnaire/leap-livingwill"
-      },
-      "name" : "leap-livingwill",
-      "description" : "Sample Legal Document - Living Will",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Questionnaire"
-      }],
-      "reference" : {
-        "reference" : "Questionnaire/leap-patient-privacy"
-      },
-      "name" : "leap-patient-privacy",
-      "description" : "Sample Legal Document - HIPAA Patient Privacy",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Questionnaire"
-      }],
-      "reference" : {
-        "reference" : "Questionnaire/leap-poahealthcare"
-      },
-      "name" : "leap-poahealthcare",
-      "description" : "Sample Legal Document - Power of Attorney",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Questionnaire"
-      }],
-      "reference" : {
-        "reference" : "Questionnaire/leap-poamentalhealth"
-      },
-      "name" : "leap-poamentalhealth",
-      "description" : "Sample Legal Document - Power of Attorney - Mental Health",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Questionnaire"
-      }],
-      "reference" : {
-        "reference" : "Questionnaire/leap-polst"
-      },
-      "name" : "leap-polst",
-      "description" : "Sample Legal Document - National Portable Medical Order",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "OperationDefinition"
-      }],
-      "reference" : {
-        "reference" : "OperationDefinition/oauthScopes"
-      },
-      "name" : "oauthScopes",
-      "description" : "Return a list of OAuth scopes",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "OperationDefinition"
-      }],
-      "reference" : {
-        "reference" : "OperationDefinition/parseToBundle"
-      },
-      "name" : "parseToBundle",
-      "description" : "Rollup multiple Consent records into a Bundle",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Patient"
-      }],
-      "reference" : {
-        "reference" : "Patient/patient-jane-doe"
-      },
-      "name" : "patient-jane-doe",
-      "description" : "Patient - Jane Doe patient not part of relationship model, used for checking security access.",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Patient"
-      }],
-      "reference" : {
-        "reference" : "Patient/patient-jennifer-smith"
-      },
-      "name" : "patient-jennifer-smith",
-      "description" : "Patient - Jennifer Smith - Patient demographics record.",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Patient"
-      }],
-      "reference" : {
-        "reference" : "Patient/patient-john-smith"
-      },
-      "name" : "patient-john-smith",
-      "description" : "Patient - John Smith - Patient demographics record.",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Patient"
-      }],
-      "reference" : {
-        "reference" : "Patient/patient-katie-klepti"
-      },
-      "name" : "patient-katie-klepti",
-      "description" : "Patient - Katie Klepti - a woman without much sense of boundaries or traditional notions of property ownership.",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Practitioner"
-      }],
-      "reference" : {
-        "reference" : "Practitioner/practitioner-alison-camron"
-      },
-      "name" : "practitioner-alison-camron",
-      "description" : "Practitioner - Dr. Alison Camron, Attending Physician",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Practitioner"
-      }],
-      "reference" : {
-        "reference" : "Practitioner/practitioner-susan-social"
-      },
-      "name" : "practitioner-susan-social",
-      "description" : "Practitioner - Susan Social - Social Worker",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "OperationDefinition"
-      }],
-      "reference" : {
-        "reference" : "OperationDefinition/rollup"
-      },
-      "name" : "rollup",
-      "description" : "Rollup multiple Consent records into a Bundle",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Organization"
-      }],
-      "reference" : {
-        "reference" : "Organization/stdymphnas"
-      },
-      "name" : "Org-StDymphnas",
-      "description" : "Organization - St. Dympha's Womens Shelter",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Organization"
-      }],
-      "reference" : {
-        "reference" : "Organization/stjames"
-      },
-      "name" : "Org-StJames",
-      "description" : "Organization - St. Jame's Infirmary",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "OperationDefinition"
-      }],
-      "reference" : {
         "reference" : "OperationDefinition/toAcl"
       },
       "name" : "toAcl",
       "description" : "Return the access control list for a user.",
       "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-resource-format",
-        "valueCode" : "application/fhir+json"
-      },
-      {
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Binary"
-      }],
-      "reference" : {
-        "reference" : "Binary/registration-request-3"
-      },
-      "name" : "registration-request-3",
-      "description" : "Backend Service - Registration Request"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-resource-format",
-        "valueCode" : "application/fhir+json"
-      },
-      {
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Binary"
-      }],
-      "reference" : {
-        "reference" : "Binary/registration-response-3"
-      },
-      "name" : "registration-response-3",
-      "description" : "Backend Service - Registration Response"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-resource-format",
-        "valueCode" : "application/fhir+json"
-      },
-      {
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Binary"
-      }],
-      "reference" : {
-        "reference" : "Binary/auth-request-3"
-      },
-      "name" : "auth-request-3",
-      "description" : "Backend Service - Authorization Reques"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-resource-format",
-        "valueCode" : "application/fhir+json"
-      },
-      {
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Binary"
-      }],
-      "reference" : {
-        "reference" : "Binary/auth-response-3"
-      },
-      "name" : "auth-response-3",
-      "description" : "Backend Service - Authorization Response"
     },
     {
       "extension" : [{

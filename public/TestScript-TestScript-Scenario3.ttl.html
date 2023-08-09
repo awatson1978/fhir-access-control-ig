@@ -31,18 +31,18 @@
     <![endif]-->
 
     <!-- Favicons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"5.45"}
-    h3,h4,h5,h6{--heading-prefix:"5.45"}</style>
+    <style type="text/css">h2{--heading-prefix:"5.62"}
+    h3,h4,h5,h6{--heading-prefix:"5.62"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -51,7 +51,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold"></span>
             <br/>
-            <span style="display:inline-block;">0.1.0 - ci-build
+            <span style="display:inline-block;">0.2.1 - ci-build
 
 
             </span>
@@ -118,7 +118,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 9" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">FastAccessControl - Local Development build (v0.1.0). See the <a href="https://gitlab.mitre.org/awatson/fast-access-control/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">FastAccessControl - Local Development build (v0.2.1). See the <a href="https://gitlab.mitre.org/awatson/fast-access-control/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -165,6 +165,7 @@
 
 
 <h2 id="root">: Scenario 3 - TTL Representation</h2>
+
   <table class="colsd">
     <tr>
 
@@ -196,79 +197,67 @@
 
 # - resource -------------------------------------------------------------------
 
- a fhir:TestScript;
-  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
-  <a href="http://hl7.org/fhir/R4/testscript.html#TestScript.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;TestScript-Scenario3&quot;]; # 
-  <a href="http://hl7.org/fhir/R4/testscript.html#TestScript.text">fhir:DomainResource.text</a> [
-     <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
-     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: TestScript&lt;/b&gt;&lt;a name=\&quot;TestScript-Scenario3\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource TestScript &amp;quot;TestScript-Scenario3&amp;quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;: &lt;code&gt;http://&lt;/code&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;version&lt;/b&gt;: 0.1.0&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Scenario 3&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: R4 TestScript - Back End Acces&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: draft&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: 2022-06-14 23:19:30+0000&lt;/p&gt;&lt;p&gt;&lt;b&gt;publisher&lt;/b&gt;: MITRE&lt;/p&gt;&lt;p&gt;&lt;b&gt;contact&lt;/b&gt;: MITRE: &lt;a href=\&quot;https://www.mitre.org\&quot;&gt;https://www.mitre.org&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;jurisdiction&lt;/b&gt;: United States of America &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/5.0.0/CodeSystem-ISO3166Part1.html\&quot;&gt;ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code&lt;/a&gt;#US)&lt;/span&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;fixture&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;autocreate&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;autodelete&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;resource&lt;/b&gt;: &lt;a href=\&quot;registration-request-3\&quot;&gt;registration-request-3: Backend Service - Registration Request&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;fixture&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;autocreate&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;autodelete&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;resource&lt;/b&gt;: &lt;a href=\&quot;registration-response-3\&quot;&gt;registration-response-3: Backend Service - Registration Response&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;test&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: 1.1 Register backend service&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;action&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Operations&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Resource&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Label&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Description&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Accept&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;EncodeRequestUrl&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Method&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;SourceId&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Url&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Binary&lt;/td&gt;&lt;td&gt;Register backend service&lt;/td&gt;&lt;td&gt;PUT /oauth/registration&lt;/td&gt;&lt;td&gt;json&lt;/td&gt;&lt;td&gt;true&lt;/td&gt;&lt;td&gt;put&lt;/td&gt;&lt;td&gt;registration-request-3&lt;/td&gt;&lt;td&gt;/oauth/registration&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;action&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Asserts&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Description&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Response&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;SourceId&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;WarningOnly&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;Confirm that the returned HTTP status is 201(Success).&lt;/td&gt;&lt;td&gt;okay&lt;/td&gt;&lt;td&gt;registration-response-3&lt;/td&gt;&lt;td&gt;false&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;/div&gt;&quot;
-  ]; # 
-  <a href="http://hl7.org/fhir/R4/testscript.html#TestScript.url">fhir:TestScript.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://&quot;]; # 
-  <a href="http://hl7.org/fhir/R4/testscript.html#TestScript.version">fhir:TestScript.version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;0.1.0&quot;]; # 
-  <a href="http://hl7.org/fhir/R4/testscript.html#TestScript.name">fhir:TestScript.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Scenario 3&quot;]; # 
-  <a href="http://hl7.org/fhir/R4/testscript.html#TestScript.title">fhir:TestScript.title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;R4 TestScript - Back End Acces&quot;]; # 
-  <a href="http://hl7.org/fhir/R4/testscript.html#TestScript.status">fhir:TestScript.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;draft&quot;]; # 
-  <a href="http://hl7.org/fhir/R4/testscript.html#TestScript.date">fhir:TestScript.date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:value</a> &quot;2022-06-14T23:19:30.696Z&quot;^^xsd:dateTime]; # 
-  <a href="http://hl7.org/fhir/R4/testscript.html#TestScript.publisher">fhir:TestScript.publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;MITRE&quot;]; # 
-  <a href="http://hl7.org/fhir/R4/testscript.html#TestScript.contact">fhir:TestScript.contact</a> [
-     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-     <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:ContactDetail.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;MITRE&quot; ];
-     <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:ContactDetail.telecom</a> [
-       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-       <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:ContactPoint.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;url&quot; ];
-       <a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:ContactPoint.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;https://www.mitre.org&quot; ]     ]
-  ]; # 
-  <a href="http://hl7.org/fhir/R4/testscript.html#TestScript.jurisdiction">fhir:TestScript.jurisdiction</a> [
-     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-     <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
-       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;urn:iso:std:iso:3166&quot; ];
-       <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;US&quot; ]     ]
-  ]; # 
-  <a href="http://hl7.org/fhir/R4/testscript.html#TestScript.fixture">fhir:TestScript.fixture</a> [
-     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-     <a href="http://hl7.org/fhir/R4/testscript.html#TestScript.fixture.id">fhir:Element.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;registration-request-3&quot; ];
-     <a href="http://hl7.org/fhir/R4/testscript.html#TestScript.fixture.autocreate">fhir:TestScript.fixture.autocreate</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:value</a> &quot;true&quot;^^xsd:boolean ];
-     <a href="http://hl7.org/fhir/R4/testscript.html#TestScript.fixture.autodelete">fhir:TestScript.fixture.autodelete</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:value</a> &quot;true&quot;^^xsd:boolean ];
-     <a href="http://hl7.org/fhir/R4/testscript.html#TestScript.fixture.resource">fhir:TestScript.fixture.resource</a> [
-       <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;registration-request-3&quot; ];
-       <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:Reference.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Backend Service - Registration Request&quot; ]     ]
-  ], [
-     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1;
-     <a href="http://hl7.org/fhir/R4/testscript.html#TestScript.fixture.id">fhir:Element.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;registration-response-3&quot; ];
-     <a href="http://hl7.org/fhir/R4/testscript.html#TestScript.fixture.autocreate">fhir:TestScript.fixture.autocreate</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:value</a> &quot;true&quot;^^xsd:boolean ];
-     <a href="http://hl7.org/fhir/R4/testscript.html#TestScript.fixture.autodelete">fhir:TestScript.fixture.autodelete</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:value</a> &quot;true&quot;^^xsd:boolean ];
-     <a href="http://hl7.org/fhir/R4/testscript.html#TestScript.fixture.resource">fhir:TestScript.fixture.resource</a> [
-       <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;registration-response-3&quot; ];
-       <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:Reference.display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Backend Service - Registration Response&quot; ]     ]
-  ]; # 
-  <a href="http://hl7.org/fhir/R4/testscript.html#TestScript.test">fhir:TestScript.test</a> [
-     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-     <a href="http://hl7.org/fhir/R4/testscript.html#TestScript.test.id">fhir:Element.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;2823af51-4a7e-5887-3f72-0a10579b4acc&quot; ];
-     <a href="http://hl7.org/fhir/R4/testscript.html#TestScript.test.name">fhir:TestScript.test.name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;1.1 Register backend service&quot; ];
-     <a href="http://hl7.org/fhir/R4/testscript.html#TestScript.test.action">fhir:TestScript.test.action</a> [
-       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-       <a href="http://hl7.org/fhir/R4/testscript.html#TestScript.test.action.operation">fhir:TestScript.test.action.operation</a> [
-         <a href="http://hl7.org/fhir/R4/testscript.html#TestScript.setup.action.operation.resource">fhir:TestScript.setup.action.operation.resource</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;Binary&quot; ];
-         <a href="http://hl7.org/fhir/R4/testscript.html#TestScript.setup.action.operation.label">fhir:TestScript.setup.action.operation.label</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Register backend service&quot; ];
-         <a href="http://hl7.org/fhir/R4/testscript.html#TestScript.setup.action.operation.description">fhir:TestScript.setup.action.operation.description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;PUT /oauth/registration&quot; ];
-         <a href="http://hl7.org/fhir/R4/testscript.html#TestScript.setup.action.operation.accept">fhir:TestScript.setup.action.operation.accept</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;json&quot; ];
-         <a href="http://hl7.org/fhir/R4/testscript.html#TestScript.setup.action.operation.encodeRequestUrl">fhir:TestScript.setup.action.operation.encodeRequestUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:value</a> &quot;true&quot;^^xsd:boolean ];
-         <a href="http://hl7.org/fhir/R4/testscript.html#TestScript.setup.action.operation.method">fhir:TestScript.setup.action.operation.method</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;put&quot; ];
-         <a href="http://hl7.org/fhir/R4/testscript.html#TestScript.setup.action.operation.sourceId">fhir:TestScript.setup.action.operation.sourceId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:value</a> &quot;registration-request-3&quot; ];
-         <a href="http://hl7.org/fhir/R4/testscript.html#TestScript.setup.action.operation.url">fhir:TestScript.setup.action.operation.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;/oauth/registration&quot; ]       ]     ], [
-       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1;
-       <a href="http://hl7.org/fhir/R4/testscript.html#TestScript.test.action.assert">fhir:TestScript.test.action.assert</a> [
-         <a href="http://hl7.org/fhir/R4/testscript.html#TestScript.setup.action.assert.description">fhir:TestScript.setup.action.assert.description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Confirm that the returned HTTP status is 201(Success).&quot; ];
-         <a href="http://hl7.org/fhir/R4/testscript.html#TestScript.setup.action.assert.response">fhir:TestScript.setup.action.assert.response</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;okay&quot; ];
-         <a href="http://hl7.org/fhir/R4/testscript.html#TestScript.setup.action.assert.sourceId">fhir:TestScript.setup.action.assert.sourceId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:value</a> &quot;registration-response-3&quot; ];
-         <a href="http://hl7.org/fhir/R4/testscript.html#TestScript.setup.action.assert.warningOnly">fhir:TestScript.setup.action.assert.warningOnly</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:value</a> &quot;false&quot;^^xsd:boolean ]       ]     ]
-  ]. # 
-
-# - ontology header ------------------------------------------------------------
-
- a owl:Ontology;
-  owl:imports fhir:fhir.ttl.
+ a fhir:TestScript ;
+  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
+  <a href="http://hl7.org/fhir/R4/testscript.html#TestScript.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;TestScript-Scenario3&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/testscript.html#TestScript.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: TestScript&lt;/b&gt;&lt;a name=\&quot;TestScript-Scenario3\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource TestScript &amp;quot;TestScript-Scenario3&amp;quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;url&lt;/b&gt;: &lt;code&gt;http://&lt;/code&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;version&lt;/b&gt;: 0.2.1&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Scenario 3&lt;/p&gt;&lt;p&gt;&lt;b&gt;title&lt;/b&gt;: R4 TestScript - Back End Acces&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: draft&lt;/p&gt;&lt;p&gt;&lt;b&gt;date&lt;/b&gt;: 2022-06-14 23:19:30+0000&lt;/p&gt;&lt;p&gt;&lt;b&gt;publisher&lt;/b&gt;: MITRE&lt;/p&gt;&lt;p&gt;&lt;b&gt;contact&lt;/b&gt;: MITRE: &lt;a href=\&quot;https://www.mitre.org\&quot;&gt;https://www.mitre.org&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;jurisdiction&lt;/b&gt;: United States of America &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/5.0.0/CodeSystem-ISO3166Part1.html\&quot;&gt;ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code&lt;/a&gt;#US)&lt;/span&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;fixture&lt;/b&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;&lt;/p&gt;registration-request-3&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;autocreate&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;autodelete&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;resource&lt;/b&gt;: &lt;a href=\&quot;registration-request-3\&quot;&gt;registration-request-3: Backend Service - Registration Request&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;fixture&lt;/b&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;&lt;/p&gt;registration-response-3&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;autocreate&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;autodelete&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;resource&lt;/b&gt;: &lt;a href=\&quot;registration-response-3\&quot;&gt;registration-response-3: Backend Service - Registration Response&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;test&lt;/b&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;&lt;/p&gt;2823af51-4a7e-5887-3f72-0a10579b4acc&lt;/blockquote&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: 1.1 Register backend service&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;action&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Operations&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Resource&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Label&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Description&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Accept&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;EncodeRequestUrl&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Method&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;SourceId&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Url&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;Binary&lt;/td&gt;&lt;td&gt;Register backend service&lt;/td&gt;&lt;td&gt;PUT /oauth/registration&lt;/td&gt;&lt;td&gt;json&lt;/td&gt;&lt;td&gt;true&lt;/td&gt;&lt;td&gt;put&lt;/td&gt;&lt;td&gt;registration-request-3&lt;/td&gt;&lt;td&gt;/oauth/registration&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;action&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Asserts&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Description&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Response&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;SourceId&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;WarningOnly&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;Confirm that the returned HTTP status is 201(Success).&lt;/td&gt;&lt;td&gt;okay&lt;/td&gt;&lt;td&gt;registration-response-3&lt;/td&gt;&lt;td&gt;false&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;/div&gt;&quot;
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/testscript.html#TestScript.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://&quot;^^xsd:anyURI] ; # 
+  <a href="http://hl7.org/fhir/R4/testscript.html#TestScript.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;0.2.1&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/testscript.html#TestScript.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Scenario 3&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/testscript.html#TestScript.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;R4 TestScript - Back End Acces&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/testscript.html#TestScript.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;draft&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/testscript.html#TestScript.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2022-06-14T23:19:30.696Z&quot;^^xsd:dateTime] ; # 
+  <a href="http://hl7.org/fhir/R4/testscript.html#TestScript.publisher">fhir:publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;MITRE&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/testscript.html#TestScript.contact">fhir:contact</a> ( [
+<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;MITRE&quot; ] ;
+    ( <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:telecom</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;url&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;https://www.mitre.org&quot; ]     ] )
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/testscript.html#TestScript.jurisdiction">fhir:jurisdiction</a> ( [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;urn:iso:std:iso:3166&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;US&quot; ]     ] )
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/testscript.html#TestScript.fixture">fhir:fixture</a> ( [
+<a href="http://hl7.org/fhir/R4/testscript.html#TestScript.fixture.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;registration-request-3&quot; ] ;
+<a href="http://hl7.org/fhir/R4/testscript.html#TestScript.fixture.autocreate">fhir:autocreate</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;true&quot;^^xsd:boolean ] ;
+<a href="http://hl7.org/fhir/R4/testscript.html#TestScript.fixture.autodelete">fhir:autodelete</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;true&quot;^^xsd:boolean ] ;
+<a href="http://hl7.org/fhir/R4/testscript.html#TestScript.fixture.resource">fhir:resource</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;registration-request-3&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;Binary&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Backend Service - Registration Request&quot; ]     ]
+  ] [
+<a href="http://hl7.org/fhir/R4/testscript.html#TestScript.fixture.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;registration-response-3&quot; ] ;
+<a href="http://hl7.org/fhir/R4/testscript.html#TestScript.fixture.autocreate">fhir:autocreate</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;true&quot;^^xsd:boolean ] ;
+<a href="http://hl7.org/fhir/R4/testscript.html#TestScript.fixture.autodelete">fhir:autodelete</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;true&quot;^^xsd:boolean ] ;
+<a href="http://hl7.org/fhir/R4/testscript.html#TestScript.fixture.resource">fhir:resource</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;registration-response-3&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;Binary&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Backend Service - Registration Response&quot; ]     ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/testscript.html#TestScript.test">fhir:test</a> ( [
+<a href="http://hl7.org/fhir/R4/testscript.html#TestScript.test.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;2823af51-4a7e-5887-3f72-0a10579b4acc&quot; ] ;
+<a href="http://hl7.org/fhir/R4/testscript.html#TestScript.test.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;1.1 Register backend service&quot; ] ;
+    ( <a href="http://hl7.org/fhir/R4/testscript.html#TestScript.test.action">fhir:action</a> [
+<a href="http://hl7.org/fhir/R4/testscript.html#TestScript.test.action.operation">fhir:operation</a> [
+<a href="http://hl7.org/fhir/R4/testscript.html#TestScript.setup.action.operation.resource">fhir:resource</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;Binary&quot; ] ;
+<a href="http://hl7.org/fhir/R4/testscript.html#TestScript.setup.action.operation.label">fhir:label</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Register backend service&quot; ] ;
+<a href="http://hl7.org/fhir/R4/testscript.html#TestScript.setup.action.operation.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;PUT /oauth/registration&quot; ] ;
+<a href="http://hl7.org/fhir/R4/testscript.html#TestScript.setup.action.operation.accept">fhir:accept</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;json&quot; ] ;
+<a href="http://hl7.org/fhir/R4/testscript.html#TestScript.setup.action.operation.encodeRequestUrl">fhir:encodeRequestUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;true&quot;^^xsd:boolean ] ;
+<a href="http://hl7.org/fhir/R4/testscript.html#TestScript.setup.action.operation.method">fhir:method</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;put&quot; ] ;
+<a href="http://hl7.org/fhir/R4/testscript.html#TestScript.setup.action.operation.sourceId">fhir:sourceId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;registration-request-3&quot; ] ;
+<a href="http://hl7.org/fhir/R4/testscript.html#TestScript.setup.action.operation.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;/oauth/registration&quot; ]       ]     ] [
+<a href="http://hl7.org/fhir/R4/testscript.html#TestScript.test.action.assert">fhir:assert</a> [
+<a href="http://hl7.org/fhir/R4/testscript.html#TestScript.setup.action.assert.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Confirm that the returned HTTP status is 201(Success).&quot; ] ;
+<a href="http://hl7.org/fhir/R4/testscript.html#TestScript.setup.action.assert.response">fhir:response</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;okay&quot; ] ;
+<a href="http://hl7.org/fhir/R4/testscript.html#TestScript.setup.action.assert.sourceId">fhir:sourceId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;registration-response-3&quot; ] ;
+<a href="http://hl7.org/fhir/R4/testscript.html#TestScript.setup.action.assert.warningOnly">fhir:warningOnly</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ]       ]     ] )
+  ] ) . # 
 
 </code></pre>
 
@@ -301,7 +290,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org">MITRE</a>.  Package mitre.fast.access-control#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Apr 11, 2023 09:52-0500">2023-04-11</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org">MITRE</a>.  Package mitre.fast.access-control#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 9, 2023 02:35-0500">2023-08-09</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -3,10 +3,11 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
   <id value="AccessControlRequirements"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2/></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2/><div><p>Access Control Capability Statement</p>
+</div></div>
   </text>
   <url value="https://gitlab.mitre.org/awatson/fast-access-control/CapabilityStatement/AccessControlRequirements"/>
-  <version value="0.1.0"/>
+  <version value="0.2.1"/>
   <status value="draft"/>
   <date value="2022-10-12"/>
   <publisher value="MITRE"/>
@@ -17,6 +18,7 @@
       <value value="https://www.mitre.org"/>
     </telecom>
   </contact>
+  <description value="Access Control Capability Statement"/>
   <kind value="requirements"/>
   <fhirVersion value="4.0.1"/>
   <format value="json"/>

@@ -5,211 +5,180 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://gitlab.mitre.org/awatson/fast-access-control/TestScript/TestScript-gszMyXpwsdoAjJZeh> a fhir:TestScript;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "TestScript-gszMyXpwsdoAjJZeh"]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: TestScript</b><a name=\"TestScript-gszMyXpwsdoAjJZeh\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource TestScript &quot;TestScript-gszMyXpwsdoAjJZeh&quot; </p></div><p><b>url</b>: <code>http://</code></p><p><b>version</b>: 0.1.0</p><p><b>name</b>: SMART_Client_Registration</p><p><b>title</b>: R4 TestScript - SMART on FHIR Client Registration</p><p><b>status</b>: draft</p><p><b>date</b>: 2022-06-14 23:24:46+0000</p><p><b>publisher</b>: MITRE</p><p><b>contact</b>: MITRE: <a href=\"https://www.mitre.org\">https://www.mitre.org</a></p><p><b>jurisdiction</b>: United States of America <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-ISO3166Part1.html\">ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code</a>#US)</span></p><h3>Origins</h3><table class=\"grid\"><tr><td>-</td><td><b>Index</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td>1</td><td>FHIR-Client (Details: [not stated] code FHIR-Client = 'FHIR-Client', stated as 'null')</td></tr></table><h3>Destinations</h3><table class=\"grid\"><tr><td>-</td><td><b>Index</b></td><td><b>Profile</b></td></tr><tr><td>*</td><td>1</td><td>FHIR-Server (Details: [not stated] code FHIR-Server = 'FHIR-Server', stated as 'null')</td></tr></table><blockquote><p><b>fixture</b></p><p><b>autocreate</b>: true</p><p><b>autodelete</b>: true</p><p><b>resource</b>: <a href=\"Basic-OAuthRegistrationRequest1.html\">Basic/OAuthRegistrationRequest1: Registration Payload 1</a></p></blockquote><blockquote><p><b>fixture</b></p><p><b>autocreate</b>: true</p><p><b>autodelete</b>: true</p></blockquote><blockquote><p><b>fixture</b></p><p><b>autocreate</b>: true</p><p><b>autodelete</b>: true</p></blockquote><blockquote><p><b>fixture</b></p><p><b>autocreate</b>: true</p><p><b>autodelete</b>: true</p></blockquote><blockquote><p><b>fixture</b></p><p><b>autocreate</b>: true</p><p><b>autodelete</b>: true</p></blockquote><blockquote><p><b>test</b></p><p><b>name</b>: National Directory - FHIR Metadata</p><blockquote><p><b>action</b></p><h3>Operations</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Label</b></td><td><b>Description</b></td><td><b>Accept</b></td><td><b>EncodeRequestUrl</b></td><td><b>Method</b></td><td><b>Url</b></td></tr><tr><td>*</td><td>Read (Details: http://terminology.hl7.org/CodeSystem/testscript-operation-codes code read = 'Read', stated as 'null')</td><td>National Directory - FHIR Metadata</td><td>GET /baseR4/metadata</td><td>json</td><td>true</td><td>get</td><td>/baseR4/metadata</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table class=\"grid\"><tr><td>-</td><td><b>Description</b></td><td><b>Response</b></td><td><b>WarningOnly</b></td></tr><tr><td>*</td><td>Confirm that the returned HTTP status is 200(OK).</td><td>okay</td><td>false</td></tr></table></blockquote></blockquote><blockquote><p><b>test</b></p><p><b>name</b>: Registration (SMART on FHIR)</p><blockquote><p><b>action</b></p><h3>Operations</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Label</b></td><td><b>Description</b></td><td><b>Accept</b></td><td><b>EncodeRequestUrl</b></td><td><b>Method</b></td><td><b>SourceId</b></td><td><b>Url</b></td></tr><tr><td>*</td><td>Create (Details: http://terminology.hl7.org/CodeSystem/testscript-operation-codes code create = 'Create', stated as 'null')</td><td>Registration (SMART on FHIR)</td><td>POST /oauth/registration</td><td>json</td><td>true</td><td>post</td><td>47be8943-2604-5d89-abb9-5c4e13a5120b</td><td>/oauth/registration</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table class=\"grid\"><tr><td>-</td><td><b>Description</b></td><td><b>Response</b></td><td><b>WarningOnly</b></td></tr><tr><td>*</td><td>Confirm that the returned HTTP status is 201(Success).</td><td>created</td><td>false</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table class=\"grid\"><tr><td>-</td><td><b>Description</b></td><td><b>WarningOnly</b></td></tr><tr><td>*</td><td>Body contains the following</td><td>false</td></tr></table></blockquote></blockquote><blockquote><p><b>test</b></p><p><b>name</b>: Authorize - Stand Alone</p><blockquote><p><b>action</b></p><h3>Operations</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Label</b></td><td><b>Description</b></td><td><b>Accept</b></td><td><b>EncodeRequestUrl</b></td><td><b>Method</b></td><td><b>Url</b></td></tr><tr><td>*</td><td>Read (Details: http://terminology.hl7.org/CodeSystem/testscript-operation-codes code read = 'Read', stated as 'null')</td><td>Authorize - Stand Alone</td><td>GET /oauth/authorize</td><td>json</td><td>true</td><td>get</td><td>/oauth/authorize</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table class=\"grid\"><tr><td>-</td><td><b>Description</b></td><td><b>Response</b></td><td><b>WarningOnly</b></td></tr><tr><td>*</td><td>Confirm that the returned HTTP status is 200(OK).</td><td>okay</td><td>false</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table class=\"grid\"><tr><td>-</td><td><b>Description</b></td><td><b>WarningOnly</b></td></tr><tr><td>*</td><td>Body contains the following</td><td>false</td></tr></table></blockquote></blockquote><blockquote><p><b>test</b></p><p><b>name</b>: Token request</p><blockquote><p><b>action</b></p><h3>Operations</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Label</b></td><td><b>Description</b></td><td><b>Accept</b></td><td><b>EncodeRequestUrl</b></td><td><b>Method</b></td><td><b>Url</b></td></tr><tr><td>*</td><td>Read (Details: http://terminology.hl7.org/CodeSystem/testscript-operation-codes code read = 'Read', stated as 'null')</td><td>Token request</td><td>GET /oauth/token?client_id=12345&amp;code=5KFP8pBZcbqkSuNnY&amp;grant_type=authorization_code&amp;redirect_uri=https%3A%2F%2Finferno.healthit.gov%2Fsuites%2Fcustom%2Fsmart%2Fredirect</td><td>json</td><td>true</td><td>get</td><td>/oauth/token</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table class=\"grid\"><tr><td>-</td><td><b>Description</b></td><td><b>Response</b></td><td><b>WarningOnly</b></td></tr><tr><td>*</td><td>Confirm that the returned HTTP status is 200(OK).</td><td>okay</td><td>false</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table class=\"grid\"><tr><td>-</td><td><b>Description</b></td><td><b>WarningOnly</b></td></tr><tr><td>*</td><td>Body contains the following</td><td>false</td></tr></table></blockquote></blockquote></div>"
-  ]; # 
-  fhir:TestScript.url [ fhir:value "http://"]; # 
-  fhir:TestScript.version [ fhir:value "0.1.0"]; # 
-  fhir:TestScript.name [ fhir:value "SMART_Client_Registration"]; # 
-  fhir:TestScript.title [ fhir:value "R4 TestScript - SMART on FHIR Client Registration"]; # 
-  fhir:TestScript.status [ fhir:value "draft"]; # 
-  fhir:TestScript.date [ fhir:value "2022-06-14T23:24:46.024Z"^^xsd:dateTime]; # 
-  fhir:TestScript.publisher [ fhir:value "MITRE"]; # 
-  fhir:TestScript.contact [
-     fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "MITRE" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "https://www.mitre.org" ]
+<https://gitlab.mitre.org/awatson/fast-access-control/TestScript/TestScript-gszMyXpwsdoAjJZeh> a fhir:TestScript ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "TestScript-gszMyXpwsdoAjJZeh"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: TestScript</b><a name=\"TestScript-gszMyXpwsdoAjJZeh\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource TestScript &quot;TestScript-gszMyXpwsdoAjJZeh&quot; </p></div><p><b>url</b>: <code>http://</code></p><p><b>version</b>: 0.2.1</p><p><b>name</b>: SMART_Client_Registration</p><p><b>title</b>: R4 TestScript - SMART on FHIR Client Registration</p><p><b>status</b>: draft</p><p><b>date</b>: 2022-06-14 23:24:46+0000</p><p><b>publisher</b>: MITRE</p><p><b>contact</b>: MITRE: <a href=\"https://www.mitre.org\">https://www.mitre.org</a></p><p><b>jurisdiction</b>: United States of America <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-ISO3166Part1.html\">ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code</a>#US)</span></p><h3>Origins</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Index</b></td><td><b>Profile</b></td></tr><tr><td style=\"display: none\">*</td><td>1</td><td>FHIR-Client (Details: [not stated] code FHIR-Client = 'FHIR-Client', stated as 'null')</td></tr></table><h3>Destinations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Index</b></td><td><b>Profile</b></td></tr><tr><td style=\"display: none\">*</td><td>1</td><td>FHIR-Server (Details: [not stated] code FHIR-Server = 'FHIR-Server', stated as 'null')</td></tr></table><blockquote><p><b>fixture</b></p><blockquote><p><b>id</b></p>47be8943-2604-5d89-abb9-5c4e13a5120b</blockquote><p><b>autocreate</b>: true</p><p><b>autodelete</b>: true</p><p><b>resource</b>: <a href=\"Basic-OAuthRegistrationRequest1.html\">Basic/OAuthRegistrationRequest1: Registration Payload 1</a></p></blockquote><blockquote><p><b>fixture</b></p><blockquote><p><b>id</b></p>8b3f5577-4344-5c5e-91a0-ac4942632496</blockquote><p><b>autocreate</b>: true</p><p><b>autodelete</b>: true</p></blockquote><blockquote><p><b>fixture</b></p><blockquote><p><b>id</b></p>b079ec7f-b12a-5fec-bd06-338c44571163</blockquote><p><b>autocreate</b>: true</p><p><b>autodelete</b>: true</p></blockquote><blockquote><p><b>fixture</b></p><blockquote><p><b>id</b></p>f6c54af2-61fd-586d-afde-2d402ebf33af</blockquote><p><b>autocreate</b>: true</p><p><b>autodelete</b>: true</p></blockquote><blockquote><p><b>fixture</b></p><blockquote><p><b>id</b></p>ff897a54-61db-5461-aebb-a42fc4ed0e4d</blockquote><p><b>autocreate</b>: true</p><p><b>autodelete</b>: true</p></blockquote><blockquote><p><b>test</b></p><blockquote><p><b>id</b></p>61dcf836-8376-5637-90e0-24ede617b7b7</blockquote><p><b>name</b>: National Directory - FHIR Metadata</p><blockquote><p><b>action</b></p><h3>Operations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Label</b></td><td><b>Description</b></td><td><b>Accept</b></td><td><b>EncodeRequestUrl</b></td><td><b>Method</b></td><td><b>Url</b></td></tr><tr><td style=\"display: none\">*</td><td>Read (Details: http://terminology.hl7.org/CodeSystem/testscript-operation-codes code read = 'Read', stated as 'null')</td><td>National Directory - FHIR Metadata</td><td>GET /baseR4/metadata</td><td>json</td><td>true</td><td>get</td><td>/baseR4/metadata</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Description</b></td><td><b>Response</b></td><td><b>WarningOnly</b></td></tr><tr><td style=\"display: none\">*</td><td>Confirm that the returned HTTP status is 200(OK).</td><td>okay</td><td>false</td></tr></table></blockquote></blockquote><blockquote><p><b>test</b></p><blockquote><p><b>id</b></p>e3daf953-6237-5170-8750-3100c0d76cb3</blockquote><p><b>name</b>: Registration (SMART on FHIR)</p><blockquote><p><b>action</b></p><h3>Operations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Label</b></td><td><b>Description</b></td><td><b>Accept</b></td><td><b>EncodeRequestUrl</b></td><td><b>Method</b></td><td><b>SourceId</b></td><td><b>Url</b></td></tr><tr><td style=\"display: none\">*</td><td>Create (Details: http://terminology.hl7.org/CodeSystem/testscript-operation-codes code create = 'Create', stated as 'null')</td><td>Registration (SMART on FHIR)</td><td>POST /oauth/registration</td><td>json</td><td>true</td><td>post</td><td>47be8943-2604-5d89-abb9-5c4e13a5120b</td><td>/oauth/registration</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Description</b></td><td><b>Response</b></td><td><b>WarningOnly</b></td></tr><tr><td style=\"display: none\">*</td><td>Confirm that the returned HTTP status is 201(Success).</td><td>created</td><td>false</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Description</b></td><td><b>WarningOnly</b></td></tr><tr><td style=\"display: none\">*</td><td>Body contains the following</td><td>false</td></tr></table></blockquote></blockquote><blockquote><p><b>test</b></p><blockquote><p><b>id</b></p>dcd8fa9d-767f-5c63-9648-dffa6974d322</blockquote><p><b>name</b>: Authorize - Stand Alone</p><blockquote><p><b>action</b></p><h3>Operations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Label</b></td><td><b>Description</b></td><td><b>Accept</b></td><td><b>EncodeRequestUrl</b></td><td><b>Method</b></td><td><b>Url</b></td></tr><tr><td style=\"display: none\">*</td><td>Read (Details: http://terminology.hl7.org/CodeSystem/testscript-operation-codes code read = 'Read', stated as 'null')</td><td>Authorize - Stand Alone</td><td>GET /oauth/authorize</td><td>json</td><td>true</td><td>get</td><td>/oauth/authorize</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Description</b></td><td><b>Response</b></td><td><b>WarningOnly</b></td></tr><tr><td style=\"display: none\">*</td><td>Confirm that the returned HTTP status is 200(OK).</td><td>okay</td><td>false</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Description</b></td><td><b>WarningOnly</b></td></tr><tr><td style=\"display: none\">*</td><td>Body contains the following</td><td>false</td></tr></table></blockquote></blockquote><blockquote><p><b>test</b></p><blockquote><p><b>id</b></p>e61c9e92-fcdc-5ca3-8b0c-c80d55b50e4e</blockquote><p><b>name</b>: Token request</p><blockquote><p><b>action</b></p><h3>Operations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Label</b></td><td><b>Description</b></td><td><b>Accept</b></td><td><b>EncodeRequestUrl</b></td><td><b>Method</b></td><td><b>Url</b></td></tr><tr><td style=\"display: none\">*</td><td>Read (Details: http://terminology.hl7.org/CodeSystem/testscript-operation-codes code read = 'Read', stated as 'null')</td><td>Token request</td><td>GET /oauth/token?client_id=12345&amp;code=5KFP8pBZcbqkSuNnY&amp;grant_type=authorization_code&amp;redirect_uri=https%3A%2F%2Finferno.healthit.gov%2Fsuites%2Fcustom%2Fsmart%2Fredirect</td><td>json</td><td>true</td><td>get</td><td>/oauth/token</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Description</b></td><td><b>Response</b></td><td><b>WarningOnly</b></td></tr><tr><td style=\"display: none\">*</td><td>Confirm that the returned HTTP status is 200(OK).</td><td>okay</td><td>false</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Description</b></td><td><b>WarningOnly</b></td></tr><tr><td style=\"display: none\">*</td><td>Body contains the following</td><td>false</td></tr></table></blockquote></blockquote></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.2.1"] ; # 
+  fhir:name [ fhir:v "SMART_Client_Registration"] ; # 
+  fhir:title [ fhir:v "R4 TestScript - SMART on FHIR Client Registration"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2022-06-14T23:24:46.024Z"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org" ]
+     ] )
+  ] ) ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "US" ]
+     ] )
+  ] ) ; # 
+  fhir:origin ( [
+     fhir:index [ fhir:v "1"^^xsd:integer ] ;
+     fhir:profile [
+       fhir:code [ fhir:v "FHIR-Client" ]
      ]
-  ]; # 
-  fhir:TestScript.jurisdiction [
-     fhir:index 0;
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
-       fhir:Coding.code [ fhir:value "US" ]
+  ] ) ; # 
+  fhir:destination ( [
+     fhir:index [ fhir:v "1"^^xsd:integer ] ;
+     fhir:profile [
+       fhir:code [ fhir:v "FHIR-Server" ]
      ]
-  ]; # 
-  fhir:TestScript.origin [
-     fhir:index 0;
-     fhir:TestScript.origin.index [ fhir:value "1"^^xsd:integer ];
-     fhir:TestScript.origin.profile [
-       fhir:Coding.code [ fhir:value "FHIR-Client" ]
+  ] ) ; # 
+  fhir:fixture ( [
+     fhir:id [ fhir:v "47be8943-2604-5d89-abb9-5c4e13a5120b" ] ;
+     fhir:autocreate [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:autodelete [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:resource [
+       fhir:link <https://gitlab.mitre.org/awatson/fast-access-control/Basic/OAuthRegistrationRequest1> ;
+       fhir:reference [ fhir:v "Basic/OAuthRegistrationRequest1" ] ;
+       fhir:display [ fhir:v "Registration Payload 1" ]
      ]
-  ]; # 
-  fhir:TestScript.destination [
-     fhir:index 0;
-     fhir:TestScript.destination.index [ fhir:value "1"^^xsd:integer ];
-     fhir:TestScript.destination.profile [
-       fhir:Coding.code [ fhir:value "FHIR-Server" ]
-     ]
-  ]; # 
-  fhir:TestScript.fixture [
-     fhir:index 0;
-     fhir:Element.id [ fhir:value "47be8943-2604-5d89-abb9-5c4e13a5120b" ];
-     fhir:TestScript.fixture.autocreate [ fhir:value "true"^^xsd:boolean ];
-     fhir:TestScript.fixture.autodelete [ fhir:value "true"^^xsd:boolean ];
-     fhir:TestScript.fixture.resource [
-       fhir:link <https://gitlab.mitre.org/awatson/fast-access-control/Basic/OAuthRegistrationRequest1>;
-       fhir:Reference.reference [ fhir:value "Basic/OAuthRegistrationRequest1" ];
-       fhir:Reference.display [ fhir:value "Registration Payload 1" ]
-     ]
-  ], [
-     fhir:index 1;
-     fhir:Element.id [ fhir:value "8b3f5577-4344-5c5e-91a0-ac4942632496" ];
-     fhir:TestScript.fixture.autocreate [ fhir:value "true"^^xsd:boolean ];
-     fhir:TestScript.fixture.autodelete [ fhir:value "true"^^xsd:boolean ]
-  ], [
-     fhir:index 2;
-     fhir:Element.id [ fhir:value "b079ec7f-b12a-5fec-bd06-338c44571163" ];
-     fhir:TestScript.fixture.autocreate [ fhir:value "true"^^xsd:boolean ];
-     fhir:TestScript.fixture.autodelete [ fhir:value "true"^^xsd:boolean ]
-  ], [
-     fhir:index 3;
-     fhir:Element.id [ fhir:value "f6c54af2-61fd-586d-afde-2d402ebf33af" ];
-     fhir:TestScript.fixture.autocreate [ fhir:value "true"^^xsd:boolean ];
-     fhir:TestScript.fixture.autodelete [ fhir:value "true"^^xsd:boolean ]
-  ], [
-     fhir:index 4;
-     fhir:Element.id [ fhir:value "ff897a54-61db-5461-aebb-a42fc4ed0e4d" ];
-     fhir:TestScript.fixture.autocreate [ fhir:value "true"^^xsd:boolean ];
-     fhir:TestScript.fixture.autodelete [ fhir:value "true"^^xsd:boolean ]
-  ]; # 
-  fhir:TestScript.test [
-     fhir:index 0;
-     fhir:Element.id [ fhir:value "61dcf836-8376-5637-90e0-24ede617b7b7" ];
-     fhir:TestScript.test.name [ fhir:value "National Directory - FHIR Metadata" ];
-     fhir:TestScript.test.action [
-       fhir:index 0;
-       fhir:TestScript.test.action.operation [
-         fhir:TestScript.setup.action.operation.type [
-           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/testscript-operation-codes" ];
-           fhir:Coding.code [ fhir:value "read" ]
-         ];
-         fhir:TestScript.setup.action.operation.label [ fhir:value "National Directory - FHIR Metadata" ];
-         fhir:TestScript.setup.action.operation.description [ fhir:value "GET /baseR4/metadata" ];
-         fhir:TestScript.setup.action.operation.accept [ fhir:value "json" ];
-         fhir:TestScript.setup.action.operation.encodeRequestUrl [ fhir:value "true"^^xsd:boolean ];
-         fhir:TestScript.setup.action.operation.method [ fhir:value "get" ];
-         fhir:TestScript.setup.action.operation.url [ fhir:value "/baseR4/metadata" ]
+  ] [
+     fhir:id [ fhir:v "8b3f5577-4344-5c5e-91a0-ac4942632496" ] ;
+     fhir:autocreate [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:autodelete [ fhir:v "true"^^xsd:boolean ]
+  ] [
+     fhir:id [ fhir:v "b079ec7f-b12a-5fec-bd06-338c44571163" ] ;
+     fhir:autocreate [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:autodelete [ fhir:v "true"^^xsd:boolean ]
+  ] [
+     fhir:id [ fhir:v "f6c54af2-61fd-586d-afde-2d402ebf33af" ] ;
+     fhir:autocreate [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:autodelete [ fhir:v "true"^^xsd:boolean ]
+  ] [
+     fhir:id [ fhir:v "ff897a54-61db-5461-aebb-a42fc4ed0e4d" ] ;
+     fhir:autocreate [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:autodelete [ fhir:v "true"^^xsd:boolean ]
+  ] ) ; # 
+  fhir:test ( [
+     fhir:id [ fhir:v "61dcf836-8376-5637-90e0-24ede617b7b7" ] ;
+     fhir:name [ fhir:v "National Directory - FHIR Metadata" ] ;
+     fhir:action ( [
+       fhir:operation [
+         fhir:type [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "read" ]
+         ] ;
+         fhir:label [ fhir:v "National Directory - FHIR Metadata" ] ;
+         fhir:description [ fhir:v "GET /baseR4/metadata" ] ;
+         fhir:accept [ fhir:v "json" ] ;
+         fhir:encodeRequestUrl [ fhir:v "true"^^xsd:boolean ] ;
+         fhir:method [ fhir:v "get" ] ;
+         fhir:url [ fhir:v "/baseR4/metadata" ]
        ]
-     ], [
-       fhir:index 1;
-       fhir:TestScript.test.action.assert [
-         fhir:TestScript.setup.action.assert.description [ fhir:value "Confirm that the returned HTTP status is 200(OK)." ];
-         fhir:TestScript.setup.action.assert.response [ fhir:value "okay" ];
-         fhir:TestScript.setup.action.assert.warningOnly [ fhir:value "false"^^xsd:boolean ]
+     ] [
+       fhir:assert [
+         fhir:description [ fhir:v "Confirm that the returned HTTP status is 200(OK)." ] ;
+         fhir:response [ fhir:v "okay" ] ;
+         fhir:warningOnly [ fhir:v "false"^^xsd:boolean ]
        ]
-     ]
-  ], [
-     fhir:index 1;
-     fhir:Element.id [ fhir:value "e3daf953-6237-5170-8750-3100c0d76cb3" ];
-     fhir:TestScript.test.name [ fhir:value "Registration (SMART on FHIR)" ];
-     fhir:TestScript.test.action [
-       fhir:index 0;
-       fhir:TestScript.test.action.operation [
-         fhir:TestScript.setup.action.operation.type [
-           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/testscript-operation-codes" ];
-           fhir:Coding.code [ fhir:value "create" ]
-         ];
-         fhir:TestScript.setup.action.operation.label [ fhir:value "Registration (SMART on FHIR)" ];
-         fhir:TestScript.setup.action.operation.description [ fhir:value "POST /oauth/registration" ];
-         fhir:TestScript.setup.action.operation.accept [ fhir:value "json" ];
-         fhir:TestScript.setup.action.operation.encodeRequestUrl [ fhir:value "true"^^xsd:boolean ];
-         fhir:TestScript.setup.action.operation.method [ fhir:value "post" ];
-         fhir:TestScript.setup.action.operation.sourceId [ fhir:value "47be8943-2604-5d89-abb9-5c4e13a5120b" ];
-         fhir:TestScript.setup.action.operation.url [ fhir:value "/oauth/registration" ]
+     ] )
+  ] [
+     fhir:id [ fhir:v "e3daf953-6237-5170-8750-3100c0d76cb3" ] ;
+     fhir:name [ fhir:v "Registration (SMART on FHIR)" ] ;
+     fhir:action ( [
+       fhir:operation [
+         fhir:type [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "create" ]
+         ] ;
+         fhir:label [ fhir:v "Registration (SMART on FHIR)" ] ;
+         fhir:description [ fhir:v "POST /oauth/registration" ] ;
+         fhir:accept [ fhir:v "json" ] ;
+         fhir:encodeRequestUrl [ fhir:v "true"^^xsd:boolean ] ;
+         fhir:method [ fhir:v "post" ] ;
+         fhir:sourceId [ fhir:v "47be8943-2604-5d89-abb9-5c4e13a5120b" ] ;
+         fhir:url [ fhir:v "/oauth/registration" ]
        ]
-     ], [
-       fhir:index 1;
-       fhir:TestScript.test.action.assert [
-         fhir:TestScript.setup.action.assert.description [ fhir:value "Confirm that the returned HTTP status is 201(Success)." ];
-         fhir:TestScript.setup.action.assert.response [ fhir:value "created" ];
-         fhir:TestScript.setup.action.assert.warningOnly [ fhir:value "false"^^xsd:boolean ]
+     ] [
+       fhir:assert [
+         fhir:description [ fhir:v "Confirm that the returned HTTP status is 201(Success)." ] ;
+         fhir:response [ fhir:v "created" ] ;
+         fhir:warningOnly [ fhir:v "false"^^xsd:boolean ]
        ]
-     ], [
-       fhir:index 2;
-       fhir:TestScript.test.action.assert [
-         fhir:TestScript.setup.action.assert.description [ fhir:value "Body contains the following" ];
-         fhir:TestScript.setup.action.assert.warningOnly [ fhir:value "false"^^xsd:boolean ]
+     ] [
+       fhir:assert [
+         fhir:description [ fhir:v "Body contains the following" ] ;
+         fhir:warningOnly [ fhir:v "false"^^xsd:boolean ]
        ]
-     ]
-  ], [
-     fhir:index 2;
-     fhir:Element.id [ fhir:value "dcd8fa9d-767f-5c63-9648-dffa6974d322" ];
-     fhir:TestScript.test.name [ fhir:value "Authorize - Stand Alone" ];
-     fhir:TestScript.test.action [
-       fhir:index 0;
-       fhir:TestScript.test.action.operation [
-         fhir:TestScript.setup.action.operation.type [
-           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/testscript-operation-codes" ];
-           fhir:Coding.code [ fhir:value "read" ]
-         ];
-         fhir:TestScript.setup.action.operation.label [ fhir:value "Authorize - Stand Alone" ];
-         fhir:TestScript.setup.action.operation.description [ fhir:value "GET /oauth/authorize" ];
-         fhir:TestScript.setup.action.operation.accept [ fhir:value "json" ];
-         fhir:TestScript.setup.action.operation.encodeRequestUrl [ fhir:value "true"^^xsd:boolean ];
-         fhir:TestScript.setup.action.operation.method [ fhir:value "get" ];
-         fhir:TestScript.setup.action.operation.url [ fhir:value "/oauth/authorize" ]
+     ] )
+  ] [
+     fhir:id [ fhir:v "dcd8fa9d-767f-5c63-9648-dffa6974d322" ] ;
+     fhir:name [ fhir:v "Authorize - Stand Alone" ] ;
+     fhir:action ( [
+       fhir:operation [
+         fhir:type [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "read" ]
+         ] ;
+         fhir:label [ fhir:v "Authorize - Stand Alone" ] ;
+         fhir:description [ fhir:v "GET /oauth/authorize" ] ;
+         fhir:accept [ fhir:v "json" ] ;
+         fhir:encodeRequestUrl [ fhir:v "true"^^xsd:boolean ] ;
+         fhir:method [ fhir:v "get" ] ;
+         fhir:url [ fhir:v "/oauth/authorize" ]
        ]
-     ], [
-       fhir:index 1;
-       fhir:TestScript.test.action.assert [
-         fhir:TestScript.setup.action.assert.description [ fhir:value "Confirm that the returned HTTP status is 200(OK)." ];
-         fhir:TestScript.setup.action.assert.response [ fhir:value "okay" ];
-         fhir:TestScript.setup.action.assert.warningOnly [ fhir:value "false"^^xsd:boolean ]
+     ] [
+       fhir:assert [
+         fhir:description [ fhir:v "Confirm that the returned HTTP status is 200(OK)." ] ;
+         fhir:response [ fhir:v "okay" ] ;
+         fhir:warningOnly [ fhir:v "false"^^xsd:boolean ]
        ]
-     ], [
-       fhir:index 2;
-       fhir:TestScript.test.action.assert [
-         fhir:TestScript.setup.action.assert.description [ fhir:value "Body contains the following" ];
-         fhir:TestScript.setup.action.assert.warningOnly [ fhir:value "false"^^xsd:boolean ]
+     ] [
+       fhir:assert [
+         fhir:description [ fhir:v "Body contains the following" ] ;
+         fhir:warningOnly [ fhir:v "false"^^xsd:boolean ]
        ]
-     ]
-  ], [
-     fhir:index 3;
-     fhir:Element.id [ fhir:value "e61c9e92-fcdc-5ca3-8b0c-c80d55b50e4e" ];
-     fhir:TestScript.test.name [ fhir:value "Token request" ];
-     fhir:TestScript.test.action [
-       fhir:index 0;
-       fhir:TestScript.test.action.operation [
-         fhir:TestScript.setup.action.operation.type [
-           fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/testscript-operation-codes" ];
-           fhir:Coding.code [ fhir:value "read" ]
-         ];
-         fhir:TestScript.setup.action.operation.label [ fhir:value "Token request" ];
-         fhir:TestScript.setup.action.operation.description [ fhir:value "GET /oauth/token?client_id=12345&code=5KFP8pBZcbqkSuNnY&grant_type=authorization_code&redirect_uri=https%3A%2F%2Finferno.healthit.gov%2Fsuites%2Fcustom%2Fsmart%2Fredirect" ];
-         fhir:TestScript.setup.action.operation.accept [ fhir:value "json" ];
-         fhir:TestScript.setup.action.operation.encodeRequestUrl [ fhir:value "true"^^xsd:boolean ];
-         fhir:TestScript.setup.action.operation.method [ fhir:value "get" ];
-         fhir:TestScript.setup.action.operation.url [ fhir:value "/oauth/token" ]
+     ] )
+  ] [
+     fhir:id [ fhir:v "e61c9e92-fcdc-5ca3-8b0c-c80d55b50e4e" ] ;
+     fhir:name [ fhir:v "Token request" ] ;
+     fhir:action ( [
+       fhir:operation [
+         fhir:type [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/testscript-operation-codes"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "read" ]
+         ] ;
+         fhir:label [ fhir:v "Token request" ] ;
+         fhir:description [ fhir:v "GET /oauth/token?client_id=12345&code=5KFP8pBZcbqkSuNnY&grant_type=authorization_code&redirect_uri=https%3A%2F%2Finferno.healthit.gov%2Fsuites%2Fcustom%2Fsmart%2Fredirect" ] ;
+         fhir:accept [ fhir:v "json" ] ;
+         fhir:encodeRequestUrl [ fhir:v "true"^^xsd:boolean ] ;
+         fhir:method [ fhir:v "get" ] ;
+         fhir:url [ fhir:v "/oauth/token" ]
        ]
-     ], [
-       fhir:index 1;
-       fhir:TestScript.test.action.assert [
-         fhir:TestScript.setup.action.assert.description [ fhir:value "Confirm that the returned HTTP status is 200(OK)." ];
-         fhir:TestScript.setup.action.assert.response [ fhir:value "okay" ];
-         fhir:TestScript.setup.action.assert.warningOnly [ fhir:value "false"^^xsd:boolean ]
+     ] [
+       fhir:assert [
+         fhir:description [ fhir:v "Confirm that the returned HTTP status is 200(OK)." ] ;
+         fhir:response [ fhir:v "okay" ] ;
+         fhir:warningOnly [ fhir:v "false"^^xsd:boolean ]
        ]
-     ], [
-       fhir:index 2;
-       fhir:TestScript.test.action.assert [
-         fhir:TestScript.setup.action.assert.description [ fhir:value "Body contains the following" ];
-         fhir:TestScript.setup.action.assert.warningOnly [ fhir:value "false"^^xsd:boolean ]
+     ] [
+       fhir:assert [
+         fhir:description [ fhir:v "Body contains the following" ] ;
+         fhir:warningOnly [ fhir:v "false"^^xsd:boolean ]
        ]
-     ]
-  ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<https://gitlab.mitre.org/awatson/fast-access-control/TestScript/TestScript-gszMyXpwsdoAjJZeh.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+     ] )
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 

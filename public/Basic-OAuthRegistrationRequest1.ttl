@@ -5,50 +5,38 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://gitlab.mitre.org/awatson/fast-access-control/Basic/OAuthRegistrationRequest1> a fhir:Basic;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "OAuthRegistrationRequest1"]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Basic</b><a name=\"OAuthRegistrationRequest1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Basic &quot;OAuthRegistrationRequest1&quot; </p></div><p><b>code</b>: Administrative Activity <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#adminact)</span></p></div>"
-  ]; # 
-  fhir:DomainResource.extension [
-     fhir:index 0;
-     fhir:Extension.url [ fhir:value "resourceType" ];
-     fhir:Extension.valueString [ fhir:value "OAuthRegistrationRequest" ]
-  ], [
-     fhir:index 1;
-     fhir:Extension.url [ fhir:value "client_name" ];
-     fhir:Extension.valueString [ fhir:value "Test Harness" ]
-  ], [
-     fhir:index 2;
-     fhir:Extension.url [ fhir:value "scope" ];
-     fhir:Extension.valueString [ fhir:value "fhir organization/read location/read" ]
-  ], [
-     fhir:index 3;
-     fhir:Extension.url [ fhir:value "token_endpoint_auth_method" ];
-     fhir:Extension.valueString [ fhir:value "code" ]
-  ], [
-     fhir:index 4;
-     fhir:Extension.url [ fhir:value "grant_types" ];
-     fhir:Extension.valueString [ fhir:value "code" ]
-  ], [
-     fhir:index 5;
-     fhir:Extension.url [ fhir:value "redirect_uris" ];
-     fhir:Extension.valueString [ fhir:value "http://localhost:3000/redirect" ]
-  ]; # 
-  fhir:Basic.code [
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.code [ fhir:value "adminact" ];
-       fhir:Coding.display [ fhir:value "Administrative Activity" ]
-     ]
+<https://gitlab.mitre.org/awatson/fast-access-control/Basic/OAuthRegistrationRequest1> a fhir:Basic ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "OAuthRegistrationRequest1"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Basic</b><a name=\"OAuthRegistrationRequest1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Basic &quot;OAuthRegistrationRequest1&quot; </p></div><p><b>code</b>: Administrative Activity <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#adminact)</span></p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "resourceType"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "OAuthRegistrationRequest" ]
+  ] [
+     fhir:url [ fhir:v "client_name"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "Test Harness" ]
+  ] [
+     fhir:url [ fhir:v "scope"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "fhir organization/read location/read" ]
+  ] [
+     fhir:url [ fhir:v "token_endpoint_auth_method"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "code" ]
+  ] [
+     fhir:url [ fhir:v "grant_types"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "code" ]
+  ] [
+     fhir:url [ fhir:v "redirect_uris"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "http://localhost:3000/redirect" ]
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:code [ fhir:v "adminact" ] ;
+       fhir:display [ fhir:v "Administrative Activity" ]
+     ] )
   ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<https://gitlab.mitre.org/awatson/fast-access-control/Basic/OAuthRegistrationRequest1.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

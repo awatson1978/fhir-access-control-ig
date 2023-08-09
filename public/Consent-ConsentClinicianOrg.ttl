@@ -5,79 +5,74 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://gitlab.mitre.org/awatson/fast-access-control/Consent/ConsentClinicianOrg> a fhir:Consent;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "ConsentClinicianOrg"]; # 
-  fhir:Resource.meta [
-     fhir:Meta.versionId [ fhir:value "1" ];
-     fhir:Meta.lastUpdated [ fhir:value "2022-09-19T00:02:41.128Z"^^xsd:dateTime ]
-  ]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Consent</b><a name=\"ConsentClinicianOrg\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Consent &quot;ConsentClinicianOrg&quot; Version &quot;1&quot; Updated &quot;2022-09-19 00:02:41+0000&quot; </p></div><p><b>status</b>: active</p><p><b>scope</b>: Privacy Consent <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-consentscope.html\">Consent Scope Codes</a>#patient-privacy)</span></p><p><b>category</b>: information disclosure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActCode.html\">ActCode</a>#IDSCL)</span></p><p><b>dateTime</b>: 2022-09-18 00:00:00+0000</p><h3>Policies</h3><table class=\"grid\"><tr><td>-</td><td><b>Uri</b></td></tr><tr><td>*</td><td><a href=\"https://docs.google.com/document/d/10Y-rEtVQiTWTy7tU-Slw5urAv5RVN38DwSGMVz84Phg/edit?usp=sharing\">https://docs.google.com/document/d/10Y-rEtVQiTWTy7tU-Slw5urAv5RVN38DwSGMVz84Phg/edit?usp=sharing</a></td></tr></table><blockquote><p><b>provision</b></p><p><b>type</b>: deny</p><blockquote><p><b>provision</b></p><p><b>type</b>: permit</p><p><b>securityLabel</b>: restricted (Details: http://terminology.hl7.org/CodeSystem/v3-Confidentiality code R = 'restricted', stated as 'restricted')</p><p><b>class</b>: Organization (Details: [not stated] code Organization = 'Organization', stated as 'Organization')</p></blockquote></blockquote></div>"
-  ]; # 
-  fhir:Consent.status [ fhir:value "active"]; # 
-  fhir:Consent.scope [
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/consentscope" ];
-       fhir:Coding.code [ fhir:value "patient-privacy" ];
-       fhir:Coding.display [ fhir:value "Privacy Consent" ]
-     ]
-  ]; # 
-  fhir:Consent.category [
-     fhir:index 0;
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ActCode" ];
-       fhir:Coding.code [ fhir:value "IDSCL" ];
-       fhir:Coding.display [ fhir:value "information disclosure" ]
-     ]
-  ]; # 
-  fhir:Consent.dateTime [ fhir:value "2022-09-18T00:00:00.000Z"^^xsd:dateTime]; # 
-  fhir:Consent.policy [
-     fhir:index 0;
-     fhir:Consent.policy.uri [ fhir:value "https://docs.google.com/document/d/10Y-rEtVQiTWTy7tU-Slw5urAv5RVN38DwSGMVz84Phg/edit?usp=sharing" ]
-  ]; # 
-  fhir:Consent.provision [
-     fhir:Consent.provision.type [ fhir:value "deny" ];
-     fhir:Consent.provision.provision [
-       fhir:index 0;
-       fhir:Consent.provision.type [ fhir:value "permit" ];
-       fhir:Consent.provision.actor [
-         fhir:index 0;
-         fhir:Consent.provision.actor.role [
-           fhir:CodeableConcept.coding [
-             fhir:index 0;
-             fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-RoleClass" ];
-             fhir:Coding.code [ fhir:value "PROV" ];
-             fhir:Coding.display [ fhir:value "healthcare provider" ];
-             fhir:Coding.userSelected [ fhir:value "true"^^xsd:boolean ]
-           ]
-         ];
-         fhir:Consent.provision.actor.reference [
-           fhir:Reference.reference [ fhir:value "CounselorRole1" ]
+<https://gitlab.mitre.org/awatson/fast-access-control/Consent/ConsentClinicianOrg> a fhir:Consent ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ConsentClinicianOrg"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "1" ] ;
+     fhir:lastUpdated [ fhir:v "2022-09-19T00:02:41.128Z"^^xsd:dateTime ]
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Consent</b><a name=\"ConsentClinicianOrg\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Consent &quot;ConsentClinicianOrg&quot; Version &quot;1&quot; Updated &quot;2022-09-19 00:02:41+0000&quot; </p></div><p><b>status</b>: active</p><p><b>scope</b>: Privacy Consent <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-consentscope.html\">Consent Scope Codes</a>#patient-privacy)</span></p><p><b>category</b>: information disclosure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-ActCode.html\">ActCode</a>#IDSCL)</span></p><p><b>dateTime</b>: 2022-09-18 00:00:00+0000</p><h3>Policies</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Uri</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"https://docs.google.com/document/d/10Y-rEtVQiTWTy7tU-Slw5urAv5RVN38DwSGMVz84Phg/edit?usp=sharing\">https://docs.google.com/document/d/10Y-rEtVQiTWTy7tU-Slw5urAv5RVN38DwSGMVz84Phg/edit?usp=sharing</a></td></tr></table><blockquote><p><b>provision</b></p><p><b>type</b>: deny</p><blockquote><p><b>provision</b></p><p><b>type</b>: permit</p><blockquote><p><b>actor</b></p></blockquote><p><b>action</b>: Access <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-consentaction.html\">Consent Action Codes</a>#access; <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-consentaction.html\">Consent Action Codes</a>#correct &quot;Correct&quot;)</span></p><p><b>securityLabel</b>: restricted (Details: http://terminology.hl7.org/CodeSystem/v3-Confidentiality code R = 'restricted', stated as 'restricted')</p><p><b>class</b>: Organization (Details: [not stated] code Organization = 'Organization', stated as 'Organization')</p></blockquote></blockquote></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:scope [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/consentscope"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "patient-privacy" ] ;
+       fhir:display [ fhir:v "Privacy Consent" ]
+     ] )
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "IDSCL" ] ;
+       fhir:display [ fhir:v "information disclosure" ]
+     ] )
+  ] ) ; # 
+  fhir:dateTime [ fhir:v "2022-09-18T00:00:00.000Z"^^xsd:dateTime] ; # 
+  fhir:policy ( [
+     fhir:uri [ fhir:v "https://docs.google.com/document/d/10Y-rEtVQiTWTy7tU-Slw5urAv5RVN38DwSGMVz84Phg/edit?usp=sharing"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:provision [
+     fhir:type [ fhir:v "deny" ] ;
+     fhir:provision ( [
+       fhir:type [ fhir:v "permit" ] ;
+       fhir:actor ( [
+         fhir:role [
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleClass"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "PROV" ] ;
+             fhir:display [ fhir:v "healthcare provider" ]
+           ] )
+         ] ;
+         fhir:reference [
+           fhir:reference [ fhir:v "CounselorRole1" ]
          ]
-       ];
-       fhir:Consent.provision.securityLabel [
-         fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-Confidentiality" ];
-         fhir:Coding.code [ fhir:value "R" ];
-         fhir:Coding.display [ fhir:value "restricted" ];
-         fhir:Coding.userSelected [ fhir:value "true"^^xsd:boolean ]
-       ];
-       fhir:Consent.provision.class [
-         fhir:index 0;
-         fhir:Coding.code [ fhir:value "Organization" ];
-         fhir:Coding.display [ fhir:value "Organization" ]
-       ]
-     ]
+       ] ) ;
+       fhir:action ( [
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/consentaction"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "access" ] ;
+           fhir:display [ fhir:v "Access" ]
+         ] [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/consentaction"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "correct" ] ;
+           fhir:display [ fhir:v "Correct" ]
+         ] )
+       ] ) ;
+       fhir:securityLabel ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-Confidentiality"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "R" ] ;
+         fhir:display [ fhir:v "restricted" ]
+       ] ) ;
+       fhir:class ( [
+         fhir:code [ fhir:v "Organization" ] ;
+         fhir:display [ fhir:v "Organization" ]
+       ] )
+     ] )
   ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<https://gitlab.mitre.org/awatson/fast-access-control/Consent/ConsentClinicianOrg.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

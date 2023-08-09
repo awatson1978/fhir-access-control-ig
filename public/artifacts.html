@@ -29,10 +29,10 @@
     <![endif]-->
 
     <!-- Favicons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
@@ -49,7 +49,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold"></span>
             <br/>
-            <span style="display:inline-block;">0.1.0 - ci-build
+            <span style="display:inline-block;">0.2.1 - ci-build
 
 
             </span>
@@ -123,7 +123,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">FastAccessControl - Local Development build (v0.1.0). See the <a href="https://gitlab.mitre.org/awatson/fast-access-control/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">FastAccessControl - Local Development build (v0.2.1). See the <a href="https://gitlab.mitre.org/awatson/fast-access-control/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Artifacts Summary</h2>
   
   
@@ -538,35 +538,28 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="Consent-ConsentAnonLoc.html" title="Consent/ConsentAnonLoc">ConsentAnonLoc</a>
-               </td>
-               <td>
-<p>Policy rule to allow general citizenry and anonymous users access to public listings of Location records.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
                   <a href="Consent-ConsentAnonOrg.html" title="Consent/ConsentAnonOrg">ConsentAnonOrg</a>
                </td>
                <td>
-<p>Policy rule to allow general citizenry and anonymous users access to public listings of Organization records.</p>
+
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Consent-ConsentAnonPrac.html" title="Consent/ConsentAnonPrac">ConsentAnonPrac</a>
+                  <a href="Consent-ConsentAnonPatient.html"
+                     title="Consent/ConsentAnonPatient">ConsentAnonPatient</a>
                </td>
                <td>
-<p>Policy rule to allow general citizenry and anonymous users access to public listings of Practitioner records.</p>
+
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Consent-ConsentClinicianLoc.html"
-                     title="Consent/ConsentClinicianLoc">ConsentClinicianLoc</a>
+                  <a href="Consent-ConsentAnonPractitioner.html"
+                     title="Consent/ConsentAnonPractitioner">ConsentAnonPractitioner</a>
                </td>
                <td>
-<p>Policy rule to allow authenticated healthcare practitioners access to restricted Location records.</p>
+
 </td>
             </tr>
             <tr>
@@ -575,7 +568,34 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                      title="Consent/ConsentClinicianOrg">ConsentClinicianOrg</a>
                </td>
                <td>
-<p>Policy rule to allow authenticated healthcare practitioners access to restricted Organization records.</p>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Consent-ConsentClinicianPatient.html"
+                     title="Consent/ConsentClinicianPatient">ConsentClinicianPatient</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Consent-ConsentPatientOwner.html"
+                     title="Consent/ConsentPatientOwner">ConsentPatientOwner</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Consent-ConsentSystemPatient.html"
+                     title="Consent/ConsentSystemPatient">ConsentSystemPatient</a>
+               </td>
+               <td>
+
 </td>
             </tr>
             <tr>
@@ -585,6 +605,31 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </td>
                <td>
 <p>OAuth Registration of Test Harness</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Organization-stdymphnas.html" title="Organization/stdymphnas">Org-StDymphnas</a>
+               </td>
+               <td>
+<p>Organization - St. Dympha’s Womens Shelter</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Organization-stjames.html" title="Organization/stjames">Org-StJames</a>
+               </td>
+               <td>
+<p>Organization - St. Jame’s Infirmary</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="TestScript-TestScript-gszMyXpwsdoAjJZeh.html"
+                     title="TestScript/TestScript-gszMyXpwsdoAjJZeh">SMART Client Registration</a>
+               </td>
+               <td>
+<p>R4 TestScript - SMART on FHIR Client Registration</p>
 </td>
             </tr>
             <tr>
@@ -657,15 +702,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </td>
                <td>
 <p>R4 TestScript - Back End Acces</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="TestScript-TestScript-gszMyXpwsdoAjJZeh.html"
-                     title="TestScript/TestScript-gszMyXpwsdoAjJZeh">SMART Client Registration</a>
-               </td>
-               <td>
-<p>R4 TestScript - SMART on FHIR Client Registration</p>
 </td>
             </tr>
             <tr>
@@ -782,22 +818,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Practitioner - Susan Social - Social Worker</p>
 </td>
             </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Organization-stdymphnas.html" title="Organization/stdymphnas">Org-StDymphnas</a>
-               </td>
-               <td>
-<p>Organization - St. Dympha’s Womens Shelter</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Organization-stjames.html" title="Organization/stjames">Org-StJames</a>
-               </td>
-               <td>
-<p>Organization - St. Jame’s Infirmary</p>
-</td>
-            </tr>
          </tbody>
       </table>
    </p>
@@ -810,6 +830,22 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <table class="grid">
          <col style="width:20%"/>
          <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Binary-auth-request-3.html" title="Binary/auth-request-3">auth-request-3</a>
+               </td>
+               <td>
+<p>Backend Service - Authorization Reques</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Binary-auth-response-3.html" title="Binary/auth-response-3">auth-response-3</a>
+               </td>
+               <td>
+<p>Backend Service - Authorization Response</p>
+</td>
+            </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Binary-registration-request-3.html"
@@ -826,22 +862,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </td>
                <td>
 <p>Backend Service - Registration Response</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Binary-auth-request-3.html" title="Binary/auth-request-3">auth-request-3</a>
-               </td>
-               <td>
-<p>Backend Service - Authorization Reques</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Binary-auth-response-3.html" title="Binary/auth-response-3">auth-response-3</a>
-               </td>
-               <td>
-<p>Backend Service - Authorization Response</p>
 </td>
             </tr>
             <tr>
@@ -879,7 +899,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org">MITRE</a>.  Package mitre.fast.access-control#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Apr 11, 2023 09:52-0500">2023-04-11</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org">MITRE</a>.  Package mitre.fast.access-control#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 9, 2023 02:35-0500">2023-08-09</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

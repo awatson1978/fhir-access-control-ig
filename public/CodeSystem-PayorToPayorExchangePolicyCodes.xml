@@ -6,11 +6,11 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>https://gitlab.mitre.org/awatson/fast-access-control/CodeSystem/PayorToPayorExchangePolicyCodes</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">CMS-9115-P<a name="PayorToPayorExchangePolicyCodes-CMS-9115-P"> </a></td><td>CMS Interoperability and Patient Access proposed rule</td></tr><tr><td style="white-space:nowrap">CMS-9115-F<a name="PayorToPayorExchangePolicyCodes-CMS-9115-F"> </a></td><td>CMS Interoperability and Patient Access final rule</td></tr><tr><td style="white-space:nowrap">CMS-9123-P<a name="PayorToPayorExchangePolicyCodes-CMS-9123-P"> </a></td><td>CMS Reducing Provider and Patient Burdern proposed rule</td></tr><tr><td style="white-space:nowrap">CMS-9123-F<a name="PayorToPayorExchangePolicyCodes-CMS-9123-F"> </a></td><td>CMS Reducing Provider and Patient Burdern final rule</td></tr></table></div>
   </text>
   <url value="https://gitlab.mitre.org/awatson/fast-access-control/CodeSystem/PayorToPayorExchangePolicyCodes"/>
-  <version value="0.1.0"/>
+  <version value="0.2.1"/>
   <name value="PayorToPayorExchangePolicyCodes"/>
   <title value="PayorToPayorExchangePolicyCodes"/>
-  <status value="active"/>
-  <date value="2023-04-11T09:52:12-05:00"/>
+  <status value="draft"/>
+  <date value="2023-08-09T02:35:23-05:00"/>
   <publisher value="MITRE"/>
   <contact>
     <name value="MITRE"/>

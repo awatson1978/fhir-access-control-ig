@@ -5,87 +5,75 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://gitlab.mitre.org/awatson/fast-access-control/TestScript/TestScript-Scenario3> a fhir:TestScript;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "TestScript-Scenario3"]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: TestScript</b><a name=\"TestScript-Scenario3\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource TestScript &quot;TestScript-Scenario3&quot; </p></div><p><b>url</b>: <code>http://</code></p><p><b>version</b>: 0.1.0</p><p><b>name</b>: Scenario 3</p><p><b>title</b>: R4 TestScript - Back End Acces</p><p><b>status</b>: draft</p><p><b>date</b>: 2022-06-14 23:19:30+0000</p><p><b>publisher</b>: MITRE</p><p><b>contact</b>: MITRE: <a href=\"https://www.mitre.org\">https://www.mitre.org</a></p><p><b>jurisdiction</b>: United States of America <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-ISO3166Part1.html\">ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code</a>#US)</span></p><blockquote><p><b>fixture</b></p><p><b>autocreate</b>: true</p><p><b>autodelete</b>: true</p><p><b>resource</b>: <a href=\"registration-request-3\">registration-request-3: Backend Service - Registration Request</a></p></blockquote><blockquote><p><b>fixture</b></p><p><b>autocreate</b>: true</p><p><b>autodelete</b>: true</p><p><b>resource</b>: <a href=\"registration-response-3\">registration-response-3: Backend Service - Registration Response</a></p></blockquote><blockquote><p><b>test</b></p><p><b>name</b>: 1.1 Register backend service</p><blockquote><p><b>action</b></p><h3>Operations</h3><table class=\"grid\"><tr><td>-</td><td><b>Resource</b></td><td><b>Label</b></td><td><b>Description</b></td><td><b>Accept</b></td><td><b>EncodeRequestUrl</b></td><td><b>Method</b></td><td><b>SourceId</b></td><td><b>Url</b></td></tr><tr><td>*</td><td>Binary</td><td>Register backend service</td><td>PUT /oauth/registration</td><td>json</td><td>true</td><td>put</td><td>registration-request-3</td><td>/oauth/registration</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table class=\"grid\"><tr><td>-</td><td><b>Description</b></td><td><b>Response</b></td><td><b>SourceId</b></td><td><b>WarningOnly</b></td></tr><tr><td>*</td><td>Confirm that the returned HTTP status is 201(Success).</td><td>okay</td><td>registration-response-3</td><td>false</td></tr></table></blockquote></blockquote></div>"
-  ]; # 
-  fhir:TestScript.url [ fhir:value "http://"]; # 
-  fhir:TestScript.version [ fhir:value "0.1.0"]; # 
-  fhir:TestScript.name [ fhir:value "Scenario 3"]; # 
-  fhir:TestScript.title [ fhir:value "R4 TestScript - Back End Acces"]; # 
-  fhir:TestScript.status [ fhir:value "draft"]; # 
-  fhir:TestScript.date [ fhir:value "2022-06-14T23:19:30.696Z"^^xsd:dateTime]; # 
-  fhir:TestScript.publisher [ fhir:value "MITRE"]; # 
-  fhir:TestScript.contact [
-     fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "MITRE" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "https://www.mitre.org" ]
+<https://gitlab.mitre.org/awatson/fast-access-control/TestScript/TestScript-Scenario3> a fhir:TestScript ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "TestScript-Scenario3"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: TestScript</b><a name=\"TestScript-Scenario3\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource TestScript &quot;TestScript-Scenario3&quot; </p></div><p><b>url</b>: <code>http://</code></p><p><b>version</b>: 0.2.1</p><p><b>name</b>: Scenario 3</p><p><b>title</b>: R4 TestScript - Back End Acces</p><p><b>status</b>: draft</p><p><b>date</b>: 2022-06-14 23:19:30+0000</p><p><b>publisher</b>: MITRE</p><p><b>contact</b>: MITRE: <a href=\"https://www.mitre.org\">https://www.mitre.org</a></p><p><b>jurisdiction</b>: United States of America <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-ISO3166Part1.html\">ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code</a>#US)</span></p><blockquote><p><b>fixture</b></p><blockquote><p><b>id</b></p>registration-request-3</blockquote><p><b>autocreate</b>: true</p><p><b>autodelete</b>: true</p><p><b>resource</b>: <a href=\"registration-request-3\">registration-request-3: Backend Service - Registration Request</a></p></blockquote><blockquote><p><b>fixture</b></p><blockquote><p><b>id</b></p>registration-response-3</blockquote><p><b>autocreate</b>: true</p><p><b>autodelete</b>: true</p><p><b>resource</b>: <a href=\"registration-response-3\">registration-response-3: Backend Service - Registration Response</a></p></blockquote><blockquote><p><b>test</b></p><blockquote><p><b>id</b></p>2823af51-4a7e-5887-3f72-0a10579b4acc</blockquote><p><b>name</b>: 1.1 Register backend service</p><blockquote><p><b>action</b></p><h3>Operations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Resource</b></td><td><b>Label</b></td><td><b>Description</b></td><td><b>Accept</b></td><td><b>EncodeRequestUrl</b></td><td><b>Method</b></td><td><b>SourceId</b></td><td><b>Url</b></td></tr><tr><td style=\"display: none\">*</td><td>Binary</td><td>Register backend service</td><td>PUT /oauth/registration</td><td>json</td><td>true</td><td>put</td><td>registration-request-3</td><td>/oauth/registration</td></tr></table></blockquote><blockquote><p><b>action</b></p><h3>Asserts</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Description</b></td><td><b>Response</b></td><td><b>SourceId</b></td><td><b>WarningOnly</b></td></tr><tr><td style=\"display: none\">*</td><td>Confirm that the returned HTTP status is 201(Success).</td><td>okay</td><td>registration-response-3</td><td>false</td></tr></table></blockquote></blockquote></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.2.1"] ; # 
+  fhir:name [ fhir:v "Scenario 3"] ; # 
+  fhir:title [ fhir:v "R4 TestScript - Back End Acces"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2022-06-14T23:19:30.696Z"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org" ]
+     ] )
+  ] ) ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "US" ]
+     ] )
+  ] ) ; # 
+  fhir:fixture ( [
+     fhir:id [ fhir:v "registration-request-3" ] ;
+     fhir:autocreate [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:autodelete [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:resource [
+       fhir:reference [ fhir:v "registration-request-3" ] ;
+       fhir:type [ fhir:v "Binary"^^xsd:anyURI ] ;
+       fhir:display [ fhir:v "Backend Service - Registration Request" ]
      ]
-  ]; # 
-  fhir:TestScript.jurisdiction [
-     fhir:index 0;
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
-       fhir:Coding.code [ fhir:value "US" ]
+  ] [
+     fhir:id [ fhir:v "registration-response-3" ] ;
+     fhir:autocreate [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:autodelete [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:resource [
+       fhir:reference [ fhir:v "registration-response-3" ] ;
+       fhir:type [ fhir:v "Binary"^^xsd:anyURI ] ;
+       fhir:display [ fhir:v "Backend Service - Registration Response" ]
      ]
-  ]; # 
-  fhir:TestScript.fixture [
-     fhir:index 0;
-     fhir:Element.id [ fhir:value "registration-request-3" ];
-     fhir:TestScript.fixture.autocreate [ fhir:value "true"^^xsd:boolean ];
-     fhir:TestScript.fixture.autodelete [ fhir:value "true"^^xsd:boolean ];
-     fhir:TestScript.fixture.resource [
-       fhir:Reference.reference [ fhir:value "registration-request-3" ];
-       fhir:Reference.display [ fhir:value "Backend Service - Registration Request" ]
-     ]
-  ], [
-     fhir:index 1;
-     fhir:Element.id [ fhir:value "registration-response-3" ];
-     fhir:TestScript.fixture.autocreate [ fhir:value "true"^^xsd:boolean ];
-     fhir:TestScript.fixture.autodelete [ fhir:value "true"^^xsd:boolean ];
-     fhir:TestScript.fixture.resource [
-       fhir:Reference.reference [ fhir:value "registration-response-3" ];
-       fhir:Reference.display [ fhir:value "Backend Service - Registration Response" ]
-     ]
-  ]; # 
-  fhir:TestScript.test [
-     fhir:index 0;
-     fhir:Element.id [ fhir:value "2823af51-4a7e-5887-3f72-0a10579b4acc" ];
-     fhir:TestScript.test.name [ fhir:value "1.1 Register backend service" ];
-     fhir:TestScript.test.action [
-       fhir:index 0;
-       fhir:TestScript.test.action.operation [
-         fhir:TestScript.setup.action.operation.resource [ fhir:value "Binary" ];
-         fhir:TestScript.setup.action.operation.label [ fhir:value "Register backend service" ];
-         fhir:TestScript.setup.action.operation.description [ fhir:value "PUT /oauth/registration" ];
-         fhir:TestScript.setup.action.operation.accept [ fhir:value "json" ];
-         fhir:TestScript.setup.action.operation.encodeRequestUrl [ fhir:value "true"^^xsd:boolean ];
-         fhir:TestScript.setup.action.operation.method [ fhir:value "put" ];
-         fhir:TestScript.setup.action.operation.sourceId [ fhir:value "registration-request-3" ];
-         fhir:TestScript.setup.action.operation.url [ fhir:value "/oauth/registration" ]
+  ] ) ; # 
+  fhir:test ( [
+     fhir:id [ fhir:v "2823af51-4a7e-5887-3f72-0a10579b4acc" ] ;
+     fhir:name [ fhir:v "1.1 Register backend service" ] ;
+     fhir:action ( [
+       fhir:operation [
+         fhir:resource [ fhir:v "Binary" ] ;
+         fhir:label [ fhir:v "Register backend service" ] ;
+         fhir:description [ fhir:v "PUT /oauth/registration" ] ;
+         fhir:accept [ fhir:v "json" ] ;
+         fhir:encodeRequestUrl [ fhir:v "true"^^xsd:boolean ] ;
+         fhir:method [ fhir:v "put" ] ;
+         fhir:sourceId [ fhir:v "registration-request-3" ] ;
+         fhir:url [ fhir:v "/oauth/registration" ]
        ]
-     ], [
-       fhir:index 1;
-       fhir:TestScript.test.action.assert [
-         fhir:TestScript.setup.action.assert.description [ fhir:value "Confirm that the returned HTTP status is 201(Success)." ];
-         fhir:TestScript.setup.action.assert.response [ fhir:value "okay" ];
-         fhir:TestScript.setup.action.assert.sourceId [ fhir:value "registration-response-3" ];
-         fhir:TestScript.setup.action.assert.warningOnly [ fhir:value "false"^^xsd:boolean ]
+     ] [
+       fhir:assert [
+         fhir:description [ fhir:v "Confirm that the returned HTTP status is 201(Success)." ] ;
+         fhir:response [ fhir:v "okay" ] ;
+         fhir:sourceId [ fhir:v "registration-response-3" ] ;
+         fhir:warningOnly [ fhir:v "false"^^xsd:boolean ]
        ]
-     ]
-  ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<https://gitlab.mitre.org/awatson/fast-access-control/TestScript/TestScript-Scenario3.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+     ] )
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 

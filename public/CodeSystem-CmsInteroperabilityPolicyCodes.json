@@ -6,11 +6,11 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://gitlab.mitre.org/awatson/fast-access-control/CodeSystem/CmsInteroperabilityPolicyCodes</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">CMS-9115-F.III<a name=\"CmsInteroperabilityPolicyCodes-CMS-9115-F.46III\"> </a></td><td>Provisions of Patient Access Through APIs</td></tr><tr><td style=\"white-space:nowrap\">CMS-9115-F.IV<a name=\"CmsInteroperabilityPolicyCodes-CMS-9115-F.46IV\"> </a></td><td>API Access to Published Provider Directory Data Provisions</td></tr><tr><td style=\"white-space:nowrap\">CMS-9115-F.V<a name=\"CmsInteroperabilityPolicyCodes-CMS-9115-F.46V\"> </a></td><td>Health Information Exchange and Care Coordination Across Payers</td></tr><tr><td style=\"white-space:nowrap\">CMS-9115-F.VI<a name=\"CmsInteroperabilityPolicyCodes-CMS-9115-F.46VI\"> </a></td><td>Care Coordination Through Trusted Exchange Networks</td></tr><tr><td style=\"white-space:nowrap\">CMS-9115-F.VII<a name=\"CmsInteroperabilityPolicyCodes-CMS-9115-F.46VII\"> </a></td><td>Improving the Medicare-Medicaid Dually Eligible Experience</td></tr><tr><td style=\"white-space:nowrap\">CMS-9115-F.VIII<a name=\"CmsInteroperabilityPolicyCodes-CMS-9115-F.46VIII\"> </a></td><td>Information Blocking Background and Public Reporting</td></tr><tr><td style=\"white-space:nowrap\">CMS-9115-F.IX<a name=\"CmsInteroperabilityPolicyCodes-CMS-9115-F.46IX\"> </a></td><td>Provider Digital Contact Information</td></tr><tr><td style=\"white-space:nowrap\">CMS-9115-F.X<a name=\"CmsInteroperabilityPolicyCodes-CMS-9115-F.46X\"> </a></td><td>Conditions of Participation for Hospitals and Critical Access Hospitals</td></tr></table></div>"
   },
   "url" : "https://gitlab.mitre.org/awatson/fast-access-control/CodeSystem/CmsInteroperabilityPolicyCodes",
-  "version" : "0.1.0",
+  "version" : "0.2.1",
   "name" : "CmsInteroperabilityPolicyCodes",
   "title" : "CmsInteroperabilityPolicyCodes",
-  "status" : "active",
-  "date" : "2023-04-11T09:52:12-05:00",
+  "status" : "draft",
+  "date" : "2023-08-09T02:35:23-05:00",
   "publisher" : "MITRE",
   "contact" : [{
     "name" : "MITRE",

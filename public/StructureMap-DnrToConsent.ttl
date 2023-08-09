@@ -5,57 +5,46 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://gitlab.mitre.org/awatson/fast-access-control/StructureMap/DnrToConsent> a fhir:StructureMap;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "DnrToConsent"]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: StructureMap</b><a name=\"DnrToConsent\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource StructureMap &quot;DnrToConsent&quot; </p></div><p><b>url</b>: <code>http://</code></p><p><b>version</b>: 0.1.0</p><p><b>name</b>: DnrToConsent</p><p><b>status</b>: draft</p><p><b>date</b>: 2023-04-11 09:52:12-0500</p><p><b>publisher</b>: MITRE</p><p><b>contact</b>: MITRE: <a href=\"https://www.mitre.org\">https://www.mitre.org</a></p><blockquote><p><b>group</b></p><p><b>name</b>: First</p><p><b>typeMode</b>: types</p><h3>Inputs</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td><td><b>Mode</b></td></tr><tr><td>*</td><td>DnrToConsent</td><td>source</td></tr></table><blockquote><p><b>rule</b></p><p><b>name</b>: HCSyJBGnL9c438DrE</p><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Context</b></td><td><b>DefaultValue[x]</b></td></tr><tr><td>*</td><td>HCSyJBGnL9c438DrE</td><td>First</td></tr></table><h3>Targets</h3><table class=\"grid\"><tr><td>-</td><td><b>ContextType</b></td><td><b>Variable</b></td></tr><tr><td>*</td><td>variable</td><td>name.given</td></tr></table></blockquote></blockquote></div>"
-  ]; # 
-  fhir:StructureMap.url [ fhir:value "http://"]; # 
-  fhir:StructureMap.version [ fhir:value "0.1.0"]; # 
-  fhir:StructureMap.name [ fhir:value "DnrToConsent"]; # 
-  fhir:StructureMap.status [ fhir:value "draft"]; # 
-  fhir:StructureMap.date [ fhir:value "2023-04-11T09:52:12-05:00"^^xsd:dateTime]; # 
-  fhir:StructureMap.publisher [ fhir:value "MITRE"]; # 
-  fhir:StructureMap.contact [
-     fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "MITRE" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "https://www.mitre.org" ]
-     ]
-  ]; # 
-  fhir:StructureMap.group [
-     fhir:index 0;
-     fhir:StructureMap.group.name [ fhir:value "First" ];
-     fhir:StructureMap.group.typeMode [ fhir:value "types" ];
-     fhir:StructureMap.group.input [
-       fhir:index 0;
-       fhir:StructureMap.group.input.name [ fhir:value "DnrToConsent" ];
-       fhir:StructureMap.group.input.mode [ fhir:value "source" ]
-     ];
-     fhir:StructureMap.group.rule [
-       fhir:index 0;
-       fhir:StructureMap.group.rule.name [ fhir:value "HCSyJBGnL9c438DrE" ];
-       fhir:StructureMap.group.rule.source [
-         fhir:index 0;
-         fhir:StructureMap.group.rule.source.context [ fhir:value "HCSyJBGnL9c438DrE" ];
-         fhir:StructureMap.group.rule.source.defaultValueString [ fhir:value "First" ]
-       ];
-       fhir:StructureMap.group.rule.target [
-         fhir:index 0;
-         fhir:StructureMap.group.rule.target.contextType [ fhir:value "variable" ];
-         fhir:StructureMap.group.rule.target.variable [ fhir:value "name.given" ]
-       ]
-     ]
-  ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<https://gitlab.mitre.org/awatson/fast-access-control/StructureMap/DnrToConsent.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+<https://gitlab.mitre.org/awatson/fast-access-control/StructureMap/DnrToConsent> a fhir:StructureMap ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "DnrToConsent"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><pre class=\"fml\">\r\n<b>map</b><span style=\"color: navy\"> &quot;</span>http://<span style=\"color: navy\">&quot; = &quot;</span>DnrToConsent<span style=\"color: navy\">&quot;\r\n\r\n</span><span style=\"color: navy\">// </span><span style=\"color: green\">Do Not Recussitate questionnaire to Consent record</span>\r\n\r\n<b>group </b>First<span style=\"color: navy\">(</span><b>source</b> <span style=\"color: maroon\">DnrToConsent</span><span style=\"color: navy\">)</span><b> &lt;&lt;types&gt;&gt;</b><span style=\"color: navy\"> {\r\n</span>  HCSyJBGnL9c438DrE<b> default </b>&quot;First&quot;<span style=\"color: navy\"><b> -&gt; </b></span><b> as </b><span style=\"color: maroon\">name.given</span> <i>&quot;HCSyJBGnL9c438DrE&quot;</i><span style=\"color: navy\">;</span>\r\n<span style=\"color: navy\">}\r\n\r\n</span></pre></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.2.1"] ; # 
+  fhir:name [ fhir:v "DnrToConsent"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2023-08-09T02:35:23-05:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Do Not Recussitate questionnaire to Consent record"] ; # 
+  fhir:group ( [
+     fhir:name [ fhir:v "First" ] ;
+     fhir:typeMode [ fhir:v "types" ] ;
+     fhir:input ( [
+       fhir:name [ fhir:v "DnrToConsent" ] ;
+       fhir:mode [ fhir:v "source" ]
+     ] ) ;
+     fhir:rule ( [
+       fhir:name [ fhir:v "HCSyJBGnL9c438DrE" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "HCSyJBGnL9c438DrE" ] ;
+         fhir:defaultValue [ fhir:v "First" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:contextType [ fhir:v "variable" ] ;
+         fhir:variable [ fhir:v "name.given" ]
+       ] )
+     ] )
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 

@@ -29,10 +29,10 @@
     <![endif]-->
 
     <!-- Favicons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
@@ -49,7 +49,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold"></span>
             <br/>
-            <span style="display:inline-block;">0.1.0 - ci-build
+            <span style="display:inline-block;">0.2.1 - ci-build
 
 
             </span>
@@ -116,7 +116,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">FastAccessControl - Local Development build (v0.1.0). See the <a href="https://gitlab.mitre.org/awatson/fast-access-control/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">FastAccessControl - Local Development build (v0.2.1). See the <a href="https://gitlab.mitre.org/awatson/fast-access-control/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -170,7 +170,7 @@
       <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://|0.1.0"/></span>
+      <span class="copy-text">0.2.1<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://|0.2.1"/></span>
       </td>
     </tr>
 
@@ -186,7 +186,7 @@
         
           Draft
           
-            as of 2023-04-11
+            as of 2023-08-09
           
         
       </td>
@@ -202,6 +202,11 @@
   </table>
 
 
+<p>
+<p>Power of Attorney contract to Consent record</p>
+
+</p>
+
 
   <!-- insert intro if present -->
   
@@ -215,7 +220,16 @@
   
 
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: StructureMap</b><a name="PoaContractToConsent"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource StructureMap &quot;PoaContractToConsent&quot; </p></div><p><b>url</b>: <code>http://</code></p><p><b>version</b>: 0.1.0</p><p><b>name</b>: PoaContractToConsent</p><p><b>status</b>: draft</p><p><b>date</b>: 2023-04-11 09:52:12-0500</p><p><b>publisher</b>: MITRE</p><p><b>contact</b>: MITRE: <a href="https://www.mitre.org">https://www.mitre.org</a></p><blockquote><p><b>group</b></p><p><b>name</b>: First</p><p><b>typeMode</b>: types</p><h3>Inputs</h3><table class="grid"><tr><td>-</td><td><b>Name</b></td><td><b>Mode</b></td></tr><tr><td>*</td><td>PoaContractToConsent</td><td>source</td></tr></table><blockquote><p><b>rule</b></p><p><b>name</b>: 6k7G75p8ZGja4tgnC</p><h3>Sources</h3><table class="grid"><tr><td>-</td><td><b>Context</b></td><td><b>DefaultValue[x]</b></td></tr><tr><td>*</td><td>6k7G75p8ZGja4tgnC</td><td>First</td></tr></table><h3>Targets</h3><table class="grid"><tr><td>-</td><td><b>ContextType</b></td><td><b>Variable</b></td></tr><tr><td>*</td><td>variable</td><td>name.given</td></tr></table></blockquote></blockquote></div>
+  <div xmlns="http://www.w3.org/1999/xhtml"><pre class="fml">
+<b>map</b><span style="color: navy"> &quot;</span>http://<span style="color: navy">&quot; = &quot;</span>PoaContractToConsent<span style="color: navy">&quot;
+
+</span><span style="color: navy">// </span><span style="color: green">Power of Attorney contract to Consent record</span>
+
+<b>group </b>First<span style="color: navy">(</span><b>source</b> <span style="color: maroon">PoaContractToConsent</span><span style="color: navy">)</span><b> &lt;&lt;types&gt;&gt;</b><span style="color: navy"> {
+</span>  6k7G75p8ZGja4tgnC<b> default </b>&quot;First&quot;<span style="color: navy"><b> -&gt; </b></span><b> as </b><span style="color: maroon">name.given</span> <i>&quot;6k7G75p8ZGja4tgnC&quot;</i><span style="color: navy">;</span>
+<span style="color: navy">}
+
+</span></pre></div>
 
   <!-- insert notes if present -->
   
@@ -246,7 +260,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org">MITRE</a>.  Package mitre.fast.access-control#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Apr 11, 2023 09:52-0500">2023-04-11</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org">MITRE</a>.  Package mitre.fast.access-control#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 9, 2023 02:35-0500">2023-08-09</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

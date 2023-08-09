@@ -6,11 +6,11 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <code>http://mehi-ig.tranquildata.com/CodeSystem/PayorToPayorExchangePolicyCodes</code></li><li>Import all the codes that are contained in <a href="http://hl7.org/fhir/R4/valueset-consent-policy.html">Consent PolicyRule Codes</a></li></ul></div>
   </text>
   <url value="https://gitlab.mitre.org/awatson/fast-access-control/ValueSet/ConsentExchangePolicies"/>
-  <version value="0.1.0"/>
+  <version value="0.2.1"/>
   <name value="ConsentExchangePolicies"/>
   <title value="ConsentExchangePolicies"/>
-  <status value="active"/>
-  <date value="2023-04-11T09:52:12-05:00"/>
+  <status value="draft"/>
+  <date value="2023-08-09T02:35:23-05:00"/>
   <publisher value="MITRE"/>
   <contact>
     <name value="MITRE"/>
