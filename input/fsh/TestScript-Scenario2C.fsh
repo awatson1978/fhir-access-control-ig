@@ -106,7 +106,7 @@ Usage: #example
 * test[=].action[=].assert.response = #okay
 * test[=].action[=].assert.warningOnly = false
 
-* test[+].id = "ed7f8206-22ad-4bce-b3d8-83980d50af5e"
+* test[+].id = "93751460-d513-4b6c-bcc1-1239227c725f"
 * test[=].name = "1.1.1 Jane tries to access her own records"
 * test[=].action[0].operation.method = #get
 * test[=].action[=].operation.label = "1.1.1"
@@ -120,17 +120,145 @@ Usage: #example
 * test[=].action[=].assert.response = #okay
 * test[=].action[=].assert.warningOnly = false
 
-* test[+].id = "ed7f8206-22ad-4bce-b3d8-23980dc0af5e"
+* test[+].id = "f93da593-133a-4ab5-9a15-6919a9646e2d"
 * test[=].name = "1.1.1 Jane logs out"
-* test[=].action[0].operation.method = #get
+* test[=].action[0].operation.method = #post
 * test[=].action[=].operation.label = "1.1.1"
-* test[=].action[=].operation.description = "GET /oauth/logout"
+* test[=].action[=].operation.description = "POST /authorizations/revoke"
 * test[=].action[=].operation.accept = #json
 * test[=].action[=].operation.encodeRequestUrl = true
-* test[=].action[=].operation.url = "/oauth/logout"
+* test[=].action[=].operation.url = "/authorizations/revoke"
 * test[=].action[=].operation.type = http://terminology.hl7.org/CodeSystem/testscript-operation-codes#read
 * test[=].action[=].operation.resource = #OAuth
 * test[=].action[+].assert.description = "Confirm that the returned HTTP status is 200(OK)."
 * test[=].action[=].assert.response = #okay
 * test[=].action[=].assert.warningOnly = false
+
+
+
+* test[+].id = "f5e23c2f-3b0a-4994-a5e2-26ee6598cfdb"
+* test[=].name = "1.2.1 Katie Klepto authenticates"
+* test[=].action[0].operation.method = #get
+* test[=].action[=].operation.label = "1.1.1"
+* test[=].action[=].operation.description = "GET /oauth/token"
+* test[=].action[=].operation.accept = #json
+* test[=].action[=].operation.encodeRequestUrl = true
+* test[=].action[=].operation.url = "/oauth/token"
+* test[=].action[=].operation.type = http://terminology.hl7.org/CodeSystem/testscript-operation-codes#read
+* test[=].action[=].operation.resource = #Basic
+// * test[=].action[=].operation.body.response_type = "code"
+// * test[=].action[=].operation.body.client_id = "12345"
+// * test[=].action[=].operation.body.redirect_uri = "https://inferno.healthit.gov/suites/custom/smart/redirect"
+// * test[=].action[=].operation.body.scope = "launch fhirUser openid patient/*.rs, organization/*.rs,"
+// * test[=].action[=].operation.body.state = "12345"
+// * test[=].action[=].operation.body.aud = "http://localhost:3000/baseR4"
+* test[=].action[+].assert.description = "Confirm that the returned HTTP status is 200(OK)."
+* test[=].action[=].assert.response = #okay
+* test[=].action[=].assert.warningOnly = false
+
+* test[+].id = "417b8dd4-082b-44a7-8642-7ce48193f5bd"
+* test[=].name = "1.2.2 Katie Klepto tries to access her own records"
+* test[=].action[0].operation.method = #get
+* test[=].action[=].operation.label = "1.1.1"
+* test[=].action[=].operation.description = "GET /baseR4/Patient/qirz9TRTPfkDgBSs8"
+* test[=].action[=].operation.accept = #json
+* test[=].action[=].operation.encodeRequestUrl = true
+* test[=].action[=].operation.url = "/baseR4/Patient/qirz9TRTPfkDgBSs8"
+* test[=].action[=].operation.type = http://terminology.hl7.org/CodeSystem/testscript-operation-codes#read
+* test[=].action[=].operation.resource = #Binary
+* test[=].action[+].assert.description = "Confirm that the returned HTTP status is 200(OK)."
+* test[=].action[=].assert.response = #okay
+* test[=].action[=].assert.warningOnly = false
+
+* test[+].id = "8ddcbc24-563a-490e-b902-ee28e720ed41"
+* test[=].name = "1.2.3 Katie Klepto tries to access Jane's records"
+* test[=].action[0].operation.method = #get
+* test[=].action[=].operation.label = "1.1.1"
+* test[=].action[=].operation.description = "GET /baseR4/Patient/6kKu6iPnJtMozpaBp"
+* test[=].action[=].operation.accept = #json
+* test[=].action[=].operation.encodeRequestUrl = true
+* test[=].action[=].operation.url = "/baseR4/Patient/6kKu6iPnJtMozpaBp"
+* test[=].action[=].operation.type = http://terminology.hl7.org/CodeSystem/testscript-operation-codes#read
+* test[=].action[=].operation.resource = #Binary
+* test[=].action[+].assert.description = "Confirm that the returned HTTP status is 200(OK)."
+* test[=].action[=].assert.response = #bad
+* test[=].action[=].assert.warningOnly = false
+
+* test[+].id = "125fc5fe-6165-4085-bb71-9cf34fb3f174"
+* test[=].name = "1.2.4 Katie Klepto logs out"
+* test[=].action[0].operation.method = #post
+* test[=].action[=].operation.label = "1.1.1"
+* test[=].action[=].operation.description = "POST /authorizations/revoke"
+* test[=].action[=].operation.accept = #json
+* test[=].action[=].operation.encodeRequestUrl = true
+* test[=].action[=].operation.url = "/authorizations/revoke"
+* test[=].action[=].operation.type = http://terminology.hl7.org/CodeSystem/testscript-operation-codes#read
+* test[=].action[=].operation.resource = #OAuth
+* test[=].action[+].assert.description = "Confirm that the returned HTTP status is 200(OK)."
+* test[=].action[=].assert.response = #okay
+* test[=].action[=].assert.warningOnly = false
+
+* test[+].id = "bd6d83d9-0a6f-47c2-a39e-e393fa1cac54"
+* test[=].name = "1.3.1 Susan Social authenticates"
+* test[=].action[0].operation.method = #get
+* test[=].action[=].operation.label = "1.1.1"
+* test[=].action[=].operation.description = "GET /oauth/token"
+* test[=].action[=].operation.accept = #json
+* test[=].action[=].operation.encodeRequestUrl = true
+* test[=].action[=].operation.url = "/oauth/token"
+* test[=].action[=].operation.type = http://terminology.hl7.org/CodeSystem/testscript-operation-codes#read
+* test[=].action[=].operation.resource = #Basic
+// * test[=].action[=].operation.body.response_type = "code"
+// * test[=].action[=].operation.body.client_id = "12345"
+// * test[=].action[=].operation.body.redirect_uri = "https://inferno.healthit.gov/suites/custom/smart/redirect"
+// * test[=].action[=].operation.body.scope = "launch fhirUser openid patient/*.rs, organization/*.rs,"
+// * test[=].action[=].operation.body.state = "12345"
+// * test[=].action[=].operation.body.aud = "http://localhost:3000/baseR4"
+* test[=].action[+].assert.description = "Confirm that the returned HTTP status is 200(OK)."
+* test[=].action[=].assert.response = #okay
+* test[=].action[=].assert.warningOnly = false
+
+* test[+].id = "19f22d84-4715-4bf8-8c96-35586ac19d66"
+* test[=].name = "1.3.2 Susan Social accesses Katie's chart"
+* test[=].action[0].operation.method = #get
+* test[=].action[=].operation.label = "1.1.1"
+* test[=].action[=].operation.description = "GET /baseR4/Patient/qirz9TRTPfkDgBSs8"
+* test[=].action[=].operation.accept = #json
+* test[=].action[=].operation.encodeRequestUrl = true
+* test[=].action[=].operation.url = "/baseR4/Patient/qirz9TRTPfkDgBSs8"
+* test[=].action[=].operation.type = http://terminology.hl7.org/CodeSystem/testscript-operation-codes#read
+* test[=].action[=].operation.resource = #Binary
+* test[=].action[+].assert.description = "Confirm that the returned HTTP status is 200(OK)."
+* test[=].action[=].assert.response = #okay
+* test[=].action[=].assert.warningOnly = false
+
+* test[+].id = "fcacd7d3-190e-4565-93e2-a4c2ff0123a2"
+* test[=].name = "1.3.3 Susan Social accesses Jane's chart"
+* test[=].action[0].operation.method = #get
+* test[=].action[=].operation.label = "1.1.1"
+* test[=].action[=].operation.description = "GET /baseR4/Patient/6kKu6iPnJtMozpaBp"
+* test[=].action[=].operation.accept = #json
+* test[=].action[=].operation.encodeRequestUrl = true
+* test[=].action[=].operation.url = "/baseR4/Patient/6kKu6iPnJtMozpaBp"
+* test[=].action[=].operation.type = http://terminology.hl7.org/CodeSystem/testscript-operation-codes#read
+* test[=].action[=].operation.resource = #Binary
+* test[=].action[+].assert.description = "Confirm that the returned HTTP status is 200(OK)."
+* test[=].action[=].assert.response = #bad
+* test[=].action[=].assert.warningOnly = false
+
+* test[+].id = "568eb07e-6c81-48e7-b8e6-79c01f103061"
+* test[=].name = "1.2.4 Susan Social logs out"
+* test[=].action[0].operation.method = #post
+* test[=].action[=].operation.label = "1.1.1"
+* test[=].action[=].operation.description = "POST /authorizations/revoke"
+* test[=].action[=].operation.accept = #json
+* test[=].action[=].operation.encodeRequestUrl = true
+* test[=].action[=].operation.url = "/authorizations/revoke"
+* test[=].action[=].operation.type = http://terminology.hl7.org/CodeSystem/testscript-operation-codes#read
+* test[=].action[=].operation.resource = #OAuth
+* test[=].action[+].assert.description = "Confirm that the returned HTTP status is 200(OK)."
+* test[=].action[=].assert.response = #okay
+* test[=].action[=].assert.warningOnly = false
+
+
 

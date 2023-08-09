@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="04d04722-2a84-4131-8514-1546959866b5"/>
+  <id value="964c3bff-4ac8-444d-95d7-5ad7cb304cdb"/>
   <meta>
-    <lastUpdated value="2023-08-09T02:35:23.107-05:00"/>
+    <lastUpdated value="2023-08-09T03:19:35.594-05:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -292,10 +292,10 @@
         <name value="ConsentExchangeCategoryCodes"/>
         <title value="ConsentExchangeCategoryCodes"/>
         <status value="draft"/>
-        <date value="2023-08-09T02:35:23-05:00"/>
+        <date value="2023-08-09T03:19:35-05:00"/>
         <expansion>
-          <identifier value="urn:uuid:23f6d5e0-689f-4271-ab37-9b2632a58923"/>
-          <timestamp value="2023-08-09T02:35:45-05:00"/>
+          <identifier value="urn:uuid:5b822140-f344-4d80-b8d1-2e85c8340db2"/>
+          <timestamp value="2023-08-09T03:19:54-05:00"/>
           <total value="15"/>
           <parameter>
             <name value="excludeNested"/>
@@ -20012,10 +20012,10 @@
         <name value="ConsentExchangeScopeCodes"/>
         <title value="ConsentExchangeScopeCodes"/>
         <status value="draft"/>
-        <date value="2023-08-09T02:35:23-05:00"/>
+        <date value="2023-08-09T03:19:35-05:00"/>
         <expansion>
-          <identifier value="urn:uuid:8f1cbe21-d09d-4ace-b1c5-d3d1ed4db778"/>
-          <timestamp value="2023-08-09T02:35:46-05:00"/>
+          <identifier value="urn:uuid:15c8a97f-f07d-419c-ae3f-28357ab60538"/>
+          <timestamp value="2023-08-09T03:19:55-05:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
