@@ -1,4 +1,2 @@
 Online Preview
-https://build.fhir.org/ig/awatson1978/fhir-access-control-ig/
-
-
+https://awatson1978.github.io/fhir-access-control-ig/
