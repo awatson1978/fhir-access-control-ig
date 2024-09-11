@@ -10,7 +10,7 @@
   fhir:id [ fhir:v "patient-john-smith"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>JOHN SMITH </b> male, DoB: 1980-04-14 ( Medical Record Number: 2002501 (use: USUAL))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td colspan=\"3\">true</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Details:</td><td colspan=\"3\"><ul><li>ph: 555-555-5553(HOME)</li><li>49 Meadow St Birmingham AL 35242 US </li><li>183 Harbor View St Boston MA 02101 US </li></ul></td></tr></table></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient patient-john-smith</b></p><a name=\"patient-john-smith\"> </a><a name=\"hcpatient-john-smith\"> </a><a name=\"patient-john-smith-en-US\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">JOHN SMITH  Male, DoB: 1980-04-14 ( Medical Record Number: 2002501 (use: usual, ))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td colspan=\"3\">true</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\"><ul><li>ph: 555-555-5553(Home)</li><li>49 Meadow St Birmingham AL 35242 US </li><li>183 Harbor View St Boston MA 02101 US </li></ul></td></tr></table></div>"
   ] ; # 
   fhir:extension ( [
      fhir:extension ( [

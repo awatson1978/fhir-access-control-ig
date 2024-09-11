@@ -1,6 +1,0 @@
-{
-  "resourceType" : "Binary",
-  "id" : "auth-response-3",
-  "contentType" : "application/fhir+json",
-  "data" : "ewogICAgInJlc291cmNlVHlwZSI6ICJPQXV0aEF1dGhlbnRpY2F0aW9uUmVzcG9uc2UiLAogICAgImlkIjogImF1dGgtcmVzcG9uc2UtMyIsCiAgICAiY29kZSI6ICJzZ0o0NndxOWl1eHFUUEZIcyIsCiAgICAic3RhdGUiOiAiMTIzNDUiLAogICAgIm1lc3NhZ2UiOiAiTm8gcmVkaXJlY3QgVVJJIHByb3ZpZGVkLiBVc2luZyB3aGF0IHdhcyBwcm92aWRlZCBkdXJpbmcgcmVnaXN0cmF0aW9uLiIKfQ=="
-}

@@ -3,7 +3,7 @@
   "id" : "practitioner-alison-camron",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"practitioner-alison-camron\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;practitioner-alison-camron&quot; </p></div><p><b>active</b>: true</p><p><b>name</b>: ALISON CAMRON </p><p><b>telecom</b>: ph: 555-555-1120(HOME)</p><p><b>address</b>: 1120 Maple St Birmingham AL 35242 US </p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1965-03-24</p></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Practitioner practitioner-alison-camron</b></p><a name=\"practitioner-alison-camron\"> </a><a name=\"hcpractitioner-alison-camron\"> </a><a name=\"practitioner-alison-camron-en-US\"> </a><p><b>active</b>: true</p><p><b>name</b>: ALISON CAMRON </p><p><b>telecom</b>: ph: 555-555-1120(Home)</p><p><b>address</b>: 1120 Maple St Birmingham AL 35242 US </p><p><b>gender</b>: Male</p><p><b>birthDate</b>: 1965-03-24</p></div>"
   },
   "active" : true,
   "name" : [{

@@ -1,9 +1,9 @@
-﻿FastAccessControl : Validation Results
+FastAccessControl : Validation Results
 =========================================
 
-err = 217, warn = 144, info = 26
-IG Publisher Version: 1.3.24 Out of date - current version is 1.3.28
-Generated Wed Aug 09 03:20:11 CDT 2023. FHIR version 4.0.1 for mitre.fast.access-control#0.2.1 (canonical = https://gitlab.mitre.org/awatson/fast-access-control)
+err = 231, warn = 147, info = 42
+IG Publisher Version: 1.6.24
+Generated Wed Sep 11 16:18:31 CDT 2024. FHIR version 4.0.1 for mitre.fast.access-control#0.2.2 (canonical = https://gitlab.mitre.org/awatson/fast-access-control)
  Build Errors : 14 / 11 / 0
  /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Basic-OAuthRegistrationRequest1 : 6 / 1 / 1
  /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/CapabilityStatement-AccessControlRequirements : 1 / 0 / 1
@@ -18,57 +18,57 @@ Generated Wed Aug 09 03:20:11 CDT 2023. FHIR version 4.0.1 for mitre.fast.access
  /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Consent-ConsentPatientOwner : 1 / 1 / 1
  /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Consent-ConsentSystemPatient : 3 / 1 / 1
  /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/ImplementationGuide-mitre.fast.access-control : 0 / 0 / 1
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/OperationDefinition-canAccess : 3 / 2 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/OperationDefinition-canAccess : 3 / 8 / 1
  /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/OperationDefinition-diff : 3 / 2 / 1
  /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/OperationDefinition-digest : 3 / 2 / 1
  /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/OperationDefinition-equals : 3 / 2 / 1
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/OperationDefinition-oauthScopes : 3 / 8 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/OperationDefinition-oauthScopes : 3 / 2 / 1
  /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/OperationDefinition-parseToBundle : 3 / 2 / 1
  /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/OperationDefinition-rollup : 3 / 2 / 1
  /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/OperationDefinition-toAcl : 3 / 2 / 1
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Organization-stdymphnas : 4 / 3 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Organization-stdymphnas : 3 / 4 / 1
  /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Organization-stjames : 0 / 1 / 1
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Patient-patient-jane-doe : 12 / 1 / 3
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Patient-patient-jennifer-smith : 8 / 1 / 8
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Patient-patient-jane-doe : 14 / 1 / 3
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Patient-patient-jennifer-smith : 9 / 1 / 8
  /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Patient-patient-john-smith : 6 / 0 / 5
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Patient-patient-katie-klepti : 11 / 1 / 3
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Patient-patient-katie-klepti : 12 / 1 / 3
  /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Practitioner-practitioner-alison-camron : 0 / 0 / 1
  /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Practitioner-practitioner-susan-social : 0 / 0 / 1
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Questionnaire-fast-patient-privacy : 5 / 1 / 2
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Questionnaire-leap-dnr : 5 / 1 / 2
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Questionnaire-leap-livingwill : 3 / 0 / 2
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Questionnaire-leap-patient-privacy : 5 / 1 / 2
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Questionnaire-leap-poahealthcare : 13 / 0 / 2
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Questionnaire-leap-poamentalhealth : 6 / 0 / 2
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Questionnaire-leap-polst : 14 / 2 / 3
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureDefinition-ConsentToAcces : 1 / 1 / 1
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureDefinition-OAuthAuthenticationRequest : 3 / 6 / 1
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureDefinition-OAuthAuthenticationResponse : 3 / 0 / 1
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureDefinition-OAuthRegistrationRequest : 3 / 10 / 1
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureDefinition-OAuthRegistrationResponse : 3 / 4 / 1
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureDefinition-OAuthTokenResponse : 3 / 6 / 1
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureMap-DnrToConsent : 3 / 2 / 1
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureMap-FirstNameToGiven : 3 / 2 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Questionnaire-fast-patient-privacy : 5 / 1 / 3
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Questionnaire-leap-dnr : 5 / 1 / 3
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Questionnaire-leap-livingwill : 3 / 0 / 3
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Questionnaire-leap-patient-privacy : 5 / 1 / 3
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Questionnaire-leap-poahealthcare : 13 / 0 / 3
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Questionnaire-leap-poamentalhealth : 6 / 0 / 3
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Questionnaire-leap-polst : 14 / 2 / 4
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureDefinition-ConsentToAcces : 0 / 1 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureDefinition-OAuthAuthenticationRequest : 4 / 6 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureDefinition-OAuthAuthenticationResponse : 4 / 0 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureDefinition-OAuthRegistrationRequest : 4 / 10 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureDefinition-OAuthRegistrationResponse : 4 / 4 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureDefinition-OAuthTokenResponse : 4 / 6 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureMap-DnrToConsent : 3 / 18 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureMap-FirstNameToGiven : 2 / 2 / 1
  /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureMap-HipaaPrivacyToConsent : 3 / 2 / 1
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureMap-LastNameToFamily : 3 / 2 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureMap-LastNameToFamily : 2 / 2 / 1
  /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureMap-LivingWillToConsent : 3 / 2 / 1
  /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureMap-PoaContractToConsent : 4 / 2 / 1
  /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureMap-PoaMentalHealthToConsent : 3 / 2 / 1
  /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureMap-PoaQuestinonaireToConsent : 4 / 2 / 1
  /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureMap-PolstToConsent : 3 / 2 / 1
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/TestScript-TestScript-Scenario1A : 5 / 2 / 1
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/TestScript-TestScript-Scenario1B : 5 / 2 / 1
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/TestScript-TestScript-Scenario2A : 5 / 18 / 1
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/TestScript-TestScript-Scenario2B : 5 / 2 / 1
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/TestScript-TestScript-Scenario2C : 5 / 2 / 1
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/TestScript-TestScript-Scenario2D : 5 / 2 / 1
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/TestScript-TestScript-Scenario2E : 5 / 2 / 1
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/TestScript-TestScript-Scenario3 : 2 / 2 / 1
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/TestScript-TestScript-gszMyXpwsdoAjJZeh : 0 / 3 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/TestScript-TestScript-Scenario1A : 6 / 2 / 2
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/TestScript-TestScript-Scenario1B : 6 / 2 / 2
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/TestScript-TestScript-Scenario2A : 6 / 2 / 2
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/TestScript-TestScript-Scenario2B : 6 / 2 / 2
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/TestScript-TestScript-Scenario2C : 6 / 2 / 2
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/TestScript-TestScript-Scenario2D : 6 / 2 / 2
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/TestScript-TestScript-Scenario2E : 6 / 2 / 2
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/TestScript-TestScript-Scenario3 : 4 / 2 / 2
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/TestScript-TestScript-gszMyXpwsdoAjJZeh : 0 / 3 / 2
  /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/ValueSet-ConsentExchangePolicies : 0 / 2 / 1
  /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/ValueSet-ConsentExchangeRelations : 0 / 1 / 1
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/ValueSet-consent-exchange-category-codes : 0 / 1 / 1
- /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/ValueSet-consent-exchange-scope-codes : 0 / 1 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/ValueSet-consent-exchange-category-codes : 0 / 2 / 1
+ /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/ValueSet-consent-exchange-scope-codes : 0 / 2 / 1
  /Users/awatson/Code/implementation-guides/fast-access-control/input/examples/Binary-auth-request-3 : 0 / 0 / 1
  /Users/awatson/Code/implementation-guides/fast-access-control/input/examples/Binary-auth-response-3 : 0 / 0 / 1
  /Users/awatson/Code/implementation-guides/fast-access-control/input/examples/Binary-registration-request-3 : 0 / 0 / 1
@@ -84,19 +84,19 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Consent/ConsentPatientOwner.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Consent/ConsentSystemPatient.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: package.tgz: Error converting pacakge to R4B: Error processing example/TestScript-TestScript-Scenario2C.json: Unknown FHIRDefinedType code 'OAuth'
-ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/Patient-patient-jane-doe.html#/html/body/div/div/div/div/div/div/table/tr/td/ul/li/a at Line 176, column 618: The link 'Practitioner/ractitioner-susan-social' for "Practitioner/ractitioner-susan-social: Susan Social" cannot be resolved
-ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/Patient-patient-jane-doe.html#/html/body/div/div/div/div/div/div/table/tr/td/ul/li/a at Line 176, column 752: The link 'Practitioner/practitioner-bernard-shuman' for "Practitioner/practitioner-bernard-shuman: Dr. Bernard Shuman" cannot be resolved
-ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/Patient-patient-jennifer-smith.html#/html/body/div/div/div/div/div/div/table/tr/td/ul/li/a at Line 176, column 735: The link 'Practitioner/ractitioner-susan-social' for "Practitioner/ractitioner-susan-social: Susan Social" cannot be resolved
-ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/Patient-patient-katie-klepti.html#/html/body/div/div/div/div/div/div/table/tr/td/ul/li/a at Line 176, column 622: The link 'Practitioner/ractitioner-susan-social' for "Practitioner/ractitioner-susan-social: Susan Social" cannot be resolved
-ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/TestScript-TestScript-Scenario1A.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 222, column 1255: The link 'PharmLoc2' for "PharmLoc2: OrgA CT Location 2" cannot be resolved
-ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/TestScript-TestScript-Scenario1B.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 222, column 1255: The link 'PharmLoc2' for "PharmLoc2: OrgA CT Location 2" cannot be resolved
-ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/TestScript-TestScript-Scenario2A.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 222, column 1252: The link 'PharmLoc2' for "PharmLoc2: OrgA CT Location 2" cannot be resolved
-ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/TestScript-TestScript-Scenario2B.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 222, column 1255: The link 'PharmLoc2' for "PharmLoc2: OrgA CT Location 2" cannot be resolved
-ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/TestScript-TestScript-Scenario2C.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 222, column 1261: The link 'PharmLoc2' for "PharmLoc2: OrgA CT Location 2" cannot be resolved
-ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/TestScript-TestScript-Scenario2D.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 222, column 1263: The link 'PharmLoc2' for "PharmLoc2: OrgA CT Location 2" cannot be resolved
-ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/TestScript-TestScript-Scenario2E.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 222, column 1253: The link 'PharmLoc2' for "PharmLoc2: OrgA CT Location 2" cannot be resolved
-ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/TestScript-TestScript-Scenario3.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 222, column 1220: The link 'registration-request-3' for "registration-request-3: Backend Service - Registration Request" cannot be resolved
-ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/TestScript-TestScript-Scenario3.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 222, column 1513: The link 'registration-response-3' for "registration-response-3: Backend Service - Registration Response" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/Patient-patient-jane-doe.html#/html/body/div/div/div/div/div/div/table/tr/td/ul/li/a at Line 177, column 1261: The link 'Practitioner/ractitioner-susan-social' for "Susan Social" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/Patient-patient-jane-doe.html#/html/body/div/div/div/div/div/div/table/tr/td/ul/li/a at Line 177, column 1356: The link 'Practitioner/practitioner-bernard-shuman' for "Dr. Bernard Shuman" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/Patient-patient-jennifer-smith.html#/html/body/div/div/div/div/div/div/table/tr/td/ul/li/a at Line 177, column 1401: The link 'Practitioner/ractitioner-susan-social' for "Susan Social" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/Patient-patient-katie-klepti.html#/html/body/div/div/div/div/div/div/table/tr/td/ul/li/a at Line 177, column 1281: The link 'Practitioner/ractitioner-susan-social' for "Susan Social" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/TestScript-TestScript-Scenario1A.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 219, column 840: The link 'PharmLoc2' for "OrgA CT Location 2" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/TestScript-TestScript-Scenario1B.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 219, column 840: The link 'PharmLoc2' for "OrgA CT Location 2" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/TestScript-TestScript-Scenario2A.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 219, column 837: The link 'PharmLoc2' for "OrgA CT Location 2" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/TestScript-TestScript-Scenario2B.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 219, column 840: The link 'PharmLoc2' for "OrgA CT Location 2" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/TestScript-TestScript-Scenario2C.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 219, column 846: The link 'PharmLoc2' for "OrgA CT Location 2" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/TestScript-TestScript-Scenario2D.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 219, column 848: The link 'PharmLoc2' for "OrgA CT Location 2" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/TestScript-TestScript-Scenario2E.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 219, column 838: The link 'PharmLoc2' for "OrgA CT Location 2" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/TestScript-TestScript-Scenario3.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 219, column 803: The link 'registration-request-3' for "Backend Service - Registration Request" cannot be resolved
+ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/output/TestScript-TestScript-Scenario3.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 219, column 1072: The link 'registration-response-3' for "Backend Service - Registration Response" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
@@ -108,438 +108,471 @@ ERROR: Basic/OAuthRegistrationRequest1: Basic.extension[2]: Extension.url must b
 ERROR: Basic/OAuthRegistrationRequest1: Basic.extension[3]: Extension.url must be an absolute URL
 ERROR: Basic/OAuthRegistrationRequest1: Basic.extension[4]: Extension.url must be an absolute URL
 ERROR: Basic/OAuthRegistrationRequest1: Basic.extension[5]: Extension.url must be an absolute URL
-WARNING: Basic/OAuthRegistrationRequest1: Basic.code.coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: Basic/OAuthRegistrationRequest1: Basic.code.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 == fsh-generated/resources/CapabilityStatement-AccessControlRequirements.json ==
-ERROR: CapabilityStatement/AccessControlRequirements: CapabilityStatement: Rule cpb-1: 'A Capability Statement SHALL have at least one of REST, messaging or document element.' Failed
+ERROR: CapabilityStatement/AccessControlRequirements: CapabilityStatement: Constraint failed: cpb-1: 'A Capability Statement SHALL have at least one of REST, messaging or document element.'
 == fsh-generated/resources/CodeSystem-CmsInteroperabilityPolicyCodes.json ==
 INFORMATION: CodeSystem/CmsInteroperabilityPolicyCodes: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
-WARNING: CodeSystem/CmsInteroperabilityPolicyCodes: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
-WARNING: CodeSystem/CmsInteroperabilityPolicyCodes: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/CmsInteroperabilityPolicyCodes: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/CmsInteroperabilityPolicyCodes: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
 == fsh-generated/resources/CodeSystem-ConsentExchangeRelationships.json ==
 INFORMATION: CodeSystem/ConsentExchangeRelationships: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
-WARNING: CodeSystem/ConsentExchangeRelationships: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
-WARNING: CodeSystem/ConsentExchangeRelationships: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/ConsentExchangeRelationships: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/ConsentExchangeRelationships: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
 == fsh-generated/resources/CodeSystem-PayorToPayorExchangePolicyCodes.json ==
 INFORMATION: CodeSystem/PayorToPayorExchangePolicyCodes: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
-WARNING: CodeSystem/PayorToPayorExchangePolicyCodes: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
-WARNING: CodeSystem/PayorToPayorExchangePolicyCodes: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/PayorToPayorExchangePolicyCodes: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/PayorToPayorExchangePolicyCodes: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
 == fsh-generated/resources/Consent-ConsentAnonOrg.json ==
 ERROR: Consent/ConsentAnonOrg: Consent.provision.provision[0].actor[0].reference: Unable to resolve resource with reference 'AnonRole'
-WARNING: Consent/ConsentAnonOrg: Consent.provision.provision[0].class[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: Consent/ConsentAnonOrg: Consent.provision.provision[0].class[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 == fsh-generated/resources/Consent-ConsentAnonPatient.json ==
 ERROR: Consent/ConsentAnonPatient: Consent.provision.provision[0].actor[0].reference: Unable to resolve resource with reference 'AnonRole'
-WARNING: Consent/ConsentAnonPatient: Consent.provision.provision[0].class[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: Consent/ConsentAnonPatient: Consent.provision.provision[0].class[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 == fsh-generated/resources/Consent-ConsentAnonPractitioner.json ==
 ERROR: Consent/ConsentAnonPractitioner: Consent.provision.provision[0].actor[0].reference: Unable to resolve resource with reference 'AnonRole'
-WARNING: Consent/ConsentAnonPractitioner: Consent.provision.provision[0].class[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: Consent/ConsentAnonPractitioner: Consent.provision.provision[0].class[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 == fsh-generated/resources/Consent-ConsentClinicianOrg.json ==
 ERROR: Consent/ConsentClinicianOrg: Consent.provision.provision[0].actor[0].reference: Unable to resolve resource with reference 'CounselorRole1'
-ERROR: Consent/ConsentClinicianOrg: Consent.provision.provision[0].action[0].coding[1]: Wrong Display Name 'Correct' for http://terminology.hl7.org/CodeSystem/consentaction#correct - should be 'Access and Correct' (for the language(s) 'en') for 'http://terminology.hl7.org/CodeSystem/consentaction#correct'
-WARNING: Consent/ConsentClinicianOrg: Consent.provision.provision[0].class[0]: A code with no system has no defined meaning. A system should be provided
+ERROR: Consent/ConsentClinicianOrg: Consent.provision.provision[0].action[0].coding[1].display: Wrong Display Name 'Correct' for http://terminology.hl7.org/CodeSystem/consentaction#correct. Valid display is 'Access and Correct' (for the language(s) 'en-US')
+WARNING: Consent/ConsentClinicianOrg: Consent.provision.provision[0].class[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 == fsh-generated/resources/Consent-ConsentClinicianPatient.json ==
 ERROR: Consent/ConsentClinicianPatient: Consent.provision.provision[0].actor[0].reference: Unable to resolve resource with reference 'CounselorRole1'
-ERROR: Consent/ConsentClinicianPatient: Consent.provision.provision[0].action[0].coding[1]: Wrong Display Name 'Correct' for http://terminology.hl7.org/CodeSystem/consentaction#correct - should be 'Access and Correct' (for the language(s) 'en') for 'http://terminology.hl7.org/CodeSystem/consentaction#correct'
-WARNING: Consent/ConsentClinicianPatient: Consent.provision.provision[0].class[0]: A code with no system has no defined meaning. A system should be provided
+ERROR: Consent/ConsentClinicianPatient: Consent.provision.provision[0].action[0].coding[1].display: Wrong Display Name 'Correct' for http://terminology.hl7.org/CodeSystem/consentaction#correct. Valid display is 'Access and Correct' (for the language(s) 'en-US')
+WARNING: Consent/ConsentClinicianPatient: Consent.provision.provision[0].class[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 == fsh-generated/resources/Consent-ConsentPatientOwner.json ==
 ERROR: Consent/ConsentPatientOwner: Consent.provision.provision[0].actor[0].reference: Unable to resolve resource with reference 'PatientRole'
-WARNING: Consent/ConsentPatientOwner: Consent.provision.provision[0].class[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: Consent/ConsentPatientOwner: Consent.provision.provision[0].class[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 == fsh-generated/resources/Consent-ConsentSystemPatient.json ==
-ERROR: Consent/ConsentSystemPatient: Consent.provision.provision[0].actor[0].role.coding[0]: Unknown Code 'SYSTEM' in the system 'http://terminology.hl7.org/CodeSystem/v3-RoleClass' for 'http://terminology.hl7.org/CodeSystem/v3-RoleClass#SYSTEM'
+ERROR: Consent/ConsentSystemPatient: Consent.provision.provision[0].actor[0].role.coding[0].code: Unknown code 'SYSTEM' in the CodeSystem 'http://terminology.hl7.org/CodeSystem/v3-RoleClass' version '4.0.0'
 ERROR: Consent/ConsentSystemPatient: Consent.provision.provision[0].actor[0].reference: Unable to resolve resource with reference 'SystemRole'
-ERROR: Consent/ConsentSystemPatient: Consent.provision.provision[0].action[0].coding[1]: Wrong Display Name 'Correct' for http://terminology.hl7.org/CodeSystem/consentaction#correct - should be 'Access and Correct' (for the language(s) 'en') for 'http://terminology.hl7.org/CodeSystem/consentaction#correct'
-WARNING: Consent/ConsentSystemPatient: Consent.provision.provision[0].class[0]: A code with no system has no defined meaning. A system should be provided
+ERROR: Consent/ConsentSystemPatient: Consent.provision.provision[0].action[0].coding[1].display: Wrong Display Name 'Correct' for http://terminology.hl7.org/CodeSystem/consentaction#correct. Valid display is 'Access and Correct' (for the language(s) 'en-US')
+WARNING: Consent/ConsentSystemPatient: Consent.provision.provision[0].class[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 == fsh-generated/resources/ImplementationGuide-mitre.fast.access-control.json ==
 == fsh-generated/resources/OperationDefinition-canAccess.json ==
 ERROR: OperationDefinition.where(url = 'http://h7.org/fhir/OperationDefinition/example'): Conformance resource /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/OperationDefinition-canAccess.json - the canonical URL (https://gitlab.mitre.org/awatson/fast-access-control/OperationDefinition/canAccess) does not match the URL (http://h7.org/fhir/OperationDefinition/example)
-WARNING: OperationDefinition/canAccess: OperationDefinition: Rule opd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 ERROR: OperationDefinition/canAccess: OperationDefinition.base: Canonical URLs must be absolute URLs if they are not fragment references (OperationDefinition/Consent-canAccess)
-WARNING: Resource: The URL 'http://h7.org/fhir/OperationDefinition/example' has already been used by oauthScopes in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/OperationDefinition-oauthScopes
+WARNING: OperationDefinition/canAccess: OperationDefinition: Constraint failed: opd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'
+WARNING: Resource: The URL 'http://h7.org/fhir/OperationDefinition/example' is also used by diff in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/OperationDefinition-diff
+WARNING: Resource: The URL 'http://h7.org/fhir/OperationDefinition/example' is also used by digest in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/OperationDefinition-digest
+WARNING: Resource: The URL 'http://h7.org/fhir/OperationDefinition/example' is also used by equals in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/OperationDefinition-equals
+WARNING: Resource: The URL 'http://h7.org/fhir/OperationDefinition/example' is also used by oauthScopes in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/OperationDefinition-oauthScopes
+WARNING: Resource: The URL 'http://h7.org/fhir/OperationDefinition/example' is also used by parseToBundle in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/OperationDefinition-parseToBundle
+WARNING: Resource: The URL 'http://h7.org/fhir/OperationDefinition/example' is also used by rollup in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/OperationDefinition-rollup
+WARNING: Resource: The URL 'http://h7.org/fhir/OperationDefinition/example' is also used by toAcl in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/OperationDefinition-toAcl
 ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/OperationDefinition-canAccess: URL Mismatch https://gitlab.mitre.org/awatson/fast-access-control/OperationDefinition/canAccess vs http://h7.org/fhir/OperationDefinition/example
 == fsh-generated/resources/OperationDefinition-diff.json ==
 ERROR: OperationDefinition.where(url = 'http://h7.org/fhir/OperationDefinition/example'): Conformance resource /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/OperationDefinition-diff.json - the canonical URL (https://gitlab.mitre.org/awatson/fast-access-control/OperationDefinition/diff) does not match the URL (http://h7.org/fhir/OperationDefinition/example)
-WARNING: OperationDefinition/diff: OperationDefinition: Rule opd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 ERROR: OperationDefinition/diff: OperationDefinition.base: Canonical URLs must be absolute URLs if they are not fragment references (OperationDefinition/Consent-diff)
-WARNING: Resource: The URL 'http://h7.org/fhir/OperationDefinition/example' has already been used by oauthScopes in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/OperationDefinition-oauthScopes
+WARNING: OperationDefinition/diff: OperationDefinition: Constraint failed: opd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'
+WARNING: Resource: The URL 'http://h7.org/fhir/OperationDefinition/example' has already been used by canAccess in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/OperationDefinition-canAccess
 ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/OperationDefinition-diff: URL Mismatch https://gitlab.mitre.org/awatson/fast-access-control/OperationDefinition/diff vs http://h7.org/fhir/OperationDefinition/example
 == fsh-generated/resources/OperationDefinition-digest.json ==
 ERROR: OperationDefinition.where(url = 'http://h7.org/fhir/OperationDefinition/example'): Conformance resource /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/OperationDefinition-digest.json - the canonical URL (https://gitlab.mitre.org/awatson/fast-access-control/OperationDefinition/digest) does not match the URL (http://h7.org/fhir/OperationDefinition/example)
-WARNING: OperationDefinition/digest: OperationDefinition: Rule opd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 ERROR: OperationDefinition/digest: OperationDefinition.base: Canonical URLs must be absolute URLs if they are not fragment references (OperationDefinition/Consent-digest)
-WARNING: Resource: The URL 'http://h7.org/fhir/OperationDefinition/example' has already been used by oauthScopes in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/OperationDefinition-oauthScopes
+WARNING: OperationDefinition/digest: OperationDefinition: Constraint failed: opd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'
+WARNING: Resource: The URL 'http://h7.org/fhir/OperationDefinition/example' has already been used by canAccess in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/OperationDefinition-canAccess
 ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/OperationDefinition-digest: URL Mismatch https://gitlab.mitre.org/awatson/fast-access-control/OperationDefinition/digest vs http://h7.org/fhir/OperationDefinition/example
 == fsh-generated/resources/OperationDefinition-equals.json ==
 ERROR: OperationDefinition.where(url = 'http://h7.org/fhir/OperationDefinition/example'): Conformance resource /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/OperationDefinition-equals.json - the canonical URL (https://gitlab.mitre.org/awatson/fast-access-control/OperationDefinition/equals) does not match the URL (http://h7.org/fhir/OperationDefinition/example)
-WARNING: OperationDefinition/equals: OperationDefinition: Rule opd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 ERROR: OperationDefinition/equals: OperationDefinition.base: Canonical URLs must be absolute URLs if they are not fragment references (OperationDefinition/Consent-equals)
-WARNING: Resource: The URL 'http://h7.org/fhir/OperationDefinition/example' has already been used by oauthScopes in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/OperationDefinition-oauthScopes
+WARNING: OperationDefinition/equals: OperationDefinition: Constraint failed: opd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'
+WARNING: Resource: The URL 'http://h7.org/fhir/OperationDefinition/example' has already been used by canAccess in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/OperationDefinition-canAccess
 ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/OperationDefinition-equals: URL Mismatch https://gitlab.mitre.org/awatson/fast-access-control/OperationDefinition/equals vs http://h7.org/fhir/OperationDefinition/example
 == fsh-generated/resources/OperationDefinition-oauthScopes.json ==
 ERROR: OperationDefinition.where(url = 'http://h7.org/fhir/OperationDefinition/example'): Conformance resource /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/OperationDefinition-oauthScopes.json - the canonical URL (https://gitlab.mitre.org/awatson/fast-access-control/OperationDefinition/oauthScopes) does not match the URL (http://h7.org/fhir/OperationDefinition/example)
-WARNING: OperationDefinition/oauthScopes: OperationDefinition: Rule opd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 ERROR: OperationDefinition/oauthScopes: OperationDefinition.base: Canonical URLs must be absolute URLs if they are not fragment references (OperationDefinition/Consent-oauthScopes)
-WARNING: Resource: The URL 'http://h7.org/fhir/OperationDefinition/example' is also used by digest in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/OperationDefinition-digest
-WARNING: Resource: The URL 'http://h7.org/fhir/OperationDefinition/example' is also used by toAcl in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/OperationDefinition-toAcl
-WARNING: Resource: The URL 'http://h7.org/fhir/OperationDefinition/example' is also used by parseToBundle in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/OperationDefinition-parseToBundle
-WARNING: Resource: The URL 'http://h7.org/fhir/OperationDefinition/example' is also used by rollup in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/OperationDefinition-rollup
-WARNING: Resource: The URL 'http://h7.org/fhir/OperationDefinition/example' is also used by canAccess in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/OperationDefinition-canAccess
-WARNING: Resource: The URL 'http://h7.org/fhir/OperationDefinition/example' is also used by diff in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/OperationDefinition-diff
-WARNING: Resource: The URL 'http://h7.org/fhir/OperationDefinition/example' is also used by equals in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/OperationDefinition-equals
+WARNING: OperationDefinition/oauthScopes: OperationDefinition: Constraint failed: opd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'
+WARNING: Resource: The URL 'http://h7.org/fhir/OperationDefinition/example' has already been used by canAccess in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/OperationDefinition-canAccess
 ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/OperationDefinition-oauthScopes: URL Mismatch https://gitlab.mitre.org/awatson/fast-access-control/OperationDefinition/oauthScopes vs http://h7.org/fhir/OperationDefinition/example
 == fsh-generated/resources/OperationDefinition-parseToBundle.json ==
 ERROR: OperationDefinition.where(url = 'http://h7.org/fhir/OperationDefinition/example'): Conformance resource /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/OperationDefinition-parseToBundle.json - the canonical URL (https://gitlab.mitre.org/awatson/fast-access-control/OperationDefinition/parseToBundle) does not match the URL (http://h7.org/fhir/OperationDefinition/example)
-WARNING: OperationDefinition/parseToBundle: OperationDefinition: Rule opd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 ERROR: OperationDefinition/parseToBundle: OperationDefinition.base: Canonical URLs must be absolute URLs if they are not fragment references (OperationDefinition/Consent-parseToBundle)
-WARNING: Resource: The URL 'http://h7.org/fhir/OperationDefinition/example' has already been used by oauthScopes in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/OperationDefinition-oauthScopes
+WARNING: OperationDefinition/parseToBundle: OperationDefinition: Constraint failed: opd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'
+WARNING: Resource: The URL 'http://h7.org/fhir/OperationDefinition/example' has already been used by canAccess in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/OperationDefinition-canAccess
 ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/OperationDefinition-parseToBundle: URL Mismatch https://gitlab.mitre.org/awatson/fast-access-control/OperationDefinition/parseToBundle vs http://h7.org/fhir/OperationDefinition/example
 == fsh-generated/resources/OperationDefinition-rollup.json ==
 ERROR: OperationDefinition.where(url = 'http://h7.org/fhir/OperationDefinition/example'): Conformance resource /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/OperationDefinition-rollup.json - the canonical URL (https://gitlab.mitre.org/awatson/fast-access-control/OperationDefinition/rollup) does not match the URL (http://h7.org/fhir/OperationDefinition/example)
-WARNING: OperationDefinition/rollup: OperationDefinition: Rule opd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 ERROR: OperationDefinition/rollup: OperationDefinition.base: Canonical URLs must be absolute URLs if they are not fragment references (OperationDefinition/Consent-rollup)
-WARNING: Resource: The URL 'http://h7.org/fhir/OperationDefinition/example' has already been used by oauthScopes in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/OperationDefinition-oauthScopes
+WARNING: OperationDefinition/rollup: OperationDefinition: Constraint failed: opd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'
+WARNING: Resource: The URL 'http://h7.org/fhir/OperationDefinition/example' has already been used by canAccess in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/OperationDefinition-canAccess
 ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/OperationDefinition-rollup: URL Mismatch https://gitlab.mitre.org/awatson/fast-access-control/OperationDefinition/rollup vs http://h7.org/fhir/OperationDefinition/example
 == fsh-generated/resources/OperationDefinition-toAcl.json ==
 ERROR: OperationDefinition.where(url = 'http://h7.org/fhir/OperationDefinition/example'): Conformance resource /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/OperationDefinition-toAcl.json - the canonical URL (https://gitlab.mitre.org/awatson/fast-access-control/OperationDefinition/toAcl) does not match the URL (http://h7.org/fhir/OperationDefinition/example)
-WARNING: OperationDefinition/toAcl: OperationDefinition: Rule opd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 ERROR: OperationDefinition/toAcl: OperationDefinition.base: Canonical URLs must be absolute URLs if they are not fragment references (OperationDefinition/Consent-toAcl)
-WARNING: Resource: The URL 'http://h7.org/fhir/OperationDefinition/example' has already been used by oauthScopes in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/OperationDefinition-oauthScopes
+WARNING: OperationDefinition/toAcl: OperationDefinition: Constraint failed: opd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'
+WARNING: Resource: The URL 'http://h7.org/fhir/OperationDefinition/example' has already been used by canAccess in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/OperationDefinition-canAccess
 ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/OperationDefinition-toAcl: URL Mismatch https://gitlab.mitre.org/awatson/fast-access-control/OperationDefinition/toAcl vs http://h7.org/fhir/OperationDefinition/example
 == fsh-generated/resources/Organization-stdymphnas.json ==
 ERROR: Organization/stdymphnas: Organization.meta.profile[0]: Canonical URL 'http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Organization' does not resolve
 ERROR: Organization/stdymphnas: Organization.meta.profile[1]: Canonical URL 'http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization' does not resolve
-WARNING: Organization/stdymphnas: Organization.meta.security[0]: A code with no system has no defined meaning. A system should be provided
-ERROR: Organization/stdymphnas: Organization.type[0].coding[0]: Unknown Code System 'http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/OrgTypeCS'
+WARNING: Organization/stdymphnas: Organization.meta.security[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Organization/stdymphnas: Organization.type[0].coding[0].system: A definition for CodeSystem 'http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/OrgTypeCS' could not be found, so the code cannot be validated
 ERROR: Organization/stdymphnas: Organization.type[0].coding[0].system: URL value 'http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/OrgTypeCS' does not resolve
-WARNING: Organization/stdymphnas: Organization.meta.profile[0]: Profile reference 'http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Organization' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
-WARNING: Organization/stdymphnas: Organization.meta.profile[1]: Profile reference 'http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+WARNING: Organization/stdymphnas: Organization.meta.profile[0]: Profile reference 'http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Organization' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+WARNING: Organization/stdymphnas: Organization.meta.profile[1]: Profile reference 'http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
 == fsh-generated/resources/Organization-stjames.json ==
-WARNING: Organization/stjames: Organization.meta.security[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: Organization/stjames: Organization.meta.security[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 == fsh-generated/resources/Patient-patient-jane-doe.json ==
 ERROR: Patient/patient-jane-doe: Patient.meta.profile[0]: Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient' does not resolve
-ERROR: Patient/patient-jane-doe: Patient.extension[0]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-race is unknown, and not allowed here
-INFORMATION: Patient/patient-jane-doe: Patient.extension[0].extension[0].value.ofType(Coding): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
-INFORMATION: Patient/patient-jane-doe: Patient.extension[0].extension[1].value.ofType(Coding): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
-ERROR: Patient/patient-jane-doe: Patient.extension[0].extension[2]: Rule ext-1: 'Must have either extensions or value[x], not both' Failed
+ERROR: Patient/patient-jane-doe: Patient.extension[0]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-race could not be found so is not allowed here
+INFORMATION: Patient/patient-jane-doe: Patient.extension[0].extension[0].value.ofType(Coding): The definition for the Code System with URI 'urn:oid:2.16.840.1.113883.6.238' doesn't provide any codes so the code cannot be validated
+INFORMATION: Patient/patient-jane-doe: Patient.extension[0].extension[1].value.ofType(Coding): The definition for the Code System with URI 'urn:oid:2.16.840.1.113883.6.238' doesn't provide any codes so the code cannot be validated
+ERROR: Patient/patient-jane-doe: Patient.extension[0].extension[2]: Constraint failed: ext-1: 'Must have either extensions or value[x], not both' (defined in http://hl7.org/fhir/StructureDefinition/Extension)
 ERROR: Patient/patient-jane-doe: Patient.extension[0].url: URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-race' does not resolve
-ERROR: Patient/patient-jane-doe: Patient.extension[1]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity is unknown, and not allowed here
+ERROR: Patient/patient-jane-doe: Patient.extension[1]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity could not be found so is not allowed here
 ERROR: Patient/patient-jane-doe: Patient.extension[1].extension[0].value.ofType(Coding): Unknown Code System 'http://hl7.org/fhir/us/core/ValueSet/omb-ethnicity'
 ERROR: Patient/patient-jane-doe: Patient.extension[1].extension[0].value.ofType(Coding).system: URL value 'http://hl7.org/fhir/us/core/ValueSet/omb-ethnicity' does not resolve
 ERROR: Patient/patient-jane-doe: Patient.extension[1].url: URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity' does not resolve
-ERROR: Patient/patient-jane-doe: Patient.extension[2]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex is unknown, and not allowed here
+ERROR: Patient/patient-jane-doe: Patient.extension[2]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex could not be found so is not allowed here
 ERROR: Patient/patient-jane-doe: Patient.extension[2].url: URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex' does not resolve
 ERROR: Patient/patient-jane-doe: Patient.generalPractitioner[0]: Unable to resolve resource with reference 'Practitioner/ractitioner-susan-social'
 ERROR: Patient/patient-jane-doe: Patient.generalPractitioner[1]: Unable to resolve resource with reference 'Practitioner/practitioner-bernard-shuman'
-WARNING: Patient/patient-jane-doe: Patient.meta.profile[0]: Profile reference 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+WARNING: Patient/patient-jane-doe: Patient.meta.profile[0]: Profile reference 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+ERROR: Patient.text.div: Hyperlink 'Practitioner/ractitioner-susan-social' at 'div/table/tr/td/ul/li/a' for 'Susan Social' does not resolve
+ERROR: Patient.text.div: Hyperlink 'Practitioner/practitioner-bernard-shuman' at 'div/table/tr/td/ul/li/a' for 'Dr. Bernard Shuman' does not resolve
 == fsh-generated/resources/Patient-patient-jennifer-smith.json ==
 ERROR: Patient/patient-jennifer-smith: Patient.meta.profile[0]: Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient' does not resolve
-ERROR: Patient/patient-jennifer-smith: Patient.extension[0]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-race is unknown, and not allowed here
-INFORMATION: Patient/patient-jennifer-smith: Patient.extension[0].extension[0].value.ofType(Coding): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
-INFORMATION: Patient/patient-jennifer-smith: Patient.extension[0].extension[1].value.ofType(Coding): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
-INFORMATION: Patient/patient-jennifer-smith: Patient.extension[0].extension[2].value.ofType(Coding): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
-INFORMATION: Patient/patient-jennifer-smith: Patient.extension[0].extension[3].value.ofType(Coding): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
+ERROR: Patient/patient-jennifer-smith: Patient.extension[0]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-race could not be found so is not allowed here
+INFORMATION: Patient/patient-jennifer-smith: Patient.extension[0].extension[0].value.ofType(Coding): The definition for the Code System with URI 'urn:oid:2.16.840.1.113883.6.238' doesn't provide any codes so the code cannot be validated
+INFORMATION: Patient/patient-jennifer-smith: Patient.extension[0].extension[1].value.ofType(Coding): The definition for the Code System with URI 'urn:oid:2.16.840.1.113883.6.238' doesn't provide any codes so the code cannot be validated
+INFORMATION: Patient/patient-jennifer-smith: Patient.extension[0].extension[2].value.ofType(Coding): The definition for the Code System with URI 'urn:oid:2.16.840.1.113883.6.238' doesn't provide any codes so the code cannot be validated
+INFORMATION: Patient/patient-jennifer-smith: Patient.extension[0].extension[3].value.ofType(Coding): The definition for the Code System with URI 'urn:oid:2.16.840.1.113883.6.238' doesn't provide any codes so the code cannot be validated
 ERROR: Patient/patient-jennifer-smith: Patient.extension[0].url: URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-race' does not resolve
-ERROR: Patient/patient-jennifer-smith: Patient.extension[1]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity is unknown, and not allowed here
-INFORMATION: Patient/patient-jennifer-smith: Patient.extension[1].extension[0].value.ofType(Coding): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
-INFORMATION: Patient/patient-jennifer-smith: Patient.extension[1].extension[1].value.ofType(Coding): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
-INFORMATION: Patient/patient-jennifer-smith: Patient.extension[1].extension[2].value.ofType(Coding): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
+ERROR: Patient/patient-jennifer-smith: Patient.extension[1]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity could not be found so is not allowed here
+INFORMATION: Patient/patient-jennifer-smith: Patient.extension[1].extension[0].value.ofType(Coding): The definition for the Code System with URI 'urn:oid:2.16.840.1.113883.6.238' doesn't provide any codes so the code cannot be validated
+INFORMATION: Patient/patient-jennifer-smith: Patient.extension[1].extension[1].value.ofType(Coding): The definition for the Code System with URI 'urn:oid:2.16.840.1.113883.6.238' doesn't provide any codes so the code cannot be validated
+INFORMATION: Patient/patient-jennifer-smith: Patient.extension[1].extension[2].value.ofType(Coding): The definition for the Code System with URI 'urn:oid:2.16.840.1.113883.6.238' doesn't provide any codes so the code cannot be validated
 ERROR: Patient/patient-jennifer-smith: Patient.extension[1].url: URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity' does not resolve
-ERROR: Patient/patient-jennifer-smith: Patient.extension[2]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex is unknown, and not allowed here
+ERROR: Patient/patient-jennifer-smith: Patient.extension[2]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex could not be found so is not allowed here
 ERROR: Patient/patient-jennifer-smith: Patient.extension[2].url: URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex' does not resolve
 ERROR: Patient/patient-jennifer-smith: Patient.generalPractitioner[0]: Unable to resolve resource with reference 'Practitioner/ractitioner-susan-social'
-WARNING: Patient/patient-jennifer-smith: Patient.meta.profile[0]: Profile reference 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+WARNING: Patient/patient-jennifer-smith: Patient.meta.profile[0]: Profile reference 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+ERROR: Patient.text.div: Hyperlink 'Practitioner/ractitioner-susan-social' at 'div/table/tr/td/ul/li/a' for 'Susan Social' does not resolve
 == fsh-generated/resources/Patient-patient-john-smith.json ==
-ERROR: Patient/patient-john-smith: Patient.extension[0]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-race is unknown, and not allowed here
-INFORMATION: Patient/patient-john-smith: Patient.extension[0].extension[0].value.ofType(Coding): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
+ERROR: Patient/patient-john-smith: Patient.extension[0]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-race could not be found so is not allowed here
+INFORMATION: Patient/patient-john-smith: Patient.extension[0].extension[0].value.ofType(Coding): The definition for the Code System with URI 'urn:oid:2.16.840.1.113883.6.238' doesn't provide any codes so the code cannot be validated
 ERROR: Patient/patient-john-smith: Patient.extension[0].url: URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-race' does not resolve
-ERROR: Patient/patient-john-smith: Patient.extension[1]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity is unknown, and not allowed here
-INFORMATION: Patient/patient-john-smith: Patient.extension[1].extension[0].value.ofType(Coding): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
-INFORMATION: Patient/patient-john-smith: Patient.extension[1].extension[1].value.ofType(Coding): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
-INFORMATION: Patient/patient-john-smith: Patient.extension[1].extension[2].value.ofType(Coding): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
+ERROR: Patient/patient-john-smith: Patient.extension[1]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity could not be found so is not allowed here
+INFORMATION: Patient/patient-john-smith: Patient.extension[1].extension[0].value.ofType(Coding): The definition for the Code System with URI 'urn:oid:2.16.840.1.113883.6.238' doesn't provide any codes so the code cannot be validated
+INFORMATION: Patient/patient-john-smith: Patient.extension[1].extension[1].value.ofType(Coding): The definition for the Code System with URI 'urn:oid:2.16.840.1.113883.6.238' doesn't provide any codes so the code cannot be validated
+INFORMATION: Patient/patient-john-smith: Patient.extension[1].extension[2].value.ofType(Coding): The definition for the Code System with URI 'urn:oid:2.16.840.1.113883.6.238' doesn't provide any codes so the code cannot be validated
 ERROR: Patient/patient-john-smith: Patient.extension[1].url: URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity' does not resolve
-ERROR: Patient/patient-john-smith: Patient.extension[2]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex is unknown, and not allowed here
+ERROR: Patient/patient-john-smith: Patient.extension[2]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex could not be found so is not allowed here
 ERROR: Patient/patient-john-smith: Patient.extension[2].url: URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex' does not resolve
 == fsh-generated/resources/Patient-patient-katie-klepti.json ==
 ERROR: Patient/patient-katie-klepti: Patient.meta.profile[0]: Canonical URL 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient' does not resolve
-ERROR: Patient/patient-katie-klepti: Patient.extension[0]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-race is unknown, and not allowed here
-INFORMATION: Patient/patient-katie-klepti: Patient.extension[0].extension[0].value.ofType(Coding): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
-INFORMATION: Patient/patient-katie-klepti: Patient.extension[0].extension[1].value.ofType(Coding): Code System URI 'urn:oid:2.16.840.1.113883.6.238' is unknown so the code cannot be validated
-ERROR: Patient/patient-katie-klepti: Patient.extension[0].extension[2]: Rule ext-1: 'Must have either extensions or value[x], not both' Failed
+ERROR: Patient/patient-katie-klepti: Patient.extension[0]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-race could not be found so is not allowed here
+INFORMATION: Patient/patient-katie-klepti: Patient.extension[0].extension[0].value.ofType(Coding): The definition for the Code System with URI 'urn:oid:2.16.840.1.113883.6.238' doesn't provide any codes so the code cannot be validated
+INFORMATION: Patient/patient-katie-klepti: Patient.extension[0].extension[1].value.ofType(Coding): The definition for the Code System with URI 'urn:oid:2.16.840.1.113883.6.238' doesn't provide any codes so the code cannot be validated
+ERROR: Patient/patient-katie-klepti: Patient.extension[0].extension[2]: Constraint failed: ext-1: 'Must have either extensions or value[x], not both' (defined in http://hl7.org/fhir/StructureDefinition/Extension)
 ERROR: Patient/patient-katie-klepti: Patient.extension[0].url: URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-race' does not resolve
-ERROR: Patient/patient-katie-klepti: Patient.extension[1]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity is unknown, and not allowed here
+ERROR: Patient/patient-katie-klepti: Patient.extension[1]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity could not be found so is not allowed here
 ERROR: Patient/patient-katie-klepti: Patient.extension[1].extension[0].value.ofType(Coding): Unknown Code System 'http://hl7.org/fhir/us/core/ValueSet/omb-ethnicity'
 ERROR: Patient/patient-katie-klepti: Patient.extension[1].extension[0].value.ofType(Coding).system: URL value 'http://hl7.org/fhir/us/core/ValueSet/omb-ethnicity' does not resolve
 ERROR: Patient/patient-katie-klepti: Patient.extension[1].url: URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity' does not resolve
-ERROR: Patient/patient-katie-klepti: Patient.extension[2]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex is unknown, and not allowed here
+ERROR: Patient/patient-katie-klepti: Patient.extension[2]: The extension http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex could not be found so is not allowed here
 ERROR: Patient/patient-katie-klepti: Patient.extension[2].url: URL value 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex' does not resolve
 ERROR: Patient/patient-katie-klepti: Patient.generalPractitioner[0]: Unable to resolve resource with reference 'Practitioner/ractitioner-susan-social'
-WARNING: Patient/patient-katie-klepti: Patient.meta.profile[0]: Profile reference 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+WARNING: Patient/patient-katie-klepti: Patient.meta.profile[0]: Profile reference 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+ERROR: Patient.text.div: Hyperlink 'Practitioner/ractitioner-susan-social' at 'div/table/tr/td/ul/li/a' for 'Susan Social' does not resolve
 == fsh-generated/resources/Practitioner-practitioner-alison-camron.json ==
 == fsh-generated/resources/Practitioner-practitioner-susan-social.json ==
 == fsh-generated/resources/Questionnaire-fast-patient-privacy.json ==
-INFORMATION: Questionnaire/fast-patient-privacy: Questionnaire.code[0]: Code System URI 'http://sdhealthconnect.com/leap/patient-privacy' is unknown so the code cannot be validated
-ERROR: Questionnaire/fast-patient-privacy: Questionnaire.item[0]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
-ERROR: Questionnaire/fast-patient-privacy: Questionnaire.item[5]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
-ERROR: Questionnaire/fast-patient-privacy: Questionnaire.item[9]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
-ERROR: Questionnaire/fast-patient-privacy: Questionnaire.item[14]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
-ERROR: Questionnaire/fast-patient-privacy: Questionnaire.item[19]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
-WARNING: Resource: The URL 'http://34.94.253.50:8080/hapi-fhir-jpaserver/fhir/Questionnaire/leap-patient-privacy' has already been used by leap-patient-privacy in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Questionnaire-leap-patient-privacy
+INFORMATION: Questionnaire/fast-patient-privacy: Questionnaire.code[0]: A definition for CodeSystem 'http://sdhealthconnect.com/leap/patient-privacy' could not be found, so the code cannot be validated
+ERROR: Questionnaire/fast-patient-privacy: Questionnaire.item[0]: Constraint failed: que-1: 'Group items must have nested items, display items cannot have nested items'
+ERROR: Questionnaire/fast-patient-privacy: Questionnaire.item[5]: Constraint failed: que-1: 'Group items must have nested items, display items cannot have nested items'
+ERROR: Questionnaire/fast-patient-privacy: Questionnaire.item[9]: Constraint failed: que-1: 'Group items must have nested items, display items cannot have nested items'
+ERROR: Questionnaire/fast-patient-privacy: Questionnaire.item[14]: Constraint failed: que-1: 'Group items must have nested items, display items cannot have nested items'
+ERROR: Questionnaire/fast-patient-privacy: Questionnaire.item[19]: Constraint failed: que-1: 'Group items must have nested items, display items cannot have nested items'
+WARNING: Resource: The URL 'http://34.94.253.50:8080/hapi-fhir-jpaserver/fhir/Questionnaire/leap-patient-privacy' is also used by leap-patient-privacy in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Questionnaire-leap-patient-privacy
+INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/Questionnaire-leap-dnr.json ==
-INFORMATION: Questionnaire/leap-dnr: Questionnaire.code[0]: Code System URI 'http://sdhealthconnect.com/leap/adr/dnr' is unknown so the code cannot be validated
-ERROR: Questionnaire/leap-dnr: Questionnaire.item[0]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
+INFORMATION: Questionnaire/leap-dnr: Questionnaire.code[0]: A definition for CodeSystem 'http://sdhealthconnect.com/leap/adr/dnr' could not be found, so the code cannot be validated
+ERROR: Questionnaire/leap-dnr: Questionnaire.item[0]: Constraint failed: que-1: 'Group items must have nested items, display items cannot have nested items'
 WARNING: Questionnaire/leap-dnr: Questionnaire.item[1].text: value should not start or finish with whitespace 'In the event of cardiac or respiratory arrest, I refuse any resuscitation measures including cardiac compression, endotracheal intubation and other advanced airway management, artificial ventilation, defibrillation, administration of advanced cardiac life support drugs and related emergency medical procedures. '
-ERROR: Questionnaire/leap-dnr: Questionnaire.item[2]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
-ERROR: Questionnaire/leap-dnr: Questionnaire.item[5]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
-ERROR: Questionnaire/leap-dnr: Questionnaire.item[9]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
-ERROR: Questionnaire/leap-dnr: Questionnaire.item[12]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
+ERROR: Questionnaire/leap-dnr: Questionnaire.item[2]: Constraint failed: que-1: 'Group items must have nested items, display items cannot have nested items'
+ERROR: Questionnaire/leap-dnr: Questionnaire.item[5]: Constraint failed: que-1: 'Group items must have nested items, display items cannot have nested items'
+ERROR: Questionnaire/leap-dnr: Questionnaire.item[9]: Constraint failed: que-1: 'Group items must have nested items, display items cannot have nested items'
+ERROR: Questionnaire/leap-dnr: Questionnaire.item[12]: Constraint failed: que-1: 'Group items must have nested items, display items cannot have nested items'
+INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/Questionnaire-leap-livingwill.json ==
-INFORMATION: Questionnaire/leap-livingwill: Questionnaire.code[0]: Code System URI 'http://sdhealthconnect.com/leap/adr/livingwill' is unknown so the code cannot be validated
-ERROR: Questionnaire/leap-livingwill: Questionnaire.item[0]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
-ERROR: Questionnaire/leap-livingwill: Questionnaire.item[7]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
-ERROR: Questionnaire/leap-livingwill: Questionnaire.item[10]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
+INFORMATION: Questionnaire/leap-livingwill: Questionnaire.code[0]: A definition for CodeSystem 'http://sdhealthconnect.com/leap/adr/livingwill' could not be found, so the code cannot be validated
+ERROR: Questionnaire/leap-livingwill: Questionnaire.item[0]: Constraint failed: que-1: 'Group items must have nested items, display items cannot have nested items'
+ERROR: Questionnaire/leap-livingwill: Questionnaire.item[7]: Constraint failed: que-1: 'Group items must have nested items, display items cannot have nested items'
+ERROR: Questionnaire/leap-livingwill: Questionnaire.item[10]: Constraint failed: que-1: 'Group items must have nested items, display items cannot have nested items'
+INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/Questionnaire-leap-patient-privacy.json ==
-INFORMATION: Questionnaire/leap-patient-privacy: Questionnaire.code[0]: Code System URI 'http://sdhealthconnect.com/leap/patient-privacy' is unknown so the code cannot be validated
-ERROR: Questionnaire/leap-patient-privacy: Questionnaire.item[0]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
-ERROR: Questionnaire/leap-patient-privacy: Questionnaire.item[5]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
-ERROR: Questionnaire/leap-patient-privacy: Questionnaire.item[9]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
-ERROR: Questionnaire/leap-patient-privacy: Questionnaire.item[14]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
-ERROR: Questionnaire/leap-patient-privacy: Questionnaire.item[19]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
-WARNING: Resource: The URL 'http://34.94.253.50:8080/hapi-fhir-jpaserver/fhir/Questionnaire/leap-patient-privacy' is also used by fast-patient-privacy in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Questionnaire-fast-patient-privacy
+INFORMATION: Questionnaire/leap-patient-privacy: Questionnaire.code[0]: A definition for CodeSystem 'http://sdhealthconnect.com/leap/patient-privacy' could not be found, so the code cannot be validated
+ERROR: Questionnaire/leap-patient-privacy: Questionnaire.item[0]: Constraint failed: que-1: 'Group items must have nested items, display items cannot have nested items'
+ERROR: Questionnaire/leap-patient-privacy: Questionnaire.item[5]: Constraint failed: que-1: 'Group items must have nested items, display items cannot have nested items'
+ERROR: Questionnaire/leap-patient-privacy: Questionnaire.item[9]: Constraint failed: que-1: 'Group items must have nested items, display items cannot have nested items'
+ERROR: Questionnaire/leap-patient-privacy: Questionnaire.item[14]: Constraint failed: que-1: 'Group items must have nested items, display items cannot have nested items'
+ERROR: Questionnaire/leap-patient-privacy: Questionnaire.item[19]: Constraint failed: que-1: 'Group items must have nested items, display items cannot have nested items'
+WARNING: Resource: The URL 'http://34.94.253.50:8080/hapi-fhir-jpaserver/fhir/Questionnaire/leap-patient-privacy' has already been used by fast-patient-privacy in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/Questionnaire-fast-patient-privacy
+INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/Questionnaire-leap-poahealthcare.json ==
-INFORMATION: Questionnaire/leap-poahealthcare: Questionnaire.code[0]: Code System URI 'http://sdhealthconnect.com/leap/adr/poahealthcare' is unknown so the code cannot be validated
-ERROR: Questionnaire/leap-poahealthcare: Questionnaire.item[0]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
-ERROR: Questionnaire/leap-poahealthcare: Questionnaire.item[1]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
-ERROR: Questionnaire/leap-poahealthcare: Questionnaire.item[7]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
-ERROR: Questionnaire/leap-poahealthcare: Questionnaire.item[15]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
-ERROR: Questionnaire/leap-poahealthcare: Questionnaire.item[19]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
-ERROR: Questionnaire/leap-poahealthcare: Questionnaire.item[24]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
-ERROR: Questionnaire/leap-poahealthcare: Questionnaire.item[29]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
-ERROR: Questionnaire/leap-poahealthcare: Questionnaire.item[35]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
-ERROR: Questionnaire/leap-poahealthcare: Questionnaire.item[39]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
-ERROR: Questionnaire/leap-poahealthcare: Questionnaire.item[47]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
-ERROR: Questionnaire/leap-poahealthcare: Questionnaire.item[51]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
-ERROR: Questionnaire/leap-poahealthcare: Questionnaire.item[54]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
-ERROR: Questionnaire/leap-poahealthcare: Questionnaire.item[57]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
+INFORMATION: Questionnaire/leap-poahealthcare: Questionnaire.code[0]: A definition for CodeSystem 'http://sdhealthconnect.com/leap/adr/poahealthcare' could not be found, so the code cannot be validated
+ERROR: Questionnaire/leap-poahealthcare: Questionnaire.item[0]: Constraint failed: que-1: 'Group items must have nested items, display items cannot have nested items'
+ERROR: Questionnaire/leap-poahealthcare: Questionnaire.item[1]: Constraint failed: que-1: 'Group items must have nested items, display items cannot have nested items'
+ERROR: Questionnaire/leap-poahealthcare: Questionnaire.item[7]: Constraint failed: que-1: 'Group items must have nested items, display items cannot have nested items'
+ERROR: Questionnaire/leap-poahealthcare: Questionnaire.item[15]: Constraint failed: que-1: 'Group items must have nested items, display items cannot have nested items'
+ERROR: Questionnaire/leap-poahealthcare: Questionnaire.item[19]: Constraint failed: que-1: 'Group items must have nested items, display items cannot have nested items'
+ERROR: Questionnaire/leap-poahealthcare: Questionnaire.item[24]: Constraint failed: que-1: 'Group items must have nested items, display items cannot have nested items'
+ERROR: Questionnaire/leap-poahealthcare: Questionnaire.item[29]: Constraint failed: que-1: 'Group items must have nested items, display items cannot have nested items'
+ERROR: Questionnaire/leap-poahealthcare: Questionnaire.item[35]: Constraint failed: que-1: 'Group items must have nested items, display items cannot have nested items'
+ERROR: Questionnaire/leap-poahealthcare: Questionnaire.item[39]: Constraint failed: que-1: 'Group items must have nested items, display items cannot have nested items'
+ERROR: Questionnaire/leap-poahealthcare: Questionnaire.item[47]: Constraint failed: que-1: 'Group items must have nested items, display items cannot have nested items'
+ERROR: Questionnaire/leap-poahealthcare: Questionnaire.item[51]: Constraint failed: que-1: 'Group items must have nested items, display items cannot have nested items'
+ERROR: Questionnaire/leap-poahealthcare: Questionnaire.item[54]: Constraint failed: que-1: 'Group items must have nested items, display items cannot have nested items'
+ERROR: Questionnaire/leap-poahealthcare: Questionnaire.item[57]: Constraint failed: que-1: 'Group items must have nested items, display items cannot have nested items'
+INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/Questionnaire-leap-poamentalhealth.json ==
-INFORMATION: Questionnaire/leap-poamentalhealth: Questionnaire.code[0]: Code System URI 'http://sdhealthconnect.com/leap/adr/poamentalhealth' is unknown so the code cannot be validated
-ERROR: Questionnaire/leap-poamentalhealth: Questionnaire.item[0]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
-ERROR: Questionnaire/leap-poamentalhealth: Questionnaire.item[1]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
-ERROR: Questionnaire/leap-poamentalhealth: Questionnaire.item[7]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
-ERROR: Questionnaire/leap-poamentalhealth: Questionnaire.item[13]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
-ERROR: Questionnaire/leap-poamentalhealth: Questionnaire.item[22]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
-ERROR: Questionnaire/leap-poamentalhealth: Questionnaire.item[25]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
+INFORMATION: Questionnaire/leap-poamentalhealth: Questionnaire.code[0]: A definition for CodeSystem 'http://sdhealthconnect.com/leap/adr/poamentalhealth' could not be found, so the code cannot be validated
+ERROR: Questionnaire/leap-poamentalhealth: Questionnaire.item[0]: Constraint failed: que-1: 'Group items must have nested items, display items cannot have nested items'
+ERROR: Questionnaire/leap-poamentalhealth: Questionnaire.item[1]: Constraint failed: que-1: 'Group items must have nested items, display items cannot have nested items'
+ERROR: Questionnaire/leap-poamentalhealth: Questionnaire.item[7]: Constraint failed: que-1: 'Group items must have nested items, display items cannot have nested items'
+ERROR: Questionnaire/leap-poamentalhealth: Questionnaire.item[13]: Constraint failed: que-1: 'Group items must have nested items, display items cannot have nested items'
+ERROR: Questionnaire/leap-poamentalhealth: Questionnaire.item[22]: Constraint failed: que-1: 'Group items must have nested items, display items cannot have nested items'
+ERROR: Questionnaire/leap-poamentalhealth: Questionnaire.item[25]: Constraint failed: que-1: 'Group items must have nested items, display items cannot have nested items'
+INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/Questionnaire-leap-polst.json ==
-INFORMATION: Questionnaire/leap-polst: Questionnaire.code[0]: Code System URI 'http://sdhealthconnect.com/leap/adr/polst' is unknown so the code cannot be validated
-ERROR: Questionnaire/leap-polst: Questionnaire.item[0]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
-ERROR: Questionnaire/leap-polst: Questionnaire.item[3]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
+INFORMATION: Questionnaire/leap-polst: Questionnaire.code[0]: A definition for CodeSystem 'http://sdhealthconnect.com/leap/adr/polst' could not be found, so the code cannot be validated
+ERROR: Questionnaire/leap-polst: Questionnaire.item[0]: Constraint failed: que-1: 'Group items must have nested items, display items cannot have nested items'
+ERROR: Questionnaire/leap-polst: Questionnaire.item[3]: Constraint failed: que-1: 'Group items must have nested items, display items cannot have nested items'
 INFORMATION: Questionnaire/leap-polst: Questionnaire.item[6].text: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
-ERROR: Questionnaire/leap-polst: Questionnaire.item[8]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
+ERROR: Questionnaire/leap-polst: Questionnaire.item[8]: Constraint failed: que-1: 'Group items must have nested items, display items cannot have nested items'
 WARNING: Questionnaire/leap-polst: Questionnaire.item[8].text: value should not start or finish with whitespace 'D. Medically Assisted Nutrition - (Offer food by mouth if desired by patient, safe and tolerated)\n\n'
-ERROR: Questionnaire/leap-polst: Questionnaire.item[13]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
-ERROR: Questionnaire/leap-polst: Questionnaire.item[18]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
+ERROR: Questionnaire/leap-polst: Questionnaire.item[13]: Constraint failed: que-1: 'Group items must have nested items, display items cannot have nested items'
+ERROR: Questionnaire/leap-polst: Questionnaire.item[18]: Constraint failed: que-1: 'Group items must have nested items, display items cannot have nested items'
 WARNING: Questionnaire/leap-polst: Questionnaire.item[18].text: value should not start or finish with whitespace 'F. Signature: Health Care Provider - Verbal orders are acceptable with follow up signature. I have discussed this order with the patient or his/her representative. The orders reflect the patient’s known wishes, to the best of my knowledge.\n\n[Note: Only licensed health care providers authorized by law to sign POLST form in state where completed may sign this order]\n\n '
-ERROR: Questionnaire/leap-polst: Questionnaire.item[22]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
-ERROR: Questionnaire/leap-polst: Questionnaire.item[26]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
-ERROR: Questionnaire/leap-polst: Questionnaire.item[29]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
-ERROR: Questionnaire/leap-polst: Questionnaire.item[34]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
-ERROR: Questionnaire/leap-polst: Questionnaire.item[37]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
-ERROR: Questionnaire/leap-polst: Questionnaire.item[41]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
-ERROR: Questionnaire/leap-polst: Questionnaire.item[47]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
-ERROR: Questionnaire/leap-polst: Questionnaire.item[54]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
-ERROR: Questionnaire/leap-polst: Questionnaire.item[58]: Rule que-1: 'Group items must have nested items, display items cannot have nested items' Failed
+ERROR: Questionnaire/leap-polst: Questionnaire.item[22]: Constraint failed: que-1: 'Group items must have nested items, display items cannot have nested items'
+ERROR: Questionnaire/leap-polst: Questionnaire.item[26]: Constraint failed: que-1: 'Group items must have nested items, display items cannot have nested items'
+ERROR: Questionnaire/leap-polst: Questionnaire.item[29]: Constraint failed: que-1: 'Group items must have nested items, display items cannot have nested items'
+ERROR: Questionnaire/leap-polst: Questionnaire.item[34]: Constraint failed: que-1: 'Group items must have nested items, display items cannot have nested items'
+ERROR: Questionnaire/leap-polst: Questionnaire.item[37]: Constraint failed: que-1: 'Group items must have nested items, display items cannot have nested items'
+ERROR: Questionnaire/leap-polst: Questionnaire.item[41]: Constraint failed: que-1: 'Group items must have nested items, display items cannot have nested items'
+ERROR: Questionnaire/leap-polst: Questionnaire.item[47]: Constraint failed: que-1: 'Group items must have nested items, display items cannot have nested items'
+ERROR: Questionnaire/leap-polst: Questionnaire.item[54]: Constraint failed: que-1: 'Group items must have nested items, display items cannot have nested items'
+ERROR: Questionnaire/leap-polst: Questionnaire.item[58]: Constraint failed: que-1: 'Group items must have nested items, display items cannot have nested items'
+INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/StructureDefinition-ConsentToAcces.json ==
-ERROR: StructureDefinition/ConsentToAcces: StructureDefinition.snapshot.element[9].example[0].value.ofType(Identifier): if identifier.system is 'urn:ietf:rfc:3986', then the identifier.value must be a full URI (e.g. start with a scheme), not 'Local eCMS identifier'
 WARNING: StructureDefinition.where(url = 'https://gitlab.mitre.org/awatson/fast-access-control/StructureDefinition/ConsentToAcces'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-OAuthAuthenticationRequest.json ==
 ERROR: StructureDefinition.where(url = 'http://hl7.org/fhir/tools/StructureDefinition/OAuthAuthenticationRequest'): Conformance resource /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureDefinition-OAuthAuthenticationRequest.json - the canonical URL (https://gitlab.mitre.org/awatson/fast-access-control/StructureDefinition/OAuthAuthenticationRequest) does not match the URL (http://hl7.org/fhir/tools/StructureDefinition/OAuthAuthenticationRequest)
 ERROR: StructureDefinition/OAuthAuthenticationRequest: StructureDefinition.type: The type OAuthAuthenticationRequest is not legal because it is not defined in the FHIR specification. Other types must have a namespace on them
-WARNING: StructureDefinition/OAuthAuthenticationRequest: StructureDefinition.snapshot.element[3]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
-WARNING: StructureDefinition/OAuthAuthenticationRequest: StructureDefinition.snapshot.element[4]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
-WARNING: StructureDefinition/OAuthAuthenticationRequest: StructureDefinition.snapshot.element[5]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
-WARNING: StructureDefinition/OAuthAuthenticationRequest: StructureDefinition.differential.element[3]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
-WARNING: StructureDefinition/OAuthAuthenticationRequest: StructureDefinition.differential.element[4]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
-WARNING: StructureDefinition/OAuthAuthenticationRequest: StructureDefinition.differential.element[5]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/OAuthAuthenticationRequest: StructureDefinition.snapshot.element[3]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/OAuthAuthenticationRequest: StructureDefinition.snapshot.element[4]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/OAuthAuthenticationRequest: StructureDefinition.snapshot.element[5]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/OAuthAuthenticationRequest: StructureDefinition.differential.element[3]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/OAuthAuthenticationRequest: StructureDefinition.differential.element[4]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/OAuthAuthenticationRequest: StructureDefinition.differential.element[5]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+ERROR: StructureDefinition/OAuthAuthenticationRequest: StructureDefinition: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
 ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureDefinition-OAuthAuthenticationRequest: URL Mismatch https://gitlab.mitre.org/awatson/fast-access-control/StructureDefinition/OAuthAuthenticationRequest vs http://hl7.org/fhir/tools/StructureDefinition/OAuthAuthenticationRequest
 == fsh-generated/resources/StructureDefinition-OAuthAuthenticationResponse.json ==
 ERROR: StructureDefinition.where(url = 'http://hl7.org/fhir/tools/StructureDefinition/OAuthAuthenticationResponse'): Conformance resource /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureDefinition-OAuthAuthenticationResponse.json - the canonical URL (https://gitlab.mitre.org/awatson/fast-access-control/StructureDefinition/OAuthAuthenticationResponse) does not match the URL (http://hl7.org/fhir/tools/StructureDefinition/OAuthAuthenticationResponse)
 ERROR: StructureDefinition/OAuthAuthenticationResponse: StructureDefinition.type: The type OAuthAuthenticationResponse is not legal because it is not defined in the FHIR specification. Other types must have a namespace on them
+ERROR: StructureDefinition/OAuthAuthenticationResponse: StructureDefinition: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
 ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureDefinition-OAuthAuthenticationResponse: URL Mismatch https://gitlab.mitre.org/awatson/fast-access-control/StructureDefinition/OAuthAuthenticationResponse vs http://hl7.org/fhir/tools/StructureDefinition/OAuthAuthenticationResponse
 == fsh-generated/resources/StructureDefinition-OAuthRegistrationRequest.json ==
 ERROR: StructureDefinition.where(url = 'http://hl7.org/fhir/tools/StructureDefinition/OAuthRegistrationRequest'): Conformance resource /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureDefinition-OAuthRegistrationRequest.json - the canonical URL (https://gitlab.mitre.org/awatson/fast-access-control/StructureDefinition/OAuthRegistrationRequest) does not match the URL (http://hl7.org/fhir/tools/StructureDefinition/OAuthRegistrationRequest)
 ERROR: StructureDefinition/OAuthRegistrationRequest: StructureDefinition.type: The type OAuthRegistrationRequest is not legal because it is not defined in the FHIR specification. Other types must have a namespace on them
-WARNING: StructureDefinition/OAuthRegistrationRequest: StructureDefinition.snapshot.element[3]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
-WARNING: StructureDefinition/OAuthRegistrationRequest: StructureDefinition.snapshot.element[4]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
-WARNING: StructureDefinition/OAuthRegistrationRequest: StructureDefinition.snapshot.element[6]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
-WARNING: StructureDefinition/OAuthRegistrationRequest: StructureDefinition.snapshot.element[7]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
-WARNING: StructureDefinition/OAuthRegistrationRequest: StructureDefinition.snapshot.element[8]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
-WARNING: StructureDefinition/OAuthRegistrationRequest: StructureDefinition.differential.element[3]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
-WARNING: StructureDefinition/OAuthRegistrationRequest: StructureDefinition.differential.element[4]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
-WARNING: StructureDefinition/OAuthRegistrationRequest: StructureDefinition.differential.element[6]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
-WARNING: StructureDefinition/OAuthRegistrationRequest: StructureDefinition.differential.element[7]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
-WARNING: StructureDefinition/OAuthRegistrationRequest: StructureDefinition.differential.element[8]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/OAuthRegistrationRequest: StructureDefinition.snapshot.element[3]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/OAuthRegistrationRequest: StructureDefinition.snapshot.element[4]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/OAuthRegistrationRequest: StructureDefinition.snapshot.element[6]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/OAuthRegistrationRequest: StructureDefinition.snapshot.element[7]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/OAuthRegistrationRequest: StructureDefinition.snapshot.element[8]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/OAuthRegistrationRequest: StructureDefinition.differential.element[3]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/OAuthRegistrationRequest: StructureDefinition.differential.element[4]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/OAuthRegistrationRequest: StructureDefinition.differential.element[6]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/OAuthRegistrationRequest: StructureDefinition.differential.element[7]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/OAuthRegistrationRequest: StructureDefinition.differential.element[8]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+ERROR: StructureDefinition/OAuthRegistrationRequest: StructureDefinition: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
 ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureDefinition-OAuthRegistrationRequest: URL Mismatch https://gitlab.mitre.org/awatson/fast-access-control/StructureDefinition/OAuthRegistrationRequest vs http://hl7.org/fhir/tools/StructureDefinition/OAuthRegistrationRequest
 == fsh-generated/resources/StructureDefinition-OAuthRegistrationResponse.json ==
 ERROR: StructureDefinition.where(url = 'http://hl7.org/fhir/tools/StructureDefinition/OAuthRegistrationResponse'): Conformance resource /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureDefinition-OAuthRegistrationResponse.json - the canonical URL (https://gitlab.mitre.org/awatson/fast-access-control/StructureDefinition/OAuthRegistrationResponse) does not match the URL (http://hl7.org/fhir/tools/StructureDefinition/OAuthRegistrationResponse)
 ERROR: StructureDefinition/OAuthRegistrationResponse: StructureDefinition.type: The type OAuthRegistrationResponse is not legal because it is not defined in the FHIR specification. Other types must have a namespace on them
-WARNING: StructureDefinition/OAuthRegistrationResponse: StructureDefinition.snapshot.element[3]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
-WARNING: StructureDefinition/OAuthRegistrationResponse: StructureDefinition.snapshot.element[4]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
-WARNING: StructureDefinition/OAuthRegistrationResponse: StructureDefinition.differential.element[3]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
-WARNING: StructureDefinition/OAuthRegistrationResponse: StructureDefinition.differential.element[4]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/OAuthRegistrationResponse: StructureDefinition.snapshot.element[3]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/OAuthRegistrationResponse: StructureDefinition.snapshot.element[4]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/OAuthRegistrationResponse: StructureDefinition.differential.element[3]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/OAuthRegistrationResponse: StructureDefinition.differential.element[4]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+ERROR: StructureDefinition/OAuthRegistrationResponse: StructureDefinition: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
 ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureDefinition-OAuthRegistrationResponse: URL Mismatch https://gitlab.mitre.org/awatson/fast-access-control/StructureDefinition/OAuthRegistrationResponse vs http://hl7.org/fhir/tools/StructureDefinition/OAuthRegistrationResponse
 == fsh-generated/resources/StructureDefinition-OAuthTokenResponse.json ==
 ERROR: StructureDefinition.where(url = 'http://hl7.org/fhir/tools/StructureDefinition/OAuthTokenResponse'): Conformance resource /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureDefinition-OAuthTokenResponse.json - the canonical URL (https://gitlab.mitre.org/awatson/fast-access-control/StructureDefinition/OAuthTokenResponse) does not match the URL (http://hl7.org/fhir/tools/StructureDefinition/OAuthTokenResponse)
 ERROR: StructureDefinition/OAuthTokenResponse: StructureDefinition.type: The type OAuthTokenResponse is not legal because it is not defined in the FHIR specification. Other types must have a namespace on them
-WARNING: StructureDefinition/OAuthTokenResponse: StructureDefinition.snapshot.element[3]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
-WARNING: StructureDefinition/OAuthTokenResponse: StructureDefinition.snapshot.element[4]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
-WARNING: StructureDefinition/OAuthTokenResponse: StructureDefinition.snapshot.element[6]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
-WARNING: StructureDefinition/OAuthTokenResponse: StructureDefinition.differential.element[3]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
-WARNING: StructureDefinition/OAuthTokenResponse: StructureDefinition.differential.element[4]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
-WARNING: StructureDefinition/OAuthTokenResponse: StructureDefinition.differential.element[6]: Rule eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/OAuthTokenResponse: StructureDefinition.snapshot.element[3]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/OAuthTokenResponse: StructureDefinition.snapshot.element[4]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/OAuthTokenResponse: StructureDefinition.snapshot.element[6]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/OAuthTokenResponse: StructureDefinition.differential.element[3]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/OAuthTokenResponse: StructureDefinition.differential.element[4]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/OAuthTokenResponse: StructureDefinition.differential.element[6]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+ERROR: StructureDefinition/OAuthTokenResponse: StructureDefinition: When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension
 ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureDefinition-OAuthTokenResponse: URL Mismatch https://gitlab.mitre.org/awatson/fast-access-control/StructureDefinition/OAuthTokenResponse vs http://hl7.org/fhir/tools/StructureDefinition/OAuthTokenResponse
 == fsh-generated/resources/StructureMap-DnrToConsent.json ==
 ERROR: StructureMap.where(url = 'http://'): Conformance resource /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureMap-DnrToConsent.json - the canonical URL (https://gitlab.mitre.org/awatson/fast-access-control/StructureMap/DnrToConsent) does not match the URL (http://)
 WARNING: StructureMap/DnrToConsent: StructureMap.group[0].input[0]: Group First parameter DnrToConsent has no type, so the paths cannot be validated
-ERROR: StructureMap/DnrToConsent: StructureMap.group[0].rule[0].source[0]: The source context HCSyJBGnL9c438DrE is not known at this point
-WARNING: Resource: The URL 'http://' has already been used by TestScript-Scenario2A in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/TestScript-TestScript-Scenario2A
+ERROR: StructureMap/DnrToConsent: StructureMap.group[0].rule[0].source[0]: The source context First is not known at this point
+WARNING: Resource: The URL 'http://' is also used by FirstNameToGiven in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureMap-FirstNameToGiven
+WARNING: Resource: The URL 'http://' is also used by HipaaPrivacyToConsent in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureMap-HipaaPrivacyToConsent
+WARNING: Resource: The URL 'http://' is also used by LastNameToFamily in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureMap-LastNameToFamily
+WARNING: Resource: The URL 'http://' is also used by LivingWillToConsent in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureMap-LivingWillToConsent
+WARNING: Resource: The URL 'http://' is also used by PoaContractToConsent in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureMap-PoaContractToConsent
+WARNING: Resource: The URL 'http://' is also used by PoaMentalHealthToConsent in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureMap-PoaMentalHealthToConsent
+WARNING: Resource: The URL 'http://' is also used by PoaQuestinonaireToConsent in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureMap-PoaQuestinonaireToConsent
+WARNING: Resource: The URL 'http://' is also used by PolstToConsent in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureMap-PolstToConsent
+WARNING: Resource: The URL 'http://' is also used by TestScript-Scenario1A in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/TestScript-TestScript-Scenario1A
+WARNING: Resource: The URL 'http://' is also used by TestScript-Scenario1B in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/TestScript-TestScript-Scenario1B
+WARNING: Resource: The URL 'http://' is also used by TestScript-Scenario2A in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/TestScript-TestScript-Scenario2A
+WARNING: Resource: The URL 'http://' is also used by TestScript-Scenario2B in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/TestScript-TestScript-Scenario2B
+WARNING: Resource: The URL 'http://' is also used by TestScript-Scenario2C in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/TestScript-TestScript-Scenario2C
+WARNING: Resource: The URL 'http://' is also used by TestScript-Scenario2D in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/TestScript-TestScript-Scenario2D
+WARNING: Resource: The URL 'http://' is also used by TestScript-Scenario2E in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/TestScript-TestScript-Scenario2E
+WARNING: Resource: The URL 'http://' is also used by TestScript-Scenario3 in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/TestScript-TestScript-Scenario3
+WARNING: Resource: The URL 'http://' is also used by TestScript-gszMyXpwsdoAjJZeh in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/TestScript-TestScript-gszMyXpwsdoAjJZeh
 ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureMap-DnrToConsent: URL Mismatch https://gitlab.mitre.org/awatson/fast-access-control/StructureMap/DnrToConsent vs http://
 == fsh-generated/resources/StructureMap-FirstNameToGiven.json ==
 ERROR: StructureMap.where(url = 'http://'): Conformance resource /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureMap-FirstNameToGiven.json - the canonical URL (https://gitlab.mitre.org/awatson/fast-access-control/StructureMap/FirstNameToGiven) does not match the URL (http://)
 WARNING: StructureMap/FirstNameToGiven: StructureMap.group[0].input[0]: Group First parameter FirstName has no type, so the paths cannot be validated
-ERROR: StructureMap/FirstNameToGiven: StructureMap.group[0].rule[0].source[0]: The source context gCaEyGa9vsLFC9aj5 is not known at this point
-WARNING: Resource: The URL 'http://' has already been used by TestScript-Scenario2A in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/TestScript-TestScript-Scenario2A
+WARNING: Resource: The URL 'http://' has already been used by DnrToConsent in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureMap-DnrToConsent
 ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureMap-FirstNameToGiven: URL Mismatch https://gitlab.mitre.org/awatson/fast-access-control/StructureMap/FirstNameToGiven vs http://
 == fsh-generated/resources/StructureMap-HipaaPrivacyToConsent.json ==
 ERROR: StructureMap.where(url = 'http://'): Conformance resource /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureMap-HipaaPrivacyToConsent.json - the canonical URL (https://gitlab.mitre.org/awatson/fast-access-control/StructureMap/HipaaPrivacyToConsent) does not match the URL (http://)
 WARNING: StructureMap/HipaaPrivacyToConsent: StructureMap.group[0].input[0]: Group First parameter HipaaPrivacyToConsent has no type, so the paths cannot be validated
-ERROR: StructureMap/HipaaPrivacyToConsent: StructureMap.group[0].rule[0].source[0]: The source context QihW2v3EyoEuqB8Y5 is not known at this point
-WARNING: Resource: The URL 'http://' has already been used by TestScript-Scenario2A in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/TestScript-TestScript-Scenario2A
+ERROR: StructureMap/HipaaPrivacyToConsent: StructureMap.group[0].rule[0].source[0]: The source context First is not known at this point
+WARNING: Resource: The URL 'http://' has already been used by DnrToConsent in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureMap-DnrToConsent
 ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureMap-HipaaPrivacyToConsent: URL Mismatch https://gitlab.mitre.org/awatson/fast-access-control/StructureMap/HipaaPrivacyToConsent vs http://
 == fsh-generated/resources/StructureMap-LastNameToFamily.json ==
 ERROR: StructureMap.where(url = 'http://'): Conformance resource /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureMap-LastNameToFamily.json - the canonical URL (https://gitlab.mitre.org/awatson/fast-access-control/StructureMap/LastNameToFamily) does not match the URL (http://)
 WARNING: StructureMap/LastNameToFamily: StructureMap.group[0].input[0]: Group First parameter LastName has no type, so the paths cannot be validated
-ERROR: StructureMap/LastNameToFamily: StructureMap.group[0].rule[0].source[0]: The source context cNAWCq2xPyKhDXGJZ is not known at this point
-WARNING: Resource: The URL 'http://' has already been used by TestScript-Scenario2A in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/TestScript-TestScript-Scenario2A
+WARNING: Resource: The URL 'http://' has already been used by DnrToConsent in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureMap-DnrToConsent
 ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureMap-LastNameToFamily: URL Mismatch https://gitlab.mitre.org/awatson/fast-access-control/StructureMap/LastNameToFamily vs http://
 == fsh-generated/resources/StructureMap-LivingWillToConsent.json ==
 ERROR: StructureMap.where(url = 'http://'): Conformance resource /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureMap-LivingWillToConsent.json - the canonical URL (https://gitlab.mitre.org/awatson/fast-access-control/StructureMap/LivingWillToConsent) does not match the URL (http://)
 WARNING: StructureMap/LivingWillToConsent: StructureMap.group[0].input[0]: Group First parameter LivingWillToConsent has no type, so the paths cannot be validated
-ERROR: StructureMap/LivingWillToConsent: StructureMap.group[0].rule[0].source[0]: The source context GASWmqkfPCcSWb2MY is not known at this point
-WARNING: Resource: The URL 'http://' has already been used by TestScript-Scenario2A in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/TestScript-TestScript-Scenario2A
+ERROR: StructureMap/LivingWillToConsent: StructureMap.group[0].rule[0].source[0]: The source context First is not known at this point
+WARNING: Resource: The URL 'http://' has already been used by DnrToConsent in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureMap-DnrToConsent
 ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureMap-LivingWillToConsent: URL Mismatch https://gitlab.mitre.org/awatson/fast-access-control/StructureMap/LivingWillToConsent vs http://
 == fsh-generated/resources/StructureMap-PoaContractToConsent.json ==
 ERROR: StructureMap.where(url = 'http://'): Conformance resource /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureMap-PoaContractToConsent.json - the canonical URL (https://gitlab.mitre.org/awatson/fast-access-control/StructureMap/PoaContractToConsent) does not match the URL (http://)
 WARNING: StructureMap/PoaContractToConsent: StructureMap.group[0].input[0]: Group First parameter PoaContractToConsent has no type, so the paths cannot be validated
 ERROR: StructureMap/PoaContractToConsent: StructureMap.group[0].rule[0]: The name 6k7G75p8ZGja4tgnC is not valid
-ERROR: StructureMap/PoaContractToConsent: StructureMap.group[0].rule[0].source[0]: The name 6k7G75p8ZGja4tgnC is not valid
-WARNING: Resource: The URL 'http://' has already been used by TestScript-Scenario2A in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/TestScript-TestScript-Scenario2A
+ERROR: StructureMap/PoaContractToConsent: StructureMap.group[0].rule[0].source[0]: The source context First is not known at this point
+WARNING: Resource: The URL 'http://' has already been used by DnrToConsent in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureMap-DnrToConsent
 ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureMap-PoaContractToConsent: URL Mismatch https://gitlab.mitre.org/awatson/fast-access-control/StructureMap/PoaContractToConsent vs http://
 == fsh-generated/resources/StructureMap-PoaMentalHealthToConsent.json ==
 ERROR: StructureMap.where(url = 'http://'): Conformance resource /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureMap-PoaMentalHealthToConsent.json - the canonical URL (https://gitlab.mitre.org/awatson/fast-access-control/StructureMap/PoaMentalHealthToConsent) does not match the URL (http://)
 WARNING: StructureMap/PoaMentalHealthToConsent: StructureMap.group[0].input[0]: Group First parameter PoaMentalHealthToConsent has no type, so the paths cannot be validated
-ERROR: StructureMap/PoaMentalHealthToConsent: StructureMap.group[0].rule[0].source[0]: The source context EiuDWq8ByF6aA8BYQ is not known at this point
-WARNING: Resource: The URL 'http://' has already been used by TestScript-Scenario2A in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/TestScript-TestScript-Scenario2A
+ERROR: StructureMap/PoaMentalHealthToConsent: StructureMap.group[0].rule[0].source[0]: The source context First is not known at this point
+WARNING: Resource: The URL 'http://' has already been used by DnrToConsent in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureMap-DnrToConsent
 ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureMap-PoaMentalHealthToConsent: URL Mismatch https://gitlab.mitre.org/awatson/fast-access-control/StructureMap/PoaMentalHealthToConsent vs http://
 == fsh-generated/resources/StructureMap-PoaQuestinonaireToConsent.json ==
 ERROR: StructureMap.where(url = 'http://'): Conformance resource /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureMap-PoaQuestinonaireToConsent.json - the canonical URL (https://gitlab.mitre.org/awatson/fast-access-control/StructureMap/PoaQuestinonaireToConsent) does not match the URL (http://)
 WARNING: StructureMap/PoaQuestinonaireToConsent: StructureMap.group[0].input[0]: Group First parameter PoaQuestinonaireToConsent has no type, so the paths cannot be validated
 ERROR: StructureMap/PoaQuestinonaireToConsent: StructureMap.group[0].rule[0]: The name 6Zzqjx8mENBX5Mdnq is not valid
-ERROR: StructureMap/PoaQuestinonaireToConsent: StructureMap.group[0].rule[0].source[0]: The name 6Zzqjx8mENBX5Mdnq is not valid
-WARNING: Resource: The URL 'http://' has already been used by TestScript-Scenario2A in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/TestScript-TestScript-Scenario2A
+ERROR: StructureMap/PoaQuestinonaireToConsent: StructureMap.group[0].rule[0].source[0]: The source context First is not known at this point
+WARNING: Resource: The URL 'http://' has already been used by DnrToConsent in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureMap-DnrToConsent
 ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureMap-PoaQuestinonaireToConsent: URL Mismatch https://gitlab.mitre.org/awatson/fast-access-control/StructureMap/PoaQuestinonaireToConsent vs http://
 == fsh-generated/resources/StructureMap-PolstToConsent.json ==
 ERROR: StructureMap.where(url = 'http://'): Conformance resource /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureMap-PolstToConsent.json - the canonical URL (https://gitlab.mitre.org/awatson/fast-access-control/StructureMap/PolstToConsent) does not match the URL (http://)
 WARNING: StructureMap/PolstToConsent: StructureMap.group[0].input[0]: Group First parameter PolstToConsent has no type, so the paths cannot be validated
-ERROR: StructureMap/PolstToConsent: StructureMap.group[0].rule[0].source[0]: The source context bNnp9yqshCL5AePDP is not known at this point
-WARNING: Resource: The URL 'http://' has already been used by TestScript-Scenario2A in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/TestScript-TestScript-Scenario2A
+ERROR: StructureMap/PolstToConsent: StructureMap.group[0].rule[0].source[0]: The source context First is not known at this point
+WARNING: Resource: The URL 'http://' has already been used by DnrToConsent in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureMap-DnrToConsent
 ERROR: /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureMap-PolstToConsent: URL Mismatch https://gitlab.mitre.org/awatson/fast-access-control/StructureMap/PolstToConsent vs http://
 == fsh-generated/resources/TestScript-TestScript-Scenario1A.json ==
-WARNING: TestScript/TestScript-Scenario1A: TestScript: Rule tst-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 ERROR: TestScript/TestScript-Scenario1A: TestScript.fixture[0].resource: Unable to resolve resource with reference 'PharmLoc2'
 ERROR: TestScript/TestScript-Scenario1A: TestScript.test[6]: Duplicate id value 'ed7f8206-22ad-4bce-b3d8-83980dc0af5e'
 ERROR: TestScript/TestScript-Scenario1A: TestScript.test[7]: Duplicate id value 'ed7f8206-22ad-4bce-b3d8-83980dc0af5e'
 ERROR: TestScript/TestScript-Scenario1A: TestScript.test[9]: Duplicate id value '486e9754-3a48-45c0-b43e-94e16e078d71'
 ERROR: TestScript/TestScript-Scenario1A: TestScript.test[13]: Duplicate id value '595cab8f-6302-44f1-a930-6b02da515216'
-WARNING: Resource: The URL 'http://' has already been used by TestScript-Scenario2A in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/TestScript-TestScript-Scenario2A
+WARNING: TestScript/TestScript-Scenario1A: TestScript: Constraint failed: tst-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'
+WARNING: Resource: The URL 'http://' has already been used by DnrToConsent in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureMap-DnrToConsent
+INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+ERROR: TestScript.text.div: Hyperlink 'PharmLoc2' at 'div/blockquote/p/a' for 'OrgA CT Location 2' does not resolve
 == fsh-generated/resources/TestScript-TestScript-Scenario1B.json ==
-WARNING: TestScript/TestScript-Scenario1B: TestScript: Rule tst-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 ERROR: TestScript/TestScript-Scenario1B: TestScript.fixture[0].resource: Unable to resolve resource with reference 'PharmLoc2'
 ERROR: TestScript/TestScript-Scenario1B: TestScript.test[6]: Duplicate id value 'ed7f8206-22ad-4bce-b3d8-83980dc0af5e'
 ERROR: TestScript/TestScript-Scenario1B: TestScript.test[7]: Duplicate id value 'ed7f8206-22ad-4bce-b3d8-83980dc0af5e'
 ERROR: TestScript/TestScript-Scenario1B: TestScript.test[9]: Duplicate id value '486e9754-3a48-45c0-b43e-94e16e078d71'
 ERROR: TestScript/TestScript-Scenario1B: TestScript.test[13]: Duplicate id value '595cab8f-6302-44f1-a930-6b02da515216'
-WARNING: Resource: The URL 'http://' has already been used by TestScript-Scenario2A in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/TestScript-TestScript-Scenario2A
+WARNING: TestScript/TestScript-Scenario1B: TestScript: Constraint failed: tst-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'
+WARNING: Resource: The URL 'http://' has already been used by DnrToConsent in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureMap-DnrToConsent
+INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+ERROR: TestScript.text.div: Hyperlink 'PharmLoc2' at 'div/blockquote/p/a' for 'OrgA CT Location 2' does not resolve
 == fsh-generated/resources/TestScript-TestScript-Scenario2A.json ==
-WARNING: TestScript/TestScript-Scenario2A: TestScript: Rule tst-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 ERROR: TestScript/TestScript-Scenario2A: TestScript.fixture[0].resource: Unable to resolve resource with reference 'PharmLoc2'
 ERROR: TestScript/TestScript-Scenario2A: TestScript.test[6]: Duplicate id value 'ed7f8206-22ad-4bce-b3d8-83980dc0af5e'
 ERROR: TestScript/TestScript-Scenario2A: TestScript.test[7]: Duplicate id value 'ed7f8206-22ad-4bce-b3d8-83980dc0af5e'
 ERROR: TestScript/TestScript-Scenario2A: TestScript.test[9]: Duplicate id value '486e9754-3a48-45c0-b43e-94e16e078d71'
 ERROR: TestScript/TestScript-Scenario2A: TestScript.test[13]: Duplicate id value '595cab8f-6302-44f1-a930-6b02da515216'
-WARNING: Resource: The URL 'http://' is also used by PoaQuestinonaireToConsent in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureMap-PoaQuestinonaireToConsent
-WARNING: Resource: The URL 'http://' is also used by PoaContractToConsent in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureMap-PoaContractToConsent
-WARNING: Resource: The URL 'http://' is also used by LivingWillToConsent in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureMap-LivingWillToConsent
-WARNING: Resource: The URL 'http://' is also used by PoaMentalHealthToConsent in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureMap-PoaMentalHealthToConsent
-WARNING: Resource: The URL 'http://' is also used by TestScript-Scenario1A in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/TestScript-TestScript-Scenario1A
-WARNING: Resource: The URL 'http://' is also used by FirstNameToGiven in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureMap-FirstNameToGiven
-WARNING: Resource: The URL 'http://' is also used by DnrToConsent in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureMap-DnrToConsent
-WARNING: Resource: The URL 'http://' is also used by HipaaPrivacyToConsent in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureMap-HipaaPrivacyToConsent
-WARNING: Resource: The URL 'http://' is also used by TestScript-Scenario2E in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/TestScript-TestScript-Scenario2E
-WARNING: Resource: The URL 'http://' is also used by TestScript-Scenario1B in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/TestScript-TestScript-Scenario1B
-WARNING: Resource: The URL 'http://' is also used by PolstToConsent in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureMap-PolstToConsent
-WARNING: Resource: The URL 'http://' is also used by TestScript-gszMyXpwsdoAjJZeh in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/TestScript-TestScript-gszMyXpwsdoAjJZeh
-WARNING: Resource: The URL 'http://' is also used by TestScript-Scenario2D in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/TestScript-TestScript-Scenario2D
-WARNING: Resource: The URL 'http://' is also used by TestScript-Scenario2C in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/TestScript-TestScript-Scenario2C
-WARNING: Resource: The URL 'http://' is also used by TestScript-Scenario3 in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/TestScript-TestScript-Scenario3
-WARNING: Resource: The URL 'http://' is also used by TestScript-Scenario2B in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/TestScript-TestScript-Scenario2B
-WARNING: Resource: The URL 'http://' is also used by LastNameToFamily in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureMap-LastNameToFamily
+WARNING: TestScript/TestScript-Scenario2A: TestScript: Constraint failed: tst-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'
+WARNING: Resource: The URL 'http://' has already been used by DnrToConsent in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureMap-DnrToConsent
+INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+ERROR: TestScript.text.div: Hyperlink 'PharmLoc2' at 'div/blockquote/p/a' for 'OrgA CT Location 2' does not resolve
 == fsh-generated/resources/TestScript-TestScript-Scenario2B.json ==
-WARNING: TestScript/TestScript-Scenario2B: TestScript: Rule tst-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 ERROR: TestScript/TestScript-Scenario2B: TestScript.fixture[0].resource: Unable to resolve resource with reference 'PharmLoc2'
 ERROR: TestScript/TestScript-Scenario2B: TestScript.test[6]: Duplicate id value 'ed7f8206-22ad-4bce-b3d8-83980dc0af5e'
 ERROR: TestScript/TestScript-Scenario2B: TestScript.test[7]: Duplicate id value 'ed7f8206-22ad-4bce-b3d8-83980dc0af5e'
 ERROR: TestScript/TestScript-Scenario2B: TestScript.test[9]: Duplicate id value '486e9754-3a48-45c0-b43e-94e16e078d71'
 ERROR: TestScript/TestScript-Scenario2B: TestScript.test[13]: Duplicate id value '595cab8f-6302-44f1-a930-6b02da515216'
-WARNING: Resource: The URL 'http://' has already been used by TestScript-Scenario2A in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/TestScript-TestScript-Scenario2A
+WARNING: TestScript/TestScript-Scenario2B: TestScript: Constraint failed: tst-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'
+WARNING: Resource: The URL 'http://' has already been used by DnrToConsent in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureMap-DnrToConsent
+INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+ERROR: TestScript.text.div: Hyperlink 'PharmLoc2' at 'div/blockquote/p/a' for 'OrgA CT Location 2' does not resolve
 == fsh-generated/resources/TestScript-TestScript-Scenario2C.json ==
-WARNING: TestScript/TestScript-Scenario2C: TestScript: Rule tst-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 ERROR: TestScript/TestScript-Scenario2C: TestScript.fixture[0].resource: Unable to resolve resource with reference 'PharmLoc2'
 ERROR: TestScript/TestScript-Scenario2C: TestScript.test[5]: Duplicate id value 'ed7f8206-22ad-4bce-b3d8-83980dc0af5e'
-ERROR: TestScript/TestScript-Scenario2C: TestScript.test[7].action[0].operation.resource: The value provided ('OAuth') is not in the value set 'FHIRDefinedType' (http://hl7.org/fhir/ValueSet/defined-types|4.0.1), and a code is required from this value set) (error message = Unable to resolve system - value set expansion has multiple matches: [])
-ERROR: TestScript/TestScript-Scenario2C: TestScript.test[11].action[0].operation.resource: The value provided ('OAuth') is not in the value set 'FHIRDefinedType' (http://hl7.org/fhir/ValueSet/defined-types|4.0.1), and a code is required from this value set) (error message = Unable to resolve system - value set expansion has multiple matches: [])
-ERROR: TestScript/TestScript-Scenario2C: TestScript.test[15].action[0].operation.resource: The value provided ('OAuth') is not in the value set 'FHIRDefinedType' (http://hl7.org/fhir/ValueSet/defined-types|4.0.1), and a code is required from this value set) (error message = Unable to resolve system - value set expansion has multiple matches: [])
-WARNING: Resource: The URL 'http://' has already been used by TestScript-Scenario2A in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/TestScript-TestScript-Scenario2A
+ERROR: TestScript/TestScript-Scenario2C: TestScript.test[7].action[0].operation.resource: The value provided ('OAuth') was not found in the value set 'FHIRDefinedType' (http://hl7.org/fhir/ValueSet/defined-types|4.0.1), and a code is required from this value set  (error message = The System URI could not be determined for the code 'OAuth' in the ValueSet 'http://hl7.org/fhir/ValueSet/defined-types|4.0.1'; The provided code '#OAuth' was not found in the value set 'http://hl7.org/fhir/ValueSet/defined-types|4.0.1')
+ERROR: TestScript/TestScript-Scenario2C: TestScript.test[11].action[0].operation.resource: The value provided ('OAuth') was not found in the value set 'FHIRDefinedType' (http://hl7.org/fhir/ValueSet/defined-types|4.0.1), and a code is required from this value set  (error message = The System URI could not be determined for the code 'OAuth' in the ValueSet 'http://hl7.org/fhir/ValueSet/defined-types|4.0.1'; The provided code '#OAuth' was not found in the value set 'http://hl7.org/fhir/ValueSet/defined-types|4.0.1')
+ERROR: TestScript/TestScript-Scenario2C: TestScript.test[15].action[0].operation.resource: The value provided ('OAuth') was not found in the value set 'FHIRDefinedType' (http://hl7.org/fhir/ValueSet/defined-types|4.0.1), and a code is required from this value set  (error message = The System URI could not be determined for the code 'OAuth' in the ValueSet 'http://hl7.org/fhir/ValueSet/defined-types|4.0.1'; The provided code '#OAuth' was not found in the value set 'http://hl7.org/fhir/ValueSet/defined-types|4.0.1')
+WARNING: TestScript/TestScript-Scenario2C: TestScript: Constraint failed: tst-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'
+WARNING: Resource: The URL 'http://' has already been used by DnrToConsent in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureMap-DnrToConsent
+INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+ERROR: TestScript.text.div: Hyperlink 'PharmLoc2' at 'div/blockquote/p/a' for 'OrgA CT Location 2' does not resolve
 == fsh-generated/resources/TestScript-TestScript-Scenario2D.json ==
-WARNING: TestScript/TestScript-Scenario2D: TestScript: Rule tst-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 ERROR: TestScript/TestScript-Scenario2D: TestScript.fixture[0].resource: Unable to resolve resource with reference 'PharmLoc2'
 ERROR: TestScript/TestScript-Scenario2D: TestScript.test[6]: Duplicate id value 'ed7f8206-22ad-4bce-b3d8-83980dc0af5e'
 ERROR: TestScript/TestScript-Scenario2D: TestScript.test[7]: Duplicate id value 'ed7f8206-22ad-4bce-b3d8-83980dc0af5e'
 ERROR: TestScript/TestScript-Scenario2D: TestScript.test[9]: Duplicate id value '486e9754-3a48-45c0-b43e-94e16e078d71'
 ERROR: TestScript/TestScript-Scenario2D: TestScript.test[13]: Duplicate id value '595cab8f-6302-44f1-a930-6b02da515216'
-WARNING: Resource: The URL 'http://' has already been used by TestScript-Scenario2A in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/TestScript-TestScript-Scenario2A
+WARNING: TestScript/TestScript-Scenario2D: TestScript: Constraint failed: tst-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'
+WARNING: Resource: The URL 'http://' has already been used by DnrToConsent in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureMap-DnrToConsent
+INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+ERROR: TestScript.text.div: Hyperlink 'PharmLoc2' at 'div/blockquote/p/a' for 'OrgA CT Location 2' does not resolve
 == fsh-generated/resources/TestScript-TestScript-Scenario2E.json ==
-WARNING: TestScript/TestScript-Scenario2E: TestScript: Rule tst-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 ERROR: TestScript/TestScript-Scenario2E: TestScript.fixture[0].resource: Unable to resolve resource with reference 'PharmLoc2'
 ERROR: TestScript/TestScript-Scenario2E: TestScript.test[6]: Duplicate id value 'ed7f8206-22ad-4bce-b3d8-83980dc0af5e'
 ERROR: TestScript/TestScript-Scenario2E: TestScript.test[7]: Duplicate id value 'ed7f8206-22ad-4bce-b3d8-83980dc0af5e'
 ERROR: TestScript/TestScript-Scenario2E: TestScript.test[9]: Duplicate id value '486e9754-3a48-45c0-b43e-94e16e078d71'
 ERROR: TestScript/TestScript-Scenario2E: TestScript.test[13]: Duplicate id value '595cab8f-6302-44f1-a930-6b02da515216'
-WARNING: Resource: The URL 'http://' has already been used by TestScript-Scenario2A in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/TestScript-TestScript-Scenario2A
+WARNING: TestScript/TestScript-Scenario2E: TestScript: Constraint failed: tst-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'
+WARNING: Resource: The URL 'http://' has already been used by DnrToConsent in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureMap-DnrToConsent
+INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+ERROR: TestScript.text.div: Hyperlink 'PharmLoc2' at 'div/blockquote/p/a' for 'OrgA CT Location 2' does not resolve
 == fsh-generated/resources/TestScript-TestScript-Scenario3.json ==
-WARNING: TestScript/TestScript-Scenario3: TestScript: Rule tst-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 ERROR: TestScript/TestScript-Scenario3: TestScript.fixture[0].resource: Unable to resolve resource with reference 'registration-request-3'
 ERROR: TestScript/TestScript-Scenario3: TestScript.fixture[1].resource: Unable to resolve resource with reference 'registration-response-3'
-WARNING: Resource: The URL 'http://' has already been used by TestScript-Scenario2A in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/TestScript-TestScript-Scenario2A
+WARNING: TestScript/TestScript-Scenario3: TestScript: Constraint failed: tst-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'
+WARNING: Resource: The URL 'http://' has already been used by DnrToConsent in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureMap-DnrToConsent
+INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+ERROR: TestScript.text.div: Hyperlink 'registration-request-3' at 'div/blockquote/p/a' for 'Backend Service - Registration Request' does not resolve
+ERROR: TestScript.text.div: Hyperlink 'registration-response-3' at 'div/blockquote/p/a' for 'Backend Service - Registration Response' does not resolve
 == fsh-generated/resources/TestScript-TestScript-gszMyXpwsdoAjJZeh.json ==
-WARNING: TestScript/TestScript-gszMyXpwsdoAjJZeh: TestScript.origin[0].profile: A code with no system has no defined meaning. A system should be provided
-WARNING: TestScript/TestScript-gszMyXpwsdoAjJZeh: TestScript.destination[0].profile: A code with no system has no defined meaning. A system should be provided
-WARNING: Resource: The URL 'http://' has already been used by TestScript-Scenario2A in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/TestScript-TestScript-Scenario2A
+WARNING: TestScript/TestScript-gszMyXpwsdoAjJZeh: TestScript.origin[0].profile: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: TestScript/TestScript-gszMyXpwsdoAjJZeh: TestScript.destination[0].profile: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Resource: The URL 'http://' has already been used by DnrToConsent in /Users/awatson/Code/implementation-guides/fast-access-control/fsh-generated/resources/StructureMap-DnrToConsent
+INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ValueSet-ConsentExchangePolicies.json ==
-WARNING: ValueSet/ConsentExchangePolicies: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
-WARNING: ValueSet.where(id = 'ConsentExchangePolicies'): Error from server: Unable to provide support for code system http://mehi-ig.tranquildata.com/CodeSystem/PayorToPayorExchangePolicyCodes
+WARNING: ValueSet/ConsentExchangePolicies: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: ValueSet.where(id = 'ConsentExchangePolicies'): Error from http://tx.fhir.org/r4: Unable to provide support for code system http://mehi-ig.tranquildata.com/CodeSystem/PayorToPayorExchangePolicyCodes
 == fsh-generated/resources/ValueSet-ConsentExchangeRelations.json ==
-WARNING: ValueSet/ConsentExchangeRelations: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet/ConsentExchangeRelations: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-consent-exchange-category-codes.json ==
-WARNING: ValueSet/consent-exchange-category-codes: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet/consent-exchange-category-codes: ValueSet.compose.exclude[0]: There are multiple different potential matches for the url 'http://terminology.hl7.org/CodeSystem/consentcategorycodes'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer. Using version '1.0.1', found versions: 1.0.1, 4.0.1
+WARNING: ValueSet/consent-exchange-category-codes: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-consent-exchange-scope-codes.json ==
-WARNING: ValueSet/consent-exchange-scope-codes: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet/consent-exchange-scope-codes: ValueSet.compose.exclude[0]: There are multiple different potential matches for the url 'http://terminology.hl7.org/CodeSystem/consentscope'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer. Using version '2.0.1', found versions: 2.0.1, 4.0.1
+WARNING: ValueSet/consent-exchange-scope-codes: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == input/examples/Binary-auth-request-3.fsh ==
 == input/examples/Binary-auth-response-3.fsh ==
 == input/examples/Binary-registration-request-3.fsh ==

@@ -9,11 +9,11 @@
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "digest"] ; # 
   fhir:text [
-     fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>URL: [base]/Bundle/[id]/$digest</p><p>Parameters</p><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr></table></div>"
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: OperationDefinition digest</b></p><a name=\"digest\"> </a><a name=\"hcdigest\"> </a><a name=\"digest-en-US\"> </a><p>URL: [base]/Bundle/[id]/$digest</p><h3>Parameters</h3><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr></table></div>"
   ] ; # 
   fhir:url [ fhir:v "http://h7.org/fhir/OperationDefinition/example"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.2.1"] ; # 
+  fhir:version [ fhir:v "0.2.2"] ; # 
   fhir:name [ fhir:v "Consent Bundle Digest"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:kind [ fhir:v "operation"] ; # 

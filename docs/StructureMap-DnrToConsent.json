@@ -3,13 +3,13 @@
   "id" : "DnrToConsent",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><pre class=\"fml\">\r\n<b>map</b><span style=\"color: navy\"> &quot;</span>http://<span style=\"color: navy\">&quot; = &quot;</span>DnrToConsent<span style=\"color: navy\">&quot;\r\n\r\n</span><span style=\"color: navy\">// </span><span style=\"color: green\">Do Not Recussitate questionnaire to Consent record</span>\r\n\r\n<b>group </b>First<span style=\"color: navy\">(</span><b>source</b> <span style=\"color: maroon\">DnrToConsent</span><span style=\"color: navy\">)</span><b> &lt;&lt;types&gt;&gt;</b><span style=\"color: navy\"> {\r\n</span>  HCSyJBGnL9c438DrE<b> default </b>&quot;First&quot;<span style=\"color: navy\"><b> -&gt; </b></span><b> as </b><span style=\"color: maroon\">name.given</span> <i>&quot;HCSyJBGnL9c438DrE&quot;</i><span style=\"color: navy\">;</span>\r\n<span style=\"color: navy\">}\r\n\r\n</span></pre></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureMap DnrToConsent</b></p><a name=\"DnrToConsent\"> </a><a name=\"hcDnrToConsent\"> </a><a name=\"DnrToConsent-en-US\"> </a><pre class=\"fml\">\r\n<b>map</b><span style=\"color: navy\"> &quot;</span>http://<span style=\"color: navy\">&quot; = &quot;</span>DnrToConsent<span style=\"color: navy\">&quot;\r\n\r\n</span><span style=\"color: navy\">// </span><span style=\"color: green\">Do Not Recussitate questionnaire to Consent record</span>\r\n\r\n<b>group </b>First<span style=\"color: navy\">(</span><b>source</b> <span style=\"color: maroon\">DnrToConsent</span><span style=\"color: navy\">)</span><b> &lt;&lt;types&gt;&gt;</b><span style=\"color: navy\"> {\r\n</span>  First<b> default </b>&quot;First&quot; <i>&quot;HCSyJBGnL9c438DrE&quot;</i><span style=\"color: navy\">;</span>\r\n<span style=\"color: navy\">}\r\n\r\n</span></pre></div>"
   },
   "url" : "http://",
-  "version" : "0.2.1",
+  "version" : "0.2.2",
   "name" : "DnrToConsent",
   "status" : "draft",
-  "date" : "2023-08-09T03:19:35-05:00",
+  "date" : "2024-09-11T16:17:59-05:00",
   "publisher" : "MITRE",
   "contact" : [{
     "name" : "MITRE",
@@ -29,12 +29,8 @@
     "rule" : [{
       "name" : "HCSyJBGnL9c438DrE",
       "source" : [{
-        "context" : "HCSyJBGnL9c438DrE",
+        "context" : "First",
         "defaultValueString" : "First"
-      }],
-      "target" : [{
-        "contextType" : "variable",
-        "variable" : "name.given"
       }]
     }]
   }]

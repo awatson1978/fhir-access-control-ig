@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>MITRE.FAST.ACCESS-CONTROL\CmsInteroperabilityPolicyCodes - FHIR v4.0.1</title>
+    <title>CmsInteroperabilityPolicyCodes -  v0.2.2</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -38,7 +38,8 @@
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
     <style type="text/css">h2{--heading-prefix:"5.20"}
     h3,h4,h5,h6{--heading-prefix:"5.20"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
@@ -49,7 +50,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold"></span>
             <br/>
-            <span style="display:inline-block;">0.2.1 - ci-build
+            <span style="display:inline-block;">0.2.2 - ci-build
 
 
             </span>
@@ -116,7 +117,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">FastAccessControl - Local Development build (v0.2.1). See the <a href="https://gitlab.mitre.org/awatson/fast-access-control/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">FastAccessControl - Local Development build (v0.2.2) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://gitlab.mitre.org/awatson/fast-access-control/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -169,7 +170,7 @@
       <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://gitlab.mitre.org/awatson/fast-access-control/CodeSystem/CmsInteroperabilityPolicyCodes<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://gitlab.mitre.org/awatson/fast-access-control/CodeSystem/CmsInteroperabilityPolicyCodes"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.2.1<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://gitlab.mitre.org/awatson/fast-access-control/CodeSystem/CmsInteroperabilityPolicyCodes|0.2.1"/></span>
+      <span class="copy-text">0.2.2<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://gitlab.mitre.org/awatson/fast-access-control/CodeSystem/CmsInteroperabilityPolicyCodes|0.2.2"/></span>
       </td>
     </tr>
 
@@ -185,7 +186,7 @@
         
           Draft
           
-            as of 2023-08-09
+            as of 2024-09-11
           
         
       </td>
@@ -218,7 +219,24 @@
 <ul><li>This CodeSystem is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)</li></ul>
 
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>https://gitlab.mitre.org/awatson/fast-access-control/CodeSystem/CmsInteroperabilityPolicyCodes</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">CMS-9115-F.III<a name="CmsInteroperabilityPolicyCodes-CMS-9115-F.46III"> </a></td><td>Provisions of Patient Access Through APIs</td></tr><tr><td style="white-space:nowrap">CMS-9115-F.IV<a name="CmsInteroperabilityPolicyCodes-CMS-9115-F.46IV"> </a></td><td>API Access to Published Provider Directory Data Provisions</td></tr><tr><td style="white-space:nowrap">CMS-9115-F.V<a name="CmsInteroperabilityPolicyCodes-CMS-9115-F.46V"> </a></td><td>Health Information Exchange and Care Coordination Across Payers</td></tr><tr><td style="white-space:nowrap">CMS-9115-F.VI<a name="CmsInteroperabilityPolicyCodes-CMS-9115-F.46VI"> </a></td><td>Care Coordination Through Trusted Exchange Networks</td></tr><tr><td style="white-space:nowrap">CMS-9115-F.VII<a name="CmsInteroperabilityPolicyCodes-CMS-9115-F.46VII"> </a></td><td>Improving the Medicare-Medicaid Dually Eligible Experience</td></tr><tr><td style="white-space:nowrap">CMS-9115-F.VIII<a name="CmsInteroperabilityPolicyCodes-CMS-9115-F.46VIII"> </a></td><td>Information Blocking Background and Public Reporting</td></tr><tr><td style="white-space:nowrap">CMS-9115-F.IX<a name="CmsInteroperabilityPolicyCodes-CMS-9115-F.46IX"> </a></td><td>Provider Digital Contact Information</td></tr><tr><td style="white-space:nowrap">CMS-9115-F.X<a name="CmsInteroperabilityPolicyCodes-CMS-9115-F.46X"> </a></td><td>Conditions of Participation for Hospitals and Critical Access Hospitals</td></tr></table></div>
+  <div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem CmsInteroperabilityPolicyCodes</b></p><a name="CmsInteroperabilityPolicyCodes"> </a><a name="hcCmsInteroperabilityPolicyCodes"> </a><a name="CmsInteroperabilityPolicyCodes-en-US"> </a><p>This  code system <code>https://gitlab.mitre.org/awatson/fast-access-control/CodeSystem/CmsInteroperabilityPolicyCodes</code> defines the following codes:</p>
+<table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr>
+<tr><td style="white-space:nowrap">CMS-9115-F.III<a name="CmsInteroperabilityPolicyCodes-CMS-9115-F.46III"> </a></td>
+<td>Provisions of Patient Access Through APIs</td></tr>
+<tr><td style="white-space:nowrap">CMS-9115-F.IV<a name="CmsInteroperabilityPolicyCodes-CMS-9115-F.46IV"> </a></td>
+<td>API Access to Published Provider Directory Data Provisions</td></tr>
+<tr><td style="white-space:nowrap">CMS-9115-F.V<a name="CmsInteroperabilityPolicyCodes-CMS-9115-F.46V"> </a></td>
+<td>Health Information Exchange and Care Coordination Across Payers</td></tr>
+<tr><td style="white-space:nowrap">CMS-9115-F.VI<a name="CmsInteroperabilityPolicyCodes-CMS-9115-F.46VI"> </a></td>
+<td>Care Coordination Through Trusted Exchange Networks</td></tr>
+<tr><td style="white-space:nowrap">CMS-9115-F.VII<a name="CmsInteroperabilityPolicyCodes-CMS-9115-F.46VII"> </a></td>
+<td>Improving the Medicare-Medicaid Dually Eligible Experience</td></tr>
+<tr><td style="white-space:nowrap">CMS-9115-F.VIII<a name="CmsInteroperabilityPolicyCodes-CMS-9115-F.46VIII"> </a></td>
+<td>Information Blocking Background and Public Reporting</td></tr>
+<tr><td style="white-space:nowrap">CMS-9115-F.IX<a name="CmsInteroperabilityPolicyCodes-CMS-9115-F.46IX"> </a></td>
+<td>Provider Digital Contact Information</td></tr>
+<tr><td style="white-space:nowrap">CMS-9115-F.X<a name="CmsInteroperabilityPolicyCodes-CMS-9115-F.46X"> </a></td>
+<td>Conditions of Participation for Hospitals and Critical Access Hospitals</td></tr></table></div>
 
   
 
@@ -238,20 +256,14 @@
   <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
-  <script type="text/javascript">
-    $(document).ready(function(){
-      if(window.location.hash != "") {
-          $('a[href="' + window.location.hash + '"]').click()
-      }
-    });
-  </script>
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
   <a name="bottom"> </a>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org">MITRE</a>.  Package mitre.fast.access-control#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 9, 2023 03:19-0500">2023-08-09</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org">MITRE</a>.  Package mitre.fast.access-control#0.2.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 11, 2024 16:17-0500">2024-09-11</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -268,7 +280,7 @@
     <div class="container">  <!-- container -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-post-footer -->
-  
+
   <!-- JS and analytics only. -->
   <!-- Bootstrap core JavaScript
   ================================================== -->
@@ -278,16 +290,7 @@
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
-  <script>anchors.options.visible = 'hover'
-anchors.add()</script>
-  
-<!-- feedback form - Google forms -->
-<!-- v0.1, 2021-01-09 -->
-
-
-
-<!-- / feedback form  -->
-
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
   <!-- Analytics Below
   ================================================== -->
   </body>

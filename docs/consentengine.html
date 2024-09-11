@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>MITRE.FAST.ACCESS-CONTROL\Consent Engine - FHIR v4.0.1</title>
+    <title>Consent Engine -  v0.2.2</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -38,7 +38,8 @@
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
     <style type="text/css">h2{--heading-prefix:"3"}
     h3,h4,h5,h6{--heading-prefix:"3"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
@@ -49,7 +50,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold"></span>
             <br/>
-            <span style="display:inline-block;">0.2.1 - ci-build
+            <span style="display:inline-block;">0.2.2 - ci-build
 
 
             </span>
@@ -123,7 +124,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">FastAccessControl - Local Development build (v0.2.1). See the <a href="https://gitlab.mitre.org/awatson/fast-access-control/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">FastAccessControl - Local Development build (v0.2.2) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://gitlab.mitre.org/awatson/fast-access-control/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Consent Engine</h2>
   
 
@@ -143,13 +144,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
 </div>
 
-<p>Many first time implementors of guides that include a Consent resource find themselves encountering a common delimma:  they spend weeks or months implementing the Consent records per the FHIR specification, setting up API endpoints, loading example resources into a database, validating the API endpoints return the correct records… and then they hit a wall.  The wall is the following:  how do we connect these Consents records to our security infrastructure?  How do we scope user access to what’s in the records?  Which then leads to questions like:  what data should be going into the Consent records to make them into computable consent?</p>
+<p>Many first time implementors of guides that include a Consent resource find themselves encountering a common delimma:  they spend weeks or months implementing the Consent records per the FHIR specification, setting up API endpoints, loading example resources into a database, validating the API endpoints return the correct records… and then they hit a wall.  The wall is the following:  how do we connect these Consents records to our security infrastructure?  How do we scope user access to what's in the records?  Which then leads to questions like:  what data should be going into the Consent records to make them into computable consent?</p>
 
 <p>When answering these questions, whether they be for a dedicated service or distributed app such as a blockchain wallet, implementors find themselves often asking how to implement operations on Consents… comparing consent records, rolling up multiple records into a single record, calculating consent differentials, converting to access control lists, creating dynamic OAuth scopes, and so forth.</p>
 
 <p>For lack of other nomenclature, this collection of functionality is sometimes referred to as a Consent Engine.</p>
 
-<p>Since Consent Engine functionality involves operations, it doesn’t immediately translate to core HTTP API functionality.  Instead, the functionality must either be implemented via in-memory classes or objects, or via the <a href="https://www.hl7.org/fhir/operations.html">FHIR operation infrastructure</a>.  The details regarding how this is done is left to the implementor.  However, we can define a standard API which proxies these functions, as well as functional acceptance tests for how they should behave.</p>
+<p>Since Consent Engine functionality involves operations, it doesn't immediately translate to core HTTP API functionality.  Instead, the functionality must either be implemented via in-memory classes or objects, or via the <a href="https://www.hl7.org/fhir/operations.html">FHIR operation infrastructure</a>.  The details regarding how this is done is left to the implementor.  However, we can define a standard API which proxies these functions, as well as functional acceptance tests for how they should behave.</p>
 
 <h2 id="operations-infrastructure--methods-and-functions">Operations Infrastructure:  Methods and Functions</h2>
 
@@ -160,7 +161,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>For example, a patient consent might be written as a generic permission for all practitioners at a clinic to access patient records, with exclusions for a specific deny provision for a clinician who has been taken off a case.  Or a consent might be written as a generic deny policy, based on HIPAA privacy interpretations, with specific provisions for the clinicians on a patient care team.</p>
 
-<p>As such, there is need for a “rollup” operation that takes multiple Consent records, and returns a parsed result that “flattens” them into a single object that can then be parsed into an acccess control list.</p>
+<p>As such, there is need for a "rollup" operation that takes multiple Consent records, and returns a parsed result that "flattens" them into a single object that can then be parsed into an acccess control list.</p>
 
 <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Function</span>
 <span class="c1">// y == op(x1, x2, x3)</span>
@@ -200,7 +201,7 @@ GET /Consent/<span class="nv">$rollup</span>?patient<span class="o">=</span>Pati
 </code></pre></div></div>
 
 <h4 id="idempotency">Idempotency</h4>
-<p>Consent Engine functions should be idempotent, meaning that they will produce the same results from the same inputs; and a rollup operation performed on a bundle that’s already rolledup should produce the same bundle (i.e. identity operator).  The goal is that different implementations and platforms should all derive the same results when calculating consent record rollups.</p>
+<p>Consent Engine functions should be idempotent, meaning that they will produce the same results from the same inputs; and a rollup operation performed on a bundle that's already rolledup should produce the same bundle (i.e. identity operator).  The goal is that different implementations and platforms should all derive the same results when calculating consent record rollups.</p>
 
 <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Function</span>
 <span class="c1">// op( op(x) ) == op(x)</span>
@@ -359,20 +360,14 @@ GET /Consent/<span class="nv">$oauthScopes</span>?patient<span class="o">=</span
   <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
-  <script type="text/javascript">
-    $(document).ready(function(){
-      if(window.location.hash != "") {
-          $('a[href="' + window.location.hash + '"]').click()
-      }
-    });
-  </script>
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
   <a name="bottom"> </a>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org">MITRE</a>.  Package mitre.fast.access-control#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 9, 2023 03:19-0500">2023-08-09</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org">MITRE</a>.  Package mitre.fast.access-control#0.2.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 11, 2024 16:17-0500">2024-09-11</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -389,7 +384,7 @@ GET /Consent/<span class="nv">$oauthScopes</span>?patient<span class="o">=</span
     <div class="container">  <!-- container -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-post-footer -->
-  
+
   <!-- JS and analytics only. -->
   <!-- Bootstrap core JavaScript
   ================================================== -->
@@ -399,16 +394,7 @@ GET /Consent/<span class="nv">$oauthScopes</span>?patient<span class="o">=</span
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
-  <script>anchors.options.visible = 'hover'
-anchors.add()</script>
-  
-<!-- feedback form - Google forms -->
-<!-- v0.1, 2021-01-09 -->
-
-
-
-<!-- / feedback form  -->
-
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
   <!-- Analytics Below
   ================================================== -->
   </body>

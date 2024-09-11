@@ -3,10 +3,10 @@
 <OperationDefinition xmlns="http://hl7.org/fhir">
   <id value="digest"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p>URL: [base]/Bundle/[id]/$digest</p><p>Parameters</p><table class="grid"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: OperationDefinition digest</b></p><a name="digest"> </a><a name="hcdigest"> </a><a name="digest-en-US"> </a><p>URL: [base]/Bundle/[id]/$digest</p><h3>Parameters</h3><table class="grid"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr></table></div>
   </text>
   <url value="http://h7.org/fhir/OperationDefinition/example"/>
-  <version value="0.2.1"/>
+  <version value="0.2.2"/>
   <name value="Consent Bundle Digest"/>
   <status value="draft"/>
   <kind value="operation"/>

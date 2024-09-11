@@ -3,11 +3,11 @@
 <OperationDefinition xmlns="http://hl7.org/fhir">
   <id value="diff"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p>URL: [base]/Consent/[id]/$diff</p><p>Parameters</p><table class="grid"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>_id</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/consent.html">Consent</a></td><td/><td><div><p>Usage:  POST /Consent/Jennifer-Consents-MA/$diff</p>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: OperationDefinition diff</b></p><a name="diff"> </a><a name="hcdiff"> </a><a name="diff-en-US"> </a><p>URL: [base]/Consent/[id]/$diff</p><h3>Parameters</h3><table class="grid"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>_id</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/consent.html">Consent</a></td><td/><td><div><p>Usage:  POST /Consent/Jennifer-Consents-MA/$diff</p>
 </div></td></tr></table></div>
   </text>
   <url value="http://h7.org/fhir/OperationDefinition/example"/>
-  <version value="0.2.1"/>
+  <version value="0.2.2"/>
   <name value="Consent Differential"/>
   <status value="draft"/>
   <kind value="operation"/>

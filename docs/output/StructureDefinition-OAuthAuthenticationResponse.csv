@@ -1,7 +1,0 @@
-"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
-"OAuthAuthenticationResponse","OAuthAuthenticationResponse","","","",0,*,"","","","null {[]} {[]}
-","The response to the discovery endpoint","The response to the discovery endpoint","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
-"OAuthAuthenticationResponse.resourceType","OAuthAuthenticationResponse.resourceType","","","",0,1,"","","","string {[]} {[]}
-","Resource type","Resource type","","","","","","","","","",,,,,"",,,,"OAuthAuthenticationResponse.resourceType",0,1,"",""
-"OAuthAuthenticationResponse.id","OAuthAuthenticationResponse.id","","","",0,1,"","","","string {[]} {[]}
-","identifer","identifer","","","","","","","","","",,,,,"",,,,"OAuthAuthenticationResponse.id",0,1,"",""

@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>MITRE.FAST.ACCESS-CONTROL\Access Control Implementation Guide - FHIR v4.0.1</title>
+    <title>Access Control Implementation Guide -  v0.2.2</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -38,7 +38,8 @@
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
     <style type="text/css">h2{--heading-prefix:"1"}
     h3,h4,h5,h6{--heading-prefix:"1"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
@@ -49,7 +50,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold"></span>
             <br/>
-            <span style="display:inline-block;">0.2.1 - ci-build
+            <span style="display:inline-block;">0.2.2 - ci-build
 
 
             </span>
@@ -123,7 +124,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">FastAccessControl - Local Development build (v0.2.1). See the <a href="https://gitlab.mitre.org/awatson/fast-access-control/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">FastAccessControl - Local Development build (v0.2.2) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://gitlab.mitre.org/awatson/fast-access-control/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Access Control Implementation Guide</h2>
   
 
@@ -138,7 +139,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://gitlab.mitre.org/awatson/fast-access-control/ImplementationGuide/mitre.fast.access-control<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://gitlab.mitre.org/awatson/fast-access-control/ImplementationGuide/mitre.fast.access-control"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.2.1<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://gitlab.mitre.org/awatson/fast-access-control/ImplementationGuide/mitre.fast.access-control|0.2.1"/></span>
+      <span class="copy-text">0.2.2<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://gitlab.mitre.org/awatson/fast-access-control/ImplementationGuide/mitre.fast.access-control|0.2.2"/></span>
       </td>
     </tr>
 
@@ -154,7 +155,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         
           Draft
           
-            as of 2023-08-09
+            as of 2024-09-11
           
         
       </td>
@@ -220,13 +221,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>After a visit to the St. James emergency room, she is seen by Dr. Camron, who determines that Jane and Timmy need shelter services.  Dr. Camron uses the state provider directory to look up local shelters; and her role as a physician allows her access to the restricted data of which shelters exist and where.</p>
 
-<p>After referal to the shelter, Jane’s records are sent over, and she is given access to the shelter’s Patient Portal.  The records are sent over on a daily basis by a system account, using a batch transfer process.</p>
+<p>After referal to the shelter, Jane's records are sent over, and she is given access to the shelter's Patient Portal.  The records are sent over on a daily basis by a system account, using a batch transfer process.</p>
 
 <p>Upon enrollment, Susan Social, the social worker responsible for managing the shelter, is assigned as a general practitioner for both Jane and Timmy.  Doing so gives her access to both patient records for review.</p>
 
-<p>After arriving at the shelter, Jane logs into the Patient Portal, which provides her various forms and rules about staying there; as well as copies of her own records, as well as those of her son’s.</p>
+<p>After arriving at the shelter, Jane logs into the Patient Portal, which provides her various forms and rules about staying there; as well as copies of her own records, as well as those of her son's.</p>
 
-<p>While at the shelter, Jane has an altercation with another guest, Kathy Klepto.  Kathy has a history of incarceration and homelessness, and has vague concepts of personal property.  She habitually picks up other people’s belongings, especially cell phones and electronic devices.  When presented the opportunity, she tries to turn the devices on and see what apps she can open.  During the incident, Kathy picks up Jane’s phone, and tries to open the shelter’s Patient Portal and access Jane’s records.</p>
+<p>While at the shelter, Jane has an altercation with another guest, Kathy Klepto.  Kathy has a history of incarceration and homelessness, and has vague concepts of personal property.  She habitually picks up other people's belongings, especially cell phones and electronic devices.  When presented the opportunity, she tries to turn the devices on and see what apps she can open.  During the incident, Kathy picks up Jane's phone, and tries to open the shelter's Patient Portal and access Jane's records.</p>
 
 <h3 id="use-cases">Use Cases</h3>
 
@@ -234,22 +235,22 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 Only unrestricted data is published to client via HTTP or websockets.</p>
 
 <p><strong>Scenario 1B - Directories With Restricted Data</strong><br />
-For the protection of the domestic violence survivors, shelters (St. Dymphna’s) are labeled as restricted data, so as not to be listed in public directories.  Only licensed healthcare practicitions (Susan Social, Dr. Camron) have access to the fact that the shelters exists, and where they are located.</p>
+For the protection of the domestic violence survivors, shelters (St. Dymphna's) are labeled as restricted data, so as not to be listed in public directories.  Only licensed healthcare practicitions (Susan Social, Dr. Camron) have access to the fact that the shelters exists, and where they are located.</p>
 
 <p><strong>Scenario 2A - PHI System - Anonymous Access</strong><br />
 No patient data is published to client via HTTP nor websockets.  Only public, unrestricted records are sent to client (i.e. sample records).</p>
 
 <p><strong>Scenario 2B - PHI System - Patient Self Access</strong> <br />
-Patient  (Jane Doe) registers and authenticates and receives an access token.  A single Patient record is available via HTTP.  If using FHIR-over-websockets or Subscription API, the user’s own Patient record is sent to the client.  Upon logout, user session variables and subscriptions are cleared, and user is no longer able to access patient data (except for the public, unrestricted records).</p>
+Patient  (Jane Doe) registers and authenticates and receives an access token.  A single Patient record is available via HTTP.  If using FHIR-over-websockets or Subscription API, the user's own Patient record is sent to the client.  Upon logout, user session variables and subscriptions are cleared, and user is no longer able to access patient data (except for the public, unrestricted records).</p>
 
 <p><strong>Scenario 2C - PHI System - Patient Multi-User Access</strong> 
-A second patient registers (Kathy).  Kathy has access to Kathy’s own records, but not to Jane’s.  At the same time, Jane has access to Jane’s records, but not to Kathy’s.  HTTP access and websocket publications/subscriptions are updated accordingly; send the user’s own data, but not sending anybody elses.  Upon logout, session variables are cleared, and no access is available.</p>
+A second patient registers (Kathy).  Kathy has access to Kathy’s own records, but not to Jane’s.  At the same time, Jane has access to Jane’s records, but not to Kathy’s.  HTTP access and websocket publications/subscriptions are updated accordingly; send the user's own data, but not sending anybody elses.  Upon logout, session variables are cleared, and no access is available.</p>
 
 <p><strong>Scenario 2D - PHI System - General Practitioner Access</strong>
-General practitioners have access to patients assigned to them.  A clinician / social worker registers (Susan Social), who has access to her own records (self access), as well as both Jane and Kathy’s records.  Susan is listed as a general practitioner on both Jane and Kathy’s Patient records.  Neither Kathy nor Jane have access to Susan’s records.  When Susan logs out, she no longer has access to any of records.</p>
+General practitioners have access to patients assigned to them.  A clinician / social worker registers (Susan Social), who has access to her own records (self access), as well as both Jane and Kathy’s records.  Susan is listed as a general practitioner on both Jane and Kathy's Patient records.  Neither Kathy nor Jane have access to Susan’s records.  When Susan logs out, she no longer has access to any of records.</p>
 
 <p><strong>Scenario 2E - PHI System - Dependents Access</strong>
-Patient’s (Jane Doe) have access to the healthcare records of their children (Timmy) and dependents (i.e. elder care), by way of custodial records.</p>
+Patient's (Jane Doe) have access to the healthcare records of their children (Timmy) and dependents (i.e. elder care), by way of custodial records.</p>
 
 <p><strong>Scenario 3 - Back End Access</strong>
 Organizations can register a client via oauth data flows.  Using the registered client id and secret, an external app can present a Bearer token and operate an $export to synchronize databases.</p>
@@ -327,20 +328,14 @@ Patient's have access to the healthcare records of their children and dependents
   <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
-  <script type="text/javascript">
-    $(document).ready(function(){
-      if(window.location.hash != "") {
-          $('a[href="' + window.location.hash + '"]').click()
-      }
-    });
-  </script>
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
   <a name="bottom"> </a>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org">MITRE</a>.  Package mitre.fast.access-control#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 9, 2023 03:19-0500">2023-08-09</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org">MITRE</a>.  Package mitre.fast.access-control#0.2.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 11, 2024 16:17-0500">2024-09-11</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -357,7 +352,7 @@ Patient's have access to the healthcare records of their children and dependents
     <div class="container">  <!-- container -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-post-footer -->
-  
+
   <!-- JS and analytics only. -->
   <!-- Bootstrap core JavaScript
   ================================================== -->
@@ -367,16 +362,7 @@ Patient's have access to the healthcare records of their children and dependents
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
-  <script>anchors.options.visible = 'hover'
-anchors.add()</script>
-  
-<!-- feedback form - Google forms -->
-<!-- v0.1, 2021-01-09 -->
-
-
-
-<!-- / feedback form  -->
-
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
   <!-- Analytics Below
   ================================================== -->
   </body>

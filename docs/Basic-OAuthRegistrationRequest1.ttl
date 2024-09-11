@@ -9,8 +9,8 @@
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "OAuthRegistrationRequest1"] ; # 
   fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Basic</b><a name=\"OAuthRegistrationRequest1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Basic &quot;OAuthRegistrationRequest1&quot; </p></div><p><b>code</b>: Administrative Activity <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#adminact)</span></p></div>"
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Basic OAuthRegistrationRequest1</b></p><a name=\"OAuthRegistrationRequest1\"> </a><a name=\"hcOAuthRegistrationRequest1\"> </a><a name=\"OAuthRegistrationRequest1-en-US\"> </a><p><b>resourceType</b>: OAuthRegistrationRequest</p><p><b>client_name</b>: Test Harness</p><p><b>scope</b>: fhir organization/read location/read</p><p><b>token_endpoint_auth_method</b>: code</p><p><b>grant_types</b>: code</p><p><b>redirect_uris</b>: http://localhost:3000/redirect</p><p><b>code</b>: <span title=\"Codes:\">Administrative Activity</span></p></div>"
   ] ; # 
   fhir:extension ( [
      fhir:url [ fhir:v "resourceType"^^xsd:anyURI ] ;

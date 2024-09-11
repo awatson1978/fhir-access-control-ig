@@ -1,4 +1,0 @@
-URL,Version,Status,OIDs,Name,Title,Descriptino,Used
-https://gitlab.mitre.org/awatson/fast-access-control/CodeSystem/CmsInteroperabilityPolicyCodes,0.2.1,draft,,CmsInteroperabilityPolicyCodes,CmsInteroperabilityPolicyCodes,"Policy provisions defined under CMS-9115-F, CMS Interoperability and Patient Access final rule",
-https://gitlab.mitre.org/awatson/fast-access-control/CodeSystem/ConsentExchangeRelationships,0.2.1,draft,,ConsentExchangeRelationships,ConsentExchangeRelationships,"Relationships used to model and exchange consent relationships",
-https://gitlab.mitre.org/awatson/fast-access-control/CodeSystem/PayorToPayorExchangePolicyCodes,0.2.1,draft,,PayorToPayorExchangePolicyCodes,PayorToPayorExchangePolicyCodes,"Policy codes used to define legal frameworks under which consent exchange occurs between payors.",

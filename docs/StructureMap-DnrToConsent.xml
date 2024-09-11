@@ -3,22 +3,22 @@
 <StructureMap xmlns="http://hl7.org/fhir">
   <id value="DnrToConsent"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><pre class="fml">
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: StructureMap DnrToConsent</b></p><a name="DnrToConsent"> </a><a name="hcDnrToConsent"> </a><a name="DnrToConsent-en-US"> </a><pre class="fml">
 <b>map</b><span style="color: navy"> &quot;</span>http://<span style="color: navy">&quot; = &quot;</span>DnrToConsent<span style="color: navy">&quot;
 
 </span><span style="color: navy">// </span><span style="color: green">Do Not Recussitate questionnaire to Consent record</span>
 
 <b>group </b>First<span style="color: navy">(</span><b>source</b> <span style="color: maroon">DnrToConsent</span><span style="color: navy">)</span><b> &lt;&lt;types&gt;&gt;</b><span style="color: navy"> {
-</span>  HCSyJBGnL9c438DrE<b> default </b>&quot;First&quot;<span style="color: navy"><b> -&gt; </b></span><b> as </b><span style="color: maroon">name.given</span> <i>&quot;HCSyJBGnL9c438DrE&quot;</i><span style="color: navy">;</span>
+</span>  First<b> default </b>&quot;First&quot; <i>&quot;HCSyJBGnL9c438DrE&quot;</i><span style="color: navy">;</span>
 <span style="color: navy">}
 
 </span></pre></div>
   </text>
   <url value="http://"/>
-  <version value="0.2.1"/>
+  <version value="0.2.2"/>
   <name value="DnrToConsent"/>
   <status value="draft"/>
-  <date value="2023-08-09T03:19:35-05:00"/>
+  <date value="2024-09-11T16:17:59-05:00"/>
   <publisher value="MITRE"/>
   <contact>
     <name value="MITRE"/>
@@ -38,13 +38,9 @@
     <rule>
       <name value="HCSyJBGnL9c438DrE"/>
       <source>
-        <context value="HCSyJBGnL9c438DrE"/>
+        <context value="First"/>
         <defaultValueString value="First"/>
       </source>
-      <target>
-        <contextType value="variable"/>
-        <variable value="name.given"/>
-      </target>
     </rule>
   </group>
 </StructureMap>

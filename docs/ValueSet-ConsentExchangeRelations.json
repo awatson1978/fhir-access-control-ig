@@ -3,14 +3,14 @@
   "id" : "ConsentExchangeRelations",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"http://hl7.org/fhir/R4/valueset-relatedperson-relationshiptype.html\">Patient relationship type</a></li><li>Import all the codes that are contained in <a href=\"http://hl7.org/fhir/R4/valueset-practitioner-role.html\">Practitioner role</a></li><li>Import all the codes that are contained in <a href=\"http://hl7.org/fhir/R4/valueset-participant-role.html\">Participant Roles</a></li><li>Import all the codes that are contained in <a href=\"http://hl7.org/fhir/R4/valueset-security-role-type.html\">SecurityRoleType</a></li><li>Import all the codes that are contained in <a href=\"http://hl7.org/fhir/R4/valueset-organization-type.html\">Organization type</a></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ConsentExchangeRelations</b></p><a name=\"ConsentExchangeRelations\"> </a><a name=\"hcConsentExchangeRelations\"> </a><a name=\"ConsentExchangeRelations-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"http://hl7.org/fhir/R4/valueset-relatedperson-relationshiptype.html\">Patient relationship type</a></li><li>Import all the codes that are contained in <a href=\"http://hl7.org/fhir/R4/valueset-practitioner-role.html\">Practitioner role</a></li><li>Import all the codes that are contained in <a href=\"http://hl7.org/fhir/R4/valueset-participant-role.html\">Participant Roles</a></li><li>Import all the codes that are contained in <a href=\"http://hl7.org/fhir/R4/valueset-security-role-type.html\">SecurityRoleType</a></li><li>Import all the codes that are contained in <a href=\"http://hl7.org/fhir/R4/valueset-organization-type.html\">Organization type</a></li></ul></div>"
   },
   "url" : "https://gitlab.mitre.org/awatson/fast-access-control/ValueSet/ConsentExchangeRelations",
-  "version" : "0.2.1",
+  "version" : "0.2.2",
   "name" : "ConsentExchangeRelations",
   "title" : "ConsentExchangeRelations",
   "status" : "draft",
-  "date" : "2023-08-09T03:19:35-05:00",
+  "date" : "2024-09-11T16:17:59-05:00",
   "publisher" : "MITRE",
   "contact" : [{
     "name" : "MITRE",

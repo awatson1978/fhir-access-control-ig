@@ -10,14 +10,14 @@
   fhir:id [ fhir:v "ConsentExchangePolicies"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <code>http://mehi-ig.tranquildata.com/CodeSystem/PayorToPayorExchangePolicyCodes</code></li><li>Import all the codes that are contained in <a href=\"http://hl7.org/fhir/R4/valueset-consent-policy.html\">Consent PolicyRule Codes</a></li></ul></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ConsentExchangePolicies</b></p><a name=\"ConsentExchangePolicies\"> </a><a name=\"hcConsentExchangePolicies\"> </a><a name=\"ConsentExchangePolicies-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <code>http://mehi-ig.tranquildata.com/CodeSystem/PayorToPayorExchangePolicyCodes</code></li><li>Import all the codes that are contained in <a href=\"http://hl7.org/fhir/R4/valueset-consent-policy.html\">Consent PolicyRule Codes</a></li></ul></div>"
   ] ; # 
   fhir:url [ fhir:v "https://gitlab.mitre.org/awatson/fast-access-control/ValueSet/ConsentExchangePolicies"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.2.1"] ; # 
+  fhir:version [ fhir:v "0.2.2"] ; # 
   fhir:name [ fhir:v "ConsentExchangePolicies"] ; # 
   fhir:title [ fhir:v "ConsentExchangePolicies"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-08-09T03:19:35-05:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-09-11T16:17:59-05:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "MITRE"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "MITRE" ] ;

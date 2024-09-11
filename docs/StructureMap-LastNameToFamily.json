@@ -3,13 +3,13 @@
   "id" : "LastNameToFamily",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><pre class=\"fml\">\r\n<b>map</b><span style=\"color: navy\"> &quot;</span>http://<span style=\"color: navy\">&quot; = &quot;</span>LastNameToFamily<span style=\"color: navy\">&quot;\r\n\r\n</span><span style=\"color: navy\">// </span><span style=\"color: green\">Last name to family name</span>\r\n\r\n<b>group </b>First<span style=\"color: navy\">(</span><b>source</b> <span style=\"color: maroon\">LastName</span><span style=\"color: navy\">)</span><b> &lt;&lt;types&gt;&gt;</b><span style=\"color: navy\"> {\r\n</span>  cNAWCq2xPyKhDXGJZ<b> default </b>&quot;LastName&quot;<span style=\"color: navy\"><b> -&gt; </b></span><b> as </b><span style=\"color: maroon\">name.family</span> <i>&quot;cNAWCq2xPyKhDXGJZ&quot;</i><span style=\"color: navy\">;</span>\r\n<span style=\"color: navy\">}\r\n\r\n</span></pre></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureMap LastNameToFamily</b></p><a name=\"LastNameToFamily\"> </a><a name=\"hcLastNameToFamily\"> </a><a name=\"LastNameToFamily-en-US\"> </a><pre class=\"fml\">\r\n<b>map</b><span style=\"color: navy\"> &quot;</span>http://<span style=\"color: navy\">&quot; = &quot;</span>LastNameToFamily<span style=\"color: navy\">&quot;\r\n\r\n</span><span style=\"color: navy\">// </span><span style=\"color: green\">Last name to family name</span>\r\n\r\n<b>group </b>First<span style=\"color: navy\">(</span><b>source</b> <span style=\"color: maroon\">LastName</span><span style=\"color: navy\">)</span><b> &lt;&lt;types&gt;&gt;</b><span style=\"color: navy\"> {\r\n</span>  LastName<b> default </b>&quot;LastName&quot; <i>&quot;cNAWCq2xPyKhDXGJZ&quot;</i><span style=\"color: navy\">;</span>\r\n<span style=\"color: navy\">}\r\n\r\n</span></pre></div>"
   },
   "url" : "http://",
-  "version" : "0.2.1",
+  "version" : "0.2.2",
   "name" : "LastNameToFamily",
   "status" : "draft",
-  "date" : "2023-08-09T03:19:35-05:00",
+  "date" : "2024-09-11T16:17:59-05:00",
   "publisher" : "MITRE",
   "contact" : [{
     "name" : "MITRE",
@@ -29,12 +29,8 @@
     "rule" : [{
       "name" : "cNAWCq2xPyKhDXGJZ",
       "source" : [{
-        "context" : "cNAWCq2xPyKhDXGJZ",
+        "context" : "LastName",
         "defaultValueString" : "LastName"
-      }],
-      "target" : [{
-        "contextType" : "variable",
-        "variable" : "name.family"
       }]
     }]
   }]

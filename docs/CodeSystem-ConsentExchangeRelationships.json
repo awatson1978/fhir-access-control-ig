@@ -3,14 +3,14 @@
   "id" : "ConsentExchangeRelationships",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://gitlab.mitre.org/awatson/fast-access-control/CodeSystem/ConsentExchangeRelationships</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ConsentExchangeRelationships</b></p><a name=\"ConsentExchangeRelationships\"> </a><a name=\"hcConsentExchangeRelationships\"> </a><a name=\"ConsentExchangeRelationships-en-US\"> </a><p>This  code system <code>https://gitlab.mitre.org/awatson/fast-access-control/CodeSystem/ConsentExchangeRelationships</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr></table></div>"
   },
   "url" : "https://gitlab.mitre.org/awatson/fast-access-control/CodeSystem/ConsentExchangeRelationships",
-  "version" : "0.2.1",
+  "version" : "0.2.2",
   "name" : "ConsentExchangeRelationships",
   "title" : "ConsentExchangeRelationships",
   "status" : "draft",
-  "date" : "2023-08-09T03:19:35-05:00",
+  "date" : "2024-09-11T16:17:59-05:00",
   "publisher" : "MITRE",
   "contact" : [{
     "name" : "MITRE",

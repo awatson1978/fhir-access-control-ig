@@ -10,13 +10,13 @@
   fhir:id [ fhir:v "LivingWillToConsent"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><pre class=\"fml\">\r\n<b>map</b><span style=\"color: navy\"> &quot;</span>http://<span style=\"color: navy\">&quot; = &quot;</span>LivingWillToConsent<span style=\"color: navy\">&quot;\r\n\r\n</span><span style=\"color: navy\">// </span><span style=\"color: green\">Living Will questionnaire to Consent record</span>\r\n\r\n<b>group </b>First<span style=\"color: navy\">(</span><b>source</b> <span style=\"color: maroon\">LivingWillToConsent</span><span style=\"color: navy\">)</span><b> &lt;&lt;types&gt;&gt;</b><span style=\"color: navy\"> {\r\n</span>  GASWmqkfPCcSWb2MY<b> default </b>&quot;First&quot;<span style=\"color: navy\"><b> -&gt; </b></span><b> as </b><span style=\"color: maroon\">name.given</span> <i>&quot;GASWmqkfPCcSWb2MY&quot;</i><span style=\"color: navy\">;</span>\r\n<span style=\"color: navy\">}\r\n\r\n</span></pre></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureMap LivingWillToConsent</b></p><a name=\"LivingWillToConsent\"> </a><a name=\"hcLivingWillToConsent\"> </a><a name=\"LivingWillToConsent-en-US\"> </a><pre class=\"fml\">\r\n<b>map</b><span style=\"color: navy\"> &quot;</span>http://<span style=\"color: navy\">&quot; = &quot;</span>LivingWillToConsent<span style=\"color: navy\">&quot;\r\n\r\n</span><span style=\"color: navy\">// </span><span style=\"color: green\">Living Will questionnaire to Consent record</span>\r\n\r\n<b>group </b>First<span style=\"color: navy\">(</span><b>source</b> <span style=\"color: maroon\">LivingWillToConsent</span><span style=\"color: navy\">)</span><b> &lt;&lt;types&gt;&gt;</b><span style=\"color: navy\"> {\r\n</span>  First<b> default </b>&quot;First&quot; <i>&quot;GASWmqkfPCcSWb2MY&quot;</i><span style=\"color: navy\">;</span>\r\n<span style=\"color: navy\">}\r\n\r\n</span></pre></div>"
   ] ; # 
   fhir:url [ fhir:v "http://"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.2.1"] ; # 
+  fhir:version [ fhir:v "0.2.2"] ; # 
   fhir:name [ fhir:v "LivingWillToConsent"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-08-09T03:19:35-05:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-09-11T16:17:59-05:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "MITRE"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "MITRE" ] ;
@@ -36,12 +36,8 @@
      fhir:rule ( [
        fhir:name [ fhir:v "GASWmqkfPCcSWb2MY" ] ;
        fhir:source ( [
-         fhir:context [ fhir:v "GASWmqkfPCcSWb2MY" ] ;
+         fhir:context [ fhir:v "First" ] ;
          fhir:defaultValue [ fhir:v "First" ]
-       ] ) ;
-       fhir:target ( [
-         fhir:contextType [ fhir:v "variable" ] ;
-         fhir:variable [ fhir:v "name.given" ]
        ] )
      ] )
   ] ) . # 
