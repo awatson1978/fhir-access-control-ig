@@ -1,0 +1,67 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://gitlab.mitre.org/awatson/fast-access-control/Organization/stdymphnas> a fhir:Organization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "stdymphnas"] ; # 
+  fhir:meta [
+     fhir:lastUpdated [ fhir:v "2020-07-07T13:26:22.0314215+00:00"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Organization"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Organization>
+     ] [
+       fhir:v "http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization>
+     ] ) ;
+     fhir:security ( [
+       fhir:code [ fhir:v "R" ] ;
+       fhir:display [ fhir:v "restricted" ]
+     ] )
+  ] ; # 
+  fhir:language [ fhir:v "en-US"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-US\" lang=\"en-US\"><p class=\"res-header-id\"><b>Generated Narrative: Organization stdymphnas</b></p><a name=\"stdymphnas\"> </a><a name=\"hcstdymphnas\"> </a><a name=\"stdymphnas-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Last updated: 2020-07-07 13:26:22+0000; Language: en-US</p><p style=\"margin-bottom: 0px\">Profiles: <code>http://hl7.org/fhir/us/directory-query/StructureDefinition/NatlDirEndpointQry-Organization</code>, <code>http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition/plannet-Organization</code></p><p style=\"margin-bottom: 0px\">Security Label: restricted (Details: [not stated] code R  = ' R ', stated as ' restricted ')</p></div><p><b>identifier</b>: <a href=\"http://terminology.hl7.org/6.0.2/NamingSystem-npi.html\" title=\"National Provider Identifier\">United States National Provider Identifier</a>/NPI999</p><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Codes:{http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/OrgTypeCS fac}\">Facility</span></p><p><b>name</b>: St. Dymphna's Women's Shelter</p><p><b>telecom</b>: ph: (111)-222-3333, <a href=\"https://www.stdymphna.com\">https://www.stdymphna.com</a></p><p><b>address</b>: 555 Side Street Hartford CT 00014-1234 </p><h3>Contacts</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Telecom</b></td></tr><tr><td style=\"display: none\">*</td><td>ph: (111)-222-3333</td></tr></table></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://hl7.org/fhir/sid/us-npi"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "NPI999" ]
+  ] ) ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/us/davinci-pdex-plan-net/CodeSystem/OrgTypeCS"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "fac" ] ;
+       fhir:display [ fhir:v "Facility" ]
+     ] )
+  ] ) ; # 
+  fhir:name [ fhir:v "St. Dymphna's Women's Shelter"] ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "(111)-222-3333" ] ;
+     fhir:rank [ fhir:v "2"^^xsd:positiveInteger ]
+  ] [
+     fhir:system [ fhir:v "url" ] ;
+     fhir:value [ fhir:v "https://www.stdymphna.com" ] ;
+     fhir:rank [ fhir:v "1"^^xsd:positiveInteger ]
+  ] ) ; # 
+  fhir:address ( [
+     fhir:line ( [ fhir:v "555 Side Street" ] ) ;
+     fhir:city [ fhir:v "Hartford" ] ;
+     fhir:state [ fhir:v "CT" ] ;
+     fhir:postalCode [ fhir:v "00014-1234" ]
+  ] ) ; # 
+  fhir:contact ( [
+     fhir:telecom ( [
+       fhir:system [ fhir:v "phone" ] ;
+       fhir:value [ fhir:v "(111)-222-3333" ] ;
+       fhir:rank [ fhir:v "1"^^xsd:positiveInteger ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

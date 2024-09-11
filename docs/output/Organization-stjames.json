@@ -1,0 +1,15 @@
+{
+  "resourceType" : "Organization",
+  "id" : "stjames",
+  "meta" : {
+    "security" : [{
+      "code" : "U",
+      "display" : "unrestricted"
+    }]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization stjames</b></p><a name=\"stjames\"> </a><a name=\"hcstjames\"> </a><a name=\"stjames-en-US\"> </a><p><b>name</b>: St. James Infirmary</p></div>"
+  },
+  "name" : "St. James Infirmary"
+}

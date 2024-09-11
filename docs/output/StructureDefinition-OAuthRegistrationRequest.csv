@@ -1,0 +1,19 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
+"OAuthRegistrationRequest","OAuthRegistrationRequest","","","",0,*,"","","","null {[]} {[]}
+","The response to the discovery endpoint","The response to the discovery endpoint","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"OAuthRegistrationRequest.resourceType","OAuthRegistrationRequest.resourceType","","","",0,1,"","","","string {[]} {[]}
+","Resource type","Resource type","","","","","","","","","",,,,,"",,,,"OAuthRegistrationRequest.resourceType",0,1,"",""
+"OAuthRegistrationRequest.id","OAuthRegistrationRequest.id","","","",0,1,"","","","string {[]} {[]}
+","identifer","identifer","","","","","","","","","",,,,,"",,,,"OAuthRegistrationRequest.id",0,1,"",""
+"OAuthRegistrationRequest.client-name","OAuthRegistrationRequest.client_name","","","",0,1,"","","","string {[]} {[]}
+","Name of the client application.","Name of the client application.","","","","","","","","","",,,,,"",,,,"OAuthRegistrationRequest.client_name",0,1,"",""
+"OAuthRegistrationRequest.initiate-login-uri","OAuthRegistrationRequest.initiate_login_uri","","","",0,1,"","","","string {[]} {[]}
+","Initiate login uri.","Initiate login uri.","","","","","","","","","",,,,,"",,,,"OAuthRegistrationRequest.initiate_login_uri",0,1,"",""
+"OAuthRegistrationRequest.scope","OAuthRegistrationRequest.scope","","","",0,1,"","","","string {[]} {[]}
+","Scope","Scope","","","","","","","","","",,,,,"",,,,"OAuthRegistrationRequest.scope",0,1,"",""
+"OAuthRegistrationRequest.token-endpoint-auth-method","OAuthRegistrationRequest.token_endpoint_auth_method","","","",0,1,"","","","string {[]} {[]}
+","Token endpoint authenticaiton method.","Token endpoint authenticaiton method.","","","","","","","","","",,,,,"",,,,"OAuthRegistrationRequest.token_endpoint_auth_method",0,1,"",""
+"OAuthRegistrationRequest.grant-types","OAuthRegistrationRequest.grant_types","","","",0,*,"","","","string {[]} {[]}
+","Grant types.","Grant types.","","","","","","","","","",,,,,"",,,,"OAuthRegistrationRequest.grant_types",0,*,"",""
+"OAuthRegistrationRequest.redirect-uris","OAuthRegistrationRequest.redirect_uris","","","",0,*,"","","","string {[]} {[]}
+","Redirect URIs","Redirect URIs","","","","","","","","","",,,,,"",,,,"OAuthRegistrationRequest.redirect_uris",0,*,"",""

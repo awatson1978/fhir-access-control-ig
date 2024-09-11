@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="stjames"/>
+  <meta>
+    <security>
+      <code value="U"/>
+      <display value="unrestricted"/>
+    </security>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Organization stjames</b></p><a name="stjames"> </a><a name="hcstjames"> </a><a name="stjames-en-US"> </a><p><b>name</b>: St. James Infirmary</p></div>
+  </text>
+  <name value="St. James Infirmary"/>
+</Organization>

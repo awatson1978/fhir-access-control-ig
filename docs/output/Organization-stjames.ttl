@@ -1,0 +1,24 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://gitlab.mitre.org/awatson/fast-access-control/Organization/stjames> a fhir:Organization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "stjames"] ; # 
+  fhir:meta [
+     fhir:security ( [
+       fhir:code [ fhir:v "U" ] ;
+       fhir:display [ fhir:v "unrestricted" ]
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization stjames</b></p><a name=\"stjames\"> </a><a name=\"hcstjames\"> </a><a name=\"stjames-en-US\"> </a><p><b>name</b>: St. James Infirmary</p></div>"
+  ] ; # 
+  fhir:name [ fhir:v "St. James Infirmary"] . # 
+
+# -------------------------------------------------------------------------------------
+

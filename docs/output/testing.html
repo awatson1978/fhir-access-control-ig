@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Functional Testing -  v0.2.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"4"}
+    h3,h4,h5,h6{--heading-prefix:"4"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">0.2.1 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="datacollection.html">Data Mapping</a>
+  </li>
+  <li>
+    <a href="consentengine.html">Consent Engine</a>
+  </li>
+  <li>
+    <a href="testing.html">Functional Testing</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Functional Testing</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">FastAccessControl - Local Development build (v0.2.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://gitlab.mitre.org/awatson/fast-access-control/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Functional Testing</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#functional-testing" id="markdown-toc-functional-testing">Functional Testing</a></li>
+  <li><a href="#certification-test-script-draft" id="markdown-toc-certification-test-script-draft">Certification Test Script (Draft)</a></li>
+  <li><a href="#references" id="markdown-toc-references">References</a></li>
+</ul>
+
+</div>
+
+<p>This implementation guide was originally conceived during the FAST National Directory connectathons, as an implementation solution to the 'restricted data' use case, also referred to as the Protected Women's Shelter usecase.  We set out to implement an access control solution based on the FHIR Consent resource, which was first demoed at the  CMS Connectathon in July 2022.  Afterwards, we set out to generalize the approach into a more solution that could model access control for multi-user systems in general.</p>
+
+<!-- 
+### Use cases 
+
+**Scenario 1 - Anonymous Access**  
+No patient data is published to client via HTTP nor websockets.  Only public, unrestricted records are sent to client.  
+
+**Scenario 2 - Patient Self Access (Jane Doe)**   
+Patient registers (Jane) and authenticates and receives an access token.  A single Patient record is available via HTTP.  If using FHIR-over-websockets or Subscription API, the user's own Patient record is sent to the client.  Upon logout, user session variables and subscriptions are cleared, and user is no longer able to access patient data (except for the public, unrestricted records).
+
+**Scenario 3 - Patient Multi-User Access (Kathy Klepto)** 
+A second patient registers (Kathy).  Kathy has access to Kathy’s own records, but not to Jane’s.  At the same time, Jane has access to Jane’s records, but not to Kathy’s.  HTTP access and websocket publications/subscriptions are updated accordingly; send the user's own data, but not sending anybody elses.  Upon logout, session variables are cleared, and no access is available.  
+
+**Scenario 4 - General Practitioner Access**
+General practitioners have access to patients assigned to them.  A clinician / social worker registers (Susan Social), who has access to her own records (self access), as well as both Jane and Kathy’s records.  Susan is listed as a general practitioner on both Jane and Kathy's Patient records.  Neither Kathy nor Jane have access to Susan’s records.  When Susan logs out, she no longer has access to any of records.  
+
+**Scenario 5 - Back End Access**
+Organizations can register a client via oauth data flows.  Using the registered client id and secret, an external app can present a Bearer token and operate an $export to synchronize databases.  
+
+
+### Coat Check Analogy
+
+Regarding the access of other people’s data, these usecases and associated tests are designed to test access control tokens.   The preferred analogy that is typically used, is that of a coat check.  Imagine the following scenario:  Person A checks in a thrift store coat and gets coat check ticket 13.  Person B checks in a nice Burberry coat and gets coat check ticket 18.  Person A then uses a pen and changes their ticket from a 13 to an 18; returns the modified ticket to coat check, and walks out with an expensive Burberry coat.  
+
+What we're testing here, is a) that users have correct access to the appropriate records, per the specified Consent records; and b) that modifying access control tokens wont spill data from another account.   -->
+
+<h3 id="functional-testing">Functional Testing</h3>
+
+<p>To properly test this, we must use a bank of negative tests, which send various malformed records to your server, testing that incorrect queries don't return the wrong data.  This is the Kathy Klepto problem… being a kelptomaniac, this user behaves contrary to terms and conditions and other expected behaviors, and attempts to send invalid credentials and/or access records that are not hers.</p>
+
+<p>To build up to this kind of testing, however, we need to begin with basic happy-path testing, and establish a baseline of expected functionality.  To do so, we express the scenarios as follows:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Test script preamble / setup</span>
+PUT /Patient/patient13
+PUT /Patient/patient18
+
+<span class="c"># Authentication</span>
+Authenticate patient 13
+
+<span class="c"># API Tests</span>
+GET /Patient?_id<span class="o">=</span>patient13  <span class="c">#(should return TRUE)</span>
+GET /Patient?_id<span class="o">=</span>patient18  <span class="c">#(should return FALSE)</span>
+</code></pre></div></div>
+
+<p>Behind the scenes, implementors will need to know how to implement a database driven access-control-list.  The simple case is one patient one record, so the login ID scopes down to the appropriate records.  For instance:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Authenticate patient 13</span>
+GET /Patient                <span class="c">#(BAD, returns everything)</span>
+GET /Patient?_id<span class="o">=</span>patient13  <span class="c">#(GOOD, should returns just patient record)</span>
+</code></pre></div></div>
+
+<p>Note:  make sure that patient13 is logged in and has an active session, which requires an additional database lookup; and is more difficult than simply checking for a Bearer token.  But otherwise, .</p>
+
+<p>The above discribes the relatively simple case of a basic 1-record-to-1-person schema, which generally maps to an n-tree or file system layout.</p>
+
+<p>Tthe challenge the FHIR ecosystem is currently facing is that implementors figure this much out on their own, but then stall when it comes time to implement dependent relations (children, elder care) or things like Power of Attorney.  Suddenly, what used to be a 1-to-1 relationship requires linked trees, graph databases, recursive parsing algorithms and similar algorithmic solutions.  Which is typically out of scope for an initial prototype, and gets punted untill the next round of funding</p>
+
+<h4 id="identity--logins">Identity &amp; Logins</h4>
+<p>In the case of Healthcare Agents who manage the care of a dependent, login credentials need to be derived from the available Consent records.</p>
+
+<h2 id="certification-test-script-draft">Certification Test Script (Draft)</h2>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Test script preamble / setup</span>
+PUT /Patient/jennifer-smith
+PUT /Patient/jane-doe
+PUT /RelatedPerson/related-person-jane-smith
+PUT /RelatedPerson/related-person-john-smith
+PUT /RelatedPerson/stranger-001
+PUT /Practitioner/alice-yin
+PUT /Consent/jennifersmith-ma-1
+PUT /Consent/jennifersmith-ma-2
+
+<span class="c"># Authentication</span>
+Authenticate:  Patient/jennifer-smith
+
+<span class="c"># API Tests</span>
+GET /Patient?_id<span class="o">=</span>Patient/jennifer-smith  <span class="c">#(should return TRUE)</span>
+GET /Patient?_id<span class="o">=</span>Patient/jane-doe  <span class="c">#(should return FALSE)</span>
+</code></pre></div></div>
+
+<p>Behind the scenes, implementors will need to know how to implement a database driven access-control-list.  The simple case is one patient one record, so the login ID scopes down to the appropriate records.  For instance:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Authenticate: jennifer-smith</span>
+GET /Patient                                    <span class="c">#(LIMITED, should not be accessible; or only return jennifer-smith records)</span>
+GET /Patient?_id<span class="o">=</span>Patient/jennifer-smith         <span class="c">#(GOOD, should returns just patient record)</span>
+GET /Patient?_id<span class="o">=</span>Patient/jane-doe               <span class="c">#(BAD, should not return record)</span>
+GET /RelatedPerson?_id<span class="o">=</span>Patient/jennifer-smith   <span class="c">#(GOOD, should return jane-smith record)</span>
+GET /RelatedPerson?_id<span class="o">=</span>Patient/jane-doe         <span class="c">#(BAD, should not return record)</span>
+GET /RelatedPerson/jane-smith                   <span class="c">#(GOOD, should return record)</span>
+GET /RelatedPerson/stranger-001                 <span class="c">#(BAD, should not return record)</span>
+
+<span class="c"># Authenticate: jane-doe</span>
+GET /Patient                                    <span class="c">#(LIMITED, should not be accessible; or only return jane-doe records)</span>
+GET /Patient?_id<span class="o">=</span>Patient/jennifer-smith         <span class="c">#(BAD, should not return record) </span>
+GET /Patient?_id<span class="o">=</span>Patient/jane-doe               <span class="c">#(GOOD, should returns just patient record)</span>
+GET /RelatedPerson?_id<span class="o">=</span>Patient/jennifer-smith   <span class="c">#(BAD, should not return record)</span>
+GET /RelatedPerson?_id<span class="o">=</span>Patient/jane-doe         <span class="c">#(GOOD, should return jane-smith record)</span>
+GET /RelatedPerson/jane-smith                   <span class="c">#(BAD, should not return record)</span>
+GET /RelatedPerson/stranger-001                 <span class="c">#(BAD, should not return record)</span>
+
+<span class="c"># Authenticate: alice-yin</span>
+GET /RelatedPerson                              <span class="c">#(GOOD, should return jane-doe and jennifer-smith records)</span>
+GET /Patient?_id<span class="o">=</span>Patient/jennifer-smith         <span class="c">#(GOOD, should return record) </span>
+GET /Patient?_id<span class="o">=</span>Patient/jane-doe               <span class="c">#(GOOD, should return record) </span>
+
+<span class="c"># Authenticate: jane-smith</span>
+GET /RelatedPerson                              <span class="c">#(LIMITED, should return jane-smith records)</span>
+GET /RelatedPerson/stranger-001                 <span class="c">#(BAD, should not return record) </span>
+GET /Patient                                    <span class="c">#(LIMITED, should return jane-smith and jennifer-smith records)</span>
+GET /Patient?_id<span class="o">=</span>Patient/jennifer-smith         <span class="c">#(GOOD, should return record) </span>
+GET /Patient?_id<span class="o">=</span>Patient/jane-smith             <span class="c">#(GOOD, should return record) </span>
+GET /Patient?_id<span class="o">=</span>Patient/jane-doe               <span class="c">#(BAD, should not return record) </span>
+
+GET /Consent/<span class="nv">$canAccess</span>?actor<span class="o">=</span>RelatedPerson/jennifer-smith
+<span class="c"># return list of consents Jennifer Smith has access to, including all children (and husband)</span>
+
+GET /Consent/<span class="nv">$canAccess</span>?_id<span class="o">=</span>Patient/jennifer-smith&amp;actor<span class="o">=</span>RelatedPerson/jennifer-smith
+<span class="c"># if daughter's record returns, should be true</span>
+<span class="c"># if no records return, no records match, and cannot access</span>
+
+GET /Consent/<span class="nv">$oauthScopes</span>?actor<span class="o">=</span>RelatedPerson/jennifer-smith
+<span class="c"># ["AllergyIntolerance", "Condition", "CareTeam", "Immunization", "Medication", "MedicationStatement", "Patient", "Practitioner", "Observation", "Procedure", "RelatedPerson"]</span>
+
+GET /Consent/<span class="nv">$oauthScopes</span>?actor<span class="o">=</span>RelatedPerson/jennifer-smith&amp;class<span class="o">=</span>Medication
+<span class="c"># true</span>
+
+GET /Consent/<span class="nv">$oauthScopes</span>?actor<span class="o">=</span>RelatedPerson/john-smith&amp;class<span class="o">=</span>Medication
+<span class="c"># false</span>
+</code></pre></div></div>
+
+<h2 id="references">References</h2>
+<p><a href="https://www.hl7.org/fhir/operations.html">FHIR Operations Infrastructure</a></p>
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org">MITRE</a>.  Package mitre.fast.access-control#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 11, 2024 16:13-0500">2024-09-11</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

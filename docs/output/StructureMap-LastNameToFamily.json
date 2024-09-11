@@ -1,0 +1,37 @@
+{
+  "resourceType" : "StructureMap",
+  "id" : "LastNameToFamily",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureMap LastNameToFamily</b></p><a name=\"LastNameToFamily\"> </a><a name=\"hcLastNameToFamily\"> </a><a name=\"LastNameToFamily-en-US\"> </a><pre class=\"fml\">\r\n<b>map</b><span style=\"color: navy\"> &quot;</span>http://<span style=\"color: navy\">&quot; = &quot;</span>LastNameToFamily<span style=\"color: navy\">&quot;\r\n\r\n</span><span style=\"color: navy\">// </span><span style=\"color: green\">Last name to family name</span>\r\n\r\n<b>group </b>First<span style=\"color: navy\">(</span><b>source</b> <span style=\"color: maroon\">LastName</span><span style=\"color: navy\">)</span><b> &lt;&lt;types&gt;&gt;</b><span style=\"color: navy\"> {\r\n</span>  LastName<b> default </b>&quot;LastName&quot; <i>&quot;cNAWCq2xPyKhDXGJZ&quot;</i><span style=\"color: navy\">;</span>\r\n<span style=\"color: navy\">}\r\n\r\n</span></pre></div>"
+  },
+  "url" : "http://",
+  "version" : "0.2.1",
+  "name" : "LastNameToFamily",
+  "status" : "draft",
+  "date" : "2024-09-11T16:13:57-05:00",
+  "publisher" : "MITRE",
+  "contact" : [{
+    "name" : "MITRE",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.mitre.org"
+    }]
+  }],
+  "description" : "Last name to family name",
+  "group" : [{
+    "name" : "First",
+    "typeMode" : "types",
+    "input" : [{
+      "name" : "LastName",
+      "mode" : "source"
+    }],
+    "rule" : [{
+      "name" : "cNAWCq2xPyKhDXGJZ",
+      "source" : [{
+        "context" : "LastName",
+        "defaultValueString" : "LastName"
+      }]
+    }]
+  }]
+}

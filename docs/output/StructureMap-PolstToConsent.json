@@ -1,0 +1,37 @@
+{
+  "resourceType" : "StructureMap",
+  "id" : "PolstToConsent",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureMap PolstToConsent</b></p><a name=\"PolstToConsent\"> </a><a name=\"hcPolstToConsent\"> </a><a name=\"PolstToConsent-en-US\"> </a><pre class=\"fml\">\r\n<b>map</b><span style=\"color: navy\"> &quot;</span>http://<span style=\"color: navy\">&quot; = &quot;</span>PolstToConsent<span style=\"color: navy\">&quot;\r\n\r\n</span><span style=\"color: navy\">// </span><span style=\"color: green\">Physician Orders for Life Sustaining Treatment (POLST) to Consent record</span>\r\n\r\n<b>group </b>First<span style=\"color: navy\">(</span><b>source</b> <span style=\"color: maroon\">PolstToConsent</span><span style=\"color: navy\">)</span><b> &lt;&lt;types&gt;&gt;</b><span style=\"color: navy\"> {\r\n</span>  First<b> default </b>&quot;First&quot; <i>&quot;bNnp9yqshCL5AePDP&quot;</i><span style=\"color: navy\">;</span>\r\n<span style=\"color: navy\">}\r\n\r\n</span></pre></div>"
+  },
+  "url" : "http://",
+  "version" : "0.2.1",
+  "name" : "PolstToConsent",
+  "status" : "draft",
+  "date" : "2024-09-11T16:13:57-05:00",
+  "publisher" : "MITRE",
+  "contact" : [{
+    "name" : "MITRE",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.mitre.org"
+    }]
+  }],
+  "description" : "Physician Orders for Life Sustaining Treatment (POLST) to Consent record",
+  "group" : [{
+    "name" : "First",
+    "typeMode" : "types",
+    "input" : [{
+      "name" : "PolstToConsent",
+      "mode" : "source"
+    }],
+    "rule" : [{
+      "name" : "bNnp9yqshCL5AePDP",
+      "source" : [{
+        "context" : "First",
+        "defaultValueString" : "First"
+      }]
+    }]
+  }]
+}

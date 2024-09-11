@@ -1,0 +1,24 @@
+{
+  "resourceType" : "CapabilityStatement",
+  "id" : "AccessControlRequirements",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CapabilityStatement AccessControlRequirements</b></p><a name=\"AccessControlRequirements\"> </a><a name=\"hcAccessControlRequirements\"> </a><a name=\"AccessControlRequirements-en-US\"> </a><h2 id=\"title\"/><ul><li>Implementation Guide Version: 0.2.1 </li><li>FHIR Version: 4.0.1 </li><li>Supported Formats: <code>json</code></li><li>Supported Patch Formats: </li><li>Published on: 2022-10-12 </li><li>Published by: MITRE </li></ul><blockquote class=\"impl-note\"><p><strong>Note to Implementers: FHIR Capabilities</strong></p><p>Any FHIR capability may be 'allowed' by the system unless explicitly marked as 'SHALL NOT'. A few items are marked as MAY in the Implementation Guide to highlight their potential relevance to the use case.</p></blockquote></div>"
+  },
+  "url" : "https://gitlab.mitre.org/awatson/fast-access-control/CapabilityStatement/AccessControlRequirements",
+  "version" : "0.2.1",
+  "status" : "draft",
+  "date" : "2022-10-12",
+  "publisher" : "MITRE",
+  "contact" : [{
+    "name" : "MITRE",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.mitre.org"
+    }]
+  }],
+  "description" : "Access Control Capability Statement",
+  "kind" : "requirements",
+  "fhirVersion" : "4.0.1",
+  "format" : ["json"]
+}

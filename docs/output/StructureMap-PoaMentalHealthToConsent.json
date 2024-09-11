@@ -1,0 +1,37 @@
+{
+  "resourceType" : "StructureMap",
+  "id" : "PoaMentalHealthToConsent",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureMap PoaMentalHealthToConsent</b></p><a name=\"PoaMentalHealthToConsent\"> </a><a name=\"hcPoaMentalHealthToConsent\"> </a><a name=\"PoaMentalHealthToConsent-en-US\"> </a><pre class=\"fml\">\r\n<b>map</b><span style=\"color: navy\"> &quot;</span>http://<span style=\"color: navy\">&quot; = &quot;</span>PoaMentalHealthToConsent<span style=\"color: navy\">&quot;\r\n\r\n</span><span style=\"color: navy\">// </span><span style=\"color: green\">Power of Attorney Mental Health questionnaire to Consent record</span>\r\n\r\n<b>group </b>First<span style=\"color: navy\">(</span><b>source</b> <span style=\"color: maroon\">PoaMentalHealthToConsent</span><span style=\"color: navy\">)</span><b> &lt;&lt;types&gt;&gt;</b><span style=\"color: navy\"> {\r\n</span>  First<b> default </b>&quot;First&quot; <i>&quot;EiuDWq8ByF6aA8BYQ&quot;</i><span style=\"color: navy\">;</span>\r\n<span style=\"color: navy\">}\r\n\r\n</span></pre></div>"
+  },
+  "url" : "http://",
+  "version" : "0.2.1",
+  "name" : "PoaMentalHealthToConsent",
+  "status" : "draft",
+  "date" : "2024-09-11T16:13:57-05:00",
+  "publisher" : "MITRE",
+  "contact" : [{
+    "name" : "MITRE",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.mitre.org"
+    }]
+  }],
+  "description" : "Power of Attorney Mental Health questionnaire to Consent record",
+  "group" : [{
+    "name" : "First",
+    "typeMode" : "types",
+    "input" : [{
+      "name" : "PoaMentalHealthToConsent",
+      "mode" : "source"
+    }],
+    "rule" : [{
+      "name" : "EiuDWq8ByF6aA8BYQ",
+      "source" : [{
+        "context" : "First",
+        "defaultValueString" : "First"
+      }]
+    }]
+  }]
+}

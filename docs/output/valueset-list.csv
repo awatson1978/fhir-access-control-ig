@@ -1,0 +1,5 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
+https://gitlab.mitre.org/awatson/fast-access-control/ValueSet/ConsentExchangePolicies,0.2.1,draft,,ConsentExchangePolicies,ConsentExchangePolicies,"Consent Exchange - Policies",,"Other"
+https://gitlab.mitre.org/awatson/fast-access-control/ValueSet/ConsentExchangeRelations,0.2.1,draft,,ConsentExchangeRelations,ConsentExchangeRelations,"Consent Exchange - Relationships",,
+https://gitlab.mitre.org/awatson/fast-access-control/ValueSet/consent-exchange-category-codes,0.2.1,draft,,ConsentExchangeCategoryCodes,ConsentExchangeCategoryCodes,"Consent Exchange - Category Codes",,
+https://gitlab.mitre.org/awatson/fast-access-control/ValueSet/consent-exchange-scope-codes,0.2.1,draft,,ConsentExchangeScopeCodes,ConsentExchangeScopeCodes,"Consent Exchange - Scope Codes",,

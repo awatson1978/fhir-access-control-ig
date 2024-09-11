@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Basic xmlns="http://hl7.org/fhir">
+  <id value="OAuthRegistrationRequest1"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Basic OAuthRegistrationRequest1</b></p><a name="OAuthRegistrationRequest1"> </a><a name="hcOAuthRegistrationRequest1"> </a><a name="OAuthRegistrationRequest1-en-US"> </a><p><b>resourceType</b>: OAuthRegistrationRequest</p><p><b>client_name</b>: Test Harness</p><p><b>scope</b>: fhir organization/read location/read</p><p><b>token_endpoint_auth_method</b>: code</p><p><b>grant_types</b>: code</p><p><b>redirect_uris</b>: http://localhost:3000/redirect</p><p><b>code</b>: <span title="Codes:">Administrative Activity</span></p></div>
+  </text>
+  <extension url="resourceType">
+    <valueString value="OAuthRegistrationRequest"/>
+  </extension>
+  <extension url="client_name">
+    <valueString value="Test Harness"/>
+  </extension>
+  <extension url="scope">
+    <valueString value="fhir organization/read location/read"/>
+  </extension>
+  <extension url="token_endpoint_auth_method">
+    <valueString value="code"/>
+  </extension>
+  <extension url="grant_types">
+    <valueString value="code"/>
+  </extension>
+  <extension url="redirect_uris">
+    <valueString value="http://localhost:3000/redirect"/>
+  </extension>
+  <code>
+    <coding>
+      <code value="adminact"/>
+      <display value="Administrative Activity"/>
+    </coding>
+  </code>
+</Basic>

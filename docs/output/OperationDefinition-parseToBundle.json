@@ -1,0 +1,67 @@
+{
+  "resourceType" : "OperationDefinition",
+  "id" : "parseToBundle",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: OperationDefinition parseToBundle</b></p><a name=\"parseToBundle\"> </a><a name=\"hcparseToBundle\"> </a><a name=\"parseToBundle-en-US\"> </a><p>URL: [base]/Consent/[id]/$parseToBundle</p><h3>Parameters</h3><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>patient</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/references.html#Reference\">Reference</a></td><td/><td><div><p>Usage:  GET /Consent/$parseToBundle?patient=Patient/{patientId}</p>\n</div></td></tr><tr><td>IN</td><td>consentor</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/references.html#Reference\">Reference</a></td><td/><td><div><p>Usage:  GET /Consent/$parseToBundle?consentor=RelatedPerson/{relatedPersonId}</p>\n</div></td></tr><tr><td>IN</td><td>practitioner</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/references.html#Reference\">Reference</a></td><td/><td><div><p>Usage:  GET /Consent/$parseToBundle?practitioner=Practitioner/{practitionerId}</p>\n</div></td></tr><tr><td>IN</td><td>organization</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/references.html#Reference\">Reference</a></td><td/><td><div><p>Usage:  GET /Consent/$parseToBundle?organization=Organization/{organizationId}</p>\n</div></td></tr></table></div>"
+  },
+  "url" : "http://h7.org/fhir/OperationDefinition/example",
+  "version" : "0.2.1",
+  "name" : "Consent to Bundle",
+  "status" : "draft",
+  "kind" : "operation",
+  "date" : "2015-08-04",
+  "publisher" : "MITRE",
+  "contact" : [{
+    "name" : "MITRE",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.mitre.org"
+    }]
+  }],
+  "description" : "Rollup multiple Consent records into a Bundle",
+  "code" : "parseToBundle",
+  "base" : "OperationDefinition/Consent-parseToBundle",
+  "resource" : ["Consent"],
+  "system" : false,
+  "type" : false,
+  "instance" : true,
+  "parameter" : [{
+    "name" : "patient",
+    "use" : "in",
+    "min" : 1,
+    "max" : "1",
+    "documentation" : "Usage:  GET /Consent/$parseToBundle?patient=Patient/{patientId}",
+    "type" : "Reference"
+  },
+  {
+    "name" : "consentor",
+    "use" : "in",
+    "min" : 0,
+    "max" : "1",
+    "documentation" : "Usage:  GET /Consent/$parseToBundle?consentor=RelatedPerson/{relatedPersonId}",
+    "type" : "Reference"
+  },
+  {
+    "name" : "practitioner",
+    "use" : "in",
+    "min" : 0,
+    "max" : "1",
+    "documentation" : "Usage:  GET /Consent/$parseToBundle?practitioner=Practitioner/{practitionerId}",
+    "type" : "Reference"
+  },
+  {
+    "name" : "organization",
+    "use" : "in",
+    "min" : 0,
+    "max" : "1",
+    "documentation" : "Usage:  GET /Consent/$parseToBundle?organization=Organization/{organizationId}",
+    "type" : "Reference"
+  }],
+  "overload" : [{
+    "parameterName" : ["patient",
+    "consentor",
+    "practitioner",
+    "organization"]
+  }]
+}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureMap xmlns="http://hl7.org/fhir">
+  <id value="LastNameToFamily"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: StructureMap LastNameToFamily</b></p><a name="LastNameToFamily"> </a><a name="hcLastNameToFamily"> </a><a name="LastNameToFamily-en-US"> </a><pre class="fml">
+<b>map</b><span style="color: navy"> &quot;</span>http://<span style="color: navy">&quot; = &quot;</span>LastNameToFamily<span style="color: navy">&quot;
+
+</span><span style="color: navy">// </span><span style="color: green">Last name to family name</span>
+
+<b>group </b>First<span style="color: navy">(</span><b>source</b> <span style="color: maroon">LastName</span><span style="color: navy">)</span><b> &lt;&lt;types&gt;&gt;</b><span style="color: navy"> {
+</span>  LastName<b> default </b>&quot;LastName&quot; <i>&quot;cNAWCq2xPyKhDXGJZ&quot;</i><span style="color: navy">;</span>
+<span style="color: navy">}
+
+</span></pre></div>
+  </text>
+  <url value="http://"/>
+  <version value="0.2.1"/>
+  <name value="LastNameToFamily"/>
+  <status value="draft"/>
+  <date value="2024-09-11T16:13:57-05:00"/>
+  <publisher value="MITRE"/>
+  <contact>
+    <name value="MITRE"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.mitre.org"/>
+    </telecom>
+  </contact>
+  <description value="Last name to family name"/>
+  <group>
+    <name value="First"/>
+    <typeMode value="types"/>
+    <input>
+      <name value="LastName"/>
+      <mode value="source"/>
+    </input>
+    <rule>
+      <name value="cNAWCq2xPyKhDXGJZ"/>
+      <source>
+        <context value="LastName"/>
+        <defaultValueString value="LastName"/>
+      </source>
+    </rule>
+  </group>
+</StructureMap>

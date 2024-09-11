@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Access Control Implementation Guide -  v0.2.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"1"}
+    h3,h4,h5,h6{--heading-prefix:"1"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">0.2.1 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="datacollection.html">Data Mapping</a>
+  </li>
+  <li>
+    <a href="consentengine.html">Consent Engine</a>
+  </li>
+  <li>
+    <a href="testing.html">Functional Testing</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Access Control Implementation Guide</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">FastAccessControl - Local Development build (v0.2.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://gitlab.mitre.org/awatson/fast-access-control/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Access Control Implementation Guide</h2>
+  
+
+
+
+
+
+
+  <table class="colsd">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://gitlab.mitre.org/awatson/fast-access-control/ImplementationGuide/mitre.fast.access-control<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://gitlab.mitre.org/awatson/fast-access-control/ImplementationGuide/mitre.fast.access-control"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.2.1<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://gitlab.mitre.org/awatson/fast-access-control/ImplementationGuide/mitre.fast.access-control|0.2.1"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Draft
+          
+            as of 2024-09-11
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">FastAccessControl</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#background" id="markdown-toc-background">Background</a></li>
+  <li><a href="#purpose" id="markdown-toc-purpose">Purpose</a></li>
+  <li><a href="#coat-check-analogy" id="markdown-toc-coat-check-analogy">Coat Check Analogy</a></li>
+  <li><a href="#clinical-scenario" id="markdown-toc-clinical-scenario">Clinical Scenario</a></li>
+  <li><a href="#use-cases" id="markdown-toc-use-cases">Use Cases</a></li>
+  <li><a href="#prior-art-references" id="markdown-toc-prior-art-references">Prior Art References</a></li>
+  <li><a href="#sponsors" id="markdown-toc-sponsors">Sponsors</a></li>
+  <li><a href="#learning-resources--background-information" id="markdown-toc-learning-resources--background-information">Learning Resources &amp; Background Information</a></li>
+  <li><a href="#contact-info" id="markdown-toc-contact-info">Contact Info</a>    <ul>
+      <li><a href="#copyright-notice" id="markdown-toc-copyright-notice">Copyright Notice</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+
+<h3 id="background">Background</h3>
+
+<p>Modern clinical information systems are regulated by various laws, including (but not limited to) HIPAA, GDPR, and 21st Century Cures.  These laws outline expectations for patient privacy and access that clinicians are bound to.  In practice, these laws specify a default expectation of privacy, with the patient having the right to grant or deny access to their information to others.  When viewed through the lens of computer information systems, these laws detail a combination of data collection forms that need to be implemented and respected, and which inform the access control lists of who may log into which systems, and what information they are allowed to access or modify.</p>
+
+<h3 id="purpose">Purpose</h3>
+
+<p>The purpose of this implementation guide is to help developers implement systems that exchange consent and advance directives data to be used in generating access control lists.  These systems may range widely from Electronic Medical Records (EHR) running in data warehouses, to Personal Health Records (PHR) running on personal mobile devices, to dedicated Consent Engine services, to graph databases, to blockchains, and many other services or products yet to be imagined.</p>
+
+<h3 id="coat-check-analogy">Coat Check Analogy</h3>
+
+<p>Regarding the access of other people’s data, the critical vulnerability that this implementation guide is addressing is that of access control tokens.  To explain the issue, consider the following analogy:</p>
+
+<p>Person A goes to a conference or night club, and checks in a thrift store coat and gets coat check ticket 13.  Person B attending the same event checks in a nice Burberry coat and gets coat check ticket 18.  Person A then uses a pen and changes their ticket from a 13 to an 18; returns the modified ticket to coat check, and walks out with an expensive Burberry coat.</p>
+
+<p>This entire implementation guide is intended to test that a)  users have correct access to the appropriate records, per the specified Consent records; and b) modifying access control tokens wont spill data from another account.</p>
+
+<h3 id="clinical-scenario">Clinical Scenario</h3>
+
+<p>Jane Doe is a divorsed single mother, with a 5 year old son named Timmy.  She has a history of domestic violence with her estranged husband, John Doe, who has a history of getting into fist fights and has served 6 months in prison.  Jane and her son are housing insecure, and have moved apartments 3 times in the past 3 years.</p>
+
+<p>After a recent hurricane, the first floor apartment Jane and Timmy are staying in is drenched in a foot of water, and Jane twists her ankle in the commotion.  Jane goes to the state provider directory, and searches for nearby services, and find information for St. James Infirmary.</p>
+
+<p>After a visit to the St. James emergency room, she is seen by Dr. Camron, who determines that Jane and Timmy need shelter services.  Dr. Camron uses the state provider directory to look up local shelters; and her role as a physician allows her access to the restricted data of which shelters exist and where.</p>
+
+<p>After referal to the shelter, Jane's records are sent over, and she is given access to the shelter's Patient Portal.  The records are sent over on a daily basis by a system account, using a batch transfer process.</p>
+
+<p>Upon enrollment, Susan Social, the social worker responsible for managing the shelter, is assigned as a general practitioner for both Jane and Timmy.  Doing so gives her access to both patient records for review.</p>
+
+<p>After arriving at the shelter, Jane logs into the Patient Portal, which provides her various forms and rules about staying there; as well as copies of her own records, as well as those of her son's.</p>
+
+<p>While at the shelter, Jane has an altercation with another guest, Kathy Klepto.  Kathy has a history of incarceration and homelessness, and has vague concepts of personal property.  She habitually picks up other people's belongings, especially cell phones and electronic devices.  When presented the opportunity, she tries to turn the devices on and see what apps she can open.  During the incident, Kathy picks up Jane's phone, and tries to open the shelter's Patient Portal and access Jane's records.</p>
+
+<h3 id="use-cases">Use Cases</h3>
+
+<p><strong>Scenario 1A - Directories with Anonymous Access</strong><br />
+Only unrestricted data is published to client via HTTP or websockets.</p>
+
+<p><strong>Scenario 1B - Directories With Restricted Data</strong><br />
+For the protection of the domestic violence survivors, shelters (St. Dymphna's) are labeled as restricted data, so as not to be listed in public directories.  Only licensed healthcare practicitions (Susan Social, Dr. Camron) have access to the fact that the shelters exists, and where they are located.</p>
+
+<p><strong>Scenario 2A - PHI System - Anonymous Access</strong><br />
+No patient data is published to client via HTTP nor websockets.  Only public, unrestricted records are sent to client (i.e. sample records).</p>
+
+<p><strong>Scenario 2B - PHI System - Patient Self Access</strong> <br />
+Patient  (Jane Doe) registers and authenticates and receives an access token.  A single Patient record is available via HTTP.  If using FHIR-over-websockets or Subscription API, the user's own Patient record is sent to the client.  Upon logout, user session variables and subscriptions are cleared, and user is no longer able to access patient data (except for the public, unrestricted records).</p>
+
+<p><strong>Scenario 2C - PHI System - Patient Multi-User Access</strong> 
+A second patient registers (Kathy).  Kathy has access to Kathy’s own records, but not to Jane’s.  At the same time, Jane has access to Jane’s records, but not to Kathy’s.  HTTP access and websocket publications/subscriptions are updated accordingly; send the user's own data, but not sending anybody elses.  Upon logout, session variables are cleared, and no access is available.</p>
+
+<p><strong>Scenario 2D - PHI System - General Practitioner Access</strong>
+General practitioners have access to patients assigned to them.  A clinician / social worker registers (Susan Social), who has access to her own records (self access), as well as both Jane and Kathy’s records.  Susan is listed as a general practitioner on both Jane and Kathy's Patient records.  Neither Kathy nor Jane have access to Susan’s records.  When Susan logs out, she no longer has access to any of records.</p>
+
+<p><strong>Scenario 2E - PHI System - Dependents Access</strong>
+Patient's (Jane Doe) have access to the healthcare records of their children (Timmy) and dependents (i.e. elder care), by way of custodial records.</p>
+
+<p><strong>Scenario 3 - Back End Access</strong>
+Organizations can register a client via oauth data flows.  Using the registered client id and secret, an external app can present a Bearer token and operate an $export to synchronize databases.</p>
+
+<!-- #### Use Case 1 - Directories With Restricted Data 
+For the protection of the domestic violence survivors it houses, St. Dymphna's shelter is labeled as restricted data., so as not to be listed in public directories.  Only licensed healthcare practicitions have access to the fact that St. Dymphnas exists, and where it is located.
+
+> When using the local healthcare directory, Dr. Allison Campron authenticates as a physician, and has access to St. Dymphnia's restricted contact and location information.  As a registered social worker, Florence also has access.  As a non-authorized civilian, John Doe does not.  
+
+#### Use Case 2 - Patients Can Only Access Their Own Data  
+Boarders at St. Dymphna's have access to a patient portal, where they can access their medical records.  Each patient has access to their own medical records, but not to anybody else's.  
+
+> When using the patient portal, Jane has access to Jane's records, not Katies.  Katie has access to Katie's records, not Jane's.   
+
+
+#### Use Case 3 - Clinicians Can Access Any Patients Their Role Authorizes   
+Social workers 
+
+> When using the clinciian portal, Florence has access to all three patients currently staying at the shelter - Jane, Timmy, and Katie.  
+
+
+#### Use Case 4 - Patients Can Access Dependent's Records (Custodial Access)   
+Patient's have access to the healthcare records of their children and dependents (i.e. elder care), by way of custodial records.  
+
+> When using the patient portal, Jane has access to both Jane and Timmy's records.  Timmy has access to Timmy's records, but not Jane's.  Katie has access to neither Jane nor Timmy's records. -->
+
+<h3 id="prior-art-references">Prior Art References</h3>
+
+<ul>
+  <li><a href="https://www.hl7.org/fhir/implementationguide.html">PACIO Implemention Guide</a></li>
+  <li><a href="https://build.fhir.org/ig/HL7/sdoh-cc/">SDOH Clinical Implementation Guide (Gravity)</a></li>
+  <li><a href="https://confluence.hl7.org/display/FHIR/2021-01+Consent+Management+and+Enforcement+Services+Track">ONC LEAP - Consent Management and Enforcement - Connectathon Track</a></li>
+  <li><a href="https://github.com/fhir-consent-exchange/implementation-guide">MEHI Consent Exchange</a></li>
+  <li><a href="https://build.fhir.org/ig/HL7/fhir-directory-attestation/branches/sept22-preview/">FAST National Direcotory - Attestation</a></li>
+</ul>
+
+<h3 id="sponsors">Sponsors</h3>
+
+<p>This implementation guide was made possible through generous sponsorship by Tranquil Data, the Massachusetts eHealth Institute (MeHI), the FHIR At Scale Taskforce, and the FAST National Directory project.</p>
+
+<h3 id="learning-resources--background-information">Learning Resources &amp; Background Information</h3>
+
+<p><a href="http://hl7.org/fhir/modules.html">Getting Started with FHIR</a><br />
+<a href="https://www.hl7.org/fhir/resourcelist.html">FHIR Resource List</a><br />
+<a href="http://www.hl7.org/implement/courseList.cfm?ref=nav">HL7 Education and Certification Course List</a></p>
+
+<h1 id="contact-info">Contact Info</h1>
+
+<p>For project maintenance, please contact:</p>
+
+<p>Abigail Watson <a href="mailto:awatson@mitre.org">awatson@mitre.org</a></p>
+
+<p>For community help, please post questions on Zulip:<br />
+<a href="https://chat.fhir.org/">https://chat.fhir.org/</a></p>
+
+<h3 id="copyright-notice">Copyright Notice</h3>
+
+<p>This (software/technical data) was produced under Contract Number 6521MT01-01, and is subject to Federal Acquisition Regulation Clause 52.227-14, Rights in Data-General.</p>
+
+<p>No other use other than that granted to the U. S. Government, or to those acting on behalf of the U. S. Government under that Clause is authorized without the express written permission of The MITRE Corporation.</p>
+
+<p>For further information, please contact The MITRE Corporation, Contracts Management Office, 7515 Colshire Drive, McLean, VA 22102-7539, (703) 983-6000.</p>
+
+<p>© 2022 The MITRE Corporation.</p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.mitre.org">MITRE</a>.  Package mitre.fast.access-control#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 11, 2024 16:13-0500">2024-09-11</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

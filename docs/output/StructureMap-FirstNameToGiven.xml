@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureMap xmlns="http://hl7.org/fhir">
+  <id value="FirstNameToGiven"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: StructureMap FirstNameToGiven</b></p><a name="FirstNameToGiven"> </a><a name="hcFirstNameToGiven"> </a><a name="FirstNameToGiven-en-US"> </a><pre class="fml">
+<b>map</b><span style="color: navy"> &quot;</span>http://<span style="color: navy">&quot; = &quot;</span>FirstNameToGiven<span style="color: navy">&quot;
+
+</span><span style="color: navy">// </span><span style="color: green">First name to given name</span>
+
+<b>group </b>First<span style="color: navy">(</span><b>source</b> <span style="color: maroon">FirstName</span><span style="color: navy">)</span><b> &lt;&lt;types&gt;&gt;</b><span style="color: navy"> {
+</span>  FirstName<b> default </b>&quot;FirstName&quot; <i>&quot;gCaEyGa9vsLFC9aj5&quot;</i><span style="color: navy">;</span>
+<span style="color: navy">}
+
+</span></pre></div>
+  </text>
+  <url value="http://"/>
+  <version value="0.2.1"/>
+  <name value="FirstNameToGiven"/>
+  <status value="draft"/>
+  <date value="2024-09-11T16:13:57-05:00"/>
+  <publisher value="MITRE"/>
+  <contact>
+    <name value="MITRE"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.mitre.org"/>
+    </telecom>
+  </contact>
+  <description value="First name to given name"/>
+  <group>
+    <name value="First"/>
+    <typeMode value="types"/>
+    <input>
+      <name value="FirstName"/>
+      <mode value="source"/>
+    </input>
+    <rule>
+      <name value="gCaEyGa9vsLFC9aj5"/>
+      <source>
+        <context value="FirstName"/>
+        <defaultValueString value="FirstName"/>
+      </source>
+    </rule>
+  </group>
+</StructureMap>

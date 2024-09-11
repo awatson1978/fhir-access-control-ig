@@ -1,0 +1,41 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://gitlab.mitre.org/awatson/fast-access-control/OperationDefinition/digest> a fhir:OperationDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "digest"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: OperationDefinition digest</b></p><a name=\"digest\"> </a><a name=\"hcdigest\"> </a><a name=\"digest-en-US\"> </a><p>URL: [base]/Bundle/[id]/$digest</p><h3>Parameters</h3><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://h7.org/fhir/OperationDefinition/example"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.2.1"] ; # 
+  fhir:name [ fhir:v "Consent Bundle Digest"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:kind [ fhir:v "operation"] ; # 
+  fhir:date [ fhir:v "2015-08-04"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Input a Bundle which contains list of 1 or more Consent records; Returns a flattened Consent that has merged the records"] ; # 
+  fhir:code [ fhir:v "digest"] ; # 
+  fhir:base [
+     fhir:v "OperationDefinition/Consent-digest"^^xsd:anyURI ;
+     fhir:link <https://gitlab.mitre.org/awatson/fast-access-control/OperationDefinition/Consent-digest>
+  ] ; # 
+  fhir:resource ( [ fhir:v "Bundle"] ) ; # 
+  fhir:system [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:type [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:instance [ fhir:v "true"^^xsd:boolean] . # 
+
+# -------------------------------------------------------------------------------------
+

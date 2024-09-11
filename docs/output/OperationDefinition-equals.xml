@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<OperationDefinition xmlns="http://hl7.org/fhir">
+  <id value="equals"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: OperationDefinition equals</b></p><a name="equals"> </a><a name="hcequals"> </a><a name="equals-en-US"> </a><p>URL: [base]/Consent/[id]/$equals</p><h3>Parameters</h3><table class="grid"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>patient</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></td><td/><td><div><p>Usage:  GET /Consent/$equals?patient=Patient/{patientId}</p>
+</div></td></tr></table></div>
+  </text>
+  <url value="http://h7.org/fhir/OperationDefinition/example"/>
+  <version value="0.2.1"/>
+  <name value="Consent Equals"/>
+  <status value="draft"/>
+  <kind value="operation"/>
+  <date value="2015-08-04"/>
+  <publisher value="MITRE"/>
+  <contact>
+    <name value="MITRE"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.mitre.org"/>
+    </telecom>
+  </contact>
+  <description value="Determines if two Consent records are equal"/>
+  <code value="equals"/>
+  <base value="OperationDefinition/Consent-equals"/>
+  <resource value="Consent"/>
+  <system value="false"/>
+  <type value="false"/>
+  <instance value="true"/>
+  <parameter>
+    <name value="patient"/>
+    <use value="in"/>
+    <min value="1"/>
+    <max value="1"/>
+    <documentation value="Usage:  GET /Consent/$equals?patient=Patient/{patientId}"/>
+    <type value="Reference"/>
+  </parameter>
+</OperationDefinition>

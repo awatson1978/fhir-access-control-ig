@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<OperationDefinition xmlns="http://hl7.org/fhir">
+  <id value="digest"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: OperationDefinition digest</b></p><a name="digest"> </a><a name="hcdigest"> </a><a name="digest-en-US"> </a><p>URL: [base]/Bundle/[id]/$digest</p><h3>Parameters</h3><table class="grid"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr></table></div>
+  </text>
+  <url value="http://h7.org/fhir/OperationDefinition/example"/>
+  <version value="0.2.1"/>
+  <name value="Consent Bundle Digest"/>
+  <status value="draft"/>
+  <kind value="operation"/>
+  <date value="2015-08-04"/>
+  <publisher value="MITRE"/>
+  <contact>
+    <name value="MITRE"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.mitre.org"/>
+    </telecom>
+  </contact>
+  <description value="Input a Bundle which contains list of 1 or more Consent records; Returns a flattened Consent that has merged the records"/>
+  <code value="digest"/>
+  <base value="OperationDefinition/Consent-digest"/>
+  <resource value="Bundle"/>
+  <system value="false"/>
+  <type value="false"/>
+  <instance value="true"/>
+</OperationDefinition>

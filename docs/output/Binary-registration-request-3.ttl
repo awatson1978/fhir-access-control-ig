@@ -1,0 +1,15 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://gitlab.mitre.org/awatson/fast-access-control/Binary/registration-request-3> a fhir:Binary ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "registration-request-3"] ; # 
+  fhir:contentType [ fhir:v "application/fhir+json"] ; # 
+  fhir:data [ fhir:v "ewogICAgInJlc291cmNlVHlwZSI6ICJPQXV0aFJlZ2lzdHJhdGlvblJlcXVlc3QiLAogICAgImlkIjogInJlZ2lzdHJhdGlvbi1yZXF1ZXN0LTMiLAogICAgImNsaWVudF9uYW1lIjoiQ3lic2Vyc2VjdXJpdHkgQXVkaXQgLSBCYWNrZW5kIFNlcnZpY2VzIiwgCiAgICAiY2xpZW50X2lkIjogImN5YmVyc2VjdXJpdHlfYmFja2VuZF9zZXJ2aWNlcyIsCiAgICAiY2xpZW50X3NlY3JldCI6ICJ2d1pDNHhtRVJQNkJzUXF1WiIKfQ=="^^xsd:base64Binary] . # 
+
+# -------------------------------------------------------------------------------------
+

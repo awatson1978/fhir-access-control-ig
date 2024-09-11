@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="patient-jane-doe"/>
+  <meta>
+    <versionId value="1"/>
+    <lastUpdated value="2020-09-13T12:21:34.589+00:00"/>
+    <source value="#mehi-consent-engine-reference-implementation"/>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Patient patient-jane-doe</b></p><a name="patient-jane-doe"> </a><a name="hcpatient-jane-doe"> </a><a name="patient-jane-doe-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">version: 1; Last updated: 2020-09-13 12:21:34+0000; </p><p style="margin-bottom: 0px">Information Source: #mehi-consent-engine-reference-implementation</p><p style="margin-bottom: 0px">Profile: <code>http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient</code></p></div><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">JANE DOE  Female, DoB: 2001-01-15 ( Medical Record Number: 1042001 (use: usual, ))</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Record is active">Active:</td><td colspan="3">true</td></tr><tr><td style="background-color: #f3f5da" title="Ways to contact the Patient">Contact Detail</td><td colspan="3">ph: 747-555-7474(Home)</td></tr><tr><td style="background-color: #f3f5da" title="Patient Links">Links:</td><td colspan="3"><ul><li>General Practitioner: <a href="Practitioner/ractitioner-susan-social">Susan Social</a></li><li>General Practitioner: <a href="Practitioner/practitioner-bernard-shuman">Dr. Bernard Shuman</a></li><li>Managing Organization: <a href="Organization-stjames.html">St. James</a></li></ul></td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-race">
+    <extension url="ombCategory">
+      <valueCoding>
+        <system value="urn:oid:2.16.840.1.113883.6.238"/>
+        <code value="2106-3"/>
+        <display value="White"/>
+      </valueCoding>
+    </extension>
+    <extension url="ombCategory">
+      <valueCoding>
+        <system value="urn:oid:2.16.840.1.113883.6.238"/>
+        <code value="1002-5"/>
+        <display value="American Indian or Alaska Native"/>
+      </valueCoding>
+    </extension>
+    <extension url="ombCategory"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity">
+    <extension url="ombCategory">
+      <valueCoding>
+        <system value="http://hl7.org/fhir/us/core/ValueSet/omb-ethnicity"/>
+        <code value="2186-5"/>
+        <display value="Non Hispanic or Latino"/>
+      </valueCoding>
+    </extension>
+    <extension url="detailed">
+      <valueString value="Non Hispanic or Latino"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex">
+    <valueCode value="F"/>
+  </extension>
+  <identifier>
+    <use value="usual"/>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="MR"/>
+        <display value="Medical Record Number"/>
+      </coding>
+      <text value="Medical Record Number"/>
+    </type>
+    <system value="http://hospital.smarthealthit.org"/>
+    <value value="1042001"/>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <family value="DOE"/>
+    <given value="JANE"/>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="747-555-7474"/>
+    <use value="home"/>
+  </telecom>
+  <gender value="female"/>
+  <birthDate value="2001-01-15"/>
+  <generalPractitioner>
+    <reference value="Practitioner/ractitioner-susan-social"/>
+    <display value="Susan Social"/>
+  </generalPractitioner>
+  <generalPractitioner>
+    <reference value="Practitioner/practitioner-bernard-shuman"/>
+    <display value="Dr. Bernard Shuman"/>
+  </generalPractitioner>
+  <managingOrganization>
+    <reference value="Organization/stjames"/>
+    <display value="St. James"/>
+  </managingOrganization>
+</Patient>

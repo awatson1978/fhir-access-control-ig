@@ -1,0 +1,38 @@
+{
+  "resourceType" : "Basic",
+  "id" : "OAuthRegistrationRequest1",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Basic OAuthRegistrationRequest1</b></p><a name=\"OAuthRegistrationRequest1\"> </a><a name=\"hcOAuthRegistrationRequest1\"> </a><a name=\"OAuthRegistrationRequest1-en-US\"> </a><p><b>resourceType</b>: OAuthRegistrationRequest</p><p><b>client_name</b>: Test Harness</p><p><b>scope</b>: fhir organization/read location/read</p><p><b>token_endpoint_auth_method</b>: code</p><p><b>grant_types</b>: code</p><p><b>redirect_uris</b>: http://localhost:3000/redirect</p><p><b>code</b>: <span title=\"Codes:\">Administrative Activity</span></p></div>"
+  },
+  "extension" : [{
+    "url" : "resourceType",
+    "valueString" : "OAuthRegistrationRequest"
+  },
+  {
+    "url" : "client_name",
+    "valueString" : "Test Harness"
+  },
+  {
+    "url" : "scope",
+    "valueString" : "fhir organization/read location/read"
+  },
+  {
+    "url" : "token_endpoint_auth_method",
+    "valueString" : "code"
+  },
+  {
+    "url" : "grant_types",
+    "valueString" : "code"
+  },
+  {
+    "url" : "redirect_uris",
+    "valueString" : "http://localhost:3000/redirect"
+  }],
+  "code" : {
+    "coding" : [{
+      "code" : "adminact",
+      "display" : "Administrative Activity"
+    }]
+  }
+}

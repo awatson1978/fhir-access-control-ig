@@ -1,0 +1,73 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://gitlab.mitre.org/awatson/fast-access-control/OperationDefinition/rollup> a fhir:OperationDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "rollup"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: OperationDefinition rollup</b></p><a name=\"rollup\"> </a><a name=\"hcrollup\"> </a><a name=\"rollup-en-US\"> </a><p>URL: [base]/Consent/[id]/$rollup</p><h3>Parameters</h3><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>patient</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/references.html#Reference\">Reference</a></td><td/><td><div><p>Usage:  GET /Consent/$rollup?patient=Patient/{patientId}</p>\n</div></td></tr><tr><td>IN</td><td>consentor</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/references.html#Reference\">Reference</a></td><td/><td><div><p>Usage:  GET /Consent/$rollup?consentor=RelatedPerson/{relatedPersonId}</p>\n</div></td></tr><tr><td>IN</td><td>practitioner</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/references.html#Reference\">Reference</a></td><td/><td><div><p>Usage:  GET /Consent/$rollup?practitioner=Practitioner/{practitionerId}</p>\n</div></td></tr><tr><td>IN</td><td>organization</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/references.html#Reference\">Reference</a></td><td/><td><div><p>Usage:  GET /Consent/$rollup?organization=Organization/{organizationId}</p>\n</div></td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://h7.org/fhir/OperationDefinition/example"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.2.1"] ; # 
+  fhir:name [ fhir:v "Consent Rollup"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:kind [ fhir:v "operation"] ; # 
+  fhir:date [ fhir:v "2015-08-04"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "MITRE"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MITRE" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.mitre.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Rollup multiple Consent records into a Bundle"] ; # 
+  fhir:code [ fhir:v "rollup"] ; # 
+  fhir:base [
+     fhir:v "OperationDefinition/Consent-rollup"^^xsd:anyURI ;
+     fhir:link <https://gitlab.mitre.org/awatson/fast-access-control/OperationDefinition/Consent-rollup>
+  ] ; # 
+  fhir:resource ( [ fhir:v "Consent"] ) ; # 
+  fhir:system [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:type [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:instance [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:parameter ( [
+     fhir:name [ fhir:v "patient" ] ;
+     fhir:use [ fhir:v "in" ] ;
+     fhir:min [ fhir:v "1"^^xsd:integer ] ;
+     fhir:max [ fhir:v "1" ] ;
+     fhir:documentation [ fhir:v "Usage:  GET /Consent/$rollup?patient=Patient/{patientId}" ] ;
+     fhir:type [ fhir:v "Reference" ]
+  ] [
+     fhir:name [ fhir:v "consentor" ] ;
+     fhir:use [ fhir:v "in" ] ;
+     fhir:min [ fhir:v "0"^^xsd:integer ] ;
+     fhir:max [ fhir:v "1" ] ;
+     fhir:documentation [ fhir:v "Usage:  GET /Consent/$rollup?consentor=RelatedPerson/{relatedPersonId}" ] ;
+     fhir:type [ fhir:v "Reference" ]
+  ] [
+     fhir:name [ fhir:v "practitioner" ] ;
+     fhir:use [ fhir:v "in" ] ;
+     fhir:min [ fhir:v "0"^^xsd:integer ] ;
+     fhir:max [ fhir:v "1" ] ;
+     fhir:documentation [ fhir:v "Usage:  GET /Consent/$rollup?practitioner=Practitioner/{practitionerId}" ] ;
+     fhir:type [ fhir:v "Reference" ]
+  ] [
+     fhir:name [ fhir:v "organization" ] ;
+     fhir:use [ fhir:v "in" ] ;
+     fhir:min [ fhir:v "0"^^xsd:integer ] ;
+     fhir:max [ fhir:v "1" ] ;
+     fhir:documentation [ fhir:v "Usage:  GET /Consent/$rollup?organization=Organization/{organizationId}" ] ;
+     fhir:type [ fhir:v "Reference" ]
+  ] ) ; # 
+  fhir:overload ( [
+     fhir:parameterName ( [ fhir:v "patient" ] [ fhir:v "consentor" ] [ fhir:v "practitioner" ] [ fhir:v "organization" ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

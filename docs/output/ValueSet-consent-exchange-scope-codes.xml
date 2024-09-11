@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="consent-exchange-scope-codes"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet consent-exchange-scope-codes</b></p><a name="consent-exchange-scope-codes"> </a><a name="hcconsent-exchange-scope-codes"> </a><a name="consent-exchange-scope-codes-en-US"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href="http://terminology.hl7.org/6.0.2/ValueSet-consent-scope.html">Consent Scope Codes</a></li></ul><p>This value set excludes codes based on the following rules:</p><ul><li>Exclude these codes as defined in <a href="http://terminology.hl7.org/6.0.2/CodeSystem-consentscope.html"><code>http://terminology.hl7.org/CodeSystem/consentscope</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="http://terminology.hl7.org/6.0.2/CodeSystem-consentscope.html#consentscope-research">research</a></td><td style="color: #cccccc">Research</td><td>Consent to participate in research protocol and information sharing required</td></tr><tr><td><a href="http://terminology.hl7.org/6.0.2/CodeSystem-consentscope.html#consentscope-treatment">treatment</a></td><td style="color: #cccccc">Treatment</td><td>Consent to undergo a specific treatment</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://gitlab.mitre.org/awatson/fast-access-control/ValueSet/consent-exchange-scope-codes"/>
+  <version value="0.2.1"/>
+  <name value="ConsentExchangeScopeCodes"/>
+  <title value="ConsentExchangeScopeCodes"/>
+  <status value="draft"/>
+  <date value="2024-09-11T16:13:57-05:00"/>
+  <publisher value="MITRE"/>
+  <contact>
+    <name value="MITRE"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.mitre.org"/>
+    </telecom>
+  </contact>
+  <description value="Consent Exchange - Scope Codes"/>
+  <compose>
+    <include>
+      <valueSet value="http://terminology.hl7.org/ValueSet/consent-scope"/>
+    </include>
+    <exclude>
+      <system value="http://terminology.hl7.org/CodeSystem/consentscope"/>
+      <concept>
+        <code value="research"/>
+      </concept>
+      <concept>
+        <code value="treatment"/>
+      </concept>
+    </exclude>
+  </compose>
+</ValueSet>

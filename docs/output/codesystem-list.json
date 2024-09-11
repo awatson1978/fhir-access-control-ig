@@ -1,0 +1,28 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "https://gitlab.mitre.org/awatson/fast-access-control/CodeSystem/CmsInteroperabilityPolicyCodes",
+      "version" : "0.2.1",
+      "status" : "draft",
+      "name" : "CmsInteroperabilityPolicyCodes",
+      "title" : "CmsInteroperabilityPolicyCodes",
+      "description" : "Policy provisions defined under CMS-9115-F, CMS Interoperability and Patient Access final rule"
+    },
+    {
+      "url" : "https://gitlab.mitre.org/awatson/fast-access-control/CodeSystem/ConsentExchangeRelationships",
+      "version" : "0.2.1",
+      "status" : "draft",
+      "name" : "ConsentExchangeRelationships",
+      "title" : "ConsentExchangeRelationships",
+      "description" : "Relationships used to model and exchange consent relationships"
+    },
+    {
+      "url" : "https://gitlab.mitre.org/awatson/fast-access-control/CodeSystem/PayorToPayorExchangePolicyCodes",
+      "version" : "0.2.1",
+      "status" : "draft",
+      "name" : "PayorToPayorExchangePolicyCodes",
+      "title" : "PayorToPayorExchangePolicyCodes",
+      "description" : "Policy codes used to define legal frameworks under which consent exchange occurs between payors."
+    }
+  ]
+}

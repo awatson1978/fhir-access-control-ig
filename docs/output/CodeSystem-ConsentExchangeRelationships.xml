@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ConsentExchangeRelationships"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ConsentExchangeRelationships</b></p><a name="ConsentExchangeRelationships"> </a><a name="hcConsentExchangeRelationships"> </a><a name="ConsentExchangeRelationships-en-US"> </a><p>This  code system <code>https://gitlab.mitre.org/awatson/fast-access-control/CodeSystem/ConsentExchangeRelationships</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td></tr></table></div>
+  </text>
+  <url value="https://gitlab.mitre.org/awatson/fast-access-control/CodeSystem/ConsentExchangeRelationships"/>
+  <version value="0.2.1"/>
+  <name value="ConsentExchangeRelationships"/>
+  <title value="ConsentExchangeRelationships"/>
+  <status value="draft"/>
+  <date value="2024-09-11T16:13:57-05:00"/>
+  <publisher value="MITRE"/>
+  <contact>
+    <name value="MITRE"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.mitre.org"/>
+    </telecom>
+  </contact>
+  <description value="Relationships used to model and exchange consent relationships"/>
+  <content value="complete"/>
+</CodeSystem>

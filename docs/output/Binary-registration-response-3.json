@@ -1,0 +1,6 @@
+{
+  "resourceType" : "Binary",
+  "id" : "registration-response-3",
+  "contentType" : "application/fhir+json",
+  "data" : "ewogICAgInJlc291cmNlVHlwZSI6ICJPQXV0aFJlZ2lzdHJhdGlvblJlc3BvbnNlIiwKICAgICJpZCI6ICJyZWdpc3RyYXRpb24tcmVzcG9uc2UtMyIsCiAgICAiY2xpZW50X25hbWUiOiJDeWJzZXJzZWN1cml0eSBBdWRpdCAtIEJhY2tlbmQgU2VydmljZXMiLCAKICAgICJjbGllbnRfaWQiOiAiY3liZXJzZWN1cml0eV9iYWNrZW5kX3NlcnZpY2VzIgp9"
+}

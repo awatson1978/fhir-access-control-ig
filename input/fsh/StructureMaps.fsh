@@ -16,8 +16,8 @@ Usage: #definition
 * group[=].input[=].mode = #source
 * group[=].rule[0].name = "gCaEyGa9vsLFC9aj5"
 * group[=].rule[=].source[0].defaultValueString = "FirstName"
-* group[=].rule[=].source[0].context = "gCaEyGa9vsLFC9aj5"
-* group[=].rule[=].target[0].variable = "name.given"
+* group[=].rule[=].source[0].context = "FirstName"
+// * group[=].rule[=].target[0].variable = "name.given"
 
 
 Instance: LastNameToFamily
@@ -33,8 +33,8 @@ Usage: #definition
 * group[=].input[=].mode = #source
 * group[=].rule[0].name = "cNAWCq2xPyKhDXGJZ"
 * group[=].rule[=].source[0].defaultValueString = "LastName"
-* group[=].rule[=].source[0].context = "cNAWCq2xPyKhDXGJZ"
-* group[=].rule[0].target[0].variable = "name.family"
+* group[=].rule[=].source[0].context = "LastName"
+// * group[=].rule[0].target[0].variable = "name.family"
 
 
 
@@ -52,8 +52,9 @@ Usage: #definition
 * group[=].input[=].mode = #source
 * group[=].rule[0].name = "QihW2v3EyoEuqB8Y5"
 * group[=].rule[=].source[0].defaultValueString = "First"
-* group[=].rule[=].source[0].context = "QihW2v3EyoEuqB8Y5"
-* group[=].rule[=].target[0].variable = "name.given"
+* group[=].rule[=].source[0].context = "First"
+// * group[=].rule[=].target[0].variable = "name.given"
+// * group[=].rule[=].target[0].context = "name.given"
 
 
 
@@ -70,8 +71,9 @@ Usage: #definition
 * group[=].input[=].mode = #source
 * group[=].rule[0].name = "HCSyJBGnL9c438DrE"
 * group[=].rule[=].source[0].defaultValueString = "First"
-* group[=].rule[=].source[0].context = "HCSyJBGnL9c438DrE"
-* group[=].rule[=].target[0].variable = "name.given"
+* group[=].rule[=].source[0].context = "First"
+// * group[=].rule[=].target[0].variable = "name.given"
+// * group[=].rule[=].target[0].context = "name.given"
 
 
 
@@ -88,8 +90,9 @@ Usage: #definition
 * group[=].input[=].mode = #source
 * group[=].rule[0].name = "GASWmqkfPCcSWb2MY"
 * group[=].rule[=].source[0].defaultValueString = "First"
-* group[=].rule[=].source[0].context = "GASWmqkfPCcSWb2MY"
-* group[=].rule[=].target[0].variable = "name.given"
+* group[=].rule[=].source[0].context = "First"
+// * group[=].rule[=].target[0].variable = "name.given"
+// * group[=].rule[=].target[0].context = "name.given"
 
 
 
@@ -107,8 +110,9 @@ Usage: #definition
 * group[=].input[=].mode = #source
 * group[=].rule[0].name = "6Zzqjx8mENBX5Mdnq"
 * group[=].rule[=].source[0].defaultValueString = "First"
-* group[=].rule[=].source[0].context = "6Zzqjx8mENBX5Mdnq"
-* group[=].rule[=].target[0].variable = "name.given"
+* group[=].rule[=].source[0].context = "First"
+// * group[=].rule[=].target[0].variable = "name.given"
+// * group[=].rule[=].target[0].context = "name.given"
 
 // * targetUri = "name.given"
 
@@ -125,8 +129,9 @@ Usage: #definition
 * group[=].input[=].mode = #source
 * group[=].rule[0].name = "6k7G75p8ZGja4tgnC"
 * group[=].rule[=].source[0].defaultValueString = "First"
-* group[=].rule[=].source[0].context = "6k7G75p8ZGja4tgnC"
-* group[=].rule[=].target[0].variable = "name.given"
+* group[=].rule[=].source[0].context = "First"
+// * group[=].rule[=].target[0].variable = "name.given"
+// * group[=].rule[=].target[0].context = "name.given"
 
 
 
@@ -144,8 +149,9 @@ Usage: #definition
 * group[=].input[=].mode = #source
 * group[=].rule[0].name = "EiuDWq8ByF6aA8BYQ"
 * group[=].rule[=].source[0].defaultValueString = "First"
-* group[=].rule[=].source[0].context = "EiuDWq8ByF6aA8BYQ"
-* group[=].rule[=].target[0].variable = "name.given"
+* group[=].rule[=].source[0].context = "First"
+// * group[=].rule[=].target[0].variable = "name.given"
+// * group[=].rule[=].target[0].context = "name.given"
 
 
 Instance: PolstToConsent
@@ -161,6 +167,7 @@ Usage: #definition
 * group[=].input[=].mode = #source
 * group[=].rule[0].name = "bNnp9yqshCL5AePDP"
 * group[=].rule[=].source[0].defaultValueString = "First"
-* group[=].rule[=].source[0].context = "bNnp9yqshCL5AePDP"
-* group[=].rule[=].target[0].variable = "name.given"
+* group[=].rule[=].source[0].context = "First"
+// * group[=].rule[=].target[0].variable = "name.given"
+// * group[=].rule[=].target[0].context = "name.given"
 

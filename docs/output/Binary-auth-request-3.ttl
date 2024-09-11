@@ -1,0 +1,15 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://gitlab.mitre.org/awatson/fast-access-control/Binary/auth-request-3> a fhir:Binary ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "auth-request-3"] ; # 
+  fhir:contentType [ fhir:v "application/fhir+json"] ; # 
+  fhir:data [ fhir:v "ewogICAgInJlc291cmNlVHlwZSI6ICJPQXV0aEF1dGhlbnRpY2F0aW9uUmVxdWVzdCIsCiAgICAiaWQiOiAiYXV0aC1yZXF1ZXN0LTMiLAogICAgInJlc3BvbnNlX3R5cGUiOiAiY29kZSIsCiAgICAiY2xpZW50X2lkIjogImN4Y1RwOHNiR25KUjlkdDZiIiwKICAgICJyZWRpcmVjdF91cmkiOiAiIiwKICAgICJzY29wZSI6ICJsYXVuY2ggZmhpclVzZXIgb3BlbmlkIHBhdGllbnQvKi5ycywgb3JnYW5pemF0aW9uLyoucnMsIiwKICAgICJzdGF0ZSI6ICIxMjM0NSIsIAogICAgImF1ZCI6ICJodHRwOi8vbG9jYWxob3N0OjMwMDAvYmFzZVI0Igp9"^^xsd:base64Binary] . # 
+
+# -------------------------------------------------------------------------------------
+

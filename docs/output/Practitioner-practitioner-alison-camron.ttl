@@ -1,0 +1,36 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://gitlab.mitre.org/awatson/fast-access-control/Practitioner/practitioner-alison-camron> a fhir:Practitioner ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "practitioner-alison-camron"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Practitioner practitioner-alison-camron</b></p><a name=\"practitioner-alison-camron\"> </a><a name=\"hcpractitioner-alison-camron\"> </a><a name=\"practitioner-alison-camron-en-US\"> </a><p><b>active</b>: true</p><p><b>name</b>: ALISON CAMRON </p><p><b>telecom</b>: ph: 555-555-1120(Home)</p><p><b>address</b>: 1120 Maple St Birmingham AL 35242 US </p><p><b>gender</b>: Male</p><p><b>birthDate</b>: 1965-03-24</p></div>"
+  ] ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "CAMRON" ] ;
+     fhir:given ( [ fhir:v "ALISON" ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "555-555-1120" ] ;
+     fhir:use [ fhir:v "home" ]
+  ] ) ; # 
+  fhir:address ( [
+     fhir:line ( [ fhir:v "1120 Maple St" ] ) ;
+     fhir:city [ fhir:v "Birmingham" ] ;
+     fhir:state [ fhir:v "AL" ] ;
+     fhir:postalCode [ fhir:v "35242" ] ;
+     fhir:country [ fhir:v "US" ]
+  ] ) ; # 
+  fhir:gender [ fhir:v "male"] ; # 
+  fhir:birthDate [ fhir:v "1965-03-24"^^xsd:date] . # 
+
+# -------------------------------------------------------------------------------------
+
